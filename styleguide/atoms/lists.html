@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html class="sg" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>UI design system - List</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" rel="stylesheet" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link href="styles/sg-main.css" rel="stylesheet">
+    <link href="styles/assets.css" rel="stylesheet">
+    <link href="../framework/styles/vendor.css" rel="stylesheet">
+    <link href="../framework/styles/main.css" rel="stylesheet">
+  </head>
+  <body class="sg-layout">
+    <button class="sg-toggle-nav js-sg-toggle-nav"><i class="fas fa-bars"></i></button>
+    <header class="sg-layout-header">
+      <p><a href="/styleguide/">Index</a></p>
+      <nav>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Atoms</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/atoms/headings.html">Headings</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/buttons.html">Buttons</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/icons.html">Icons</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/lists.html">Lists</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/forms.html">Form</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/tables.html">Tables</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Molecules</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/molecules/hero.html">Hero</a></li>
+          <li class="sg-list__item"><a href="/styleguide/molecules/carousel.html">Carousel</a></li>
+          <li class="sg-list__item"><a href="/styleguide/molecules/overlay-tabs.html">Overlay tabs</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Organisms</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/organisms/header.html">Header</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/footer.html">Footer</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/page-nav.html">Page nav</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/section-header.html">Section header</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/content-blocks.html">Content blocks</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/grid-blocks.html">Grid blocks</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Pages</h3>
+        <h4 class="sg-heading sg-heading--xs sg-text--xs">Main</h4>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/pages.html#pages/0_home">Home</a></li>
+          <li class="sg-list__item"><a href="/styleguide/pages.html#pages/1_sector">Sector</a></li>
+          <li class="sg-list__item"><a href="/styleguide/pages.html#pages/2_newsroom">Newsroom</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ==================================================================================================-->
+    <!-- CONTENT STARTS >>-->
+    <!-- ==================================================================================================-->
+    <main class="sg-layout-content">
+      <style type="text/css">
+        .sg-component-example .c-list {
+            max-width: 440px;
+        }
+        
+        
+      </style>
+      <h2 class="sg-heading sg-text--xl sg-heading--xl">List</h2>
+      <div class="sg-component-description"><span class="sg-code sg-code--inline">c-list</span>
+        <p>Ordered and unordered lists.</p>
+      </div>
+      <h3 class="sg-heading sg-text--lg sg-heading--lg">Ordered list</h3>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light">
+<p>
+    A paragraph to visualise list indentation relative to context.
+    Globally transform resource maximizing leadership skills after parallel experiences.
+    Phosfluorescently facilitate real-time manufactured products for best-of-breed supply chains.
+    Continually cultivate customer directed core competencies without customer directed information.
+    Dynamically create reliable collaboration and idea-sharing without intuitive technologies.
+    Progressively formulate unique best practices.
+</p>
+
+<ol class="c-list c-list--style_ordered">
+    <li>List item text</li>
+    <li>A little bit longer list item text</li>
+    <li>Another list item text</li>
+</ol>
+
+
+        </div>
+        <div class="sg-component-example__preview sg-component-example__preview--dark">
+<p>
+    A paragraph to visualise list indentation relative to context.
+    Globally transform resource maximizing leadership skills after parallel experiences.
+    Phosfluorescently facilitate real-time manufactured products for best-of-breed supply chains.
+    Continually cultivate customer directed core competencies without customer directed information.
+    Dynamically create reliable collaboration and idea-sharing without intuitive technologies.
+    Progressively formulate unique best practices.
+</p>
+
+<ol class="c-list c-list--style_ordered">
+    <li>List item text</li>
+    <li>A little bit longer list item text</li>
+    <li>Another list item text</li>
+</ol>
+
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">&lt;p&gt;
+    A paragraph to visualise list indentation relative to context.
+    Globally transform resource maximizing leadership skills after parallel experiences.
+    Phosfluorescently facilitate real-time manufactured products for best-of-breed supply chains.
+    Continually cultivate customer directed core competencies without customer directed information.
+    Dynamically create reliable collaboration and idea-sharing without intuitive technologies.
+    Progressively formulate unique best practices.
+&lt;/p&gt;
+
+&lt;ol class=&quot;c-list c-list--style_ordered&quot;&gt;
+    &lt;li&gt;List item text&lt;/li&gt;
+    &lt;li&gt;A little bit longer list item text&lt;/li&gt;
+    &lt;li&gt;Another list item text&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+        </div>
+      </div>
+      <h3 class="sg-heading sg-text--lg sg-heading--lg">Unordered list</h3>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light">
+<p>
+    A paragraph to visualise list indentation relative to context.
+    Globally transform resource maximizing leadership skills after parallel experiences.
+    Phosfluorescently facilitate real-time manufactured products for best-of-breed supply chains.
+    Continually cultivate customer directed core competencies without customer directed information.
+    Dynamically create reliable collaboration and idea-sharing without intuitive technologies.
+    Progressively formulate unique best practices.
+</p>
+
+<ul class="c-list c-list--style_unordered">
+    <li>List item text</li>
+    <li>A little bit longer list item text</li>
+    <li>Another list item text</li>
+</ul>
+
+
+        </div>
+        <div class="sg-component-example__preview sg-component-example__preview--dark">
+<p>
+    A paragraph to visualise list indentation relative to context.
+    Globally transform resource maximizing leadership skills after parallel experiences.
+    Phosfluorescently facilitate real-time manufactured products for best-of-breed supply chains.
+    Continually cultivate customer directed core competencies without customer directed information.
+    Dynamically create reliable collaboration and idea-sharing without intuitive technologies.
+    Progressively formulate unique best practices.
+</p>
+
+<ol class="c-list c-list--style_ordered">
+    <li>List item text</li>
+    <li>A little bit longer list item text</li>
+    <li>Another list item text</li>
+</ol>
+
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">&lt;p&gt;
+    A paragraph to visualise list indentation relative to context.
+    Globally transform resource maximizing leadership skills after parallel experiences.
+    Phosfluorescently facilitate real-time manufactured products for best-of-breed supply chains.
+    Continually cultivate customer directed core competencies without customer directed information.
+    Dynamically create reliable collaboration and idea-sharing without intuitive technologies.
+    Progressively formulate unique best practices.
+&lt;/p&gt;
+
+&lt;ul class=&quot;c-list c-list--style_unordered&quot;&gt;
+    &lt;li&gt;List item text&lt;/li&gt;
+    &lt;li&gt;A little bit longer list item text&lt;/li&gt;
+    &lt;li&gt;Another list item text&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+        </div>
+      </div>
+      <h3 class="sg-heading sg-text--lg sg-heading--lg">Icon list</h3>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light">
+<p>
+    A paragraph to visualise list indentation relative to context.
+    Globally transform resource maximizing leadership skills after parallel experiences.
+    Phosfluorescently facilitate real-time manufactured products for best-of-breed supply chains.
+    Continually cultivate customer directed core competencies without customer directed information.
+    Dynamically create reliable collaboration and idea-sharing without intuitive technologies.
+    Progressively formulate unique best practices.
+</p>
+
+<ul class="c-list c-list--style_icon">
+    <li>
+        <svg class="c-list__icon c-icon c-icon--theme_default c-icon--size_xs"><use xlink:href="/framework/svg/stack.svg#icon--circle-tick"></use></svg>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis congue efficitur. Morbi vel eros odio. Maecenas cursus eu neque at tincidunt.
+    </li>
+    <li>
+        <svg class="c-list__icon c-icon c-icon--theme_default c-icon--size_xs"><use xlink:href="/framework/svg/stack.svg#icon--circle-tick"></use></svg>
+        A little bit longer list item text
+    </li>
+    <li>
+        <svg class="c-list__icon c-icon c-icon--theme_default c-icon--size_xs"><use xlink:href="/framework/svg/stack.svg#icon--circle-tick"></use></svg>
+        Another list item text
+    </li>
+</ul>
+
+
+        </div>
+        <div class="sg-component-example__preview sg-component-example__preview--dark">
+<p>
+    A paragraph to visualise list indentation relative to context.
+    Globally transform resource maximizing leadership skills after parallel experiences.
+    Phosfluorescently facilitate real-time manufactured products for best-of-breed supply chains.
+    Continually cultivate customer directed core competencies without customer directed information.
+    Dynamically create reliable collaboration and idea-sharing without intuitive technologies.
+    Progressively formulate unique best practices.
+</p>
+
+<ul class="c-list c-list--style_icon">
+    <li>
+        <svg class="c-list__icon c-icon c-icon--theme_default c-icon--size_xs"><use xlink:href="/framework/svg/stack.svg#icon--circle-tick"></use></svg>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis congue efficitur. Morbi vel eros odio. Maecenas cursus eu neque at tincidunt.
+    </li>
+    <li>
+        <svg class="c-list__icon c-icon c-icon--theme_default c-icon--size_xs"><use xlink:href="/framework/svg/stack.svg#icon--circle-tick"></use></svg>
+        A little bit longer list item text
+    </li>
+    <li>
+        <svg class="c-list__icon c-icon c-icon--theme_default c-icon--size_xs"><use xlink:href="/framework/svg/stack.svg#icon--circle-tick"></use></svg>
+        Another list item text
+    </li>
+</ul>
+
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">&lt;p&gt;
+    A paragraph to visualise list indentation relative to context.
+    Globally transform resource maximizing leadership skills after parallel experiences.
+    Phosfluorescently facilitate real-time manufactured products for best-of-breed supply chains.
+    Continually cultivate customer directed core competencies without customer directed information.
+    Dynamically create reliable collaboration and idea-sharing without intuitive technologies.
+    Progressively formulate unique best practices.
+&lt;/p&gt;
+
+&lt;ul class=&quot;c-list c-list--style_icon&quot;&gt;
+    &lt;li&gt;
+        &lt;svg class=&quot;c-list__icon c-icon c-icon--theme_default c-icon--size_xs&quot;&gt;&lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-tick&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis congue efficitur. Morbi vel eros odio. Maecenas cursus eu neque at tincidunt.
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;svg class=&quot;c-list__icon c-icon c-icon--theme_default c-icon--size_xs&quot;&gt;&lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-tick&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+        A little bit longer list item text
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;svg class=&quot;c-list__icon c-icon c-icon--theme_default c-icon--size_xs&quot;&gt;&lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-tick&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+        Another list item text
+    &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+        </div>
+      </div>
+    </main>
+    <!-- ==================================================================================================-->
+    <!-- << CONTENT ENDS-->
+    <!-- ==================================================================================================-->
+    <script src="../framework/vendors/bundle.js"></script>
+    <script src="../framework/scripts/main.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

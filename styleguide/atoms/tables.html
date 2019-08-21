@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html class="sg" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>UI design system - Table</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" rel="stylesheet" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link href="styles/sg-main.css" rel="stylesheet">
+    <link href="styles/assets.css" rel="stylesheet">
+    <link href="../framework/styles/vendor.css" rel="stylesheet">
+    <link href="../framework/styles/main.css" rel="stylesheet">
+  </head>
+  <body class="sg-layout">
+    <button class="sg-toggle-nav js-sg-toggle-nav"><i class="fas fa-bars"></i></button>
+    <header class="sg-layout-header">
+      <p><a href="/styleguide/">Index</a></p>
+      <nav>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Atoms</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/atoms/headings.html">Headings</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/buttons.html">Buttons</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/icons.html">Icons</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/lists.html">Lists</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/forms.html">Form</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/tables.html">Tables</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Molecules</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/molecules/hero.html">Hero</a></li>
+          <li class="sg-list__item"><a href="/styleguide/molecules/carousel.html">Carousel</a></li>
+          <li class="sg-list__item"><a href="/styleguide/molecules/overlay-tabs.html">Overlay tabs</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Organisms</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/organisms/header.html">Header</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/footer.html">Footer</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/page-nav.html">Page nav</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/section-header.html">Section header</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/content-blocks.html">Content blocks</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/grid-blocks.html">Grid blocks</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Pages</h3>
+        <h4 class="sg-heading sg-heading--xs sg-text--xs">Main</h4>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/pages.html#pages/0_home">Home</a></li>
+          <li class="sg-list__item"><a href="/styleguide/pages.html#pages/1_sector">Sector</a></li>
+          <li class="sg-list__item"><a href="/styleguide/pages.html#pages/2_newsroom">Newsroom</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ==================================================================================================-->
+    <!-- CONTENT STARTS >>-->
+    <!-- ==================================================================================================-->
+    <main class="sg-layout-content">
+      <h2 class="sg-heading sg-text--xl sg-heading--xl">Table</h2>
+      <div class="sg-component-description"><span class="sg-code sg-code--inline">c-table</span>
+        <p>Data tables.</p>
+      </div>
+      <!-- Layout-->
+      <h3 class="sg-heading sg-text--lg sg-heading--lg">Layout</h3>
+      <h4 class="sg-heading sg-text--md sg-heading--md">Default</h4>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light">
+<table class="c-table
+              c-table--style_default
+              c-table--space_default">
+    <thead>
+    <tr>
+        <th>&nbsp;</th>
+        <th>Table heading with some longer value</th>
+        <th>Table heading</th>
+        <th>Table heading with longer text that will most likely wrap</th>
+        <th>Table heading with longer text</th>
+        <th>Table heading</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td class="c-table__cell--w_min">#1</td>
+        <td>Table data with some longer value</td>
+        <td>
+            <a href="#"
+               class="c-link c-link--with-icon">
+                <span class="c-link__icon c-icon icon54v4-File-1"></span>Table data
+            </a>
+        </td>
+        <td>Table data</td>
+        <td>Table data</td>
+        <td class="c-table__cell--numeric">$12,568.00</td>
+        <td class="c-table__cell--actions c-table__cell--w_min">
+            <a href="#"
+               class="c-link">
+                <svg class="c-icon c-icon--theme_info c-icon--size_md"><use xlink:href="/framework/svg/stack.svg#icon--actions"></use></svg>
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td class="c-table__cell--w_min">#2</td>
+        <td>Table data</td>
+        <td>
+            <a href="#"
+               class="c-link c-link--with-icon">
+                <span class="c-link__icon c-icon icon54v4-File-1"></span>Table data
+            </a>
+        </td>
+        <td>Table data with some longer value that will most likely wrap onto a new line</td>
+        <td>Table data</td>
+        <td class="c-table__cell--numeric">$12,568.00</td>
+        <td class="c-table__cell--actions c-table__cell--w_min">
+            <a href="#"
+               class="c-link">
+                <svg class="c-icon c-icon--theme_info c-icon--size_md"><use xlink:href="/framework/svg/stack.svg#icon--actions"></use></svg>
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td class="c-table__cell--w_min">#3</td>
+        <td>Table data</td>
+        <td>
+            <a href="#"
+               class="c-link c-link--with-icon">
+                <span class="c-link__icon c-icon icon54v4-File-1"></span>Table data
+            </a>
+        </td>
+        <td>Table data</td>
+        <td>Table data with some longer value</td>
+        <td class="c-table__cell--numeric">$12,568.00</td>
+        <td class="c-table__cell--actions c-table__cell--w_min">
+            <a href="#"
+               class="c-link">
+                <svg class="c-icon c-icon--theme_info c-icon--size_md"><use xlink:href="/framework/svg/stack.svg#icon--actions"></use></svg>
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td class="c-table__cell--w_min">#4</td>
+        <td>Table data</td>
+        <td>
+            <a href="#"
+               class="c-link c-link--with-icon">
+                <span class="c-link__icon c-icon icon54v4-File-1"></span>Table data
+            </a>
+        </td>
+        <td>Table data</td>
+        <td>Table data</td>
+        <td class="c-table__cell--numeric">$12,388,568.00</td>
+        <td class="c-table__cell--actions c-table__cell--w_min">
+            <a href="#"
+               class="c-link">
+                <svg class="c-icon c-icon--theme_info c-icon--size_md"><use xlink:href="/framework/svg/stack.svg#icon--actions"></use></svg>
+            </a>
+        </td>
+    </tr>
+    </tbody>
+
+    <tfoot>
+    <tr>
+        <td colspan="5">&nbsp;</td>
+        <td class="c-table__cell--numeric">$12,568.00</td>
+        <td>&nbsp;</td>
+    </tr>
+    </tfoot>
+</table>
+
+
+        </div>
+        <div class="sg-component-example__preview sg-component-example__preview--dark">
+<table class="c-table
+              c-table--style_default
+              c-table--space_default">
+    <thead>
+    <tr>
+        <th>&nbsp;</th>
+        <th>Table heading with some longer value</th>
+        <th>Table heading</th>
+        <th>Table heading with longer text that will most likely wrap</th>
+        <th>Table heading with longer text</th>
+        <th>Table heading</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td class="c-table__cell--w_min">#1</td>
+        <td>Table data with some longer value</td>
+        <td>
+            <a href="#"
+               class="c-link c-link--with-icon">
+                <span class="c-link__icon c-icon icon54v4-File-1"></span>Table data
+            </a>
+        </td>
+        <td>Table data</td>
+        <td>Table data</td>
+        <td class="c-table__cell--numeric">$12,568.00</td>
+        <td class="c-table__cell--actions c-table__cell--w_min">
+            <a href="#"
+               class="c-link">
+                <svg class="c-icon c-icon--theme_info c-icon--size_md"><use xlink:href="/framework/svg/stack.svg#icon--actions"></use></svg>
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td class="c-table__cell--w_min">#2</td>
+        <td>Table data</td>
+        <td>
+            <a href="#"
+               class="c-link c-link--with-icon">
+                <span class="c-link__icon c-icon icon54v4-File-1"></span>Table data
+            </a>
+        </td>
+        <td>Table data with some longer value that will most likely wrap onto a new line</td>
+        <td>Table data</td>
+        <td class="c-table__cell--numeric">$12,568.00</td>
+        <td class="c-table__cell--actions c-table__cell--w_min">
+            <a href="#"
+               class="c-link">
+                <svg class="c-icon c-icon--theme_info c-icon--size_md"><use xlink:href="/framework/svg/stack.svg#icon--actions"></use></svg>
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td class="c-table__cell--w_min">#3</td>
+        <td>Table data</td>
+        <td>
+            <a href="#"
+               class="c-link c-link--with-icon">
+                <span class="c-link__icon c-icon icon54v4-File-1"></span>Table data
+            </a>
+        </td>
+        <td>Table data</td>
+        <td>Table data with some longer value</td>
+        <td class="c-table__cell--numeric">$12,568.00</td>
+        <td class="c-table__cell--actions c-table__cell--w_min">
+            <a href="#"
+               class="c-link">
+                <svg class="c-icon c-icon--theme_info c-icon--size_md"><use xlink:href="/framework/svg/stack.svg#icon--actions"></use></svg>
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td class="c-table__cell--w_min">#4</td>
+        <td>Table data</td>
+        <td>
+            <a href="#"
+               class="c-link c-link--with-icon">
+                <span class="c-link__icon c-icon icon54v4-File-1"></span>Table data
+            </a>
+        </td>
+        <td>Table data</td>
+        <td>Table data</td>
+        <td class="c-table__cell--numeric">$12,388,568.00</td>
+        <td class="c-table__cell--actions c-table__cell--w_min">
+            <a href="#"
+               class="c-link">
+                <svg class="c-icon c-icon--theme_info c-icon--size_md"><use xlink:href="/framework/svg/stack.svg#icon--actions"></use></svg>
+            </a>
+        </td>
+    </tr>
+    </tbody>
+
+    <tfoot>
+    <tr>
+        <td colspan="5">&nbsp;</td>
+        <td class="c-table__cell--numeric">$12,568.00</td>
+        <td>&nbsp;</td>
+    </tr>
+    </tfoot>
+</table>
+
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">&lt;table class=&quot;c-table
+              c-table--style_default
+              c-table--space_default&quot;&gt;
+    &lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th&gt;&amp;nbsp;&lt;/th&gt;
+        &lt;th&gt;Table heading with some longer value&lt;/th&gt;
+        &lt;th&gt;Table heading&lt;/th&gt;
+        &lt;th&gt;Table heading with longer text that will most likely wrap&lt;/th&gt;
+        &lt;th&gt;Table heading with longer text&lt;/th&gt;
+        &lt;th&gt;Table heading&lt;/th&gt;
+        &lt;th&gt;Actions&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;/thead&gt;
+
+    &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td class=&quot;c-table__cell--w_min&quot;&gt;#1&lt;/td&gt;
+        &lt;td&gt;Table data with some longer value&lt;/td&gt;
+        &lt;td&gt;
+            &lt;a href=&quot;#&quot;
+               class=&quot;c-link c-link--with-icon&quot;&gt;
+                &lt;span class=&quot;c-link__icon c-icon icon54v4-File-1&quot;&gt;&lt;/span&gt;Table data
+            &lt;/a&gt;
+        &lt;/td&gt;
+        &lt;td&gt;Table data&lt;/td&gt;
+        &lt;td&gt;Table data&lt;/td&gt;
+        &lt;td class=&quot;c-table__cell--numeric&quot;&gt;$12,568.00&lt;/td&gt;
+        &lt;td class=&quot;c-table__cell--actions c-table__cell--w_min&quot;&gt;
+            &lt;a href=&quot;#&quot;
+               class=&quot;c-link&quot;&gt;
+                &lt;svg class=&quot;c-icon c-icon--theme_info c-icon--size_md&quot;&gt;&lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--actions&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+            &lt;/a&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td class=&quot;c-table__cell--w_min&quot;&gt;#2&lt;/td&gt;
+        &lt;td&gt;Table data&lt;/td&gt;
+        &lt;td&gt;
+            &lt;a href=&quot;#&quot;
+               class=&quot;c-link c-link--with-icon&quot;&gt;
+                &lt;span class=&quot;c-link__icon c-icon icon54v4-File-1&quot;&gt;&lt;/span&gt;Table data
+            &lt;/a&gt;
+        &lt;/td&gt;
+        &lt;td&gt;Table data with some longer value that will most likely wrap onto a new line&lt;/td&gt;
+        &lt;td&gt;Table data&lt;/td&gt;
+        &lt;td class=&quot;c-table__cell--numeric&quot;&gt;$12,568.00&lt;/td&gt;
+        &lt;td class=&quot;c-table__cell--actions c-table__cell--w_min&quot;&gt;
+            &lt;a href=&quot;#&quot;
+               class=&quot;c-link&quot;&gt;
+                &lt;svg class=&quot;c-icon c-icon--theme_info c-icon--size_md&quot;&gt;&lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--actions&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+            &lt;/a&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td class=&quot;c-table__cell--w_min&quot;&gt;#3&lt;/td&gt;
+        &lt;td&gt;Table data&lt;/td&gt;
+        &lt;td&gt;
+            &lt;a href=&quot;#&quot;
+               class=&quot;c-link c-link--with-icon&quot;&gt;
+                &lt;span class=&quot;c-link__icon c-icon icon54v4-File-1&quot;&gt;&lt;/span&gt;Table data
+            &lt;/a&gt;
+        &lt;/td&gt;
+        &lt;td&gt;Table data&lt;/td&gt;
+        &lt;td&gt;Table data with some longer value&lt;/td&gt;
+        &lt;td class=&quot;c-table__cell--numeric&quot;&gt;$12,568.00&lt;/td&gt;
+        &lt;td class=&quot;c-table__cell--actions c-table__cell--w_min&quot;&gt;
+            &lt;a href=&quot;#&quot;
+               class=&quot;c-link&quot;&gt;
+                &lt;svg class=&quot;c-icon c-icon--theme_info c-icon--size_md&quot;&gt;&lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--actions&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+            &lt;/a&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td class=&quot;c-table__cell--w_min&quot;&gt;#4&lt;/td&gt;
+        &lt;td&gt;Table data&lt;/td&gt;
+        &lt;td&gt;
+            &lt;a href=&quot;#&quot;
+               class=&quot;c-link c-link--with-icon&quot;&gt;
+                &lt;span class=&quot;c-link__icon c-icon icon54v4-File-1&quot;&gt;&lt;/span&gt;Table data
+            &lt;/a&gt;
+        &lt;/td&gt;
+        &lt;td&gt;Table data&lt;/td&gt;
+        &lt;td&gt;Table data&lt;/td&gt;
+        &lt;td class=&quot;c-table__cell--numeric&quot;&gt;$12,388,568.00&lt;/td&gt;
+        &lt;td class=&quot;c-table__cell--actions c-table__cell--w_min&quot;&gt;
+            &lt;a href=&quot;#&quot;
+               class=&quot;c-link&quot;&gt;
+                &lt;svg class=&quot;c-icon c-icon--theme_info c-icon--size_md&quot;&gt;&lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--actions&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+            &lt;/a&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tbody&gt;
+
+    &lt;tfoot&gt;
+    &lt;tr&gt;
+        &lt;td colspan=&quot;5&quot;&gt;&amp;nbsp;&lt;/td&gt;
+        &lt;td class=&quot;c-table__cell--numeric&quot;&gt;$12,568.00&lt;/td&gt;
+        &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;
+</code></pre>
+        </div>
+      </div>
+      <h4 class="sg-heading sg-text--md sg-heading--md">Fixed-width columns</h4>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light">
+<table class="c-table
+              c-table--style_default
+              c-table--space_default
+              c-table--layout_fixed">
+    <thead>
+    <tr>
+        <th>Table heading</th>
+        <th>Table heading</th>
+        <th>Table heading</th>
+        <th>Table heading with some longer value that will most likely wrap</th>
+        <th>Table heading</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td>Table data</td>
+        <td>Table data</td>
+        <td>Table data with some longer value that will most likely wrap onto a new line</td>
+        <td>Table data</td>
+        <td>Table data</td>
+    </tr>
+    <tr>
+        <td>Table data</td>
+        <td>Table data</td>
+        <td>Table data</td>
+        <td>Table data</td>
+        <td>Table data with some longer value that will most likely wrap onto a new line</td>
+    </tr>
+    <tr>
+        <td>Table data</td>
+        <td>Table data</td>
+        <td>Table data</td>
+        <td>Table data</td>
+        <td>Table data</td>
+    </tr>
+    <tr>
+        <td>Table data</td>
+        <td>Table data</td>
+        <td>Table data</td>
+        <td>Table data</td>
+        <td>Table data</td>
+    </tr>
+    </tbody>
+
+    <tfoot>
+    <tr>
+        <td colspan="3">&nbsp;</td>
+        <td>Table footer</td>
+        <td>Table footer</td>
+    </tr>
+    </tfoot>
+</table>
+
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">&lt;table class=&quot;c-table
+              c-table--style_default
+              c-table--space_default
+              c-table--layout_fixed&quot;&gt;
+    &lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Table heading&lt;/th&gt;
+        &lt;th&gt;Table heading&lt;/th&gt;
+        &lt;th&gt;Table heading&lt;/th&gt;
+        &lt;th&gt;Table heading with some longer value that will most likely wrap&lt;/th&gt;
+        &lt;th&gt;Table heading&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;/thead&gt;
+
+    &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Table data&lt;/td&gt;
+        &lt;td&gt;Table data&lt;/td&gt;
+        &lt;td&gt;Table data with some longer value that will most likely wrap onto a new line&lt;/td&gt;
+        &lt;td&gt;Table data&lt;/td&gt;
+        &lt;td&gt;Table data&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Table data&lt;/td&gt;
+        &lt;td&gt;Table data&lt;/td&gt;
+        &lt;td&gt;Table data&lt;/td&gt;
+        &lt;td&gt;Table data&lt;/td&gt;
+        &lt;td&gt;Table data with some longer value that will most likely wrap onto a new line&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Table data&lt;/td&gt;
+        &lt;td&gt;Table data&lt;/td&gt;
+        &lt;td&gt;Table data&lt;/td&gt;
+        &lt;td&gt;Table data&lt;/td&gt;
+        &lt;td&gt;Table data&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Table data&lt;/td&gt;
+        &lt;td&gt;Table data&lt;/td&gt;
+        &lt;td&gt;Table data&lt;/td&gt;
+        &lt;td&gt;Table data&lt;/td&gt;
+        &lt;td&gt;Table data&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tbody&gt;
+
+    &lt;tfoot&gt;
+    &lt;tr&gt;
+        &lt;td colspan=&quot;3&quot;&gt;&amp;nbsp;&lt;/td&gt;
+        &lt;td&gt;Table footer&lt;/td&gt;
+        &lt;td&gt;Table footer&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;
+</code></pre>
+        </div>
+      </div>
+    </main>
+    <!-- ==================================================================================================-->
+    <!-- << CONTENT ENDS-->
+    <!-- ==================================================================================================-->
+    <script src="../framework/vendors/bundle.js"></script>
+    <script src="../framework/scripts/main.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

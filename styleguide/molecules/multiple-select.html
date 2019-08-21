@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html class="sg" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>UI design system - </title>
+    <link href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" rel="stylesheet" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link href="styles/sg-main.css" rel="stylesheet">
+    <link href="styles/assets.css" rel="stylesheet">
+    <link href="../framework/styles/vendor.css" rel="stylesheet">
+    <link href="../framework/styles/main.css" rel="stylesheet">
+  </head>
+  <body class="sg-layout">
+    <button class="sg-toggle-nav js-sg-toggle-nav"><i class="fas fa-bars"></i></button>
+    <header class="sg-layout-header">
+      <p><a href="/styleguide/">Index</a></p>
+      <nav>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Atoms</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/atoms/headings.html">Headings</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/buttons.html">Buttons</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/icons.html">Icons</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/lists.html">Lists</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/forms.html">Form</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/tables.html">Tables</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Molecules</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/molecules/hero.html">Hero</a></li>
+          <li class="sg-list__item"><a href="/styleguide/molecules/carousel.html">Carousel</a></li>
+          <li class="sg-list__item"><a href="/styleguide/molecules/overlay-tabs.html">Overlay tabs</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Organisms</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/organisms/header.html">Header</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/footer.html">Footer</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/page-nav.html">Page nav</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/section-header.html">Section header</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/content-blocks.html">Content blocks</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/grid-blocks.html">Grid blocks</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Pages</h3>
+        <h4 class="sg-heading sg-heading--xs sg-text--xs">Main</h4>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/pages.html#pages/0_home">Home</a></li>
+          <li class="sg-list__item"><a href="/styleguide/pages.html#pages/1_sector">Sector</a></li>
+          <li class="sg-list__item"><a href="/styleguide/pages.html#pages/2_newsroom">Newsroom</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ==================================================================================================-->
+    <!-- CONTENT STARTS >>-->
+    <!-- ==================================================================================================-->
+    <main class="sg-layout-content">
+      <h4 class="sg-heading sg-text--md sg-heading--md">Multiple-select</h4>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light">
+
+          <form class="c-form c-form--layout_v c-form--style_outline c-form--theme_default c-form--space_default">
+            <div class="o-grid o-grid--gutter_lg">
+              <div class="o-grid__col u-8/24">
+                <div class="c-form__group">
+                  <label class="c-form__label" for="multi-select-1">Multi select
+                  </label>
+                  <select class="js-multiple-select--multi" data-placeholder="Please select" name="multi-select-1" id="multi-select-1" multiple="multiple">
+                    <option>Option one</option>
+                    <option>Option two</option>
+                    <option>Option three</option>
+                    <option>Option four</option>
+                    <option>Option five</option>
+                    <option>Option six</option>
+                  </select>
+                </div>
+              </div>
+              <div class="o-grid__col u-8/24">
+                <div class="c-form__group">
+                  <label class="c-form__label" for="multi-select-2">Multi select + filter
+                  </label>
+                  <select class="js-multiple-select--multi js-multiple-select_filter" data-placeholder="Please select" name="multi-select-2" id="multi-select-2" multiple="multiple">
+                    <option>Option one</option>
+                    <option>Option two</option>
+                    <option selected="selected">Option three</option>
+                    <option disabled="disabled">Option four disabled</option>
+                    <option>Option five</option>
+                    <option>Option six</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="o-grid o-grid--gutter_lg">
+              <div class="o-grid__col u-8/24">
+                <div class="c-form__group">
+                  <label class="c-form__label" for="multi-select-4">Single select
+                  </label>
+                  <select class="js-multiple-select--single" data-placeholder="Please select" name="multi-select-4" id="multi-select-4">
+                    <option>Option one</option>
+                    <option>Option two</option>
+                    <option>Option three</option>
+                    <option>Option four</option>
+                    <option>Option five</option>
+                    <option>Option six</option>
+                  </select>
+                </div>
+              </div>
+              <div class="o-grid__col u-8/24">
+                <div class="c-form__group">
+                  <label class="c-form__label" for="multi-select-5">Single select + filter
+                  </label>
+                  <select class="js-multiple-select--single js-multiple-select_filter" data-placeholder="Please select" name="multi-select-5" id="multi-select-5">
+                    <option>Option one</option>
+                    <option>Option two</option>
+                    <option>Option three</option>
+                    <option>Option four</option>
+                    <option>Option five</option>
+                    <option>Option six</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">
+              &lt;form class=&quot;c-form c-form--layout_v c-form--style_outline c-form--theme_default c-form--space_default&quot;&gt;
+                &lt;div class=&quot;o-grid o-grid--gutter_lg&quot;&gt;
+                  &lt;div class=&quot;o-grid__col u-8/24&quot;&gt;
+                    &lt;div class=&quot;c-form__group&quot;&gt;
+                      &lt;label class=&quot;c-form__label&quot; for=&quot;multi-select-1&quot;&gt;Multi select
+                      &lt;/label&gt;
+                      &lt;select class=&quot;js-multiple-select--multi&quot; data-placeholder=&quot;Please select&quot; name=&quot;multi-select-1&quot; id=&quot;multi-select-1&quot; multiple=&quot;multiple&quot;&gt;
+                        &lt;option&gt;Option one&lt;/option&gt;
+                        &lt;option&gt;Option two&lt;/option&gt;
+                        &lt;option&gt;Option three&lt;/option&gt;
+                        &lt;option&gt;Option four&lt;/option&gt;
+                        &lt;option&gt;Option five&lt;/option&gt;
+                        &lt;option&gt;Option six&lt;/option&gt;
+                      &lt;/select&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;o-grid__col u-8/24&quot;&gt;
+                    &lt;div class=&quot;c-form__group&quot;&gt;
+                      &lt;label class=&quot;c-form__label&quot; for=&quot;multi-select-2&quot;&gt;Multi select + filter
+                      &lt;/label&gt;
+                      &lt;select class=&quot;js-multiple-select--multi js-multiple-select_filter&quot; data-placeholder=&quot;Please select&quot; name=&quot;multi-select-2&quot; id=&quot;multi-select-2&quot; multiple=&quot;multiple&quot;&gt;
+                        &lt;option&gt;Option one&lt;/option&gt;
+                        &lt;option&gt;Option two&lt;/option&gt;
+                        &lt;option selected=&quot;selected&quot;&gt;Option three&lt;/option&gt;
+                        &lt;option disabled=&quot;disabled&quot;&gt;Option four disabled&lt;/option&gt;
+                        &lt;option&gt;Option five&lt;/option&gt;
+                        &lt;option&gt;Option six&lt;/option&gt;
+                      &lt;/select&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;o-grid o-grid--gutter_lg&quot;&gt;
+                  &lt;div class=&quot;o-grid__col u-8/24&quot;&gt;
+                    &lt;div class=&quot;c-form__group&quot;&gt;
+                      &lt;label class=&quot;c-form__label&quot; for=&quot;multi-select-4&quot;&gt;Single select
+                      &lt;/label&gt;
+                      &lt;select class=&quot;js-multiple-select--single&quot; data-placeholder=&quot;Please select&quot; name=&quot;multi-select-4&quot; id=&quot;multi-select-4&quot;&gt;
+                        &lt;option&gt;Option one&lt;/option&gt;
+                        &lt;option&gt;Option two&lt;/option&gt;
+                        &lt;option&gt;Option three&lt;/option&gt;
+                        &lt;option&gt;Option four&lt;/option&gt;
+                        &lt;option&gt;Option five&lt;/option&gt;
+                        &lt;option&gt;Option six&lt;/option&gt;
+                      &lt;/select&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;o-grid__col u-8/24&quot;&gt;
+                    &lt;div class=&quot;c-form__group&quot;&gt;
+                      &lt;label class=&quot;c-form__label&quot; for=&quot;multi-select-5&quot;&gt;Single select + filter
+                      &lt;/label&gt;
+                      &lt;select class=&quot;js-multiple-select--single js-multiple-select_filter&quot; data-placeholder=&quot;Please select&quot; name=&quot;multi-select-5&quot; id=&quot;multi-select-5&quot;&gt;
+                        &lt;option&gt;Option one&lt;/option&gt;
+                        &lt;option&gt;Option two&lt;/option&gt;
+                        &lt;option&gt;Option three&lt;/option&gt;
+                        &lt;option&gt;Option four&lt;/option&gt;
+                        &lt;option&gt;Option five&lt;/option&gt;
+                        &lt;option&gt;Option six&lt;/option&gt;
+                      &lt;/select&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/form&gt;</code></pre>
+        </div>
+      </div>
+    </main>
+    <!-- ==================================================================================================-->
+    <!-- << CONTENT ENDS-->
+    <!-- ==================================================================================================-->
+    <script src="../framework/vendors/bundle.js"></script>
+    <script src="../framework/scripts/main.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

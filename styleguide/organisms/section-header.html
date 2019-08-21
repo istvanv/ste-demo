@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="sg" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>UI design system - </title>
+    <link href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" rel="stylesheet" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link href="styles/sg-main.css" rel="stylesheet">
+    <link href="styles/assets.css" rel="stylesheet">
+    <link href="../framework/styles/vendor.css" rel="stylesheet">
+    <link href="../framework/styles/main.css" rel="stylesheet">
+  </head>
+  <body class="sg-layout">
+    <button class="sg-toggle-nav js-sg-toggle-nav"><i class="fas fa-bars"></i></button>
+    <header class="sg-layout-header">
+      <p><a href="/styleguide/">Index</a></p>
+      <nav>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Atoms</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/atoms/headings.html">Headings</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/buttons.html">Buttons</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/icons.html">Icons</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/lists.html">Lists</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/forms.html">Form</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/tables.html">Tables</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Molecules</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/molecules/hero.html">Hero</a></li>
+          <li class="sg-list__item"><a href="/styleguide/molecules/carousel.html">Carousel</a></li>
+          <li class="sg-list__item"><a href="/styleguide/molecules/overlay-tabs.html">Overlay tabs</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Organisms</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/organisms/header.html">Header</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/footer.html">Footer</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/page-nav.html">Page nav</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/section-header.html">Section header</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/content-blocks.html">Content blocks</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/grid-blocks.html">Grid blocks</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Pages</h3>
+        <h4 class="sg-heading sg-heading--xs sg-text--xs">Main</h4>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/pages.html#pages/0_home">Home</a></li>
+          <li class="sg-list__item"><a href="/styleguide/pages.html#pages/1_sector">Sector</a></li>
+          <li class="sg-list__item"><a href="/styleguide/pages.html#pages/2_newsroom">Newsroom</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ==================================================================================================-->
+    <!-- CONTENT STARTS >>-->
+    <!-- ==================================================================================================-->
+    <main class="sg-layout-content">
+      <h4 class="sg-heading sg-text--md sg-heading--md">Section header</h4>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light">
+
+          <header class="c-section-header c-section-header--row">
+            <div class="c-section-header__main">
+              <h2 class="c-heading c-heading--lg">Section header
+              </h2>
+            </div>
+          </header>
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">
+              &lt;header class=&quot;c-section-header c-section-header--row&quot;&gt;
+                &lt;div class=&quot;c-section-header__main&quot;&gt;
+                  &lt;h2 class=&quot;c-heading c-heading--lg&quot;&gt;Section header
+                  &lt;/h2&gt;
+                &lt;/div&gt;
+              &lt;/header&gt;</code></pre>
+        </div>
+      </div>
+      <h4 class="sg-heading sg-text--md sg-heading--md">Section header - with extra elements</h4>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light">
+
+          <header class="c-section-header c-section-header--row">
+            <div class="c-section-header__before">
+              <svg class="c-icon c-icon--size_md c-icon--theme_tertiary" role="presentation">
+                <use xlink:href="/framework/svg/stack.svg#icon--news"></use>
+              </svg>
+            </div>
+            <div class="c-section-header__main">
+              <h2 class="c-heading c-heading--lg">Section header
+              </h2>
+            </div>
+            <div class="c-section-header__after"><a class="c-button c-button--size_md c-button--theme_secondary-solid" href="#"><span class="c-button__pos">The link</span></a>
+            </div>
+          </header>
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">
+              &lt;header class=&quot;c-section-header c-section-header--row&quot;&gt;
+                &lt;div class=&quot;c-section-header__before&quot;&gt;
+                  &lt;svg class=&quot;c-icon c-icon--size_md c-icon--theme_tertiary&quot; role=&quot;presentation&quot;&gt;
+                    &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--news&quot;&gt;&lt;/use&gt;
+                  &lt;/svg&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;c-section-header__main&quot;&gt;
+                  &lt;h2 class=&quot;c-heading c-heading--lg&quot;&gt;Section header
+                  &lt;/h2&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;c-section-header__after&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_secondary-solid&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;The link&lt;/span&gt;&lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/header&gt;</code></pre>
+        </div>
+      </div>
+      <h4 class="sg-heading sg-text--md sg-heading--md">Section header - column (vertical) layout</h4>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light">
+
+          <header class="c-section-header c-section-header--col">
+            <div class="c-section-header__before">
+              <svg class="c-icon c-icon--size_md c-icon--theme_tertiary" role="presentation">
+                <use xlink:href="/framework/svg/stack.svg#icon--news"></use>
+              </svg>
+            </div>
+            <div class="c-section-header__main">
+              <h2 class="c-heading c-heading--lg">Section header
+              </h2>
+            </div>
+            <div class="c-section-header__after"><a class="c-button c-button--size_md c-button--theme_secondary-solid u-mb-x3" href="#"><span class="c-button__pos">The link</span></a>
+            </div>
+          </header>
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">
+              &lt;header class=&quot;c-section-header c-section-header--col&quot;&gt;
+                &lt;div class=&quot;c-section-header__before&quot;&gt;
+                  &lt;svg class=&quot;c-icon c-icon--size_md c-icon--theme_tertiary&quot; role=&quot;presentation&quot;&gt;
+                    &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--news&quot;&gt;&lt;/use&gt;
+                  &lt;/svg&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;c-section-header__main&quot;&gt;
+                  &lt;h2 class=&quot;c-heading c-heading--lg&quot;&gt;Section header
+                  &lt;/h2&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;c-section-header__after&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_secondary-solid u-mb-x3&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;The link&lt;/span&gt;&lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/header&gt;</code></pre>
+        </div>
+      </div>
+    </main>
+    <!-- ==================================================================================================-->
+    <!-- << CONTENT ENDS-->
+    <!-- ==================================================================================================-->
+    <script src="../framework/vendors/bundle.js"></script>
+    <script src="../framework/scripts/main.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

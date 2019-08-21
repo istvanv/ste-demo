@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html class="sg" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>UI design system - </title>
+    <link href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" rel="stylesheet" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link href="styles/sg-main.css" rel="stylesheet">
+    <link href="styles/assets.css" rel="stylesheet">
+    <link href="../framework/styles/vendor.css" rel="stylesheet">
+    <link href="../framework/styles/main.css" rel="stylesheet">
+  </head>
+  <body class="sg-layout">
+    <button class="sg-toggle-nav js-sg-toggle-nav"><i class="fas fa-bars"></i></button>
+    <header class="sg-layout-header">
+      <p><a href="/styleguide/">Index</a></p>
+      <nav>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Atoms</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/atoms/headings.html">Headings</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/buttons.html">Buttons</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/icons.html">Icons</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/lists.html">Lists</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/forms.html">Form</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/tables.html">Tables</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Molecules</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/molecules/hero.html">Hero</a></li>
+          <li class="sg-list__item"><a href="/styleguide/molecules/carousel.html">Carousel</a></li>
+          <li class="sg-list__item"><a href="/styleguide/molecules/overlay-tabs.html">Overlay tabs</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Organisms</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/organisms/header.html">Header</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/footer.html">Footer</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/page-nav.html">Page nav</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/section-header.html">Section header</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/content-blocks.html">Content blocks</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/grid-blocks.html">Grid blocks</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Pages</h3>
+        <h4 class="sg-heading sg-heading--xs sg-text--xs">Main</h4>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/pages.html#pages/0_home">Home</a></li>
+          <li class="sg-list__item"><a href="/styleguide/pages.html#pages/1_sector">Sector</a></li>
+          <li class="sg-list__item"><a href="/styleguide/pages.html#pages/2_newsroom">Newsroom</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ==================================================================================================-->
+    <!-- CONTENT STARTS >>-->
+    <!-- ==================================================================================================-->
+    <main class="sg-layout-content">
+      <h4 class="sg-heading sg-text--md sg-heading--md">Alert - sizes</h4>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light">
+
+          <div class="c-alert c-alert--style_inform c-alert--theme_info c-alert--size_sm u-mb-x6">
+            <div class="c-alert__body">
+              <div class="c-alert__content o-media o-media--middle o-media--gutter_sm">
+                <div class="c-alert__content-icon o-media__fixed">
+                  <svg class="c-icon c-icon--size_sm c-alert__icon" role="presentation">
+                    <use xlink:href="/framework/svg/stack.svg#icon--circle-info"></use>
+                  </svg>
+                </div>
+                <div class="c-alert__content-message o-media__fluid">
+                  <div class="o-list o-list--inline o-list--middle o-list--gutter_sm">
+                    <div class="o-list__item">Small alert with no title</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-alert c-alert--style_inform c-alert--theme_info c-alert--size_sm u-mb-x6">
+            <div class="c-alert__body">
+              <div class="c-alert__content o-media o-media--middle o-media--gutter_sm">
+                <div class="c-alert__content-icon o-media__fixed">
+                  <svg class="c-icon c-icon--size_sm c-alert__icon" role="presentation">
+                    <use xlink:href="/framework/svg/stack.svg#icon--circle-info"></use>
+                  </svg>
+                </div>
+                <div class="c-alert__content-message o-media__fluid">
+                  <div class="o-list o-list--inline o-list--middle o-list--gutter_sm">
+                    <div class="o-list__item">
+                      <div class="c-alert__title">Small alert</div>Small alert with a title
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-alert c-alert--style_inform c-alert--theme_info c-alert--size_md u-mb-x6">
+            <div class="c-alert__body">
+              <div class="c-alert__content o-media o-media--middle o-media--gutter_sm">
+                <div class="c-alert__content-icon o-media__fixed">
+                  <svg class="c-icon c-icon--size_md c-alert__icon" role="presentation">
+                    <use xlink:href="/framework/svg/stack.svg#icon--circle-info"></use>
+                  </svg>
+                </div>
+                <div class="c-alert__content-message o-media__fluid">
+                  <div class="o-list o-list--inline o-list--middle o-list--gutter_sm">
+                    <div class="o-list__item">
+                      <div class="c-alert__title">Medium alert</div>Medium alert with a title
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-alert c-alert--style_inform c-alert--theme_info c-alert--size_lg u-mb-x6">
+            <div class="c-alert__body">
+              <div class="c-alert__content o-media o-media--middle o-media--gutter_sm">
+                <div class="c-alert__content-icon o-media__fixed">
+                  <svg class="c-icon c-icon--size_lg c-alert__icon" role="presentation">
+                    <use xlink:href="/framework/svg/stack.svg#icon--circle-info"></use>
+                  </svg>
+                </div>
+                <div class="c-alert__content-message o-media__fluid">
+                  <div class="o-list o-list--inline o-list--middle o-list--gutter_sm">
+                    <div class="o-list__item">
+                      <div class="c-alert__title">Large alert</div>Large alert with a title
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">
+              &lt;div class=&quot;c-alert c-alert--style_inform c-alert--theme_info c-alert--size_sm u-mb-x6&quot;&gt;
+                &lt;div class=&quot;c-alert__body&quot;&gt;
+                  &lt;div class=&quot;c-alert__content o-media o-media--middle o-media--gutter_sm&quot;&gt;
+                    &lt;div class=&quot;c-alert__content-icon o-media__fixed&quot;&gt;
+                      &lt;svg class=&quot;c-icon c-icon--size_sm c-alert__icon&quot; role=&quot;presentation&quot;&gt;
+                        &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-info&quot;&gt;&lt;/use&gt;
+                      &lt;/svg&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;c-alert__content-message o-media__fluid&quot;&gt;
+                      &lt;div class=&quot;o-list o-list--inline o-list--middle o-list--gutter_sm&quot;&gt;
+                        &lt;div class=&quot;o-list__item&quot;&gt;Small alert with no title&lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;c-alert c-alert--style_inform c-alert--theme_info c-alert--size_sm u-mb-x6&quot;&gt;
+                &lt;div class=&quot;c-alert__body&quot;&gt;
+                  &lt;div class=&quot;c-alert__content o-media o-media--middle o-media--gutter_sm&quot;&gt;
+                    &lt;div class=&quot;c-alert__content-icon o-media__fixed&quot;&gt;
+                      &lt;svg class=&quot;c-icon c-icon--size_sm c-alert__icon&quot; role=&quot;presentation&quot;&gt;
+                        &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-info&quot;&gt;&lt;/use&gt;
+                      &lt;/svg&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;c-alert__content-message o-media__fluid&quot;&gt;
+                      &lt;div class=&quot;o-list o-list--inline o-list--middle o-list--gutter_sm&quot;&gt;
+                        &lt;div class=&quot;o-list__item&quot;&gt;
+                          &lt;div class=&quot;c-alert__title&quot;&gt;Small alert&lt;/div&gt;Small alert with a title
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;c-alert c-alert--style_inform c-alert--theme_info c-alert--size_md u-mb-x6&quot;&gt;
+                &lt;div class=&quot;c-alert__body&quot;&gt;
+                  &lt;div class=&quot;c-alert__content o-media o-media--middle o-media--gutter_sm&quot;&gt;
+                    &lt;div class=&quot;c-alert__content-icon o-media__fixed&quot;&gt;
+                      &lt;svg class=&quot;c-icon c-icon--size_md c-alert__icon&quot; role=&quot;presentation&quot;&gt;
+                        &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-info&quot;&gt;&lt;/use&gt;
+                      &lt;/svg&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;c-alert__content-message o-media__fluid&quot;&gt;
+                      &lt;div class=&quot;o-list o-list--inline o-list--middle o-list--gutter_sm&quot;&gt;
+                        &lt;div class=&quot;o-list__item&quot;&gt;
+                          &lt;div class=&quot;c-alert__title&quot;&gt;Medium alert&lt;/div&gt;Medium alert with a title
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;c-alert c-alert--style_inform c-alert--theme_info c-alert--size_lg u-mb-x6&quot;&gt;
+                &lt;div class=&quot;c-alert__body&quot;&gt;
+                  &lt;div class=&quot;c-alert__content o-media o-media--middle o-media--gutter_sm&quot;&gt;
+                    &lt;div class=&quot;c-alert__content-icon o-media__fixed&quot;&gt;
+                      &lt;svg class=&quot;c-icon c-icon--size_lg c-alert__icon&quot; role=&quot;presentation&quot;&gt;
+                        &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-info&quot;&gt;&lt;/use&gt;
+                      &lt;/svg&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;c-alert__content-message o-media__fluid&quot;&gt;
+                      &lt;div class=&quot;o-list o-list--inline o-list--middle o-list--gutter_sm&quot;&gt;
+                        &lt;div class=&quot;o-list__item&quot;&gt;
+                          &lt;div class=&quot;c-alert__title&quot;&gt;Large alert&lt;/div&gt;Large alert with a title
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;</code></pre>
+        </div>
+      </div>
+      <h4 class="sg-heading sg-text--md sg-heading--md">Alert - notify</h4>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--dark">
+
+          <div class="c-alert c-alert--style_notify c-alert--theme_info c-alert--size_md u-mb-x6"><a class="c-alert__dismiss js-alert__dismiss" href="#"><span class="c-alert__dismiss-label">Close</span>
+              <svg class="c-icon c-icon--size_xxs u-ml" role="presentation">
+                <use xlink:href="/framework/svg/stack.svg#icon--circle-cross"></use>
+              </svg></a>
+            <div class="c-alert__body">
+              <div class="c-alert__content o-media o-media--middle o-media--gutter_sm">
+                <div class="c-alert__content-icon o-media__fixed">
+                  <svg class="c-icon c-icon--size_md c-alert__icon" role="presentation">
+                    <use xlink:href="/framework/svg/stack.svg#icon--circle-info"></use>
+                  </svg>
+                </div>
+                <div class="c-alert__content-message o-media__fluid">
+                  <div class="o-list o-list--inline o-list--middle o-list--gutter_sm">
+                    <div class="o-list__item">
+                      <div class="c-alert__title">Money sitting in Cash Account</div>You currently have $40,000 sitting in the Cash Account
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-alert c-alert--style_notify c-alert--theme_success c-alert--size_md u-mb-x6"><a class="c-alert__dismiss js-alert__dismiss" href="#"><span class="c-alert__dismiss-label">Close</span>
+              <svg class="c-icon c-icon--size_xxs u-ml" role="presentation">
+                <use xlink:href="/framework/svg/stack.svg#icon--circle-cross"></use>
+              </svg></a>
+            <div class="c-alert__body">
+              <div class="c-alert__content o-media o-media--middle o-media--gutter_sm">
+                <div class="c-alert__content-icon o-media__fixed">
+                  <svg class="c-icon c-icon--size_md c-alert__icon" role="presentation">
+                    <use xlink:href="/framework/svg/stack.svg#icon--circle-tick"></use>
+                  </svg>
+                </div>
+                <div class="c-alert__content-message o-media__fluid">
+                  <div class="o-list o-list--inline o-list--middle o-list--gutter_sm">
+                    <div class="o-list__item">
+                      <div class="c-alert__title">Money sitting in Cash Account</div>You currently have $40,000 sitting in the Cash Account
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-alert c-alert--style_notify c-alert--theme_warning c-alert--size_md u-mb-x6"><a class="c-alert__dismiss js-alert__dismiss" href="#"><span class="c-alert__dismiss-label">Close</span>
+              <svg class="c-icon c-icon--size_xxs u-ml" role="presentation">
+                <use xlink:href="/framework/svg/stack.svg#icon--circle-cross"></use>
+              </svg></a>
+            <div class="c-alert__body">
+              <div class="c-alert__content o-media o-media--middle o-media--gutter_sm">
+                <div class="c-alert__content-icon o-media__fixed">
+                  <svg class="c-icon c-icon--size_md c-alert__icon" role="presentation">
+                    <use xlink:href="/framework/svg/stack.svg#icon--alert"></use>
+                  </svg>
+                </div>
+                <div class="c-alert__content-message o-media__fluid">
+                  <div class="o-list o-list--inline o-list--middle o-list--gutter_sm">
+                    <div class="o-list__item">
+                      <div class="c-alert__title">Money sitting in Cash Account</div>You currently have $40,000 sitting in the Cash Account
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-alert c-alert--style_notify c-alert--theme_danger c-alert--size_md u-mb-x6"><a class="c-alert__dismiss js-alert__dismiss" href="#"><span class="c-alert__dismiss-label">Close</span>
+              <svg class="c-icon c-icon--size_xxs u-ml" role="presentation">
+                <use xlink:href="/framework/svg/stack.svg#icon--circle-cross"></use>
+              </svg></a>
+            <div class="c-alert__body">
+              <div class="c-alert__content o-media o-media--middle o-media--gutter_sm">
+                <div class="c-alert__content-icon o-media__fixed">
+                  <svg class="c-icon c-icon--size_md c-alert__icon" role="presentation">
+                    <use xlink:href="/framework/svg/stack.svg#icon--circle-cross"></use>
+                  </svg>
+                </div>
+                <div class="c-alert__content-message o-media__fluid">
+                  <div class="o-list o-list--inline o-list--middle o-list--gutter_sm">
+                    <div class="o-list__item">
+                      <div class="c-alert__title">Money sitting in Cash Account</div>You currently have $40,000 sitting in the Cash Account
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-alert c-alert--style_notify c-alert--theme_info c-alert--size_md u-mb-x6"><a class="c-alert__dismiss js-alert__dismiss" href="#"><span class="c-alert__dismiss-label">Close</span>
+              <svg class="c-icon c-icon--size_xxs u-ml" role="presentation">
+                <use xlink:href="/framework/svg/stack.svg#icon--circle-cross"></use>
+              </svg></a>
+            <div class="c-alert__body">
+              <div class="c-alert__content o-media o-media--middle o-media--gutter_sm">
+                <div class="c-alert__content-icon o-media__fixed">
+                  <svg class="c-icon c-icon--size_md c-alert__icon" role="presentation">
+                    <use xlink:href="/framework/svg/stack.svg#icon--circle-info"></use>
+                  </svg>
+                </div>
+                <div class="c-alert__content-message o-media__fluid">
+                  <div class="o-list o-list--inline o-list--middle o-list--gutter_sm">
+                    <div class="o-list__item">
+                      <div class="c-alert__title">With button</div>You currently have $40,000 sitting in the Cash Account
+                    </div>
+                    <div class="o-list__item">
+                      <button class="c-button c-button--size_md c-button--theme_default-solid" type="button"><span class="c-button__pos">Action button</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-alert c-alert--style_notify c-alert--theme_warning c-alert--size_md c-alert--center-content u-mb-x6"><a class="c-alert__dismiss js-alert__dismiss" href="#"><span class="c-alert__dismiss-label">Close</span>
+              <svg class="c-icon c-icon--size_xxs u-ml" role="presentation">
+                <use xlink:href="/framework/svg/stack.svg#icon--circle-cross"></use>
+              </svg></a>
+            <div class="c-alert__body">
+              <div class="c-alert__content o-media o-media--middle o-media--gutter_sm">
+                <div class="c-alert__content-icon o-media__fixed">
+                  <svg class="c-icon c-icon--size_md c-alert__icon" role="presentation">
+                    <use xlink:href="/framework/svg/stack.svg#icon--alert"></use>
+                  </svg>
+                </div>
+                <div class="c-alert__content-message o-media__fluid">
+                  <div class="o-list o-list--inline o-list--middle o-list--gutter_sm">
+                    <div class="o-list__item">You are currently impersonating Michael Jackson</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">
+              &lt;div class=&quot;c-alert c-alert--style_notify c-alert--theme_info c-alert--size_md u-mb-x6&quot;&gt;&lt;a class=&quot;c-alert__dismiss js-alert__dismiss&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-alert__dismiss-label&quot;&gt;Close&lt;/span&gt;
+                  &lt;svg class=&quot;c-icon c-icon--size_xxs u-ml&quot; role=&quot;presentation&quot;&gt;
+                    &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-cross&quot;&gt;&lt;/use&gt;
+                  &lt;/svg&gt;&lt;/a&gt;
+                &lt;div class=&quot;c-alert__body&quot;&gt;
+                  &lt;div class=&quot;c-alert__content o-media o-media--middle o-media--gutter_sm&quot;&gt;
+                    &lt;div class=&quot;c-alert__content-icon o-media__fixed&quot;&gt;
+                      &lt;svg class=&quot;c-icon c-icon--size_md c-alert__icon&quot; role=&quot;presentation&quot;&gt;
+                        &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-info&quot;&gt;&lt;/use&gt;
+                      &lt;/svg&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;c-alert__content-message o-media__fluid&quot;&gt;
+                      &lt;div class=&quot;o-list o-list--inline o-list--middle o-list--gutter_sm&quot;&gt;
+                        &lt;div class=&quot;o-list__item&quot;&gt;
+                          &lt;div class=&quot;c-alert__title&quot;&gt;Money sitting in Cash Account&lt;/div&gt;You currently have $40,000 sitting in the Cash Account
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;c-alert c-alert--style_notify c-alert--theme_success c-alert--size_md u-mb-x6&quot;&gt;&lt;a class=&quot;c-alert__dismiss js-alert__dismiss&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-alert__dismiss-label&quot;&gt;Close&lt;/span&gt;
+                  &lt;svg class=&quot;c-icon c-icon--size_xxs u-ml&quot; role=&quot;presentation&quot;&gt;
+                    &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-cross&quot;&gt;&lt;/use&gt;
+                  &lt;/svg&gt;&lt;/a&gt;
+                &lt;div class=&quot;c-alert__body&quot;&gt;
+                  &lt;div class=&quot;c-alert__content o-media o-media--middle o-media--gutter_sm&quot;&gt;
+                    &lt;div class=&quot;c-alert__content-icon o-media__fixed&quot;&gt;
+                      &lt;svg class=&quot;c-icon c-icon--size_md c-alert__icon&quot; role=&quot;presentation&quot;&gt;
+                        &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-tick&quot;&gt;&lt;/use&gt;
+                      &lt;/svg&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;c-alert__content-message o-media__fluid&quot;&gt;
+                      &lt;div class=&quot;o-list o-list--inline o-list--middle o-list--gutter_sm&quot;&gt;
+                        &lt;div class=&quot;o-list__item&quot;&gt;
+                          &lt;div class=&quot;c-alert__title&quot;&gt;Money sitting in Cash Account&lt;/div&gt;You currently have $40,000 sitting in the Cash Account
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;c-alert c-alert--style_notify c-alert--theme_warning c-alert--size_md u-mb-x6&quot;&gt;&lt;a class=&quot;c-alert__dismiss js-alert__dismiss&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-alert__dismiss-label&quot;&gt;Close&lt;/span&gt;
+                  &lt;svg class=&quot;c-icon c-icon--size_xxs u-ml&quot; role=&quot;presentation&quot;&gt;
+                    &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-cross&quot;&gt;&lt;/use&gt;
+                  &lt;/svg&gt;&lt;/a&gt;
+                &lt;div class=&quot;c-alert__body&quot;&gt;
+                  &lt;div class=&quot;c-alert__content o-media o-media--middle o-media--gutter_sm&quot;&gt;
+                    &lt;div class=&quot;c-alert__content-icon o-media__fixed&quot;&gt;
+                      &lt;svg class=&quot;c-icon c-icon--size_md c-alert__icon&quot; role=&quot;presentation&quot;&gt;
+                        &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--alert&quot;&gt;&lt;/use&gt;
+                      &lt;/svg&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;c-alert__content-message o-media__fluid&quot;&gt;
+                      &lt;div class=&quot;o-list o-list--inline o-list--middle o-list--gutter_sm&quot;&gt;
+                        &lt;div class=&quot;o-list__item&quot;&gt;
+                          &lt;div class=&quot;c-alert__title&quot;&gt;Money sitting in Cash Account&lt;/div&gt;You currently have $40,000 sitting in the Cash Account
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;c-alert c-alert--style_notify c-alert--theme_danger c-alert--size_md u-mb-x6&quot;&gt;&lt;a class=&quot;c-alert__dismiss js-alert__dismiss&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-alert__dismiss-label&quot;&gt;Close&lt;/span&gt;
+                  &lt;svg class=&quot;c-icon c-icon--size_xxs u-ml&quot; role=&quot;presentation&quot;&gt;
+                    &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-cross&quot;&gt;&lt;/use&gt;
+                  &lt;/svg&gt;&lt;/a&gt;
+                &lt;div class=&quot;c-alert__body&quot;&gt;
+                  &lt;div class=&quot;c-alert__content o-media o-media--middle o-media--gutter_sm&quot;&gt;
+                    &lt;div class=&quot;c-alert__content-icon o-media__fixed&quot;&gt;
+                      &lt;svg class=&quot;c-icon c-icon--size_md c-alert__icon&quot; role=&quot;presentation&quot;&gt;
+                        &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-cross&quot;&gt;&lt;/use&gt;
+                      &lt;/svg&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;c-alert__content-message o-media__fluid&quot;&gt;
+                      &lt;div class=&quot;o-list o-list--inline o-list--middle o-list--gutter_sm&quot;&gt;
+                        &lt;div class=&quot;o-list__item&quot;&gt;
+                          &lt;div class=&quot;c-alert__title&quot;&gt;Money sitting in Cash Account&lt;/div&gt;You currently have $40,000 sitting in the Cash Account
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;c-alert c-alert--style_notify c-alert--theme_info c-alert--size_md u-mb-x6&quot;&gt;&lt;a class=&quot;c-alert__dismiss js-alert__dismiss&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-alert__dismiss-label&quot;&gt;Close&lt;/span&gt;
+                  &lt;svg class=&quot;c-icon c-icon--size_xxs u-ml&quot; role=&quot;presentation&quot;&gt;
+                    &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-cross&quot;&gt;&lt;/use&gt;
+                  &lt;/svg&gt;&lt;/a&gt;
+                &lt;div class=&quot;c-alert__body&quot;&gt;
+                  &lt;div class=&quot;c-alert__content o-media o-media--middle o-media--gutter_sm&quot;&gt;
+                    &lt;div class=&quot;c-alert__content-icon o-media__fixed&quot;&gt;
+                      &lt;svg class=&quot;c-icon c-icon--size_md c-alert__icon&quot; role=&quot;presentation&quot;&gt;
+                        &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-info&quot;&gt;&lt;/use&gt;
+                      &lt;/svg&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;c-alert__content-message o-media__fluid&quot;&gt;
+                      &lt;div class=&quot;o-list o-list--inline o-list--middle o-list--gutter_sm&quot;&gt;
+                        &lt;div class=&quot;o-list__item&quot;&gt;
+                          &lt;div class=&quot;c-alert__title&quot;&gt;With button&lt;/div&gt;You currently have $40,000 sitting in the Cash Account
+                        &lt;/div&gt;
+                        &lt;div class=&quot;o-list__item&quot;&gt;
+                          &lt;button class=&quot;c-button c-button--size_md c-button--theme_default-solid&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;Action button&lt;/span&gt;&lt;/button&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;c-alert c-alert--style_notify c-alert--theme_warning c-alert--size_md c-alert--center-content u-mb-x6&quot;&gt;&lt;a class=&quot;c-alert__dismiss js-alert__dismiss&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-alert__dismiss-label&quot;&gt;Close&lt;/span&gt;
+                  &lt;svg class=&quot;c-icon c-icon--size_xxs u-ml&quot; role=&quot;presentation&quot;&gt;
+                    &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-cross&quot;&gt;&lt;/use&gt;
+                  &lt;/svg&gt;&lt;/a&gt;
+                &lt;div class=&quot;c-alert__body&quot;&gt;
+                  &lt;div class=&quot;c-alert__content o-media o-media--middle o-media--gutter_sm&quot;&gt;
+                    &lt;div class=&quot;c-alert__content-icon o-media__fixed&quot;&gt;
+                      &lt;svg class=&quot;c-icon c-icon--size_md c-alert__icon&quot; role=&quot;presentation&quot;&gt;
+                        &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--alert&quot;&gt;&lt;/use&gt;
+                      &lt;/svg&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;c-alert__content-message o-media__fluid&quot;&gt;
+                      &lt;div class=&quot;o-list o-list--inline o-list--middle o-list--gutter_sm&quot;&gt;
+                        &lt;div class=&quot;o-list__item&quot;&gt;You are currently impersonating Michael Jackson&lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;</code></pre>
+        </div>
+      </div>
+      <h4 class="sg-heading sg-text--md sg-heading--md">Alert - inform</h4>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light">
+
+          <div class="c-alert c-alert--style_inform c-alert--theme_info c-alert--size_md u-mb-x6">
+            <div class="c-alert__body">
+              <div class="c-alert__content o-media o-media--middle o-media--gutter_sm">
+                <div class="c-alert__content-icon o-media__fixed">
+                  <svg class="c-icon c-icon--size_md c-alert__icon" role="presentation">
+                    <use xlink:href="/framework/svg/stack.svg#icon--circle-info"></use>
+                  </svg>
+                </div>
+                <div class="c-alert__content-message o-media__fluid">
+                  <div class="o-list o-list--inline o-list--middle o-list--gutter_sm">
+                    <div class="o-list__item">
+                      <div class="c-alert__title">Money sitting in Cash Account</div>You currently have $40,000 sitting in the Cash Account
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-alert c-alert--style_inform c-alert--theme_success c-alert--size_md u-mb-x6">
+            <div class="c-alert__body">
+              <div class="c-alert__content o-media o-media--middle o-media--gutter_sm">
+                <div class="c-alert__content-icon o-media__fixed">
+                  <svg class="c-icon c-icon--size_md c-alert__icon" role="presentation">
+                    <use xlink:href="/framework/svg/stack.svg#icon--circle-tick"></use>
+                  </svg>
+                </div>
+                <div class="c-alert__content-message o-media__fluid">
+                  <div class="o-list o-list--inline o-list--middle o-list--gutter_sm">
+                    <div class="o-list__item">
+                      <div class="c-alert__title">Money sitting in Cash Account</div>You currently have $40,000 sitting in the Cash Account
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-alert c-alert--style_inform c-alert--theme_warning c-alert--size_md u-mb-x6">
+            <div class="c-alert__body">
+              <div class="c-alert__content o-media o-media--middle o-media--gutter_sm">
+                <div class="c-alert__content-icon o-media__fixed">
+                  <svg class="c-icon c-icon--size_md c-alert__icon" role="presentation">
+                    <use xlink:href="/framework/svg/stack.svg#icon--alert"></use>
+                  </svg>
+                </div>
+                <div class="c-alert__content-message o-media__fluid">
+                  <div class="o-list o-list--inline o-list--middle o-list--gutter_sm">
+                    <div class="o-list__item">
+                      <div class="c-alert__title">Money sitting in Cash Account</div>You currently have $40,000 sitting in the Cash Account
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-alert c-alert--style_inform c-alert--theme_danger c-alert--size_md u-mb-x6">
+            <div class="c-alert__body">
+              <div class="c-alert__content o-media o-media--middle o-media--gutter_sm">
+                <div class="c-alert__content-icon o-media__fixed">
+                  <svg class="c-icon c-icon--size_md c-alert__icon" role="presentation">
+                    <use xlink:href="/framework/svg/stack.svg#icon--circle-cross"></use>
+                  </svg>
+                </div>
+                <div class="c-alert__content-message o-media__fluid">
+                  <div class="o-list o-list--inline o-list--middle o-list--gutter_sm">
+                    <div class="o-list__item">
+                      <div class="c-alert__title">Money sitting in Cash Account</div>You currently have $40,000 sitting in the Cash Account
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-alert c-alert--style_inform c-alert--theme_info c-alert--size_md u-mb-x6">
+            <div class="c-alert__body">
+              <div class="c-alert__content o-media o-media--middle o-media--gutter_sm">
+                <div class="c-alert__content-icon o-media__fixed">
+                  <svg class="c-icon c-icon--size_md c-alert__icon" role="presentation">
+                    <use xlink:href="/framework/svg/stack.svg#icon--circle-info"></use>
+                  </svg>
+                </div>
+                <div class="c-alert__content-message o-media__fluid">
+                  <div class="o-list o-list--inline o-list--middle o-list--gutter_sm">
+                    <div class="o-list__item">
+                      <div class="c-alert__title">With button</div>You currently have $40,000 sitting in the Cash Account
+                    </div>
+                    <div class="o-list__item">
+                      <button class="c-button c-button--size_md c-button--theme_default-solid" type="button"><span class="c-button__pos">Action button</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">
+              &lt;div class=&quot;c-alert c-alert--style_inform c-alert--theme_info c-alert--size_md u-mb-x6&quot;&gt;
+                &lt;div class=&quot;c-alert__body&quot;&gt;
+                  &lt;div class=&quot;c-alert__content o-media o-media--middle o-media--gutter_sm&quot;&gt;
+                    &lt;div class=&quot;c-alert__content-icon o-media__fixed&quot;&gt;
+                      &lt;svg class=&quot;c-icon c-icon--size_md c-alert__icon&quot; role=&quot;presentation&quot;&gt;
+                        &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-info&quot;&gt;&lt;/use&gt;
+                      &lt;/svg&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;c-alert__content-message o-media__fluid&quot;&gt;
+                      &lt;div class=&quot;o-list o-list--inline o-list--middle o-list--gutter_sm&quot;&gt;
+                        &lt;div class=&quot;o-list__item&quot;&gt;
+                          &lt;div class=&quot;c-alert__title&quot;&gt;Money sitting in Cash Account&lt;/div&gt;You currently have $40,000 sitting in the Cash Account
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;c-alert c-alert--style_inform c-alert--theme_success c-alert--size_md u-mb-x6&quot;&gt;
+                &lt;div class=&quot;c-alert__body&quot;&gt;
+                  &lt;div class=&quot;c-alert__content o-media o-media--middle o-media--gutter_sm&quot;&gt;
+                    &lt;div class=&quot;c-alert__content-icon o-media__fixed&quot;&gt;
+                      &lt;svg class=&quot;c-icon c-icon--size_md c-alert__icon&quot; role=&quot;presentation&quot;&gt;
+                        &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-tick&quot;&gt;&lt;/use&gt;
+                      &lt;/svg&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;c-alert__content-message o-media__fluid&quot;&gt;
+                      &lt;div class=&quot;o-list o-list--inline o-list--middle o-list--gutter_sm&quot;&gt;
+                        &lt;div class=&quot;o-list__item&quot;&gt;
+                          &lt;div class=&quot;c-alert__title&quot;&gt;Money sitting in Cash Account&lt;/div&gt;You currently have $40,000 sitting in the Cash Account
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;c-alert c-alert--style_inform c-alert--theme_warning c-alert--size_md u-mb-x6&quot;&gt;
+                &lt;div class=&quot;c-alert__body&quot;&gt;
+                  &lt;div class=&quot;c-alert__content o-media o-media--middle o-media--gutter_sm&quot;&gt;
+                    &lt;div class=&quot;c-alert__content-icon o-media__fixed&quot;&gt;
+                      &lt;svg class=&quot;c-icon c-icon--size_md c-alert__icon&quot; role=&quot;presentation&quot;&gt;
+                        &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--alert&quot;&gt;&lt;/use&gt;
+                      &lt;/svg&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;c-alert__content-message o-media__fluid&quot;&gt;
+                      &lt;div class=&quot;o-list o-list--inline o-list--middle o-list--gutter_sm&quot;&gt;
+                        &lt;div class=&quot;o-list__item&quot;&gt;
+                          &lt;div class=&quot;c-alert__title&quot;&gt;Money sitting in Cash Account&lt;/div&gt;You currently have $40,000 sitting in the Cash Account
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;c-alert c-alert--style_inform c-alert--theme_danger c-alert--size_md u-mb-x6&quot;&gt;
+                &lt;div class=&quot;c-alert__body&quot;&gt;
+                  &lt;div class=&quot;c-alert__content o-media o-media--middle o-media--gutter_sm&quot;&gt;
+                    &lt;div class=&quot;c-alert__content-icon o-media__fixed&quot;&gt;
+                      &lt;svg class=&quot;c-icon c-icon--size_md c-alert__icon&quot; role=&quot;presentation&quot;&gt;
+                        &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-cross&quot;&gt;&lt;/use&gt;
+                      &lt;/svg&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;c-alert__content-message o-media__fluid&quot;&gt;
+                      &lt;div class=&quot;o-list o-list--inline o-list--middle o-list--gutter_sm&quot;&gt;
+                        &lt;div class=&quot;o-list__item&quot;&gt;
+                          &lt;div class=&quot;c-alert__title&quot;&gt;Money sitting in Cash Account&lt;/div&gt;You currently have $40,000 sitting in the Cash Account
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;c-alert c-alert--style_inform c-alert--theme_info c-alert--size_md u-mb-x6&quot;&gt;
+                &lt;div class=&quot;c-alert__body&quot;&gt;
+                  &lt;div class=&quot;c-alert__content o-media o-media--middle o-media--gutter_sm&quot;&gt;
+                    &lt;div class=&quot;c-alert__content-icon o-media__fixed&quot;&gt;
+                      &lt;svg class=&quot;c-icon c-icon--size_md c-alert__icon&quot; role=&quot;presentation&quot;&gt;
+                        &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-info&quot;&gt;&lt;/use&gt;
+                      &lt;/svg&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;c-alert__content-message o-media__fluid&quot;&gt;
+                      &lt;div class=&quot;o-list o-list--inline o-list--middle o-list--gutter_sm&quot;&gt;
+                        &lt;div class=&quot;o-list__item&quot;&gt;
+                          &lt;div class=&quot;c-alert__title&quot;&gt;With button&lt;/div&gt;You currently have $40,000 sitting in the Cash Account
+                        &lt;/div&gt;
+                        &lt;div class=&quot;o-list__item&quot;&gt;
+                          &lt;button class=&quot;c-button c-button--size_md c-button--theme_default-solid&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;Action button&lt;/span&gt;&lt;/button&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;</code></pre>
+        </div>
+      </div>
+      <h4 class="sg-heading sg-text--md sg-heading--md">Alert - strong</h4>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light">
+
+          <div class="c-alert c-alert--style_strong c-alert--theme_info c-alert--size_md u-mb-x6"><a class="c-alert__dismiss js-alert__dismiss" href="#"><span class="c-alert__dismiss-label">Close</span>
+              <svg class="c-icon c-icon--size_xxs u-ml" role="presentation">
+                <use xlink:href="/framework/svg/stack.svg#icon--circle-cross"></use>
+              </svg></a>
+            <div class="c-alert__body">
+              <div class="c-alert__content o-media o-media--middle o-media--gutter_sm">
+                <div class="c-alert__content-icon o-media__fixed">
+                  <svg class="c-icon c-icon--size_md c-alert__icon" role="presentation">
+                    <use xlink:href="/framework/svg/stack.svg#icon--circle-info"></use>
+                  </svg>
+                </div>
+                <div class="c-alert__content-message o-media__fluid">
+                  <div class="o-list o-list--inline o-list--middle o-list--gutter_sm">
+                    <div class="o-list__item">
+                      <div class="c-alert__title">Money sitting in Cash Account</div>You currently have $40,000 sitting in the Cash Account
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-alert c-alert--style_strong c-alert--theme_success c-alert--size_md u-mb-x6"><a class="c-alert__dismiss js-alert__dismiss" href="#"><span class="c-alert__dismiss-label">Close</span>
+              <svg class="c-icon c-icon--size_xxs u-ml" role="presentation">
+                <use xlink:href="/framework/svg/stack.svg#icon--circle-cross"></use>
+              </svg></a>
+            <div class="c-alert__body">
+              <div class="c-alert__content o-media o-media--middle o-media--gutter_sm">
+                <div class="c-alert__content-icon o-media__fixed">
+                  <svg class="c-icon c-icon--size_md c-alert__icon" role="presentation">
+                    <use xlink:href="/framework/svg/stack.svg#icon--circle-tick"></use>
+                  </svg>
+                </div>
+                <div class="c-alert__content-message o-media__fluid">
+                  <div class="o-list o-list--inline o-list--middle o-list--gutter_sm">
+                    <div class="o-list__item">
+                      <div class="c-alert__title">Money sitting in Cash Account</div>You currently have $40,000 sitting in the Cash Account
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-alert c-alert--style_strong c-alert--theme_warning c-alert--size_md u-mb-x6"><a class="c-alert__dismiss js-alert__dismiss" href="#"><span class="c-alert__dismiss-label">Close</span>
+              <svg class="c-icon c-icon--size_xxs u-ml" role="presentation">
+                <use xlink:href="/framework/svg/stack.svg#icon--circle-cross"></use>
+              </svg></a>
+            <div class="c-alert__body">
+              <div class="c-alert__content o-media o-media--middle o-media--gutter_sm">
+                <div class="c-alert__content-icon o-media__fixed">
+                  <svg class="c-icon c-icon--size_md c-alert__icon" role="presentation">
+                    <use xlink:href="/framework/svg/stack.svg#icon--alert"></use>
+                  </svg>
+                </div>
+                <div class="c-alert__content-message o-media__fluid">
+                  <div class="o-list o-list--inline o-list--middle o-list--gutter_sm">
+                    <div class="o-list__item">
+                      <div class="c-alert__title">Money sitting in Cash Account</div>You currently have $40,000 sitting in the Cash Account
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-alert c-alert--style_strong c-alert--theme_danger c-alert--size_md u-mb-x6"><a class="c-alert__dismiss js-alert__dismiss" href="#"><span class="c-alert__dismiss-label">Close</span>
+              <svg class="c-icon c-icon--size_xxs u-ml" role="presentation">
+                <use xlink:href="/framework/svg/stack.svg#icon--circle-cross"></use>
+              </svg></a>
+            <div class="c-alert__body">
+              <div class="c-alert__content o-media o-media--middle o-media--gutter_sm">
+                <div class="c-alert__content-icon o-media__fixed">
+                  <svg class="c-icon c-icon--size_md c-alert__icon" role="presentation">
+                    <use xlink:href="/framework/svg/stack.svg#icon--circle-cross"></use>
+                  </svg>
+                </div>
+                <div class="c-alert__content-message o-media__fluid">
+                  <div class="o-list o-list--inline o-list--middle o-list--gutter_sm">
+                    <div class="o-list__item">
+                      <div class="c-alert__title">Money sitting in Cash Account</div>You currently have $40,000 sitting in the Cash Account
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="c-alert c-alert--style_strong c-alert--theme_info c-alert--size_md u-mb-x6"><a class="c-alert__dismiss js-alert__dismiss" href="#"><span class="c-alert__dismiss-label">Close</span>
+              <svg class="c-icon c-icon--size_xxs u-ml" role="presentation">
+                <use xlink:href="/framework/svg/stack.svg#icon--circle-cross"></use>
+              </svg></a>
+            <div class="c-alert__body">
+              <div class="c-alert__content o-media o-media--middle o-media--gutter_sm">
+                <div class="c-alert__content-icon o-media__fixed">
+                  <svg class="c-icon c-icon--size_md c-alert__icon" role="presentation">
+                    <use xlink:href="/framework/svg/stack.svg#icon--circle-info"></use>
+                  </svg>
+                </div>
+                <div class="c-alert__content-message o-media__fluid">
+                  <div class="o-list o-list--inline o-list--middle o-list--gutter_sm">
+                    <div class="o-list__item">
+                      <div class="c-alert__title">With button</div>You currently have $40,000 sitting in the Cash Account
+                    </div>
+                    <div class="o-list__item">
+                      <button class="c-button c-button--size_md c-button--theme_default-solid" type="button"><span class="c-button__pos">Action button</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">
+              &lt;div class=&quot;c-alert c-alert--style_strong c-alert--theme_info c-alert--size_md u-mb-x6&quot;&gt;&lt;a class=&quot;c-alert__dismiss js-alert__dismiss&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-alert__dismiss-label&quot;&gt;Close&lt;/span&gt;
+                  &lt;svg class=&quot;c-icon c-icon--size_xxs u-ml&quot; role=&quot;presentation&quot;&gt;
+                    &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-cross&quot;&gt;&lt;/use&gt;
+                  &lt;/svg&gt;&lt;/a&gt;
+                &lt;div class=&quot;c-alert__body&quot;&gt;
+                  &lt;div class=&quot;c-alert__content o-media o-media--middle o-media--gutter_sm&quot;&gt;
+                    &lt;div class=&quot;c-alert__content-icon o-media__fixed&quot;&gt;
+                      &lt;svg class=&quot;c-icon c-icon--size_md c-alert__icon&quot; role=&quot;presentation&quot;&gt;
+                        &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-info&quot;&gt;&lt;/use&gt;
+                      &lt;/svg&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;c-alert__content-message o-media__fluid&quot;&gt;
+                      &lt;div class=&quot;o-list o-list--inline o-list--middle o-list--gutter_sm&quot;&gt;
+                        &lt;div class=&quot;o-list__item&quot;&gt;
+                          &lt;div class=&quot;c-alert__title&quot;&gt;Money sitting in Cash Account&lt;/div&gt;You currently have $40,000 sitting in the Cash Account
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;c-alert c-alert--style_strong c-alert--theme_success c-alert--size_md u-mb-x6&quot;&gt;&lt;a class=&quot;c-alert__dismiss js-alert__dismiss&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-alert__dismiss-label&quot;&gt;Close&lt;/span&gt;
+                  &lt;svg class=&quot;c-icon c-icon--size_xxs u-ml&quot; role=&quot;presentation&quot;&gt;
+                    &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-cross&quot;&gt;&lt;/use&gt;
+                  &lt;/svg&gt;&lt;/a&gt;
+                &lt;div class=&quot;c-alert__body&quot;&gt;
+                  &lt;div class=&quot;c-alert__content o-media o-media--middle o-media--gutter_sm&quot;&gt;
+                    &lt;div class=&quot;c-alert__content-icon o-media__fixed&quot;&gt;
+                      &lt;svg class=&quot;c-icon c-icon--size_md c-alert__icon&quot; role=&quot;presentation&quot;&gt;
+                        &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-tick&quot;&gt;&lt;/use&gt;
+                      &lt;/svg&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;c-alert__content-message o-media__fluid&quot;&gt;
+                      &lt;div class=&quot;o-list o-list--inline o-list--middle o-list--gutter_sm&quot;&gt;
+                        &lt;div class=&quot;o-list__item&quot;&gt;
+                          &lt;div class=&quot;c-alert__title&quot;&gt;Money sitting in Cash Account&lt;/div&gt;You currently have $40,000 sitting in the Cash Account
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;c-alert c-alert--style_strong c-alert--theme_warning c-alert--size_md u-mb-x6&quot;&gt;&lt;a class=&quot;c-alert__dismiss js-alert__dismiss&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-alert__dismiss-label&quot;&gt;Close&lt;/span&gt;
+                  &lt;svg class=&quot;c-icon c-icon--size_xxs u-ml&quot; role=&quot;presentation&quot;&gt;
+                    &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-cross&quot;&gt;&lt;/use&gt;
+                  &lt;/svg&gt;&lt;/a&gt;
+                &lt;div class=&quot;c-alert__body&quot;&gt;
+                  &lt;div class=&quot;c-alert__content o-media o-media--middle o-media--gutter_sm&quot;&gt;
+                    &lt;div class=&quot;c-alert__content-icon o-media__fixed&quot;&gt;
+                      &lt;svg class=&quot;c-icon c-icon--size_md c-alert__icon&quot; role=&quot;presentation&quot;&gt;
+                        &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--alert&quot;&gt;&lt;/use&gt;
+                      &lt;/svg&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;c-alert__content-message o-media__fluid&quot;&gt;
+                      &lt;div class=&quot;o-list o-list--inline o-list--middle o-list--gutter_sm&quot;&gt;
+                        &lt;div class=&quot;o-list__item&quot;&gt;
+                          &lt;div class=&quot;c-alert__title&quot;&gt;Money sitting in Cash Account&lt;/div&gt;You currently have $40,000 sitting in the Cash Account
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;c-alert c-alert--style_strong c-alert--theme_danger c-alert--size_md u-mb-x6&quot;&gt;&lt;a class=&quot;c-alert__dismiss js-alert__dismiss&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-alert__dismiss-label&quot;&gt;Close&lt;/span&gt;
+                  &lt;svg class=&quot;c-icon c-icon--size_xxs u-ml&quot; role=&quot;presentation&quot;&gt;
+                    &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-cross&quot;&gt;&lt;/use&gt;
+                  &lt;/svg&gt;&lt;/a&gt;
+                &lt;div class=&quot;c-alert__body&quot;&gt;
+                  &lt;div class=&quot;c-alert__content o-media o-media--middle o-media--gutter_sm&quot;&gt;
+                    &lt;div class=&quot;c-alert__content-icon o-media__fixed&quot;&gt;
+                      &lt;svg class=&quot;c-icon c-icon--size_md c-alert__icon&quot; role=&quot;presentation&quot;&gt;
+                        &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-cross&quot;&gt;&lt;/use&gt;
+                      &lt;/svg&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;c-alert__content-message o-media__fluid&quot;&gt;
+                      &lt;div class=&quot;o-list o-list--inline o-list--middle o-list--gutter_sm&quot;&gt;
+                        &lt;div class=&quot;o-list__item&quot;&gt;
+                          &lt;div class=&quot;c-alert__title&quot;&gt;Money sitting in Cash Account&lt;/div&gt;You currently have $40,000 sitting in the Cash Account
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;c-alert c-alert--style_strong c-alert--theme_info c-alert--size_md u-mb-x6&quot;&gt;&lt;a class=&quot;c-alert__dismiss js-alert__dismiss&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-alert__dismiss-label&quot;&gt;Close&lt;/span&gt;
+                  &lt;svg class=&quot;c-icon c-icon--size_xxs u-ml&quot; role=&quot;presentation&quot;&gt;
+                    &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-cross&quot;&gt;&lt;/use&gt;
+                  &lt;/svg&gt;&lt;/a&gt;
+                &lt;div class=&quot;c-alert__body&quot;&gt;
+                  &lt;div class=&quot;c-alert__content o-media o-media--middle o-media--gutter_sm&quot;&gt;
+                    &lt;div class=&quot;c-alert__content-icon o-media__fixed&quot;&gt;
+                      &lt;svg class=&quot;c-icon c-icon--size_md c-alert__icon&quot; role=&quot;presentation&quot;&gt;
+                        &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-info&quot;&gt;&lt;/use&gt;
+                      &lt;/svg&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;c-alert__content-message o-media__fluid&quot;&gt;
+                      &lt;div class=&quot;o-list o-list--inline o-list--middle o-list--gutter_sm&quot;&gt;
+                        &lt;div class=&quot;o-list__item&quot;&gt;
+                          &lt;div class=&quot;c-alert__title&quot;&gt;With button&lt;/div&gt;You currently have $40,000 sitting in the Cash Account
+                        &lt;/div&gt;
+                        &lt;div class=&quot;o-list__item&quot;&gt;
+                          &lt;button class=&quot;c-button c-button--size_md c-button--theme_default-solid&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;Action button&lt;/span&gt;&lt;/button&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;</code></pre>
+        </div>
+      </div>
+    </main>
+    <!-- ==================================================================================================-->
+    <!-- << CONTENT ENDS-->
+    <!-- ==================================================================================================-->
+    <script src="../framework/vendors/bundle.js"></script>
+    <script src="../framework/scripts/main.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

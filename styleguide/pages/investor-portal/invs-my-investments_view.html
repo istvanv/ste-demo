@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>UI design system - </title>
+    <link href="/framework/styles/assets.css" rel="stylesheet">
+    <link href="/framework/styles/vendor.css" rel="stylesheet">
+    <link href="/framework/styles/main.css" rel="stylesheet">
+  </head>
+  <body class="c-section c-section--investor">
+    <div class="tingle-content-wrapper">
+      <header class="c-header c-header--investor">
+        <div class="o-container o-container--gutter_md o-container--width_fluid">
+          <div class="c-header__inner o-media o-media--middle o-media--gutter_md">
+            <div class="o-media__fixed"><a class="c-header__brand" href="/"><img class="c-image" src="/framework/svg/au-logo.svg" alt="Australian Unity logo"></a></div>
+            <div class="o-media__fluid">
+              <div class="c-navbar js-mainnav">
+                      <button class="c-button c-button--size_md c-button--theme_default-solid c-navbar__menu-trigger js-mainnav__trigger" type="button"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_sm" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--hamburger"></use>
+                                </svg></span></button>
+                <nav class="c-navbar__nav js-mainnav__target">
+                  <div class="c-navbar__main">
+                    <ul class="c-menu-main">
+                      <li class="c-menu-main__item"><a class="c-menu-main__action" href="#">Dashboard</a></li>
+                      <li class="c-menu-main__item"><a class="c-menu-main__action" href="#">My investments</a></li>
+                      <li class="c-menu-main__item"><a class="c-menu-main__action" href="#">Transactions</a></li>
+                      <li class="c-menu-main__item"><a class="c-menu-main__action" href="#">Notifications</a></li>
+                      <li class="c-menu-main__item"><a class="c-menu-main__action" href="#">All investments</a></li>
+                      <li class="c-menu-main__item"><a class="c-menu-main__action" href="#">Resources</a></li>
+                    </ul>
+                  </div>
+                  <div class="c-navbar__side">
+                    <div class="o-list o-list--inline o-list--gutter_xs o-list--middle u-lh-dense">
+                      <div class="o-list__item u-pr-x4 u-border-r-sm u-border-clr-dark">
+                        <div class="o-type-ms-1 u-mb">Anthony Smith</div>
+                        <div class="c-form c-form--style_outline c-form--theme_default c-form--space_default c-form--size_sm">
+                          <div class="c-form__input-group">
+                            <div class="c-form__before-control">FA</div>
+                            <select class="c-form__control">
+                              <option>68931</option>
+                              <option>68932</option>
+                              <option>68933</option>
+                              <option>68934</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="o-list__item"><a class="u-weight-bold" href="#">LOGOUT</a></div>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- ==================================================================================================-->
+      <!-- CONTENT STARTS >>-->
+      <!-- ==================================================================================================-->
+      <div class="o-container o-container--gutter_md o-container--width_fluid u-pv-x12">
+        <div class="o-grid o-grid--gutter_md">
+          <main class="o-grid__col u-18/24@lg-up u-mb-x6@md-dn">
+            <header class="c-panel c-panel--z_md u-bgcolor-white u-ph-x6 u-pt-x8 u-mb-x6">
+              <div class="o-grid o-grid--gutter_md">
+                <div class="o-grid__col u-12/24@md-up u-14/24@xl-up">
+                  <h2 class="c-heading c-heading--xl u-color-scheme-shade-dark">My investments</h2>
+                </div>
+                <div class="o-grid__col u-12/24@md-up u-10/24@xl-up">
+                  <div class="o-media o-media--gutter_lg o-media--res u-mt-x2">
+                    <div class="o-media__fixed">
+                      <h4 class="c-heading c-heading--xs u-lh-tight u-mv-x3@sm-dn">Select an investment to view</h4>
+                    </div>
+                    <div class="o-media__fluid">
+                      <form class="c-form c-form--style_outline c-form--theme_default c-form--space_default">
+                        <div class="c-form__group">
+                          <select class="c-form__control" name="gridbar-invstate" id="gridbar-invstate">
+                            <option>Bentleigh East, VIC (373)</option>
+                          </select>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </header>
+            <section class="c-panel c-panel--z_md u-mb-x6">
+              <div class="o-grid">
+                <div class="o-grid__col u-8/24@md-up u-6/24@xl-up u-bgcolor-neutral-lightest">
+                  <section class="u-ph-x6 u-pv-x6 u-lh-dense">
+                    <div class="o-type-ms6 u-weight-bold u-color-scheme-brand">#373</div>
+                    <div class="o-type-ms3 u-weight-bold">Bentleigh East, VIC</div>124 Clarance Street
+                  </section>
+                  <section class="u-ph-x6 u-pv-x6">
+                    <h4 class="c-heading c-heading--xs">Investment details</h4>
+                    <div class="o-list o-list--block o-list--middle">
+                      <div class="o-list__item u-border-b-sm u-border-clr-dark u-pv-x2 u-lh-dense">
+                        <div class="o-media o-media--middle o-media--gutter_xs o-media--rev">
+                          <div class="o-media__fixed u-color-scheme-shade-dark o-type-ms2 u-weight-bold">$80,000</div>
+                          <div class="o-media__fluid">Amount invested</div>
+                        </div>
+                      </div>
+                      <div class="o-list__item u-border-b-sm u-border-clr-dark u-pv-x2 u-lh-dense">
+                        <div class="o-media o-media--middle o-media--gutter_xs o-media--rev">
+                          <div class="o-media__fixed u-color-scheme-shade-dark o-type-ms2 u-weight-bold">$10,456.12</div>
+                          <div class="o-media__fluid">Income received to date</div>
+                        </div>
+                      </div>
+                      <div class="o-list__item u-border-b-sm u-border-clr-dark u-pv-x2 u-lh-dense">
+                        <div class="o-media o-media--middle o-media--gutter_xs o-media--rev">
+                          <div class="o-media__fixed u-color-scheme-shade-dark ">7.75%</div>
+                          <div class="o-media__fluid">Interest rate</div>
+                        </div>
+                      </div>
+                      <div class="o-list__item u-border-b-sm u-border-clr-dark u-pv-x2 u-lh-dense">
+                        <div class="o-media o-media--middle o-media--gutter_xs o-media--rev">
+                          <div class="o-media__fixed u-color-scheme-shade-dark ">64.36%</div>
+                          <div class="o-media__fluid">LVR</div>
+                        </div>
+                      </div>
+                      <div class="o-list__item u-border-b-sm u-border-clr-dark u-pv-x2 u-lh-dense">
+                        <div class="o-media o-media--middle o-media--gutter_xs o-media--rev">
+                          <div class="o-media__fixed u-color-scheme-shade-dark ">January 2018</div>
+                          <div class="o-media__fluid">Start date</div>
+                        </div>
+                      </div>
+                      <div class="o-list__item u-border-b-sm u-border-clr-dark u-pv-x2 u-lh-dense">
+                        <div class="o-media o-media--middle o-media--gutter_xs o-media--rev">
+                          <div class="o-media__fixed u-color-scheme-shade-dark ">February 2019</div>
+                          <div class="o-media__fluid">Expected completion</div>
+                        </div>
+                      </div>
+                      <div class="o-list__item u-border-b-sm u-border-clr-dark u-pv-x2 u-lh-dense">
+                        <div class="o-media o-media--middle o-media--gutter_xs o-media--rev">
+                          <div class="o-media__fixed u-color-scheme-shade-dark ">80%</div>
+                          <div class="o-media__fluid">Initial debt coverage ratio</div>
+                        </div>
+                      </div>
+                      <div class="o-list__item u-border-b-sm u-border-clr-dark u-pv-x2 u-lh-dense">
+                        <div class="o-media o-media--middle o-media--gutter_xs o-media--rev">
+                          <div class="o-media__fixed u-color-scheme-shade-dark ">82.5%</div>
+                          <div class="o-media__fluid">Current debt coverage ratio</div>
+                        </div>
+                      </div>
+                      <div class="o-list__item u-border-b-sm u-border-clr-dark u-pv-x2 u-lh-dense">
+                        <div class="o-media o-media--middle o-media--gutter_xs o-media--rev">
+                          <div class="o-media__fixed u-color-scheme-shade-dark ">$1,250,000</div>
+                          <div class="o-media__fluid">Future availability</div>
+                        </div>
+                      </div>
+                      <div class="o-list__item u-border-b-sm u-border-clr-dark u-pv-x2 u-lh-dense">
+                        <div class="o-media o-media--middle o-media--gutter_xs o-media--rev">
+                          <div class="o-media__fixed u-color-scheme-shade-dark ">22/01/2018</div>
+                          <div class="o-media__fluid">Date invested</div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <div class="o-grid__col u-16/24@md-up u-18/24@xl-up u-bgcolor-white">
+                  <section class="u-ph-x6 u-pv-x6">
+                    <div class="owl-carousel owl-carousel--standard">
+                      <div><img class="c-image" src="http://via.placeholder.com/900x500"></div>
+                      <div><img class="c-image" src="http://via.placeholder.com/900x500"></div>
+                    </div>
+                  </section>
+                  <section class="u-ph-x6 u-pv-x6">
+                    <h4 class="c-heading c-heading--xs">Development progress</h4>
+                    <div class="c-progress-bar c-progress-bar--size_md c-progress-bar--theme_primary">
+                      <div class="c-progress-bar__label">85%</div>
+                      <div class="c-progress-bar__bar" style="width: 85%"></div>
+                    </div>
+                  </section>
+                  <section class="u-ph-x6 u-pv-x6">
+                    <h4 class="c-heading c-heading--xs">Investment documents</h4>
+                    <div class="o-list o-list--block o-list--gutter_xs">
+                      <div class="o-list__item"><a class="c-link" href="#">
+                                <svg class="c-icon c-icon--size_sm u-mr" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--pds"></use>
+                                </svg>Bentleigh East, VIC - SDPS</a></div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </section>
+          </main>
+          <aside class="o-grid__col u-6/24@lg-up">
+            <article class="c-panel c-panel--z_md u-bgcolor-white u-mb-x6">
+              <header class="u-pt-x6 u-ph-x6 u-mb-x4">
+                <h3 class="c-heading c-heading--sm u-color-scheme-shade-dark">I want to&hellip;</h3>
+              </header>
+              <section>
+                <div class="c-nav-actions c-nav-actions--layout_v c-nav-actions--size_lg">
+                  <div class="c-nav-actions__item"><a class="c-nav-actions__link" href="#"><span class="o-media o-media--middle o-media--gutter_xs"><span class="o-media__fixed">
+                                <svg class="c-icon c-icon--size_sm" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--transactions"></use>
+                                </svg></span><span class="o-media__fluid">View transactions</span></span></a></div>
+                  <div class="c-nav-actions__item"><a class="c-nav-actions__link" href="#"><span class="o-media o-media--middle o-media--gutter_xs"><span class="o-media__fixed">
+                                <svg class="c-icon c-icon--size_sm" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--statements"></use>
+                                </svg></span><span class="o-media__fluid">Download statements</span></span></a></div>
+                  <div class="c-nav-actions__item"><a class="c-nav-actions__link" href="#"><span class="o-media o-media--middle o-media--gutter_xs"><span class="o-media__fixed">
+                                <svg class="c-icon c-icon--size_sm" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--user-edit"></use>
+                                </svg></span><span class="o-media__fluid">Update my details</span></span></a></div>
+                  <div class="c-nav-actions__item"><a class="c-nav-actions__link" href="#"><span class="o-media o-media--middle o-media--gutter_xs"><span class="o-media__fixed">
+                                <svg class="c-icon c-icon--size_sm" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--user-add"></use>
+                                </svg></span><span class="o-media__fluid">Refer a friend</span></span></a></div>
+                  <div class="c-nav-actions__item"><a class="c-nav-actions__link" href="#"><span class="o-media o-media--middle o-media--gutter_xs"><span class="o-media__fixed">
+                                <svg class="c-icon c-icon--size_sm" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--phone"></use>
+                                </svg></span><span class="o-media__fluid">Contact Australian Unity</span></span></a></div>
+                </div>
+              </section>
+            </article>
+            <article class="c-panel c-panel--z_md u-bgcolor-white u-mb-x6">
+              <header class="u-pt-x6 u-ph-x6 u-mb-x4">
+                <h3 class="c-heading c-heading--sm u-color-scheme-shade-dark">Latest updates</h3>
+              </header>
+              <div class="u-ph-x6 u-pv-x6">
+                <div class="o-list o-list--block">
+                  <div class="o-list__item u-border-b-sm u-border-clr-dark u-pb-x4 u-lh-dense">Lock-up stage has been reached, with internal fit out due to start week commencing the 15th June
+                    <div class="u-color-neutral-dark">2 days ago</div>
+                  </div>
+                  <div class="o-list__item u-border-b-sm u-border-clr-dark u-pv-x4 u-lh-dense">The builder has completed the framing stage, and has started work on the external cladding
+                    <div class="u-color-neutral-dark">2 days ago</div>
+                  </div>
+                  <div class="o-list__item u-pt-x4 u-lh-dense">The foundations have been completed with work on the sub floor about to commence
+                    <div class="u-color-neutral-dark">2 days ago</div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </aside>
+        </div>
+      </div>
+      <!-- ==================================================================================================-->
+      <!-- << CONTENT ENDS-->
+      <!-- ==================================================================================================-->
+    </div>
+    <script src="/framework/vendors/bundle.js"></script>
+    <script src="/framework/scripts/main.js"></script>
+  </body>
+</html>

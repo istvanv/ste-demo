@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>UI design system - </title>
+    <link href="/framework/styles/assets.css" rel="stylesheet">
+    <link href="/framework/styles/vendor.css" rel="stylesheet">
+    <link href="/framework/styles/main.css" rel="stylesheet">
+  </head>
+  <body class="c-section c-section--admin">
+    <div class="tingle-content-wrapper">
+      <header class="c-header c-header--admin">
+        <div class="o-container o-container--gutter_md o-container--width_fluid">
+          <div class="c-header__inner o-media o-media--middle o-media--gutter_md">
+            <div class="o-media__fixed"><a class="c-header__brand" href="/"><img class="c-image" src="/framework/svg/au-logo.svg" alt="Australian Unity logo"></a></div>
+            <div class="o-media__fluid">
+              <div class="c-navbar js-mainnav">
+                      <button class="c-button c-button--size_md c-button--theme_default-solid c-navbar__menu-trigger js-mainnav__trigger" type="button"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_sm" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--hamburger"></use>
+                                </svg></span></button>
+                <nav class="c-navbar__nav js-mainnav__target">
+                  <div class="c-navbar__main">
+                    <ul class="c-menu-main">
+                      <li class="c-menu-main__item"><a class="c-menu-main__action" href="#">Users</a></li>
+                      <li class="c-menu-main__item"><a class="c-menu-main__action" href="#">Investments</a></li>
+                      <li class="c-menu-main__item"><a class="c-menu-main__action" href="#">Queues</a></li>
+                      <li class="c-menu-main__item"><a class="c-menu-main__action" href="#">Repayments</a></li>
+                    </ul>
+                  </div>
+                  <div class="c-navbar__side">
+                    <div class="o-list o-list--inline o-list--gutter_xs o-list--middle u-lh-dense">
+                      <div class="o-list__item u-pr-x6 u-border-r-sm-dark">
+                        <div class="o-type-ms-1">Anthony Smith</div>
+                      </div>
+                      <div class="o-list__item"><a class="u-weight-bold" href="#">LOGOUT</a></div>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- ==================================================================================================-->
+      <!-- CONTENT STARTS >>-->
+      <!-- ==================================================================================================-->
+      <main class="o-container o-container--gutter_sm o-container--width_fluid u-bgcolor-white">
+        <header class="u-ph-x6 u-pv-x12">
+          <section class="o-media o-media--res">
+            <div class="o-media__fixed">
+              <h2 class="c-heading c-heading--lg u-mb u-color-scheme-brand">Repayment</h2>
+              <div class="o-type-ms3 u-lh-dense u-weight-bold">$314,000</div>
+            </div>
+            <div class="o-media__fluid u-pt-x3@sm-dn u-text-right@md-up">
+              <div class="o-list o-list--inline o-list--gutter_sm">
+                <div class="o-list__item">
+                        <button class="c-button c-button--size_md c-button--theme_default-solid js-tooltip-html-trigger" type="button" data-tooltip-target="#tooltip_repayment"><span class="c-button__pos">
+                                  <svg class="c-icon c-icon--size_sm" role="presentation">
+                                    <use xlink:href="/framework/svg/stack.svg#icon--actions"></use>
+                                  </svg></span></button>
+                </div>
+                <div class="o-list__item">
+                        <button class="c-button c-button--size_md c-button--theme_default-solid" type="button"><span class="c-button__pos">Repay selected</span></button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </header>
+        <section class="u-ph-x6 u-pt-x12 u-pb-x6">
+          <form class="c-form c-form--style_outline c-form--theme_default c-form--space_default">
+            <div class="o-grid o-grid--gutter_lg">
+              <div class="o-grid__col u-6/24@md-up u-4/24@lg-up">
+                <div class="c-form__group">
+                  <label class="c-form__label" for="appl-invopt-initamount">Total repayment
+                  </label>
+                  <div class="c-form__input-group">
+                    <div class="c-form__before-control">$</div>
+                    <input class="c-form__control" type="text" name="appl-invopt-initamount" value="" placeholder="" id="appl-invopt-initamount"/>
+                  </div>
+                </div>
+              </div>
+              <div class="o-grid__col u-18/24@md-up u-20/24@lg-up">
+                <div class="o-media o-media--gutter_lg o-media--res">
+                  <div class="o-media__fixed">
+                    <h4 class="c-heading c-heading--xs u-lh-tight u-mv-x3@sm-dn">Filter by</h4>
+                  </div>
+                  <div class="o-media__fluid">
+                    <div class="o-grid o-grid--gutter_md">
+                      <div class="o-grid__col u-12/24@sm-up u-6/24@lg-up">
+                        <div class="c-form__group">
+                          <label class="c-form__label" for="gridbar-searchusers">Loan
+                          </label>
+                          <select class="c-form__control" name="gridbar-acctype" id="gridbar-acctype">
+                            <option>All loans</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </section>
+        <section class="u-ph-x6 u-pb-x12">
+          <div class="o-overflow-scroll">
+            <table class="c-table c-table--style_clean c-table--space_default">
+              <thead>
+                <tr>
+                  <th class="c-table__cell--w_min">
+                    <div class="c-checkbox">
+                      <input class="c-checkbox__control" type="checkbox" name="admn-tbl-opt-all" value="1" id="admn-tbl-opt-all"/>
+                      <label class="c-checkbox__label" for="admn-tbl-opt-all">
+                      </label>
+                    </div>
+                  </th>
+                  <th>Investor #</th>
+                  <th>Investor</th>
+                  <th>Type</th>
+                  <th>Adviser</th>
+                  <th>Loan</th>
+                  <th>Date invested</th>
+                  <th>Cash</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="c-table__cell--w_min">
+                    <div class="c-checkbox">
+                      <input class="c-checkbox__control" type="checkbox" name="admn-tbl-opt1" value="1" id="admn-tbl-opt1"/>
+                      <label class="c-checkbox__label" for="admn-tbl-opt1">
+                      </label>
+                    </div>
+                  </td>
+                  <td>165987</td>
+                  <td>Michael Jackson</td>
+                  <td>GIA</td>
+                  <td>Marty McFly</td>
+                  <td>Highett, VIC (505)</td>
+                  <td>27 Mar 2017</td>
+                  <td class="c-table__cell--numeric">66,000</td>
+                  <td class="c-table__cell--w_min c-table__cell--actions">
+                          <button class="c-button c-button--size_md c-button--theme_default-solid js-tooltip-html-trigger" type="button" data-tooltip-target="#tooltip_repayment-table-actions"><span class="c-button__pos">
+                                    <svg class="c-icon c-icon--size_sm" role="presentation">
+                                      <use xlink:href="/framework/svg/stack.svg#icon--actions"></use>
+                                    </svg></span></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="c-table__cell--w_min">
+                    <div class="c-checkbox">
+                      <input class="c-checkbox__control" type="checkbox" name="admn-tbl-opt2" value="1" id="admn-tbl-opt2"/>
+                      <label class="c-checkbox__label" for="admn-tbl-opt2">
+                      </label>
+                    </div>
+                  </td>
+                  <td>165987</td>
+                  <td>Michael Jackson</td>
+                  <td>GIA</td>
+                  <td>Marty McFly</td>
+                  <td>Highett, VIC (505)</td>
+                  <td>27 Mar 2017</td>
+                  <td class="c-table__cell--numeric">66,000</td>
+                  <td class="c-table__cell--w_min c-table__cell--actions">
+                          <button class="c-button c-button--size_md c-button--theme_default-solid js-tooltip-html-trigger" type="button" data-tooltip-target="#tooltip_repayment-table-actions"><span class="c-button__pos">
+                                    <svg class="c-icon c-icon--size_sm" role="presentation">
+                                      <use xlink:href="/framework/svg/stack.svg#icon--actions"></use>
+                                    </svg></span></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="c-table__cell--w_min">
+                    <div class="c-checkbox">
+                      <input class="c-checkbox__control" type="checkbox" name="admn-tbl-opt3" value="1" id="admn-tbl-opt3"/>
+                      <label class="c-checkbox__label" for="admn-tbl-opt3">
+                      </label>
+                    </div>
+                  </td>
+                  <td>165987</td>
+                  <td>Michael Jackson</td>
+                  <td>GIA</td>
+                  <td>Marty McFly</td>
+                  <td>Highett, VIC (505)</td>
+                  <td>27 Mar 2017</td>
+                  <td class="c-table__cell--numeric">66,000</td>
+                  <td class="c-table__cell--w_min c-table__cell--actions">
+                          <button class="c-button c-button--size_md c-button--theme_default-solid js-tooltip-html-trigger" type="button" data-tooltip-target="#tooltip_repayment-table-actions"><span class="c-button__pos">
+                                    <svg class="c-icon c-icon--size_sm" role="presentation">
+                                      <use xlink:href="/framework/svg/stack.svg#icon--actions"></use>
+                                    </svg></span></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="c-table__cell--w_min">
+                    <div class="c-checkbox">
+                      <input class="c-checkbox__control" type="checkbox" name="admn-tbl-opt4" value="1" id="admn-tbl-opt4"/>
+                      <label class="c-checkbox__label" for="admn-tbl-opt4">
+                      </label>
+                    </div>
+                  </td>
+                  <td>165987</td>
+                  <td>Michael Jackson</td>
+                  <td>GIA</td>
+                  <td>Marty McFly</td>
+                  <td>Highett, VIC (505)</td>
+                  <td>27 Mar 2017</td>
+                  <td class="c-table__cell--numeric">66,000</td>
+                  <td class="c-table__cell--w_min c-table__cell--actions">
+                          <button class="c-button c-button--size_md c-button--theme_default-solid js-tooltip-html-trigger" type="button" data-tooltip-target="#tooltip_repayment-table-actions"><span class="c-button__pos">
+                                    <svg class="c-icon c-icon--size_sm" role="presentation">
+                                      <use xlink:href="/framework/svg/stack.svg#icon--actions"></use>
+                                    </svg></span></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="c-table__cell--w_min">
+                    <div class="c-checkbox">
+                      <input class="c-checkbox__control" type="checkbox" name="admn-tbl-opt5" value="1" id="admn-tbl-opt5"/>
+                      <label class="c-checkbox__label" for="admn-tbl-opt5">
+                      </label>
+                    </div>
+                  </td>
+                  <td>165987</td>
+                  <td>Michael Jackson</td>
+                  <td>GIA</td>
+                  <td>Marty McFly</td>
+                  <td>Highett, VIC (505)</td>
+                  <td>27 Mar 2017</td>
+                  <td class="c-table__cell--numeric">66,000</td>
+                  <td class="c-table__cell--w_min c-table__cell--actions">
+                          <button class="c-button c-button--size_md c-button--theme_default-solid js-tooltip-html-trigger" type="button" data-tooltip-target="#tooltip_repayment-table-actions"><span class="c-button__pos">
+                                    <svg class="c-icon c-icon--size_sm" role="presentation">
+                                      <use xlink:href="/framework/svg/stack.svg#icon--actions"></use>
+                                    </svg></span></button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="u-pt-x2 u-text-center">
+            <div class="c-pagination"><a class="c-pagination__item c-pagination__prev" href="#">
+                      <svg class="c-icon c-icon--size_md c-pagination__icon" role="presentation">
+                        <use xlink:href="/framework/svg/stack.svg#icon--carret-left"></use>
+                      </svg></a><a class="c-pagination__item c-pagination__step" href="#">1</a><a class="c-pagination__step--current c-pagination__item c-pagination__step" href="#">2</a><a class="c-pagination__item c-pagination__step" href="#">3</a><a class="c-pagination__item c-pagination__step" href="#">4</a><a class="c-pagination__item c-pagination__next" href="#">
+                      <svg class="c-icon c-icon--size_md c-pagination__icon" role="presentation">
+                        <use xlink:href="/framework/svg/stack.svg#icon--carret-right"></use>
+                      </svg></a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- Tooltips-->
+      <div class="js-tooltip-html-target" id="tooltip_repayment">
+        <div class="c-nav-actions c-nav-actions--layout_v c-nav-actions--size_sm">
+          <div class="c-nav-actions__item"><a class="c-nav-actions__link" href="#">&mdash;</a></div>
+        </div>
+      </div>
+      <div class="js-tooltip-html-target" id="tooltip_repayment-table-actions">
+        <div class="c-nav-actions c-nav-actions--layout_v c-nav-actions--size_sm">
+          <div class="c-nav-actions__item"><a class="c-nav-actions__link" href="#" onclick="openModalSm(event)" data-modal-target="#modal_edit-repayment">Edit</a></div>
+          <div class="c-nav-actions__item"><a class="c-nav-actions__link" href="#">Remove</a></div>
+        </div>
+      </div>
+      <!-- Modals-->
+      <div class="c-modal__content u-hidden" id="modal_edit-repayment" data-modal-save-label="Update" data-modal-cancel-label="Cancel">
+        <h3 class="c-heading c-heading--sm">Edit repayment</h3>
+        <div class="u-bgcolor-neutral-light u-pv-x4 u-ph-x5 u-mb-x5">
+          <div class="o-grid o-grid--gutter_sm">
+            <div class="o-grid__col u-8/24 u-weight-bold">Investor</div>
+            <div class="o-grid__col u-16/24">Michael Jackson</div>
+          </div>
+          <div class="o-grid o-grid--gutter_sm">
+            <div class="o-grid__col u-8/24 u-weight-bold">Investor #</div>
+            <div class="o-grid__col u-16/24">123 987</div>
+          </div>
+          <div class="o-grid o-grid--gutter_sm">
+            <div class="o-grid__col u-8/24 u-weight-bold">Current cash</div>
+            <div class="o-grid__col u-16/24 u-weight-bold u-color-scheme-brand">66,000</div>
+          </div>
+        </div>
+        <form class="c-form c-form--style_outline c-form--theme_default c-form--space_dense">
+          <div class="o-grid o-grid--gutter_md c-form__group">
+            <div class="o-grid__col u-12/24">
+              <label class="c-form__label" for="appl-invopt-initamount">Updated cash
+              </label>
+              <div class="c-form__input-group">
+                <div class="c-form__before-control">$</div>
+                <input class="c-form__control" type="text" name="appl-invopt-initamount" value="" placeholder="" id="appl-invopt-initamount">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- ==================================================================================================-->
+      <!-- << CONTENT ENDS-->
+      <!-- ==================================================================================================-->
+    </div>
+    <script src="/framework/vendors/bundle.js"></script>
+    <script src="/framework/scripts/main.js"></script>
+  </body>
+</html>

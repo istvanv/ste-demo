@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html class="sg" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>UI design system - </title>
+    <link href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" rel="stylesheet" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link href="styles/sg-main.css" rel="stylesheet">
+    <link href="styles/assets.css" rel="stylesheet">
+    <link href="../framework/styles/vendor.css" rel="stylesheet">
+    <link href="../framework/styles/main.css" rel="stylesheet">
+  </head>
+  <body class="sg-layout">
+    <button class="sg-toggle-nav js-sg-toggle-nav"><i class="fas fa-bars"></i></button>
+    <header class="sg-layout-header">
+      <p><a href="/styleguide/">Index</a></p>
+      <nav>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Atoms</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/atoms/headings.html">Headings</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/buttons.html">Buttons</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/icons.html">Icons</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/lists.html">Lists</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/forms.html">Form</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/tables.html">Tables</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Molecules</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/molecules/hero.html">Hero</a></li>
+          <li class="sg-list__item"><a href="/styleguide/molecules/carousel.html">Carousel</a></li>
+          <li class="sg-list__item"><a href="/styleguide/molecules/overlay-tabs.html">Overlay tabs</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Organisms</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/organisms/header.html">Header</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/footer.html">Footer</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/page-nav.html">Page nav</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/section-header.html">Section header</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/content-blocks.html">Content blocks</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/grid-blocks.html">Grid blocks</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Pages</h3>
+        <h4 class="sg-heading sg-heading--xs sg-text--xs">Main</h4>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/pages.html#pages/0_home">Home</a></li>
+          <li class="sg-list__item"><a href="/styleguide/pages.html#pages/1_sector">Sector</a></li>
+          <li class="sg-list__item"><a href="/styleguide/pages.html#pages/2_newsroom">Newsroom</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ==================================================================================================-->
+    <!-- CONTENT STARTS >>-->
+    <!-- ==================================================================================================-->
+    <main class="sg-layout-content">
+      <h4 class="sg-heading sg-text--md sg-heading--md">Page nav bar</h4>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light">
+
+          <div class="c-page-nav">
+            <div class="o-container o-container--gutter_lg o-container--width_lg u-ph-x0@md-dn">
+              <div class="c-page-nav__inner">
+                <div class="c-page-nav__main">
+                  <ul class="c-menu-page o-overflow-scroll o-overflow-scroll--direction_h">
+                            <li class="c-menu-page__item c-menu-item c-menu-item--tertiary-bottom"><a class="c-menu-item__action" href="#">Page section 1</a></li>
+                            <li class="c-menu-page__item c-menu-item c-menu-item--tertiary-bottom"><a class="c-menu-item__action" href="#">Page section longer 2</a></li>
+                            <li class="c-menu-page__item c-menu-item c-menu-item--tertiary-bottom"><a class="c-menu-item__action" href="#">Page section 3</a></li>
+                            <li class="c-menu-page__item c-menu-item c-menu-item--tertiary-bottom"><a class="c-menu-item__action" href="#">Page section longer 4</a></li>
+                            <li class="c-menu-page__item c-menu-item c-menu-item--tertiary-bottom"><a class="c-menu-item__action" href="#">Page section long 5</a></li>
+                  </ul>
+                </div>
+                <div class="c-page-nav__after">
+                  <div class="o-list o-list--inline o-list--middle o-list--gutter_sm">
+                    <div class="o-list__item"><a class="c-button c-button--size_md c-button--theme_default-solid c-button--mod_inverse c-button--mod_clear" href="#"><span class="c-button__pos">
+                                  <svg class="c-icon c-icon--size_xs u-mr-x2" role="presentation">
+                                    <use xlink:href="/framework/svg/stack.svg#icon--share"></use>
+                                  </svg>share</span></a>
+                    </div>
+                    <div class="o-list__item"><a class="c-button c-button--size_md c-button--theme_default-solid c-button--mod_inverse c-button--mod_clear" href="#"><span class="c-button__pos">
+                                  <svg class="c-icon c-icon--size_xs u-mr-x2" role="presentation">
+                                    <use xlink:href="/framework/svg/stack.svg#icon--print"></use>
+                                  </svg>print</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">
+              &lt;div class=&quot;c-page-nav&quot;&gt;
+                &lt;div class=&quot;o-container o-container--gutter_lg o-container--width_lg u-ph-x0@md-dn&quot;&gt;
+                  &lt;div class=&quot;c-page-nav__inner&quot;&gt;
+                    &lt;div class=&quot;c-page-nav__main&quot;&gt;
+                      &lt;ul class=&quot;c-menu-page o-overflow-scroll o-overflow-scroll--direction_h&quot;&gt;
+                                &lt;li class=&quot;c-menu-page__item c-menu-item c-menu-item--tertiary-bottom&quot;&gt;&lt;a class=&quot;c-menu-item__action&quot; href=&quot;#&quot;&gt;Page section 1&lt;/a&gt;&lt;/li&gt;
+                                &lt;li class=&quot;c-menu-page__item c-menu-item c-menu-item--tertiary-bottom&quot;&gt;&lt;a class=&quot;c-menu-item__action&quot; href=&quot;#&quot;&gt;Page section longer 2&lt;/a&gt;&lt;/li&gt;
+                                &lt;li class=&quot;c-menu-page__item c-menu-item c-menu-item--tertiary-bottom&quot;&gt;&lt;a class=&quot;c-menu-item__action&quot; href=&quot;#&quot;&gt;Page section 3&lt;/a&gt;&lt;/li&gt;
+                                &lt;li class=&quot;c-menu-page__item c-menu-item c-menu-item--tertiary-bottom&quot;&gt;&lt;a class=&quot;c-menu-item__action&quot; href=&quot;#&quot;&gt;Page section longer 4&lt;/a&gt;&lt;/li&gt;
+                                &lt;li class=&quot;c-menu-page__item c-menu-item c-menu-item--tertiary-bottom&quot;&gt;&lt;a class=&quot;c-menu-item__action&quot; href=&quot;#&quot;&gt;Page section long 5&lt;/a&gt;&lt;/li&gt;
+                      &lt;/ul&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;c-page-nav__after&quot;&gt;
+                      &lt;div class=&quot;o-list o-list--inline o-list--middle o-list--gutter_sm&quot;&gt;
+                        &lt;div class=&quot;o-list__item&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_default-solid c-button--mod_inverse c-button--mod_clear&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                      &lt;svg class=&quot;c-icon c-icon--size_xs u-mr-x2&quot; role=&quot;presentation&quot;&gt;
+                                        &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--share&quot;&gt;&lt;/use&gt;
+                                      &lt;/svg&gt;share&lt;/span&gt;&lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;o-list__item&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_default-solid c-button--mod_inverse c-button--mod_clear&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                      &lt;svg class=&quot;c-icon c-icon--size_xs u-mr-x2&quot; role=&quot;presentation&quot;&gt;
+                                        &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--print&quot;&gt;&lt;/use&gt;
+                                      &lt;/svg&gt;print&lt;/span&gt;&lt;/a&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;</code></pre>
+        </div>
+      </div>
+    </main>
+    <!-- ==================================================================================================-->
+    <!-- << CONTENT ENDS-->
+    <!-- ==================================================================================================-->
+    <script src="../framework/vendors/bundle.js"></script>
+    <script src="../framework/scripts/main.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

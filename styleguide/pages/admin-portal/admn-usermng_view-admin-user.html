@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>UI design system - </title>
+    <link href="/framework/styles/assets.css" rel="stylesheet">
+    <link href="/framework/styles/vendor.css" rel="stylesheet">
+    <link href="/framework/styles/main.css" rel="stylesheet">
+  </head>
+  <body class="c-section c-section--admin">
+    <div class="tingle-content-wrapper">
+      <header class="c-header c-header--admin">
+        <div class="o-container o-container--gutter_md o-container--width_fluid">
+          <div class="c-header__inner o-media o-media--middle o-media--gutter_md">
+            <div class="o-media__fixed"><a class="c-header__brand" href="/"><img class="c-image" src="/framework/svg/au-logo.svg" alt="Australian Unity logo"></a></div>
+            <div class="o-media__fluid">
+              <div class="c-navbar js-mainnav">
+                      <button class="c-button c-button--size_md c-button--theme_default-solid c-navbar__menu-trigger js-mainnav__trigger" type="button"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_sm" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--hamburger"></use>
+                                </svg></span></button>
+                <nav class="c-navbar__nav js-mainnav__target">
+                  <div class="c-navbar__main">
+                    <ul class="c-menu-main">
+                      <li class="c-menu-main__item"><a class="c-menu-main__action" href="#">Users</a></li>
+                      <li class="c-menu-main__item"><a class="c-menu-main__action" href="#">Investments</a></li>
+                      <li class="c-menu-main__item"><a class="c-menu-main__action" href="#">Queues</a></li>
+                      <li class="c-menu-main__item"><a class="c-menu-main__action" href="#">Repayments</a></li>
+                    </ul>
+                  </div>
+                  <div class="c-navbar__side">
+                    <div class="o-list o-list--inline o-list--gutter_xs o-list--middle u-lh-dense">
+                      <div class="o-list__item u-pr-x6 u-border-r-sm-dark">
+                        <div class="o-type-ms-1">Anthony Smith</div>
+                      </div>
+                      <div class="o-list__item"><a class="u-weight-bold" href="#">LOGOUT</a></div>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- ==================================================================================================-->
+      <!-- CONTENT STARTS >>-->
+      <!-- ==================================================================================================-->
+      <div class="o-container o-container--gutter_sm o-container--width_fluid u-bgcolor-neutral-lightest">
+        <nav class="u-ph-x6 u-pt-x6">
+          <ul class="c-breadcrumbs o-list o-list--inline o-list--middle">
+            <li class="c-breadcrumbs__crumb o-list__item"><a class="c-breadcrumbs__crumb-inner"></a>
+                    <svg class="c-icon c-breadcrumbs__separator" role="presentation">
+                      <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                    </svg>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <main class="u-bgcolor-white">
+        <div class="o-container o-container--gutter_sm o-container--width_fluid u-bgcolor-neutral-lightest">
+          <header class="u-ph-x6 u-pt-x12">
+            <nav class="o-list o-list--inline o-list--gutter_sm">
+              <div class="o-list__item"><a href="#"><span class="c-tab-tile c-tab-tile--style_default u-block u-pv-x6 u-ph-x12 u-text-center u-lh-dense u-bgcolor-white u-color-scheme-brand">
+                    <div class="c-tab-tile__label o-type-ms2 u-weight-bold">Adminuser Userson</div></span></a></div>
+            </nav>
+          </header>
+        </div>
+        <div class="o-container o-container--gutter_sm o-container--width_fluid u-bgcolor-white">
+          <section class="u-pv-x12 u-ph-x6 u-mb-x6">
+            <form class="c-form c-form--style_outline c-form--theme_default c-form--space_default">
+              <div class="o-grid o-grid--gutter_lg">
+                <div class="o-grid__col u-4/24@md-up u-4/24@lg-up">
+                  <fieldset class="c-form__fieldset c-form--layout_h">
+                    <legend class="c-form__legend">Account information</legend>
+                    <div class="c-form__group"><span class="c-form__label">Account type</span>Admin
+                    </div>
+                    <div class="c-form__group"><span class="c-form__label">User role</span>
+                      <select class="c-form__control" name="admn-vuser-userrole" id="admn-vuser-userrole">
+                        <option>Investor Services</option>
+                      </select>
+                    </div>
+                    <div class="c-form__group"><span class="c-form__label">Investor #</span>&mdash;
+                    </div>
+                  </fieldset>
+                </div>
+                <div class="o-grid__col u-14/24@md-up u-16/24@lg-up">
+                  <div class="o-grid o-grid--gutter_sm">
+                    <div class="o-grid__col u-12/24@sm-up u-7/24@lg-up">
+                      <fieldset class="c-form__fieldset c-form--layout_h">
+                        <legend class="c-form__legend">Personal information</legend>
+                        <div class="c-form__group">
+                          <label class="c-form__label" for="admn-vuser-fname">First name
+                          </label>
+                          <input class="c-form__control" type="text" name="admn-vuser-fname" value="" placeholder="" id="admn-vuser-fname"/>
+                        </div>
+                        <div class="c-form__group">
+                          <label class="c-form__label" for="admn-vuser-lname">Last name
+                          </label>
+                          <input class="c-form__control" type="text" name="admn-vuser-lname" value="" placeholder="" id="admn-vuser-lname"/>
+                        </div>
+                        <div class="c-form__group">
+                          <label class="c-form__label" for="admn-vuser-email">Email address
+                          </label>
+                          <input class="c-form__control" type="text" name="admn-vuser-email" value="" placeholder="" id="admn-vuser-email"/>
+                        </div>
+                        <div class="c-form__group">
+                          <label class="c-form__label" for="admn-vuser-coontnum">Contact number
+                          </label>
+                          <input class="c-form__control" type="text" name="admn-vuser-coontnum" value="" placeholder="" id="admn-vuser-coontnum"/>
+                        </div>
+                      </fieldset>
+                    </div>
+                  </div>
+                </div>
+                <div class="o-grid__col u-6/24@md-up u-4/24@lg-up">
+                  <div class="o-list o-list--gutter_xs o-list--block">
+                    <div class="o-list__item u-pb-x2">
+                            <button class="c-button c-button--size_md c-button--theme_default-solid u-24/24" type="button"><span class="c-button__pos">
+                                      <svg class="c-icon c-icon--size_sm u-mr-x2" role="presentation">
+                                        <use xlink:href="/framework/svg/stack.svg#icon--save"></use>
+                                      </svg>Save changes</span></button>
+                    </div>
+                    <div class="o-list__item">
+                            <button class="c-button c-button--size_md c-button--theme_default-solid u-24/24" type="button"><span class="c-button__pos">
+                                      <svg class="c-icon c-icon--size_sm u-mr-x2" role="presentation">
+                                        <use xlink:href="/framework/svg/stack.svg#icon--key"></use>
+                                      </svg>Reset password</span></button>
+                    </div>
+                    <div class="o-list__item u-pt-x2">
+                            <button class="c-button c-button--size_md c-button--theme_default-solid u-24/24" type="button"><span class="c-button__pos">Deactivate account</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+      </main>
+      <!-- ==================================================================================================-->
+      <!-- << CONTENT ENDS-->
+      <!-- ==================================================================================================-->
+    </div>
+    <script src="/framework/vendors/bundle.js"></script>
+    <script src="/framework/scripts/main.js"></script>
+  </body>
+</html>

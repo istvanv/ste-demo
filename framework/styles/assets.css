@@ -1,0 +1,99 @@
+/**
+ * We import all required asset scss files from styles/asstes, or other souces.
+ */
+/**
+ * The base value the scale starts at.
+ *
+ * Number
+ */
+/**
+ * The ratio the scale is built on
+ *
+ * Unitless Number
+ */
+/**
+ * Length of scale ( right part of the decimal
+ * point ) ms will be rounded to.
+ *
+ * Unitless Number
+ */
+/**
+ * Grid columns. This setting is shared between
+ * iotaCSS grid objects and size, pull & push
+ * utilities. You can change it also locally to
+ * each module.
+ *
+ * Type: Unitless Number / List
+ */
+/**
+ * Global namespace for Objects, Components and
+ * Utilities
+ *
+ * Type: String
+ */
+/**
+ * Default gutters. This setting is shared between
+ * multiple objects and utilities as the default value
+ * for gutters. You can change it also locally to each
+ * module.
+ *
+ * Type: Number / List / Map
+ */
+/**
+ * Enables flexbox across the app. If you do not want
+ * all modules to use flexbox you can keep this value
+ * false and set it to true separately to each one of
+ * them locally.
+ *
+ * Type: Boolean
+ */
+/**
+ * Enables rtl across the app. If you enable this setting
+ * the final CSS will be converted to RTL.
+ *
+ * Type: Boolean
+ */
+/**
+ * Default global breakpoints map. These are the
+ * default breakpoints map that will be shared across
+ * all iotaCSS modules. You can change it also locally
+ * to each module.
+ *
+ * Type: Map
+ */
+/**
+ * Global breakpoint suffix naming setting. All breakpoint
+ * specific styles have a '@breakpointName' suffix by default.
+ * The \ character is used to escape the @ character.
+ *
+ * Type: String
+ */
+/**
+ * Global delimiter naming setting for Size, Push and Pull
+ * utilities. By default it is '/' (.u-1/2) and you can change
+ * it for example to 'of' so that the generated HTML class will be
+ * 'u-1of2'.
+ *
+ * Type: String
+ */
+/**
+ * @size
+ * @strength
+ * @offset
+ */
+/**
+.el::after {
+    @include css-triangle('left', $baseline-x2);
+    border-color: #efefef;
+}
+*/
+/**
+ * Montserrat
+ * Source: https://fonts.google.com/specimen/Montserrat
+ */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400,400i,500,600,700,800,900&display=swap");
+/**
+ * Open Sans
+ * Source: https://fonts.google.com/specimen/Open+Sans
+ */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700&display=swap");

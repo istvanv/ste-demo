@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html class="sg" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>UI design system - </title>
+    <link href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" rel="stylesheet" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link href="styles/sg-main.css" rel="stylesheet">
+    <link href="styles/assets.css" rel="stylesheet">
+    <link href="../framework/styles/vendor.css" rel="stylesheet">
+    <link href="../framework/styles/main.css" rel="stylesheet">
+  </head>
+  <body class="sg-layout">
+    <button class="sg-toggle-nav js-sg-toggle-nav"><i class="fas fa-bars"></i></button>
+    <header class="sg-layout-header">
+      <p><a href="/styleguide/">Index</a></p>
+      <nav>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Atoms</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/atoms/headings.html">Headings</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/buttons.html">Buttons</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/icons.html">Icons</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/lists.html">Lists</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/forms.html">Form</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/tables.html">Tables</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Molecules</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/molecules/hero.html">Hero</a></li>
+          <li class="sg-list__item"><a href="/styleguide/molecules/carousel.html">Carousel</a></li>
+          <li class="sg-list__item"><a href="/styleguide/molecules/overlay-tabs.html">Overlay tabs</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Organisms</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/organisms/header.html">Header</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/footer.html">Footer</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/page-nav.html">Page nav</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/section-header.html">Section header</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/content-blocks.html">Content blocks</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/grid-blocks.html">Grid blocks</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Pages</h3>
+        <h4 class="sg-heading sg-heading--xs sg-text--xs">Main</h4>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/pages.html#pages/0_home">Home</a></li>
+          <li class="sg-list__item"><a href="/styleguide/pages.html#pages/1_sector">Sector</a></li>
+          <li class="sg-list__item"><a href="/styleguide/pages.html#pages/2_newsroom">Newsroom</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ==================================================================================================-->
+    <!-- CONTENT STARTS >>-->
+    <!-- ==================================================================================================-->
+    <main class="sg-layout-content">
+      <style type="text/css">
+        .sg-component-example .c-button {
+            margin: 0 10px 10px 0 !important;
+        }
+        
+        
+      </style>
+      <h2 class="sg-heading sg-text--xl sg-heading--xl">Button</h2>
+      <div class="sg-component-description"><span class="sg-code sg-code--inline">c-button</span>
+        <p>Button styles.</p>
+      </div>
+      <!-- Size-->
+      <h3 class="sg-heading sg-text--lg sg-heading--lg">Sizes</h3>
+      <div class="sg-component-description"><span class="sg-code sg-code--inline">c-button c-button--size_[...]</span>
+      </div>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light">
+
+          <button class="c-button c-button--size_feature c-button--theme_default-solid" type="button"><span class="c-button__pos">size feature</span></button>
+          <button class="c-button c-button--size_xl c-button--theme_default-solid" type="button"><span class="c-button__pos">size xl</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_default-solid" type="button"><span class="c-button__pos">size lg</span></button>
+          <button class="c-button c-button--size_md c-button--theme_default-solid" type="button"><span class="c-button__pos">size md</span></button>
+          <button class="c-button c-button--size_sm c-button--theme_default-solid" type="button"><span class="c-button__pos">size sm</span></button>
+          <button class="c-button c-button--size_xs c-button--theme_default-solid" type="button"><span class="c-button__pos">size xs</span></button>
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">
+              &lt;button class=&quot;c-button c-button--size_feature c-button--theme_default-solid&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;size feature&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_xl c-button--theme_default-solid&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;size xl&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_default-solid&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;size lg&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_md c-button--theme_default-solid&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;size md&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_sm c-button--theme_default-solid&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;size sm&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_xs c-button--theme_default-solid&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;size xs&lt;/span&gt;&lt;/button&gt;</code></pre>
+        </div>
+      </div>
+      <!-- Themes-->
+      <h3 class="sg-heading sg-text--lg sg-heading--lg">Themes</h3>
+      <div class="sg-component-description"><span class="sg-code sg-code--inline">c-button c-button--theme_[...]</span>
+      </div>
+      <h4 class="sg-heading sg-text--md sg-heading--md">Default</h4>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light">
+
+          <button class="c-button c-button--size_lg c-button--theme_default-solid" type="button"><span class="c-button__pos">default</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_primary-solid" type="button"><span class="c-button__pos">primary</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_secondary-solid" type="button"><span class="c-button__pos">secondary</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_tertiary-solid" type="button"><span class="c-button__pos">tertiary</span></button>
+          <!-- Clear mod-->
+          <button class="c-button c-button--size_lg c-button--theme_default-solid c-button--mod_clear" type="button"><span class="c-button__pos">default clear</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_primary-solid c-button--mod_clear" type="button"><span class="c-button__pos">primary clear</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_secondary-solid c-button--mod_clear" type="button"><span class="c-button__pos">secondary clear</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_tertiary-solid c-button--mod_clear" type="button"><span class="c-button__pos">tertiary clear</span></button>
+          <div class="hr u-mt-x4 u-mb-x8"></div>
+          <!-- Disabled-->
+          <div class="sg-component-example__comments">Disabled state:</div>
+          <button class="c-button c-button--size_lg c-button--theme_default-solid" type="button" disabled="disabled"><span class="c-button__pos">default</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_primary-solid" type="button" disabled="disabled"><span class="c-button__pos">primary</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_secondary-solid" type="button" disabled="disabled"><span class="c-button__pos">secondary</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_tertiary-solid" type="button" disabled="disabled"><span class="c-button__pos">tertiary</span></button>
+          <!-- Clear mod-->
+          <button class="c-button c-button--size_lg c-button--theme_default-solid c-button--mod_clear" type="button" disabled="disabled"><span class="c-button__pos">default clear</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_primary-solid c-button--mod_clear" type="button" disabled="disabled"><span class="c-button__pos">primary clear</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_secondary-solid c-button--mod_clear" type="button" disabled="disabled"><span class="c-button__pos">secondary clear</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_tertiary-solid c-button--mod_clear" type="button" disabled="disabled"><span class="c-button__pos">tertiary clear</span></button>
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_default-solid&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;default&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_primary-solid&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;primary&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_secondary-solid&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;secondary&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_tertiary-solid&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;tertiary&lt;/span&gt;&lt;/button&gt;
+              &lt;!-- Clear mod--&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_default-solid c-button--mod_clear&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;default clear&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_primary-solid c-button--mod_clear&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;primary clear&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_secondary-solid c-button--mod_clear&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;secondary clear&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_tertiary-solid c-button--mod_clear&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;tertiary clear&lt;/span&gt;&lt;/button&gt;
+              &lt;div class=&quot;hr u-mt-x4 u-mb-x8&quot;&gt;&lt;/div&gt;
+              &lt;!-- Disabled--&gt;
+              &lt;div class=&quot;sg-component-example__comments&quot;&gt;Disabled state:&lt;/div&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_default-solid&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;default&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_primary-solid&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;primary&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_secondary-solid&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;secondary&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_tertiary-solid&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;tertiary&lt;/span&gt;&lt;/button&gt;
+              &lt;!-- Clear mod--&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_default-solid c-button--mod_clear&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;default clear&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_primary-solid c-button--mod_clear&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;primary clear&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_secondary-solid c-button--mod_clear&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;secondary clear&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_tertiary-solid c-button--mod_clear&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;tertiary clear&lt;/span&gt;&lt;/button&gt;</code></pre>
+        </div>
+      </div>
+      <h4 class="sg-heading sg-text--sm sg-heading--sm">Default - inverse</h4>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--dark">
+
+          <button class="c-button c-button--size_lg c-button--theme_default-solid c-button--mod_inverse" type="button"><span class="c-button__pos">default</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_primary-solid c-button--mod_inverse" type="button"><span class="c-button__pos">primary</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_secondary-solid c-button--mod_inverse" type="button"><span class="c-button__pos">secondary</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_tertiary-solid c-button--mod_inverse" type="button"><span class="c-button__pos">tertiary</span></button>
+          <!-- Clear mod-->
+          <button class="c-button c-button--size_lg c-button--theme_default-solid c-button--mod_inverse c-button--mod_clear" type="button"><span class="c-button__pos">default clear</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_primary-solid c-button--mod_inverse c-button--mod_clear" type="button"><span class="c-button__pos">primary clear</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_secondary-solid c-button--mod_inverse c-button--mod_clear" type="button"><span class="c-button__pos">secondary clear</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_tertiary-solid c-button--mod_inverse c-button--mod_clear" type="button"><span class="c-button__pos">tertiary clear</span></button>
+          <div class="hr u-mt-x4 u-mb-x8"></div>
+          <!-- Disabled-->
+          <div class="sg-component-example__comments">Disabled state:</div>
+          <button class="c-button c-button--size_lg c-button--theme_default-solid c-button--mod_inverse" type="button" disabled="disabled"><span class="c-button__pos">default</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_primary-solid c-button--mod_inverse" type="button" disabled="disabled"><span class="c-button__pos">primary</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_secondary-solid c-button--mod_inverse" type="button" disabled="disabled"><span class="c-button__pos">secondary</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_tertiary-solid c-button--mod_inverse" type="button" disabled="disabled"><span class="c-button__pos">tertiary</span></button>
+          <!-- Clear mod-->
+          <button class="c-button c-button--size_lg c-button--theme_default-solid c-button--mod_inverse c-button--mod_clear" type="button" disabled="disabled"><span class="c-button__pos">default clear</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_primary-solid c-button--mod_inverse c-button--mod_clear" type="button" disabled="disabled"><span class="c-button__pos">primary clear</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_secondary-solid c-button--mod_inverse c-button--mod_clear" type="button" disabled="disabled"><span class="c-button__pos">secondary clear</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_tertiary-solid c-button--mod_inverse c-button--mod_clear" type="button" disabled="disabled"><span class="c-button__pos">tertiary clear</span></button>
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_default-solid c-button--mod_inverse&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;default&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_primary-solid c-button--mod_inverse&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;primary&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_secondary-solid c-button--mod_inverse&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;secondary&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_tertiary-solid c-button--mod_inverse&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;tertiary&lt;/span&gt;&lt;/button&gt;
+              &lt;!-- Clear mod--&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_default-solid c-button--mod_inverse c-button--mod_clear&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;default clear&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_primary-solid c-button--mod_inverse c-button--mod_clear&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;primary clear&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_secondary-solid c-button--mod_inverse c-button--mod_clear&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;secondary clear&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_tertiary-solid c-button--mod_inverse c-button--mod_clear&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;tertiary clear&lt;/span&gt;&lt;/button&gt;
+              &lt;div class=&quot;hr u-mt-x4 u-mb-x8&quot;&gt;&lt;/div&gt;
+              &lt;!-- Disabled--&gt;
+              &lt;div class=&quot;sg-component-example__comments&quot;&gt;Disabled state:&lt;/div&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_default-solid c-button--mod_inverse&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;default&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_primary-solid c-button--mod_inverse&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;primary&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_secondary-solid c-button--mod_inverse&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;secondary&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_tertiary-solid c-button--mod_inverse&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;tertiary&lt;/span&gt;&lt;/button&gt;
+              &lt;!-- Clear mod--&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_default-solid c-button--mod_inverse c-button--mod_clear&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;default clear&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_primary-solid c-button--mod_inverse c-button--mod_clear&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;primary clear&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_secondary-solid c-button--mod_inverse c-button--mod_clear&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;secondary clear&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_tertiary-solid c-button--mod_inverse c-button--mod_clear&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;tertiary clear&lt;/span&gt;&lt;/button&gt;</code></pre>
+        </div>
+      </div>
+      <h4 class="sg-heading sg-text--md sg-heading--md">Ghost</h4>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light">
+
+          <button class="c-button c-button--size_lg c-button--theme_default-ghost" type="button"><span class="c-button__pos">default</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_primary-ghost" type="button"><span class="c-button__pos">primary</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_secondary-ghost" type="button"><span class="c-button__pos">secondary</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_tertiary-ghost" type="button"><span class="c-button__pos">tertiary</span></button>
+          <div class="hr u-mt-x4 u-mb-x8"></div>
+          <!-- Disabled-->
+          <div class="sg-component-example__comments">Disabled state:</div>
+          <button class="c-button c-button--size_lg c-button--theme_default-ghost" type="button" disabled="disabled"><span class="c-button__pos">default</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_primary-ghost" type="button" disabled="disabled"><span class="c-button__pos">primary</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_secondary-ghost" type="button" disabled="disabled"><span class="c-button__pos">secondary</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_tertiary-ghost" type="button" disabled="disabled"><span class="c-button__pos">tertiary</span></button>
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_default-ghost&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;default&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_primary-ghost&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;primary&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_secondary-ghost&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;secondary&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_tertiary-ghost&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;tertiary&lt;/span&gt;&lt;/button&gt;
+              &lt;div class=&quot;hr u-mt-x4 u-mb-x8&quot;&gt;&lt;/div&gt;
+              &lt;!-- Disabled--&gt;
+              &lt;div class=&quot;sg-component-example__comments&quot;&gt;Disabled state:&lt;/div&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_default-ghost&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;default&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_primary-ghost&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;primary&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_secondary-ghost&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;secondary&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_tertiary-ghost&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;tertiary&lt;/span&gt;&lt;/button&gt;</code></pre>
+        </div>
+      </div>
+      <h4 class="sg-heading sg-text--sm sg-heading--sm">Ghost - inverse</h4>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--dark">
+
+          <button class="c-button c-button--size_lg c-button--theme_default-ghost c-button--mod_inverse" type="button"><span class="c-button__pos">default</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_primary-ghost c-button--mod_inverse" type="button"><span class="c-button__pos">primary</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_secondary-ghost c-button--mod_inverse" type="button"><span class="c-button__pos">secondary</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_tertiary-ghost c-button--mod_inverse" type="button"><span class="c-button__pos">tertiary</span></button>
+          <div class="hr u-mt-x4 u-mb-x8"></div>
+          <!-- Disabled-->
+          <div class="sg-component-example__comments">Disabled state:</div>
+          <button class="c-button c-button--size_lg c-button--theme_default-ghost c-button--mod_inverse" type="button" disabled="disabled"><span class="c-button__pos">default</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_primary-ghost c-button--mod_inverse" type="button" disabled="disabled"><span class="c-button__pos">primary</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_secondary-ghost c-button--mod_inverse" type="button" disabled="disabled"><span class="c-button__pos">secondary</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_tertiary-ghost c-button--mod_inverse" type="button" disabled="disabled"><span class="c-button__pos">tertiary</span></button>
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_default-ghost c-button--mod_inverse&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;default&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_primary-ghost c-button--mod_inverse&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;primary&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_secondary-ghost c-button--mod_inverse&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;secondary&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_tertiary-ghost c-button--mod_inverse&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;tertiary&lt;/span&gt;&lt;/button&gt;
+              &lt;div class=&quot;hr u-mt-x4 u-mb-x8&quot;&gt;&lt;/div&gt;
+              &lt;!-- Disabled--&gt;
+              &lt;div class=&quot;sg-component-example__comments&quot;&gt;Disabled state:&lt;/div&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_default-ghost c-button--mod_inverse&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;default&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_primary-ghost c-button--mod_inverse&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;primary&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_secondary-ghost c-button--mod_inverse&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;secondary&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_tertiary-ghost c-button--mod_inverse&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;tertiary&lt;/span&gt;&lt;/button&gt;</code></pre>
+        </div>
+      </div>
+      <h4 class="sg-heading sg-text--md sg-heading--md">Ghost thin</h4>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light">
+
+          <button class="c-button c-button--size_lg c-button--theme_default-ghost-thin" type="button"><span class="c-button__pos">default</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_primary-ghost-thin" type="button"><span class="c-button__pos">primary</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_secondary-ghost-thin" type="button"><span class="c-button__pos">secondary</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_tertiary-ghost-thin" type="button"><span class="c-button__pos">tertiary</span></button>
+          <div class="hr u-mt-x4 u-mb-x8"></div>
+          <!-- Disabled-->
+          <div class="sg-component-example__comments">Disabled state:</div>
+          <button class="c-button c-button--size_lg c-button--theme_default-ghost-thin" type="button" disabled="disabled"><span class="c-button__pos">default</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_primary-ghost-thin" type="button" disabled="disabled"><span class="c-button__pos">primary</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_secondary-ghost-thin" type="button" disabled="disabled"><span class="c-button__pos">secondary</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_tertiary-ghost-thin" type="button" disabled="disabled"><span class="c-button__pos">tertiary</span></button>
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_default-ghost-thin&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;default&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_primary-ghost-thin&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;primary&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_secondary-ghost-thin&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;secondary&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_tertiary-ghost-thin&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;tertiary&lt;/span&gt;&lt;/button&gt;
+              &lt;div class=&quot;hr u-mt-x4 u-mb-x8&quot;&gt;&lt;/div&gt;
+              &lt;!-- Disabled--&gt;
+              &lt;div class=&quot;sg-component-example__comments&quot;&gt;Disabled state:&lt;/div&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_default-ghost-thin&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;default&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_primary-ghost-thin&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;primary&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_secondary-ghost-thin&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;secondary&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_tertiary-ghost-thin&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;tertiary&lt;/span&gt;&lt;/button&gt;</code></pre>
+        </div>
+      </div>
+      <h4 class="sg-heading sg-text--sm sg-heading--sm">Ghost thin - inverse</h4>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--dark">
+
+          <button class="c-button c-button--size_lg c-button--theme_default-ghost-thin c-button--mod_inverse" type="button"><span class="c-button__pos">default</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_primary-ghost-thin c-button--mod_inverse" type="button"><span class="c-button__pos">primary</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_secondary-ghost-thin c-button--mod_inverse" type="button"><span class="c-button__pos">secondary</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_tertiary-ghost-thin c-button--mod_inverse" type="button"><span class="c-button__pos">tertiary</span></button>
+          <div class="hr u-mt-x4 u-mb-x8"></div>
+          <!-- Disabled-->
+          <div class="sg-component-example__comments">Disabled state:</div>
+          <button class="c-button c-button--size_lg c-button--theme_default-ghost-thin c-button--mod_inverse" type="button" disabled="disabled"><span class="c-button__pos">default</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_primary-ghost-thin c-button--mod_inverse" type="button" disabled="disabled"><span class="c-button__pos">primary</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_secondary-ghost-thin c-button--mod_inverse" type="button" disabled="disabled"><span class="c-button__pos">secondary</span></button>
+          <button class="c-button c-button--size_lg c-button--theme_tertiary-ghost-thin c-button--mod_inverse" type="button" disabled="disabled"><span class="c-button__pos">tertiary</span></button>
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_default-ghost-thin c-button--mod_inverse&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;default&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_primary-ghost-thin c-button--mod_inverse&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;primary&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_secondary-ghost-thin c-button--mod_inverse&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;secondary&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_tertiary-ghost-thin c-button--mod_inverse&quot; type=&quot;button&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;tertiary&lt;/span&gt;&lt;/button&gt;
+              &lt;div class=&quot;hr u-mt-x4 u-mb-x8&quot;&gt;&lt;/div&gt;
+              &lt;!-- Disabled--&gt;
+              &lt;div class=&quot;sg-component-example__comments&quot;&gt;Disabled state:&lt;/div&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_default-ghost-thin c-button--mod_inverse&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;default&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_primary-ghost-thin c-button--mod_inverse&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;primary&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_secondary-ghost-thin c-button--mod_inverse&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;secondary&lt;/span&gt;&lt;/button&gt;
+              &lt;button class=&quot;c-button c-button--size_lg c-button--theme_tertiary-ghost-thin c-button--mod_inverse&quot; type=&quot;button&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;tertiary&lt;/span&gt;&lt;/button&gt;</code></pre>
+        </div>
+      </div>
+    </main>
+    <!-- ==================================================================================================-->
+    <!-- << CONTENT ENDS-->
+    <!-- ==================================================================================================-->
+    <script src="../framework/vendors/bundle.js"></script>
+    <script src="../framework/scripts/main.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

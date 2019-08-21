@@ -1,0 +1,2713 @@
+<!DOCTYPE html>
+<html class="sg" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>UI design system - </title>
+    <link href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" rel="stylesheet" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link href="styles/sg-main.css" rel="stylesheet">
+    <link href="styles/assets.css" rel="stylesheet">
+    <link href="../framework/styles/vendor.css" rel="stylesheet">
+    <link href="../framework/styles/main.css" rel="stylesheet">
+  </head>
+  <body class="sg-layout">
+    <button class="sg-toggle-nav js-sg-toggle-nav"><i class="fas fa-bars"></i></button>
+    <header class="sg-layout-header">
+      <p><a href="/styleguide/">Index</a></p>
+      <nav>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Atoms</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/atoms/headings.html">Headings</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/buttons.html">Buttons</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/icons.html">Icons</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/lists.html">Lists</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/forms.html">Form</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/tables.html">Tables</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Molecules</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/molecules/hero.html">Hero</a></li>
+          <li class="sg-list__item"><a href="/styleguide/molecules/carousel.html">Carousel</a></li>
+          <li class="sg-list__item"><a href="/styleguide/molecules/overlay-tabs.html">Overlay tabs</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Organisms</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/organisms/header.html">Header</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/footer.html">Footer</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/page-nav.html">Page nav</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/section-header.html">Section header</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/content-blocks.html">Content blocks</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/grid-blocks.html">Grid blocks</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Pages</h3>
+        <h4 class="sg-heading sg-heading--xs sg-text--xs">Main</h4>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/pages.html#pages/0_home">Home</a></li>
+          <li class="sg-list__item"><a href="/styleguide/pages.html#pages/1_sector">Sector</a></li>
+          <li class="sg-list__item"><a href="/styleguide/pages.html#pages/2_newsroom">Newsroom</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ==================================================================================================-->
+    <!-- CONTENT STARTS >>-->
+    <!-- ==================================================================================================-->
+    <main class="sg-layout-content">
+      <h2 class="sg-heading sg-text--xl sg-heading--xl">Form</h2>
+      <div class="sg-component-description">
+        <p>
+          Parent wrapper class
+          <span class="sg-code sg-code--inline">c-form</span>
+        </p>
+      </div>
+      <h3 class="sg-heading sg-text--lg sg-heading--lg">Size</h3>
+      <div class="sg-component-description">
+        <p>To change the size of inputs:<br>
+          you can either use the modifier
+          <span class="sg-code sg-code--inline">.c-form--size_XX</span>
+          (sm, md, lg) on the form or any parent tag of the target form elements.<br>
+          OR apply
+          <span class="sg-code sg-code--inline">.form__control--size_XX</span>
+          (sm, md, lg) directly to the element, eg
+          <span class="sg-code sg-code--inline">class=&quot;form__control form__control--size_sm&quot;</span>
+        </p>
+      </div>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light">
+<form class="c-form
+             c-form--layout_h
+             c-form--style_outline
+             c-form--theme_default
+             c-form--space_default">
+
+
+    <div class="c-form__group o-grid o-grid--gutter_sm o-grid--middle">
+        <label for="el_control-sizeLG_layout_h"
+               class="c-form__label o-grid__col u-8/24@lg-up">
+            Large input
+        </label>
+
+        <div class="o-grid__col u-6/24@md-up u-4/24@lg-up">
+            <input type="date"
+                   class="c-form__control c-form__control--size_lg c-form__dateinput"
+                   id="el_control-sizeLG_layout_h">
+        </div>
+
+
+        <div class="o-grid__col u-6/24@md-up u-3/24@lg-up">
+            <input type="text"
+                   class="c-form__control c-form__control--size_lg"
+                   id="el_control-sizeLGb_layouta_h">
+        </div>
+
+        <div class="o-grid__col u-6/24@md-up u-3/24@lg-up">
+            <div class="c-form__input-group c-form--size_lg">
+                <div class="c-form__before-control">B</div>
+                <input type="text"
+                       class="c-form__control"
+                       id="el_control-sizeLGb_layoutb_h">
+                <div class="c-form__after-control">A</div>
+            </div>
+        </div>
+
+
+        <div class="o-grid__col u-6/24@md-up">
+            <select type="text"
+                   class="c-form__control c-form__control--size_lg"
+                   id="el_control-sizeLGc_layout_h">
+                <option value="1">Option one</option>
+                <option value="1">Option two</option>
+                <option value="1">Option three</option>
+            </select>
+        </div>
+    </div>
+
+
+
+    <div class="c-form__group o-grid o-grid--gutter_sm o-grid--middle">
+        <label for="el_control-sizeD_layout_h"
+               class="c-form__label o-grid__col u-8/24@lg-up">
+            Default input (no size modifier)
+        </label>
+
+        <div class="o-grid__col u-6/24@md-up u-4/24@lg-up">
+            <input type="date"
+                   class="c-form__control c-form__dateinput"
+                   id="el_control-sizeD_layout_h">
+        </div>
+
+
+        <div class="o-grid__col u-6/24@md-up u-3/24@lg-up">
+            <input type="text"
+                   class="c-form__control"
+                   id="el_control-sizeDb_layout_h">
+        </div>
+
+        <div class="o-grid__col u-6/24@md-up u-3/24@lg-up">
+            <div class="c-form__input-group">
+                <div class="c-form__before-control">B</div>
+                <input type="text"
+                       class="c-form__control"
+                       id="el_control-sizeDba_layoutb_h">
+                <div class="c-form__after-control">A</div>
+            </div>
+        </div>
+
+
+        <div class="o-grid__col u-6/24@md-up">
+            <select type="text"
+                    class="c-form__control"
+                    id="el_control-sizeDc_layout_h">
+                <option value="1">Option one</option>
+                <option value="1">Option two</option>
+                <option value="1">Option three</option>
+            </select>
+        </div>
+    </div>
+
+
+
+    <div class="c-form__group o-grid o-grid--gutter_sm o-grid--middle">
+        <label for="el_control-sizeMD_layout_h"
+               class="c-form__label o-grid__col u-8/24@lg-up">
+            Medium input
+        </label>
+
+        <div class="o-grid__col u-6/24@md-up u-4/24@lg-up">
+            <input type="date"
+                   class="c-form__control c-form__control--size_md c-form__dateinput"
+                   id="el_control-sizeMD_layout_h">
+        </div>
+
+
+        <div class="o-grid__col u-6/24@md-up u-3/24@lg-up">
+            <input type="text"
+                   class="c-form__control c-form__control--size_md"
+                   id="el_control-sizeMDb_layout_h">
+        </div>
+
+        <div class="o-grid__col u-6/24@md-up u-3/24@lg-up">
+            <div class="c-form__input-group c-form--size_md">
+                <div class="c-form__before-control">B</div>
+                <input type="text"
+                       class="c-form__control"
+                       id="el_control-sizeMDa1_layout_h">
+                <div class="c-form__after-control">A</div>
+            </div>
+        </div>
+
+
+        <div class="o-grid__col u-6/24@md-up">
+            <select type="text"
+                    class="c-form__control c-form__control--size_md"
+                    id="el_control-sizeMDc_layout_h">
+                <option value="1">Option one</option>
+                <option value="1">Option two</option>
+                <option value="1">Option three</option>
+            </select>
+        </div>
+    </div>
+
+
+
+    <div class="c-form__group o-grid o-grid--gutter_sm o-grid--middle">
+        <label for="el_control-sizeSM_layout_h"
+               class="c-form__label o-grid__col u-8/24@lg-up">
+            Small input
+        </label>
+
+        <div class="o-grid__col u-6/24@md-up u-4/24@lg-up">
+            <input type="date"
+                   class="c-form__control c-form__control--size_sm c-form__dateinput"
+                   id="el_control-sizeSM_layout_h">
+        </div>
+
+
+        <div class="o-grid__col u-6/24@md-up u-3/24@lg-up">
+            <input type="text"
+                   class="c-form__control c-form__control--size_sm"
+                   id="el_control-sizeSMb_layout_h">
+        </div>
+
+        <div class="o-grid__col u-6/24@md-up u-3/24@lg-up">
+            <div class="c-form__input-group c-form--size_sm">
+                <div class="c-form__before-control">B</div>
+                <input type="text"
+                       class="c-form__control"
+                       id="el_control-sizeSMa1_layout_h">
+                <div class="c-form__after-control">A</div>
+            </div>
+        </div>
+
+
+        <div class="o-grid__col u-6/24@md-up">
+            <select type="text"
+                    class="c-form__control c-form__control--size_sm"
+                    id="el_control-sizeSMc_layout_h">
+                <option value="1">Option one</option>
+                <option value="1">Option two</option>
+                <option value="1">Option three</option>
+            </select>
+        </div>
+    </div>
+
+</form>
+
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">&lt;form class=&quot;c-form
+             c-form--layout_h
+             c-form--style_outline
+             c-form--theme_default
+             c-form--space_default&quot;&gt;
+
+
+    &lt;div class=&quot;c-form__group o-grid o-grid--gutter_sm o-grid--middle&quot;&gt;
+        &lt;label for=&quot;el_control-sizeLG_layout_h&quot;
+               class=&quot;c-form__label o-grid__col u-8/24@lg-up&quot;&gt;
+            Large input
+        &lt;/label&gt;
+
+        &lt;div class=&quot;o-grid__col u-6/24@md-up u-4/24@lg-up&quot;&gt;
+            &lt;input type=&quot;date&quot;
+                   class=&quot;c-form__control c-form__control--size_lg c-form__dateinput&quot;
+                   id=&quot;el_control-sizeLG_layout_h&quot;&gt;
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;o-grid__col u-6/24@md-up u-3/24@lg-up&quot;&gt;
+            &lt;input type=&quot;text&quot;
+                   class=&quot;c-form__control c-form__control--size_lg&quot;
+                   id=&quot;el_control-sizeLGb_layouta_h&quot;&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;o-grid__col u-6/24@md-up u-3/24@lg-up&quot;&gt;
+            &lt;div class=&quot;c-form__input-group c-form--size_lg&quot;&gt;
+                &lt;div class=&quot;c-form__before-control&quot;&gt;B&lt;/div&gt;
+                &lt;input type=&quot;text&quot;
+                       class=&quot;c-form__control&quot;
+                       id=&quot;el_control-sizeLGb_layoutb_h&quot;&gt;
+                &lt;div class=&quot;c-form__after-control&quot;&gt;A&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;o-grid__col u-6/24@md-up&quot;&gt;
+            &lt;select type=&quot;text&quot;
+                   class=&quot;c-form__control c-form__control--size_lg&quot;
+                   id=&quot;el_control-sizeLGc_layout_h&quot;&gt;
+                &lt;option value=&quot;1&quot;&gt;Option one&lt;/option&gt;
+                &lt;option value=&quot;1&quot;&gt;Option two&lt;/option&gt;
+                &lt;option value=&quot;1&quot;&gt;Option three&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+
+    &lt;div class=&quot;c-form__group o-grid o-grid--gutter_sm o-grid--middle&quot;&gt;
+        &lt;label for=&quot;el_control-sizeD_layout_h&quot;
+               class=&quot;c-form__label o-grid__col u-8/24@lg-up&quot;&gt;
+            Default input (no size modifier)
+        &lt;/label&gt;
+
+        &lt;div class=&quot;o-grid__col u-6/24@md-up u-4/24@lg-up&quot;&gt;
+            &lt;input type=&quot;date&quot;
+                   class=&quot;c-form__control c-form__dateinput&quot;
+                   id=&quot;el_control-sizeD_layout_h&quot;&gt;
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;o-grid__col u-6/24@md-up u-3/24@lg-up&quot;&gt;
+            &lt;input type=&quot;text&quot;
+                   class=&quot;c-form__control&quot;
+                   id=&quot;el_control-sizeDb_layout_h&quot;&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;o-grid__col u-6/24@md-up u-3/24@lg-up&quot;&gt;
+            &lt;div class=&quot;c-form__input-group&quot;&gt;
+                &lt;div class=&quot;c-form__before-control&quot;&gt;B&lt;/div&gt;
+                &lt;input type=&quot;text&quot;
+                       class=&quot;c-form__control&quot;
+                       id=&quot;el_control-sizeDba_layoutb_h&quot;&gt;
+                &lt;div class=&quot;c-form__after-control&quot;&gt;A&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;o-grid__col u-6/24@md-up&quot;&gt;
+            &lt;select type=&quot;text&quot;
+                    class=&quot;c-form__control&quot;
+                    id=&quot;el_control-sizeDc_layout_h&quot;&gt;
+                &lt;option value=&quot;1&quot;&gt;Option one&lt;/option&gt;
+                &lt;option value=&quot;1&quot;&gt;Option two&lt;/option&gt;
+                &lt;option value=&quot;1&quot;&gt;Option three&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+
+    &lt;div class=&quot;c-form__group o-grid o-grid--gutter_sm o-grid--middle&quot;&gt;
+        &lt;label for=&quot;el_control-sizeMD_layout_h&quot;
+               class=&quot;c-form__label o-grid__col u-8/24@lg-up&quot;&gt;
+            Medium input
+        &lt;/label&gt;
+
+        &lt;div class=&quot;o-grid__col u-6/24@md-up u-4/24@lg-up&quot;&gt;
+            &lt;input type=&quot;date&quot;
+                   class=&quot;c-form__control c-form__control--size_md c-form__dateinput&quot;
+                   id=&quot;el_control-sizeMD_layout_h&quot;&gt;
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;o-grid__col u-6/24@md-up u-3/24@lg-up&quot;&gt;
+            &lt;input type=&quot;text&quot;
+                   class=&quot;c-form__control c-form__control--size_md&quot;
+                   id=&quot;el_control-sizeMDb_layout_h&quot;&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;o-grid__col u-6/24@md-up u-3/24@lg-up&quot;&gt;
+            &lt;div class=&quot;c-form__input-group c-form--size_md&quot;&gt;
+                &lt;div class=&quot;c-form__before-control&quot;&gt;B&lt;/div&gt;
+                &lt;input type=&quot;text&quot;
+                       class=&quot;c-form__control&quot;
+                       id=&quot;el_control-sizeMDa1_layout_h&quot;&gt;
+                &lt;div class=&quot;c-form__after-control&quot;&gt;A&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;o-grid__col u-6/24@md-up&quot;&gt;
+            &lt;select type=&quot;text&quot;
+                    class=&quot;c-form__control c-form__control--size_md&quot;
+                    id=&quot;el_control-sizeMDc_layout_h&quot;&gt;
+                &lt;option value=&quot;1&quot;&gt;Option one&lt;/option&gt;
+                &lt;option value=&quot;1&quot;&gt;Option two&lt;/option&gt;
+                &lt;option value=&quot;1&quot;&gt;Option three&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+
+    &lt;div class=&quot;c-form__group o-grid o-grid--gutter_sm o-grid--middle&quot;&gt;
+        &lt;label for=&quot;el_control-sizeSM_layout_h&quot;
+               class=&quot;c-form__label o-grid__col u-8/24@lg-up&quot;&gt;
+            Small input
+        &lt;/label&gt;
+
+        &lt;div class=&quot;o-grid__col u-6/24@md-up u-4/24@lg-up&quot;&gt;
+            &lt;input type=&quot;date&quot;
+                   class=&quot;c-form__control c-form__control--size_sm c-form__dateinput&quot;
+                   id=&quot;el_control-sizeSM_layout_h&quot;&gt;
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;o-grid__col u-6/24@md-up u-3/24@lg-up&quot;&gt;
+            &lt;input type=&quot;text&quot;
+                   class=&quot;c-form__control c-form__control--size_sm&quot;
+                   id=&quot;el_control-sizeSMb_layout_h&quot;&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;o-grid__col u-6/24@md-up u-3/24@lg-up&quot;&gt;
+            &lt;div class=&quot;c-form__input-group c-form--size_sm&quot;&gt;
+                &lt;div class=&quot;c-form__before-control&quot;&gt;B&lt;/div&gt;
+                &lt;input type=&quot;text&quot;
+                       class=&quot;c-form__control&quot;
+                       id=&quot;el_control-sizeSMa1_layout_h&quot;&gt;
+                &lt;div class=&quot;c-form__after-control&quot;&gt;A&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+
+        &lt;div class=&quot;o-grid__col u-6/24@md-up&quot;&gt;
+            &lt;select type=&quot;text&quot;
+                    class=&quot;c-form__control c-form__control--size_sm&quot;
+                    id=&quot;el_control-sizeSMc_layout_h&quot;&gt;
+                &lt;option value=&quot;1&quot;&gt;Option one&lt;/option&gt;
+                &lt;option value=&quot;1&quot;&gt;Option two&lt;/option&gt;
+                &lt;option value=&quot;1&quot;&gt;Option three&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/form&gt;
+</code></pre>
+        </div>
+      </div>
+      <!-- Layout-->
+      <h3 class="sg-heading sg-text--lg sg-heading--lg">Layout</h3>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light">
+<form class="c-form
+             c-form--layout_h
+             c-form--style_outline
+             c-form--theme_default
+             c-form--space_default">
+
+
+    <div class="c-form__group o-grid o-grid--gutter_sm o-grid--middle">
+        <label for="el_input_layout_h"
+               class="c-form__label o-grid__col u-8/24@sm-up">
+            Text label
+            <div class="c-form__helptext">
+                Help text example
+            </div>
+        </label>
+
+        <div class="o-grid__col u-16/24@sm-up">
+            <input type="text"
+                   class="c-form__control"
+                   id="el_input_layout_h">
+
+            <div class="c-form__requirement c-form__requirement--state_danger">
+                Invalid field message invisible by default
+            </div>
+        </div>
+    </div>
+
+
+    <div class="c-form__group o-grid o-grid--gutter_sm o-grid--middle">
+        <label for="el_datepicker_layout_h"
+               class="c-form__label o-grid__col u-8/24@sm-up">
+            Date input
+        </label>
+
+        <div class="o-grid__col u-6/24@sm-up">
+            <input type="date"
+                   class="c-form__control c-form__dateinput"
+                   id="el_datepicker_layout_h">
+        </div>
+    </div>
+
+
+    <div class="c-form__group o-grid o-grid--gutter_sm o-grid--middle">
+        <label for="el_input_layout-req_h"
+               class="c-form__label o-grid__col u-8/24@sm-up">
+            Text label
+        </label>
+
+        <div class="o-grid__col u-16/24@sm-up">
+            <input type="text"
+                   class="c-form__control"
+                   id="el_input_layout-req_h"
+                   data-invalid>
+
+            <div class="c-form__requirement c-form__requirement--state_danger">
+                Invalid field message visible because input has 'data-invalid' attr
+            </div>
+        </div>
+    </div>
+
+    <div class="c-form__group o-grid o-grid--gutter_sm o-grid--middle">
+        <label for="el_inputg_layout_h"
+               class="c-form__label o-grid__col u-8/24@sm-up">
+            Input group decoration
+        </label>
+
+        <div class="o-grid__col u-16/24@sm-up">
+            <div class="c-form__input-group">
+                <div class="c-form__before-control">
+                    Before
+                </div>
+                <input type="text"
+                    class="c-form__control"
+                    id="el_inputg_layout_v"
+                    data-invalid>
+                <div class="c-form__requirement c-form__requirement--state_danger">
+                    Invalid for group field message visible because input has 'data-invalid' attr
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="c-form__group o-grid o-grid--gutter_sm o-grid--middle">
+        <label for="el_select_layout_h"
+               class="c-form__label o-grid__col u-8/24@sm-up">
+            Select label
+        </label>
+
+        <div class="o-grid__col u-16/24@sm-up">
+            <select class="c-form__control"
+                    id="el_select_layout_h">
+                <option value="1">Option one</option>
+                <option value="1">Option two</option>
+                <option value="1">Option three</option>
+            </select>
+        </div>
+    </div>
+
+
+    <div class="c-form__group o-grid o-grid--gutter_sm o-grid--middle">
+        <label for="el_textarea_layout_h"
+               class="c-form__label o-grid__col u-8/24@sm-up">
+            Textarea label
+            <div class="c-form__helptext">
+                Help text example
+            </div>
+        </label>
+
+        <div class="o-grid__col u-16/24@sm-up">
+            <textarea name=""
+                      class="c-form__control"
+                      id="el_textarea_layout_h"></textarea>
+        </div>
+    </div>
+
+
+    <hr class="u-mt-x4 u-mb-x8">
+
+
+    <!-- Custom checkbox -->
+
+
+    <div class="c-form__group o-grid o-grid--gutter_sm o-grid--middle">
+
+        <span class="c-form__label o-grid__col u-8/24@sm-up">
+            Faux label
+        </span>
+
+        <div class="o-grid__col u-16/24@sm-up">
+
+            <div class="c-checkbox__inline-wrapper">
+                <div class="c-checkbox">
+                    <input type="checkbox"
+                           class="c-checkbox__control"
+                           id="el_checkbox-single-new_layout_h"
+                           value="option1">
+                    <label for="el_checkbox-single-new_layout_h"
+                           class="c-checkbox__label">
+                        Single checkbox label text
+                    </label>
+                </div>
+
+                <div class="c-checkbox">
+                    <input type="checkbox"
+                           class="c-checkbox__control"
+                           id="el_checkbox-single1-new_layout_h"
+                           value="option1">
+                    <label for="el_checkbox-single1-new_layout_h"
+                           class="c-checkbox__label">
+                        Single checkbox label text
+                    </label>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="c-form__group o-grid o-grid--gutter_sm o-grid--middle">
+        <span class="c-form__label o-grid__col u-8/24@sm-up">
+            Checkbox group
+        </span>
+
+        <div class="o-grid__col u-16/24@sm-up">
+            <div class="c-checkbox__stack-wrapper">
+                <div class="c-checkbox">
+                    <input type="checkbox"
+                           class="c-checkbox__control"
+                           id="el_checkbox-new_layout_h"
+                           value="option1">
+                    <label for="el_checkbox-new_layout_h"
+                           class="c-checkbox__label">
+                        Checkbox label text
+                    </label>
+                </div>
+
+                <div class="c-checkbox">
+                    <input type="checkbox"
+                           class="c-checkbox__control"
+                           id="el_checkbox-checked_layout_h"
+                           value="option2"
+                           checked>
+                    <label for="el_checkbox-checked_layout_h"
+                           class="c-checkbox__label">
+                        Checkbox checked label text
+                    </label>
+                </div>
+
+                <div class="c-checkbox">
+                    <input type="checkbox"
+                           class="c-checkbox__control"
+                           id="el_checkbox-checkeddis_layout_h"
+                           value="option3"
+                           checked
+                           disabled>
+                    <label for="el_checkbox-checkeddis_layout_h"
+                           class="c-checkbox__label">
+                        Checkbox checked disabled label text
+                    </label>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Custom radio -->
+
+
+    <div class="c-form__group o-grid o-grid--gutter_sm o-grid--middle">
+        <span class="c-form__label o-grid__col u-8/24@sm-up">
+            Faux label
+        </span>
+
+        <div class="o-grid__col u-16/24@sm-up">
+            <div class="c-radio__inline-wrapper">
+                <div class="c-radio">
+                    <input type="radio"
+                           class="c-form__radio c-radio__control"
+                           name="el_radio-single-new_layout_h"
+                           id="el_radio-single-new_layout_h"
+                           value="option1">
+                    <label for="el_radio-single-new_layout_h"
+                           class="c-form__radio-label c-radio__label">
+                        Single radio label one
+                    </label>
+                </div>
+
+                <div class="c-radio">
+                    <input type="radio"
+                           class="c-form__radio c-radio__control"
+                           name="el_radio-single-new_layout_h"
+                           id="el_radio-single1-new_layout_h"
+                           value="option1">
+                    <label for="el_radio-single1-new_layout_h"
+                           class="c-form__radio-label c-radio__label">
+                        Single radio label two
+                    </label>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="c-form__group o-grid o-grid--gutter_sm o-grid--middle">
+        <span class="c-form__label o-grid__col u-8/24@sm-up">
+            Radio group
+        </span>
+
+        <div class="o-grid__col u-16/24@sm-up">
+            <div class="c-radio__stack-wrapper">
+                <div class="c-radio">
+                    <input type="radio"
+                           class="c-form__radio c-radio__control"
+                           id="el_radio-new_layout_h"
+                           value="option1">
+                    <label for="el_radio-new_layout_h"
+                           class="c-form__radio-label c-radio__label">
+                        Radio label text
+                    </label>
+                </div>
+
+                <div class="c-radio">
+                    <input type="radio"
+                           class="c-form__radio c-radio__control"
+                           id="el_radio-checked_layout_h"
+                           value="option2"
+                           checked>
+                    <label for="el_radio-checked_layout_h"
+                           class="c-form__radio-label c-radio__label">
+                        Radio checked label text
+                    </label>
+                </div>
+
+                <div class="c-radio">
+                    <input type="radio"
+                           class="c-form__radio c-radio__control"
+                           id="el_radio-checkeddis_layout_h"
+                           value="option3"
+                           checked
+                           disabled>
+                    <label for="el_radio-checkeddis_layout_h"
+                           class="c-form__radio-label c-radio__label">
+                        Radio checked disabled label text
+                    </label>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</form>
+
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">&lt;form class=&quot;c-form
+             c-form--layout_h
+             c-form--style_outline
+             c-form--theme_default
+             c-form--space_default&quot;&gt;
+
+
+    &lt;div class=&quot;c-form__group o-grid o-grid--gutter_sm o-grid--middle&quot;&gt;
+        &lt;label for=&quot;el_input_layout_h&quot;
+               class=&quot;c-form__label o-grid__col u-8/24@sm-up&quot;&gt;
+            Text label
+            &lt;div class=&quot;c-form__helptext&quot;&gt;
+                Help text example
+            &lt;/div&gt;
+        &lt;/label&gt;
+
+        &lt;div class=&quot;o-grid__col u-16/24@sm-up&quot;&gt;
+            &lt;input type=&quot;text&quot;
+                   class=&quot;c-form__control&quot;
+                   id=&quot;el_input_layout_h&quot;&gt;
+
+            &lt;div class=&quot;c-form__requirement c-form__requirement--state_danger&quot;&gt;
+                Invalid field message invisible by default
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+    &lt;div class=&quot;c-form__group o-grid o-grid--gutter_sm o-grid--middle&quot;&gt;
+        &lt;label for=&quot;el_datepicker_layout_h&quot;
+               class=&quot;c-form__label o-grid__col u-8/24@sm-up&quot;&gt;
+            Date input
+        &lt;/label&gt;
+
+        &lt;div class=&quot;o-grid__col u-6/24@sm-up&quot;&gt;
+            &lt;input type=&quot;date&quot;
+                   class=&quot;c-form__control c-form__dateinput&quot;
+                   id=&quot;el_datepicker_layout_h&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+    &lt;div class=&quot;c-form__group o-grid o-grid--gutter_sm o-grid--middle&quot;&gt;
+        &lt;label for=&quot;el_input_layout-req_h&quot;
+               class=&quot;c-form__label o-grid__col u-8/24@sm-up&quot;&gt;
+            Text label
+        &lt;/label&gt;
+
+        &lt;div class=&quot;o-grid__col u-16/24@sm-up&quot;&gt;
+            &lt;input type=&quot;text&quot;
+                   class=&quot;c-form__control&quot;
+                   id=&quot;el_input_layout-req_h&quot;
+                   data-invalid&gt;
+
+            &lt;div class=&quot;c-form__requirement c-form__requirement--state_danger&quot;&gt;
+                Invalid field message visible because input has 'data-invalid' attr
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;c-form__group o-grid o-grid--gutter_sm o-grid--middle&quot;&gt;
+        &lt;label for=&quot;el_inputg_layout_h&quot;
+               class=&quot;c-form__label o-grid__col u-8/24@sm-up&quot;&gt;
+            Input group decoration
+        &lt;/label&gt;
+
+        &lt;div class=&quot;o-grid__col u-16/24@sm-up&quot;&gt;
+            &lt;div class=&quot;c-form__input-group&quot;&gt;
+                &lt;div class=&quot;c-form__before-control&quot;&gt;
+                    Before
+                &lt;/div&gt;
+                &lt;input type=&quot;text&quot;
+                    class=&quot;c-form__control&quot;
+                    id=&quot;el_inputg_layout_v&quot;
+                    data-invalid&gt;
+                &lt;div class=&quot;c-form__requirement c-form__requirement--state_danger&quot;&gt;
+                    Invalid for group field message visible because input has 'data-invalid' attr
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+    &lt;div class=&quot;c-form__group o-grid o-grid--gutter_sm o-grid--middle&quot;&gt;
+        &lt;label for=&quot;el_select_layout_h&quot;
+               class=&quot;c-form__label o-grid__col u-8/24@sm-up&quot;&gt;
+            Select label
+        &lt;/label&gt;
+
+        &lt;div class=&quot;o-grid__col u-16/24@sm-up&quot;&gt;
+            &lt;select class=&quot;c-form__control&quot;
+                    id=&quot;el_select_layout_h&quot;&gt;
+                &lt;option value=&quot;1&quot;&gt;Option one&lt;/option&gt;
+                &lt;option value=&quot;1&quot;&gt;Option two&lt;/option&gt;
+                &lt;option value=&quot;1&quot;&gt;Option three&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+    &lt;div class=&quot;c-form__group o-grid o-grid--gutter_sm o-grid--middle&quot;&gt;
+        &lt;label for=&quot;el_textarea_layout_h&quot;
+               class=&quot;c-form__label o-grid__col u-8/24@sm-up&quot;&gt;
+            Textarea label
+            &lt;div class=&quot;c-form__helptext&quot;&gt;
+                Help text example
+            &lt;/div&gt;
+        &lt;/label&gt;
+
+        &lt;div class=&quot;o-grid__col u-16/24@sm-up&quot;&gt;
+            &lt;textarea name=&quot;&quot;
+                      class=&quot;c-form__control&quot;
+                      id=&quot;el_textarea_layout_h&quot;&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+    &lt;hr class=&quot;u-mt-x4 u-mb-x8&quot;&gt;
+
+
+    &lt;!-- Custom checkbox --&gt;
+
+
+    &lt;div class=&quot;c-form__group o-grid o-grid--gutter_sm o-grid--middle&quot;&gt;
+
+        &lt;span class=&quot;c-form__label o-grid__col u-8/24@sm-up&quot;&gt;
+            Faux label
+        &lt;/span&gt;
+
+        &lt;div class=&quot;o-grid__col u-16/24@sm-up&quot;&gt;
+
+            &lt;div class=&quot;c-checkbox__inline-wrapper&quot;&gt;
+                &lt;div class=&quot;c-checkbox&quot;&gt;
+                    &lt;input type=&quot;checkbox&quot;
+                           class=&quot;c-checkbox__control&quot;
+                           id=&quot;el_checkbox-single-new_layout_h&quot;
+                           value=&quot;option1&quot;&gt;
+                    &lt;label for=&quot;el_checkbox-single-new_layout_h&quot;
+                           class=&quot;c-checkbox__label&quot;&gt;
+                        Single checkbox label text
+                    &lt;/label&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;c-checkbox&quot;&gt;
+                    &lt;input type=&quot;checkbox&quot;
+                           class=&quot;c-checkbox__control&quot;
+                           id=&quot;el_checkbox-single1-new_layout_h&quot;
+                           value=&quot;option1&quot;&gt;
+                    &lt;label for=&quot;el_checkbox-single1-new_layout_h&quot;
+                           class=&quot;c-checkbox__label&quot;&gt;
+                        Single checkbox label text
+                    &lt;/label&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+
+
+    &lt;div class=&quot;c-form__group o-grid o-grid--gutter_sm o-grid--middle&quot;&gt;
+        &lt;span class=&quot;c-form__label o-grid__col u-8/24@sm-up&quot;&gt;
+            Checkbox group
+        &lt;/span&gt;
+
+        &lt;div class=&quot;o-grid__col u-16/24@sm-up&quot;&gt;
+            &lt;div class=&quot;c-checkbox__stack-wrapper&quot;&gt;
+                &lt;div class=&quot;c-checkbox&quot;&gt;
+                    &lt;input type=&quot;checkbox&quot;
+                           class=&quot;c-checkbox__control&quot;
+                           id=&quot;el_checkbox-new_layout_h&quot;
+                           value=&quot;option1&quot;&gt;
+                    &lt;label for=&quot;el_checkbox-new_layout_h&quot;
+                           class=&quot;c-checkbox__label&quot;&gt;
+                        Checkbox label text
+                    &lt;/label&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;c-checkbox&quot;&gt;
+                    &lt;input type=&quot;checkbox&quot;
+                           class=&quot;c-checkbox__control&quot;
+                           id=&quot;el_checkbox-checked_layout_h&quot;
+                           value=&quot;option2&quot;
+                           checked&gt;
+                    &lt;label for=&quot;el_checkbox-checked_layout_h&quot;
+                           class=&quot;c-checkbox__label&quot;&gt;
+                        Checkbox checked label text
+                    &lt;/label&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;c-checkbox&quot;&gt;
+                    &lt;input type=&quot;checkbox&quot;
+                           class=&quot;c-checkbox__control&quot;
+                           id=&quot;el_checkbox-checkeddis_layout_h&quot;
+                           value=&quot;option3&quot;
+                           checked
+                           disabled&gt;
+                    &lt;label for=&quot;el_checkbox-checkeddis_layout_h&quot;
+                           class=&quot;c-checkbox__label&quot;&gt;
+                        Checkbox checked disabled label text
+                    &lt;/label&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+
+
+    &lt;!-- Custom radio --&gt;
+
+
+    &lt;div class=&quot;c-form__group o-grid o-grid--gutter_sm o-grid--middle&quot;&gt;
+        &lt;span class=&quot;c-form__label o-grid__col u-8/24@sm-up&quot;&gt;
+            Faux label
+        &lt;/span&gt;
+
+        &lt;div class=&quot;o-grid__col u-16/24@sm-up&quot;&gt;
+            &lt;div class=&quot;c-radio__inline-wrapper&quot;&gt;
+                &lt;div class=&quot;c-radio&quot;&gt;
+                    &lt;input type=&quot;radio&quot;
+                           class=&quot;c-form__radio c-radio__control&quot;
+                           name=&quot;el_radio-single-new_layout_h&quot;
+                           id=&quot;el_radio-single-new_layout_h&quot;
+                           value=&quot;option1&quot;&gt;
+                    &lt;label for=&quot;el_radio-single-new_layout_h&quot;
+                           class=&quot;c-form__radio-label c-radio__label&quot;&gt;
+                        Single radio label one
+                    &lt;/label&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;c-radio&quot;&gt;
+                    &lt;input type=&quot;radio&quot;
+                           class=&quot;c-form__radio c-radio__control&quot;
+                           name=&quot;el_radio-single-new_layout_h&quot;
+                           id=&quot;el_radio-single1-new_layout_h&quot;
+                           value=&quot;option1&quot;&gt;
+                    &lt;label for=&quot;el_radio-single1-new_layout_h&quot;
+                           class=&quot;c-form__radio-label c-radio__label&quot;&gt;
+                        Single radio label two
+                    &lt;/label&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+
+    &lt;div class=&quot;c-form__group o-grid o-grid--gutter_sm o-grid--middle&quot;&gt;
+        &lt;span class=&quot;c-form__label o-grid__col u-8/24@sm-up&quot;&gt;
+            Radio group
+        &lt;/span&gt;
+
+        &lt;div class=&quot;o-grid__col u-16/24@sm-up&quot;&gt;
+            &lt;div class=&quot;c-radio__stack-wrapper&quot;&gt;
+                &lt;div class=&quot;c-radio&quot;&gt;
+                    &lt;input type=&quot;radio&quot;
+                           class=&quot;c-form__radio c-radio__control&quot;
+                           id=&quot;el_radio-new_layout_h&quot;
+                           value=&quot;option1&quot;&gt;
+                    &lt;label for=&quot;el_radio-new_layout_h&quot;
+                           class=&quot;c-form__radio-label c-radio__label&quot;&gt;
+                        Radio label text
+                    &lt;/label&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;c-radio&quot;&gt;
+                    &lt;input type=&quot;radio&quot;
+                           class=&quot;c-form__radio c-radio__control&quot;
+                           id=&quot;el_radio-checked_layout_h&quot;
+                           value=&quot;option2&quot;
+                           checked&gt;
+                    &lt;label for=&quot;el_radio-checked_layout_h&quot;
+                           class=&quot;c-form__radio-label c-radio__label&quot;&gt;
+                        Radio checked label text
+                    &lt;/label&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;c-radio&quot;&gt;
+                    &lt;input type=&quot;radio&quot;
+                           class=&quot;c-form__radio c-radio__control&quot;
+                           id=&quot;el_radio-checkeddis_layout_h&quot;
+                           value=&quot;option3&quot;
+                           checked
+                           disabled&gt;
+                    &lt;label for=&quot;el_radio-checkeddis_layout_h&quot;
+                           class=&quot;c-form__radio-label c-radio__label&quot;&gt;
+                        Radio checked disabled label text
+                    &lt;/label&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/form&gt;
+</code></pre>
+        </div>
+      </div>
+      <h4 class="sg-heading sg-text--md sg-heading--md">Vertical</h4>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light">
+<form class="c-form
+             c-form--layout_v
+             c-form--style_outline
+             c-form--theme_default
+             c-form--space_default">
+
+    <div class="c-form__group">
+        <label for="el_input_layout_v"
+               class="c-form__label">
+            Text label
+        </label>
+
+        <input type="text"
+               class="c-form__control"
+               id="el_input_layout_v">
+
+        <div class="c-form__requirement c-form__requirement--state_danger">
+            Invalid field message invisible by default
+        </div>
+    </div>
+
+
+
+    <div class="c-form__group">
+        <label for="el_input_layout-req_v"
+               class="c-form__label">
+            Text label
+        </label>
+
+        <input type="text"
+               class="c-form__control"
+               id="el_input_layout-req_v"
+               data-invalid>
+
+        <div class="c-form__requirement c-form__requirement--state_danger">
+            Invalid field message visible because input has 'data-invalid' attr
+        </div>
+
+        <div class="c-form__requirement c-form__requirement--state_warning">
+            Invalid field message visible because input has 'data-invalid' attr
+        </div>
+
+        <div class="c-form__requirement c-form__requirement--state_success">
+            Invalid field message visible because input has 'data-invalid' attr
+        </div>
+
+        <div class="c-form__requirement c-form__requirement--state_info">
+            Invalid field message visible because input has 'data-invalid' attr
+        </div>
+    </div>
+
+
+
+    <div class="c-form__group">
+        <label for="el_select_layout_v"
+               class="c-form__label">
+            Select label
+        </label>
+
+        <select class="c-form__control"
+                id="el_select_layout_v">
+            <option value="1">Option one</option>
+            <option value="1">Option two</option>
+            <option value="1">Option three</option>
+        </select>
+    </div>
+
+
+
+    <!-- Input groups -->
+
+    <div class="c-form__group">
+        <label for="el_inputg_layout_v"
+               class="c-form__label">
+            Input group decoration
+        </label>
+
+        <div class="c-form__input-group">
+            <div class="c-form__before-control">
+                Before
+            </div>
+            <input type="text"
+                   class="c-form__control"
+                   id="el_inputg_layout_v">
+            <div class="c-form__after-control">
+                After
+            </div>
+        </div>
+    </div>
+
+    <div class="c-form__group">
+        <label for="el_inputg_layout_v"
+               class="c-form__label">
+            Input group decoration
+        </label>
+        <div class="c-form__input-group">
+            <div class="c-form__before-control">
+                Before
+            </div>
+            <input type="text"
+                   class="c-form__control"
+                   id="el_inputg_layout_v"
+                   data-invalid>
+            <div class="c-form__requirement c-form__requirement--state_danger">
+                Invalid for group field message visible because input has 'data-invalid' attr
+            </div>
+        </div>
+    </div>
+
+    <div class="c-form__group">
+        <label for="el_inputg_layout_v"
+               class="c-form__label">
+            Input group decoration
+        </label>
+        <div class="c-form__input-group">
+            <input type="text"
+                   class="c-form__control"
+                   id="el_inputg_layout_v"
+                   data-invalid>
+            <div class="c-form__after-control">
+                After
+            </div>
+            <div class="c-form__requirement c-form__requirement--state_danger">
+                Invalid for group field message visible because input has 'data-invalid' attr
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Textarea -->
+
+    <div class="c-form__group">
+        <label for="el_textarea_layout_v"
+               class="c-form__label">
+            Textarea label
+        </label>
+
+        <textarea name=""
+                  class="c-form__control"
+                  id="el_textarea_layout_v"></textarea>
+    </div>
+
+
+
+    <!-- Custom checkbox -->
+
+
+    <div class="c-form__group">
+        <span class="c-form__label">
+            Faux label
+        </span>
+
+
+        <div class="c-checkbox__inline-wrapper">
+
+            <div class="c-checkbox">
+                <input type="checkbox"
+                       class="c-checkbox__control"
+                       id="el_checkbox-single-new_layout_v"
+                       value="option1">
+                <label for="el_checkbox-single-new_layout_v"
+                       class="c-checkbox__label">
+                    Single checkbox label text
+                </label>
+            </div>
+
+            <div class="c-checkbox">
+                <input type="checkbox"
+                       class="c-checkbox__control"
+                       id="el_checkbox-single1-new_layout_v"
+                       value="option1">
+                <label for="el_checkbox-single1-new_layout_v"
+                       class="c-checkbox__label">
+                    Single checkbox label text
+                </label>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="c-form__group">
+        <span class="c-form__label">
+            Checkbox group
+        </span>
+
+        <div class="c-checkbox__stack-wrapper">
+            <div class="c-checkbox">
+                <input type="checkbox"
+                       class="c-checkbox__control"
+                       id="el_checkbox-new_layout_v"
+                       value="option1">
+                <label for="el_checkbox-new_layout_v"
+                       class="c-checkbox__label">
+                    Checkbox label text
+                </label>
+            </div>
+
+            <div class="c-checkbox">
+                <input type="checkbox"
+                       class="c-checkbox__control"
+                       id="el_checkbox-checked_layout_v"
+                       value="option2"
+                       checked>
+                <label for="el_checkbox-checked_layout_v"
+                       class="c-checkbox__label">
+                    Checkbox checked label text
+                </label>
+            </div>
+
+            <div class="c-checkbox">
+                <input type="checkbox"
+                       class="c-checkbox__control"
+                       id="el_checkbox-checkeddis_layout_v"
+                       value="option3"
+                       checked
+                       disabled>
+                <label for="el_checkbox-checkeddis_layout_v"
+                       class="c-checkbox__label">
+                    Checkbox checked disabled label text
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Custom radio -->
+
+
+    <div class="c-form__group">
+        <span class="c-form__label">
+            Faux label
+        </span>
+
+        <div class="c-radio__inline-wrapper">
+            <div class="c-radio">
+                <input type="radio"
+                       class="c-form__radio c-radio__control"
+                       name="el_radio-single-new_layout_v"
+                       id="el_radio-single-new_layout_v"
+                       value="option1">
+                <label for="el_radio-single-new_layout_v"
+                       class="c-form__radio-label c-radio__label">
+                    Single radio label one
+                </label>
+            </div>
+
+            <div class="c-radio">
+                <input type="radio"
+                       class="c-form__radio c-radio__control"
+                       name="el_radio-single-new_layout_v"
+                       id="el_radio-single1-new_layout_v"
+                       value="option1">
+                <label for="el_radio-single1-new_layout_v"
+                       class="c-form__radio-label c-radio__label">
+                    Single radio label two
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="c-form__group">
+        <span class="c-form__label">
+            Radio group
+        </span>
+
+        <div class="c-radio__stack-wrapper">
+            <div class="c-radio">
+                <input type="radio"
+                       class="c-form__radio c-radio__control"
+                       id="el_radio-new_layout_v"
+                       value="option1">
+                <label for="el_radio-new_layout_v"
+                       class="c-form__radio-label c-radio__label">
+                    Radio label text
+                </label>
+            </div>
+
+            <div class="c-radio">
+                <input type="radio"
+                       class="c-form__radio c-radio__control"
+                       id="el_radio-checked_layout_v"
+                       value="option2"
+                       checked>
+                <label for="el_radio-checked_layout_v"
+                       class="c-form__radio-label c-radio__label">
+                    Radio checked label text
+                </label>
+            </div>
+
+            <div class="c-radio">
+                <input type="radio"
+                       class="c-form__radio c-radio__control"
+                       id="el_radio-checkeddis_layout_v"
+                       value="option3"
+                       checked
+                       disabled>
+                <label for="el_radio-checkeddis_layout_v"
+                       class="c-form__radio-label c-radio__label">
+                    Radio checked disabled label text
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+</form>
+
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">&lt;form class=&quot;c-form
+             c-form--layout_v
+             c-form--style_outline
+             c-form--theme_default
+             c-form--space_default&quot;&gt;
+
+    &lt;div class=&quot;c-form__group&quot;&gt;
+        &lt;label for=&quot;el_input_layout_v&quot;
+               class=&quot;c-form__label&quot;&gt;
+            Text label
+        &lt;/label&gt;
+
+        &lt;input type=&quot;text&quot;
+               class=&quot;c-form__control&quot;
+               id=&quot;el_input_layout_v&quot;&gt;
+
+        &lt;div class=&quot;c-form__requirement c-form__requirement--state_danger&quot;&gt;
+            Invalid field message invisible by default
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+
+    &lt;div class=&quot;c-form__group&quot;&gt;
+        &lt;label for=&quot;el_input_layout-req_v&quot;
+               class=&quot;c-form__label&quot;&gt;
+            Text label
+        &lt;/label&gt;
+
+        &lt;input type=&quot;text&quot;
+               class=&quot;c-form__control&quot;
+               id=&quot;el_input_layout-req_v&quot;
+               data-invalid&gt;
+
+        &lt;div class=&quot;c-form__requirement c-form__requirement--state_danger&quot;&gt;
+            Invalid field message visible because input has 'data-invalid' attr
+        &lt;/div&gt;
+
+        &lt;div class=&quot;c-form__requirement c-form__requirement--state_warning&quot;&gt;
+            Invalid field message visible because input has 'data-invalid' attr
+        &lt;/div&gt;
+
+        &lt;div class=&quot;c-form__requirement c-form__requirement--state_success&quot;&gt;
+            Invalid field message visible because input has 'data-invalid' attr
+        &lt;/div&gt;
+
+        &lt;div class=&quot;c-form__requirement c-form__requirement--state_info&quot;&gt;
+            Invalid field message visible because input has 'data-invalid' attr
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+
+    &lt;div class=&quot;c-form__group&quot;&gt;
+        &lt;label for=&quot;el_select_layout_v&quot;
+               class=&quot;c-form__label&quot;&gt;
+            Select label
+        &lt;/label&gt;
+
+        &lt;select class=&quot;c-form__control&quot;
+                id=&quot;el_select_layout_v&quot;&gt;
+            &lt;option value=&quot;1&quot;&gt;Option one&lt;/option&gt;
+            &lt;option value=&quot;1&quot;&gt;Option two&lt;/option&gt;
+            &lt;option value=&quot;1&quot;&gt;Option three&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+
+
+
+    &lt;!-- Input groups --&gt;
+
+    &lt;div class=&quot;c-form__group&quot;&gt;
+        &lt;label for=&quot;el_inputg_layout_v&quot;
+               class=&quot;c-form__label&quot;&gt;
+            Input group decoration
+        &lt;/label&gt;
+
+        &lt;div class=&quot;c-form__input-group&quot;&gt;
+            &lt;div class=&quot;c-form__before-control&quot;&gt;
+                Before
+            &lt;/div&gt;
+            &lt;input type=&quot;text&quot;
+                   class=&quot;c-form__control&quot;
+                   id=&quot;el_inputg_layout_v&quot;&gt;
+            &lt;div class=&quot;c-form__after-control&quot;&gt;
+                After
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;c-form__group&quot;&gt;
+        &lt;label for=&quot;el_inputg_layout_v&quot;
+               class=&quot;c-form__label&quot;&gt;
+            Input group decoration
+        &lt;/label&gt;
+        &lt;div class=&quot;c-form__input-group&quot;&gt;
+            &lt;div class=&quot;c-form__before-control&quot;&gt;
+                Before
+            &lt;/div&gt;
+            &lt;input type=&quot;text&quot;
+                   class=&quot;c-form__control&quot;
+                   id=&quot;el_inputg_layout_v&quot;
+                   data-invalid&gt;
+            &lt;div class=&quot;c-form__requirement c-form__requirement--state_danger&quot;&gt;
+                Invalid for group field message visible because input has 'data-invalid' attr
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;c-form__group&quot;&gt;
+        &lt;label for=&quot;el_inputg_layout_v&quot;
+               class=&quot;c-form__label&quot;&gt;
+            Input group decoration
+        &lt;/label&gt;
+        &lt;div class=&quot;c-form__input-group&quot;&gt;
+            &lt;input type=&quot;text&quot;
+                   class=&quot;c-form__control&quot;
+                   id=&quot;el_inputg_layout_v&quot;
+                   data-invalid&gt;
+            &lt;div class=&quot;c-form__after-control&quot;&gt;
+                After
+            &lt;/div&gt;
+            &lt;div class=&quot;c-form__requirement c-form__requirement--state_danger&quot;&gt;
+                Invalid for group field message visible because input has 'data-invalid' attr
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+    &lt;!-- Textarea --&gt;
+
+    &lt;div class=&quot;c-form__group&quot;&gt;
+        &lt;label for=&quot;el_textarea_layout_v&quot;
+               class=&quot;c-form__label&quot;&gt;
+            Textarea label
+        &lt;/label&gt;
+
+        &lt;textarea name=&quot;&quot;
+                  class=&quot;c-form__control&quot;
+                  id=&quot;el_textarea_layout_v&quot;&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+
+
+
+    &lt;!-- Custom checkbox --&gt;
+
+
+    &lt;div class=&quot;c-form__group&quot;&gt;
+        &lt;span class=&quot;c-form__label&quot;&gt;
+            Faux label
+        &lt;/span&gt;
+
+
+        &lt;div class=&quot;c-checkbox__inline-wrapper&quot;&gt;
+
+            &lt;div class=&quot;c-checkbox&quot;&gt;
+                &lt;input type=&quot;checkbox&quot;
+                       class=&quot;c-checkbox__control&quot;
+                       id=&quot;el_checkbox-single-new_layout_v&quot;
+                       value=&quot;option1&quot;&gt;
+                &lt;label for=&quot;el_checkbox-single-new_layout_v&quot;
+                       class=&quot;c-checkbox__label&quot;&gt;
+                    Single checkbox label text
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;c-checkbox&quot;&gt;
+                &lt;input type=&quot;checkbox&quot;
+                       class=&quot;c-checkbox__control&quot;
+                       id=&quot;el_checkbox-single1-new_layout_v&quot;
+                       value=&quot;option1&quot;&gt;
+                &lt;label for=&quot;el_checkbox-single1-new_layout_v&quot;
+                       class=&quot;c-checkbox__label&quot;&gt;
+                    Single checkbox label text
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+
+    &lt;div class=&quot;c-form__group&quot;&gt;
+        &lt;span class=&quot;c-form__label&quot;&gt;
+            Checkbox group
+        &lt;/span&gt;
+
+        &lt;div class=&quot;c-checkbox__stack-wrapper&quot;&gt;
+            &lt;div class=&quot;c-checkbox&quot;&gt;
+                &lt;input type=&quot;checkbox&quot;
+                       class=&quot;c-checkbox__control&quot;
+                       id=&quot;el_checkbox-new_layout_v&quot;
+                       value=&quot;option1&quot;&gt;
+                &lt;label for=&quot;el_checkbox-new_layout_v&quot;
+                       class=&quot;c-checkbox__label&quot;&gt;
+                    Checkbox label text
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;c-checkbox&quot;&gt;
+                &lt;input type=&quot;checkbox&quot;
+                       class=&quot;c-checkbox__control&quot;
+                       id=&quot;el_checkbox-checked_layout_v&quot;
+                       value=&quot;option2&quot;
+                       checked&gt;
+                &lt;label for=&quot;el_checkbox-checked_layout_v&quot;
+                       class=&quot;c-checkbox__label&quot;&gt;
+                    Checkbox checked label text
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;c-checkbox&quot;&gt;
+                &lt;input type=&quot;checkbox&quot;
+                       class=&quot;c-checkbox__control&quot;
+                       id=&quot;el_checkbox-checkeddis_layout_v&quot;
+                       value=&quot;option3&quot;
+                       checked
+                       disabled&gt;
+                &lt;label for=&quot;el_checkbox-checkeddis_layout_v&quot;
+                       class=&quot;c-checkbox__label&quot;&gt;
+                    Checkbox checked disabled label text
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+
+
+    &lt;!-- Custom radio --&gt;
+
+
+    &lt;div class=&quot;c-form__group&quot;&gt;
+        &lt;span class=&quot;c-form__label&quot;&gt;
+            Faux label
+        &lt;/span&gt;
+
+        &lt;div class=&quot;c-radio__inline-wrapper&quot;&gt;
+            &lt;div class=&quot;c-radio&quot;&gt;
+                &lt;input type=&quot;radio&quot;
+                       class=&quot;c-form__radio c-radio__control&quot;
+                       name=&quot;el_radio-single-new_layout_v&quot;
+                       id=&quot;el_radio-single-new_layout_v&quot;
+                       value=&quot;option1&quot;&gt;
+                &lt;label for=&quot;el_radio-single-new_layout_v&quot;
+                       class=&quot;c-form__radio-label c-radio__label&quot;&gt;
+                    Single radio label one
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;c-radio&quot;&gt;
+                &lt;input type=&quot;radio&quot;
+                       class=&quot;c-form__radio c-radio__control&quot;
+                       name=&quot;el_radio-single-new_layout_v&quot;
+                       id=&quot;el_radio-single1-new_layout_v&quot;
+                       value=&quot;option1&quot;&gt;
+                &lt;label for=&quot;el_radio-single1-new_layout_v&quot;
+                       class=&quot;c-form__radio-label c-radio__label&quot;&gt;
+                    Single radio label two
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+
+    &lt;div class=&quot;c-form__group&quot;&gt;
+        &lt;span class=&quot;c-form__label&quot;&gt;
+            Radio group
+        &lt;/span&gt;
+
+        &lt;div class=&quot;c-radio__stack-wrapper&quot;&gt;
+            &lt;div class=&quot;c-radio&quot;&gt;
+                &lt;input type=&quot;radio&quot;
+                       class=&quot;c-form__radio c-radio__control&quot;
+                       id=&quot;el_radio-new_layout_v&quot;
+                       value=&quot;option1&quot;&gt;
+                &lt;label for=&quot;el_radio-new_layout_v&quot;
+                       class=&quot;c-form__radio-label c-radio__label&quot;&gt;
+                    Radio label text
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;c-radio&quot;&gt;
+                &lt;input type=&quot;radio&quot;
+                       class=&quot;c-form__radio c-radio__control&quot;
+                       id=&quot;el_radio-checked_layout_v&quot;
+                       value=&quot;option2&quot;
+                       checked&gt;
+                &lt;label for=&quot;el_radio-checked_layout_v&quot;
+                       class=&quot;c-form__radio-label c-radio__label&quot;&gt;
+                    Radio checked label text
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;c-radio&quot;&gt;
+                &lt;input type=&quot;radio&quot;
+                       class=&quot;c-form__radio c-radio__control&quot;
+                       id=&quot;el_radio-checkeddis_layout_v&quot;
+                       value=&quot;option3&quot;
+                       checked
+                       disabled&gt;
+                &lt;label for=&quot;el_radio-checkeddis_layout_v&quot;
+                       class=&quot;c-form__radio-label c-radio__label&quot;&gt;
+                    Radio checked disabled label text
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/form&gt;
+</code></pre>
+        </div>
+      </div>
+      <h4 class="sg-heading sg-text--md sg-heading--md">Inline groups</h4>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light">
+<form class="c-form
+             c-form--layout_group-inline
+             c-form--style_outline
+             c-form--theme_default
+             c-form--space_default">
+
+    <div class="c-form__group">
+        <label for="el_input_layout_gi"
+               class="c-form__label">
+            Text label
+        </label>
+
+        <input type="text"
+               class="c-form__control"
+               id="el_input_layout_gi">
+    </div>
+
+
+    <div class="c-form__group">
+        <label for="el_select_layout_gi"
+               class="c-form__label">
+            Select label
+        </label>
+
+        <select class="c-form__control"
+                id="el_select_layout_gi">
+            <option value="1">Select option one</option>
+            <option value="1">Select option two</option>
+            <option value="1">Select option three</option>
+        </select>
+    </div>
+
+</form>
+
+
+
+<div class="sg-component-example__comments">With inline labels and fields</div>
+
+
+<form class="c-form
+             c-form--layout_inline
+             c-form--style_outline
+             c-form--theme_default
+             c-form--space_default">
+
+    <div class="c-form__group">
+        <label for="el_input_layout_in"
+               class="c-form__label">
+            Text label
+        </label>
+
+        <input type="text"
+               class="c-form__control"
+               id="el_input_layout_in">
+    </div>
+
+
+    <div class="c-form__group">
+        <label for="el_select_layout_in"
+               class="c-form__label">
+            Select label
+        </label>
+
+        <select class="c-form__control"
+                id="el_select_layout_in">
+            <option value="1">Select option one</option>
+            <option value="1">Select option two</option>
+            <option value="1">Select option three</option>
+        </select>
+    </div>
+
+
+    <div class="c-form__group">
+
+    </div>
+
+</form>
+
+
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">&lt;form class=&quot;c-form
+             c-form--layout_group-inline
+             c-form--style_outline
+             c-form--theme_default
+             c-form--space_default&quot;&gt;
+
+    &lt;div class=&quot;c-form__group&quot;&gt;
+        &lt;label for=&quot;el_input_layout_gi&quot;
+               class=&quot;c-form__label&quot;&gt;
+            Text label
+        &lt;/label&gt;
+
+        &lt;input type=&quot;text&quot;
+               class=&quot;c-form__control&quot;
+               id=&quot;el_input_layout_gi&quot;&gt;
+    &lt;/div&gt;
+
+
+    &lt;div class=&quot;c-form__group&quot;&gt;
+        &lt;label for=&quot;el_select_layout_gi&quot;
+               class=&quot;c-form__label&quot;&gt;
+            Select label
+        &lt;/label&gt;
+
+        &lt;select class=&quot;c-form__control&quot;
+                id=&quot;el_select_layout_gi&quot;&gt;
+            &lt;option value=&quot;1&quot;&gt;Select option one&lt;/option&gt;
+            &lt;option value=&quot;1&quot;&gt;Select option two&lt;/option&gt;
+            &lt;option value=&quot;1&quot;&gt;Select option three&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+
+&lt;/form&gt;
+
+
+
+&lt;div class=&quot;sg-component-example__comments&quot;&gt;With inline labels and fields&lt;/div&gt;
+
+
+&lt;form class=&quot;c-form
+             c-form--layout_inline
+             c-form--style_outline
+             c-form--theme_default
+             c-form--space_default&quot;&gt;
+
+    &lt;div class=&quot;c-form__group&quot;&gt;
+        &lt;label for=&quot;el_input_layout_in&quot;
+               class=&quot;c-form__label&quot;&gt;
+            Text label
+        &lt;/label&gt;
+
+        &lt;input type=&quot;text&quot;
+               class=&quot;c-form__control&quot;
+               id=&quot;el_input_layout_in&quot;&gt;
+    &lt;/div&gt;
+
+
+    &lt;div class=&quot;c-form__group&quot;&gt;
+        &lt;label for=&quot;el_select_layout_in&quot;
+               class=&quot;c-form__label&quot;&gt;
+            Select label
+        &lt;/label&gt;
+
+        &lt;select class=&quot;c-form__control&quot;
+                id=&quot;el_select_layout_in&quot;&gt;
+            &lt;option value=&quot;1&quot;&gt;Select option one&lt;/option&gt;
+            &lt;option value=&quot;1&quot;&gt;Select option two&lt;/option&gt;
+            &lt;option value=&quot;1&quot;&gt;Select option three&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+
+
+    &lt;div class=&quot;c-form__group&quot;&gt;
+
+    &lt;/div&gt;
+
+&lt;/form&gt;
+
+</code></pre>
+        </div>
+      </div>
+      <!-- Theme-->
+      <h3 class="sg-heading sg-text--lg sg-heading--lg">Inverse theme</h3>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--dark">
+<form class="c-form
+             c-form--layout_v
+             c-form--style_outline
+             c-form--theme_light
+             c-form--space_default">
+
+    <div class="c-form__group">
+        <label for="el_input_theme_light"
+               class="c-form__label">
+            Text label
+        </label>
+
+        <input type="text"
+               class="c-form__control"
+               id="el_input_theme_light">
+    </div>
+
+
+    <div class="c-form__group">
+        <label for="el_select_theme_light"
+               class="c-form__label">
+            Select label
+        </label>
+
+        <select class="c-form__control"
+                id="el_select_theme_light">
+            <option value="1">Option one</option>
+            <option value="1">Option two</option>
+            <option value="1">Option three</option>
+        </select>
+    </div>
+
+
+    <div class="c-form__group">
+        <label for="el_textarea_theme_light"
+               class="c-form__label">
+            Textarea label
+        </label>
+
+        <textarea name=""
+                  class="c-form__control"
+                  id="el_textarea_theme_light"></textarea>
+    </div>
+
+
+    <div class="c-form__group">
+
+    </div>
+
+</form>
+
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">&lt;form class=&quot;c-form
+             c-form--layout_v
+             c-form--style_outline
+             c-form--theme_light
+             c-form--space_default&quot;&gt;
+
+    &lt;div class=&quot;c-form__group&quot;&gt;
+        &lt;label for=&quot;el_input_theme_light&quot;
+               class=&quot;c-form__label&quot;&gt;
+            Text label
+        &lt;/label&gt;
+
+        &lt;input type=&quot;text&quot;
+               class=&quot;c-form__control&quot;
+               id=&quot;el_input_theme_light&quot;&gt;
+    &lt;/div&gt;
+
+
+    &lt;div class=&quot;c-form__group&quot;&gt;
+        &lt;label for=&quot;el_select_theme_light&quot;
+               class=&quot;c-form__label&quot;&gt;
+            Select label
+        &lt;/label&gt;
+
+        &lt;select class=&quot;c-form__control&quot;
+                id=&quot;el_select_theme_light&quot;&gt;
+            &lt;option value=&quot;1&quot;&gt;Option one&lt;/option&gt;
+            &lt;option value=&quot;1&quot;&gt;Option two&lt;/option&gt;
+            &lt;option value=&quot;1&quot;&gt;Option three&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+
+
+    &lt;div class=&quot;c-form__group&quot;&gt;
+        &lt;label for=&quot;el_textarea_theme_light&quot;
+               class=&quot;c-form__label&quot;&gt;
+            Textarea label
+        &lt;/label&gt;
+
+        &lt;textarea name=&quot;&quot;
+                  class=&quot;c-form__control&quot;
+                  id=&quot;el_textarea_theme_light&quot;&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+
+
+    &lt;div class=&quot;c-form__group&quot;&gt;
+
+    &lt;/div&gt;
+
+&lt;/form&gt;
+</code></pre>
+        </div>
+      </div>
+      <!-- Custom-->
+      <h3 class="sg-heading sg-text--lg sg-heading--lg">Custom styled form elements</h3>
+      <h4 class="sg-heading sg-text--md sg-heading--md">Button-style radio</h4>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light">
+<form class="c-form
+             c-form--space_default">
+
+    <div class="c-form__group">
+        <span class="c-form__label">
+            Button-style radio
+        </span>
+
+        <div class="c-radio-btn__inline-wrapper">
+            <div class="c-radio-btn">
+                <input type="radio"
+                       class="c-form__radio c-radio-btn__control"
+                       name="el_radio-button"
+                       id="el_radio-button0"
+                       checked>
+                <label for="el_radio-button0"
+                       class="c-form__radio-label c-radio-btn__label">
+                    Option one
+                </label>
+            </div>
+
+            <div class="c-radio-btn">
+                <input type="radio"
+                       class="c-form__radio c-radio-btn__control"
+                       name="el_radio-button"
+                       id="el_radio-button1">
+                <label for="el_radio-button1"
+                       class="c-form__radio-label c-radio-btn__label">
+                    Option two
+                </label>
+            </div>
+
+            <div class="c-radio-btn">
+                <input type="radio"
+                       class="c-form__radio c-radio-btn__control"
+                       name="el_radio-button"
+                       id="el_radio-button2">
+                <label for="el_radio-button2"
+                       class="c-form__radio-label c-radio-btn__label">
+                    Option three
+                </label>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="c-form__group">
+        <span class="c-form__label">
+            Disabled Button-style radio
+        </span>
+
+        <div class="c-radio-btn__inline-wrapper">
+            <div class="c-radio-btn">
+                <input type="radio"
+                       class="c-form__radio c-radio-btn__control"
+                       name="el_radio-button-disabled"
+                       id="el_radio-button-disabled0"
+                       disabled
+                       checked>
+                <label for="el_radio-button-disabled0"
+                       class="c-form__radio-label c-radio-btn__label">
+                    Option one
+                </label>
+            </div>
+
+            <div class="c-radio-btn">
+                <input type="radio"
+                       class="c-form__radio c-radio-btn__control"
+                       name="el_radio-button-disabled"
+                       disabled
+                       id="el_radio-button-disabled1">
+                <label for="el_radio-button-disabled1"
+                       class="c-form__radio-label c-radio-btn__label">
+                    Option two
+                </label>
+            </div>
+
+            <div class="c-radio-btn">
+                <input type="radio"
+                       class="c-form__radio c-radio-btn__control"
+                       name="el_radio-button-disabled"
+                       disabled
+                       id="el_radio-button-disabled2">
+                <label for="el_radio-button-disabled2"
+                       class="c-form__radio-label c-radio-btn__label">
+                    Option three
+                </label>
+            </div>
+
+        </div>
+    </div>
+
+</form>
+
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">&lt;form class=&quot;c-form
+             c-form--space_default&quot;&gt;
+
+    &lt;div class=&quot;c-form__group&quot;&gt;
+        &lt;span class=&quot;c-form__label&quot;&gt;
+            Button-style radio
+        &lt;/span&gt;
+
+        &lt;div class=&quot;c-radio-btn__inline-wrapper&quot;&gt;
+            &lt;div class=&quot;c-radio-btn&quot;&gt;
+                &lt;input type=&quot;radio&quot;
+                       class=&quot;c-form__radio c-radio-btn__control&quot;
+                       name=&quot;el_radio-button&quot;
+                       id=&quot;el_radio-button0&quot;
+                       checked&gt;
+                &lt;label for=&quot;el_radio-button0&quot;
+                       class=&quot;c-form__radio-label c-radio-btn__label&quot;&gt;
+                    Option one
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;c-radio-btn&quot;&gt;
+                &lt;input type=&quot;radio&quot;
+                       class=&quot;c-form__radio c-radio-btn__control&quot;
+                       name=&quot;el_radio-button&quot;
+                       id=&quot;el_radio-button1&quot;&gt;
+                &lt;label for=&quot;el_radio-button1&quot;
+                       class=&quot;c-form__radio-label c-radio-btn__label&quot;&gt;
+                    Option two
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;c-radio-btn&quot;&gt;
+                &lt;input type=&quot;radio&quot;
+                       class=&quot;c-form__radio c-radio-btn__control&quot;
+                       name=&quot;el_radio-button&quot;
+                       id=&quot;el_radio-button2&quot;&gt;
+                &lt;label for=&quot;el_radio-button2&quot;
+                       class=&quot;c-form__radio-label c-radio-btn__label&quot;&gt;
+                    Option three
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;c-form__group&quot;&gt;
+        &lt;span class=&quot;c-form__label&quot;&gt;
+            Disabled Button-style radio
+        &lt;/span&gt;
+
+        &lt;div class=&quot;c-radio-btn__inline-wrapper&quot;&gt;
+            &lt;div class=&quot;c-radio-btn&quot;&gt;
+                &lt;input type=&quot;radio&quot;
+                       class=&quot;c-form__radio c-radio-btn__control&quot;
+                       name=&quot;el_radio-button-disabled&quot;
+                       id=&quot;el_radio-button-disabled0&quot;
+                       disabled
+                       checked&gt;
+                &lt;label for=&quot;el_radio-button-disabled0&quot;
+                       class=&quot;c-form__radio-label c-radio-btn__label&quot;&gt;
+                    Option one
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;c-radio-btn&quot;&gt;
+                &lt;input type=&quot;radio&quot;
+                       class=&quot;c-form__radio c-radio-btn__control&quot;
+                       name=&quot;el_radio-button-disabled&quot;
+                       disabled
+                       id=&quot;el_radio-button-disabled1&quot;&gt;
+                &lt;label for=&quot;el_radio-button-disabled1&quot;
+                       class=&quot;c-form__radio-label c-radio-btn__label&quot;&gt;
+                    Option two
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;c-radio-btn&quot;&gt;
+                &lt;input type=&quot;radio&quot;
+                       class=&quot;c-form__radio c-radio-btn__control&quot;
+                       name=&quot;el_radio-button-disabled&quot;
+                       disabled
+                       id=&quot;el_radio-button-disabled2&quot;&gt;
+                &lt;label for=&quot;el_radio-button-disabled2&quot;
+                       class=&quot;c-form__radio-label c-radio-btn__label&quot;&gt;
+                    Option three
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/form&gt;
+</code></pre>
+        </div>
+      </div>
+      <h4 class="sg-heading sg-text--md sg-heading--md">Tile-style radio</h4>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light">
+<form class="c-form
+             c-form--space_default">
+
+    <div class="c-form__group">
+        <span class="c-form__label">
+            Square aspect ratio
+        </span>
+
+        <!-- Square form factor -->
+
+        <div class="c-radio-tile__inline-wrapper">
+            <div class="c-radio-tile c-radio-tile--square">
+                <input type="radio"
+                       class="c-radio-tile__control"
+                       name="el_radio-tile"
+                       id="el_radio-tile0"
+                       checked>
+                <label for="el_radio-tile0"
+                       class="c-radio-tile__label">
+                    <span class="c-radio-tile__label-wrapapper">
+                        Single line
+                    </span>
+                </label>
+            </div>
+
+            <div class="c-radio-tile c-radio-tile--square">
+                <input type="radio"
+                       class="c-radio-tile__control"
+                       name="el_radio-tile"
+                       id="el_radio-tile1">
+                <label for="el_radio-tile1"
+                       class="c-radio-tile__label">
+                    <span class="c-radio-tile__label-wrapapper">
+                        Multi-line
+                        <br>
+                        text label
+                    </span>
+                </label>
+            </div>
+
+            <div class="c-radio-tile c-radio-tile--square">
+                <input type="radio"
+                       class="c-radio-tile__control"
+                       name="el_radio-tile"
+                       id="el_radio-tile2">
+                <label for="el_radio-tile2"
+                       class="c-radio-tile__label">
+                    <span class="c-radio-tile__label-wrapapper">
+                        <svg class="c-radio-tile__icon c-icon c-icon--size_md"><use xlink:href="/framework/svg/stack.svg#icon--circle-tick"></use></svg>
+                        <br>
+                        Icon + text
+                    </span>
+                </label>
+            </div>
+
+            <div class="c-radio-tile c-radio-tile--square">
+                <input type="radio"
+                       class="c-radio-tile__control"
+                       name="el_radio-tile"
+                       id="el_radio-tile3">
+                <label for="el_radio-tile3"
+                       class="c-radio-tile__label">
+                    <span class="c-radio-tile__label-wrapapper">
+                        <svg class="c-radio-tile__icon c-icon c-icon--size_lg"><use xlink:href="/framework/svg/stack.svg#icon--circle-tick"></use></svg>
+                    </span>
+                </label>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Landscape form factor -->
+
+    <div class="c-form__group">
+        <span class="c-form__label">
+            Landscape aspect ratio
+        </span>
+
+        <div class="c-radio-tile__inline-wrapper">
+            <div class="c-radio-tile c-radio-tile--landscape">
+                <input type="radio"
+                       class="c-radio-tile__control"
+                       name="el_ls-radio-tile"
+                       id="el_ls-radio-tile0"
+                       checked>
+                <label for="el_ls-radio-tile0"
+                       class="c-radio-tile__label">
+                    <span class="c-radio-tile__label-wrapapper">
+                        Single line
+                    </span>
+                </label>
+            </div>
+
+            <div class="c-radio-tile c-radio-tile--landscape">
+                <input type="radio"
+                       class="c-radio-tile__control"
+                       name="el_ls-radio-tile"
+                       id="el_ls-radio-tile1">
+                <label for="el_ls-radio-tile1"
+                       class="c-radio-tile__label">
+                    <span class="c-radio-tile__label-wrapapper">
+                        Multi-line
+                        <br>
+                        text label
+                    </span>
+                </label>
+            </div>
+
+            <div class="c-radio-tile c-radio-tile--landscape">
+                <input type="radio"
+                       class="c-radio-tile__control"
+                       name="el_ls-radio-tile"
+                       id="el_ls-radio-tile2">
+                <label for="el_ls-radio-tile2"
+                       class="c-radio-tile__label">
+                    <span class="c-radio-tile__label-wrapapper">
+                        <svg class="c-radio-tile__icon c-icon c-icon--size_lg"><use xlink:href="/framework/svg/stack.svg#icon--circle-tick"></use></svg>
+                        <br>
+                        Icon + text
+                    </span>
+                </label>
+            </div>
+
+            <div class="c-radio-tile c-radio-tile--landscape">
+                <input type="radio"
+                       class="c-radio-tile__control"
+                       name="el_ls-radio-tile"
+                       id="el_ls-radio-tile3">
+                <label for="el_ls-radio-tile3"
+                       class="c-radio-tile__label">
+                    <span class="c-radio-tile__label-wrapapper">
+                        <svg class="c-radio-tile__icon c-icon c-icon--size_lg"><use xlink:href="/framework/svg/stack.svg#icon--circle-tick"></use></svg>
+                    </span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Fluid form factor -->
+
+    <div class="c-form__group">
+        <span class="c-form__label">
+            Unrestricted aspect ratio
+        </span>
+
+        <div class="c-radio-tile__inline-wrapper">
+
+            <div class="c-radio-tile c-radio-tile--fluid">
+                <input type="radio"
+                       class="c-radio-tile__control"
+                       name="el_fl-radio-tile"
+                       id="el_fl-radio-tile0"
+                       checked>
+                <label for="el_fl-radio-tile0"
+                       class="c-radio-tile__label">
+                    <span class="c-radio-tile__label-wrapapper">
+                        Single line
+                    </span>
+                </label>
+            </div>
+
+            <div class="c-radio-tile c-radio-tile--fluid">
+                <input type="radio"
+                       class="c-radio-tile__control"
+                       name="el_fl-radio-tile"
+                       id="el_fl-radio-tile1">
+                <label for="el_fl-radio-tile1"
+                       class="c-radio-tile__label">
+                    <span class="c-radio-tile__label-wrapapper">
+                        Multi-line
+                        <br>
+                        text label
+                    </span>
+                </label>
+            </div>
+
+            <div class="c-radio-tile c-radio-tile--fluid">
+                <input type="radio"
+                       class="c-radio-tile__control"
+                       name="el_fl-radio-tile"
+                       id="el_fl-radio-tile2">
+                <label for="el_fl-radio-tile2"
+                       class="c-radio-tile__label">
+                    <span class="c-radio-tile__label-wrapapper">
+                        <svg class="c-radio-tile__icon c-icon c-icon--size_lg"><use xlink:href="/framework/svg/stack.svg#icon--circle-tick"></use></svg>
+                        <br>
+                        Icon + text
+                    </span>
+                </label>
+            </div>
+
+            <div class="c-radio-tile c-radio-tile--fluid">
+                <input type="radio"
+                       class="c-radio-tile__control"
+                       name="el_fl-radio-tile"
+                       id="el_fl-radio-tile3">
+                <label for="el_fl-radio-tile3"
+                       class="c-radio-tile__label">
+                    <span class="c-radio-tile__label-wrapapper">
+                        <svg class="c-radio-tile__icon c-icon c-icon--size_lg"><use xlink:href="/framework/svg/stack.svg#icon--circle-tick"></use></svg>
+                    </span>
+                </label>
+            </div>
+
+        </div>
+
+    </div>
+
+</form>
+
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">&lt;form class=&quot;c-form
+             c-form--space_default&quot;&gt;
+
+    &lt;div class=&quot;c-form__group&quot;&gt;
+        &lt;span class=&quot;c-form__label&quot;&gt;
+            Square aspect ratio
+        &lt;/span&gt;
+
+        &lt;!-- Square form factor --&gt;
+
+        &lt;div class=&quot;c-radio-tile__inline-wrapper&quot;&gt;
+            &lt;div class=&quot;c-radio-tile c-radio-tile--square&quot;&gt;
+                &lt;input type=&quot;radio&quot;
+                       class=&quot;c-radio-tile__control&quot;
+                       name=&quot;el_radio-tile&quot;
+                       id=&quot;el_radio-tile0&quot;
+                       checked&gt;
+                &lt;label for=&quot;el_radio-tile0&quot;
+                       class=&quot;c-radio-tile__label&quot;&gt;
+                    &lt;span class=&quot;c-radio-tile__label-wrapapper&quot;&gt;
+                        Single line
+                    &lt;/span&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;c-radio-tile c-radio-tile--square&quot;&gt;
+                &lt;input type=&quot;radio&quot;
+                       class=&quot;c-radio-tile__control&quot;
+                       name=&quot;el_radio-tile&quot;
+                       id=&quot;el_radio-tile1&quot;&gt;
+                &lt;label for=&quot;el_radio-tile1&quot;
+                       class=&quot;c-radio-tile__label&quot;&gt;
+                    &lt;span class=&quot;c-radio-tile__label-wrapapper&quot;&gt;
+                        Multi-line
+                        &lt;br&gt;
+                        text label
+                    &lt;/span&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;c-radio-tile c-radio-tile--square&quot;&gt;
+                &lt;input type=&quot;radio&quot;
+                       class=&quot;c-radio-tile__control&quot;
+                       name=&quot;el_radio-tile&quot;
+                       id=&quot;el_radio-tile2&quot;&gt;
+                &lt;label for=&quot;el_radio-tile2&quot;
+                       class=&quot;c-radio-tile__label&quot;&gt;
+                    &lt;span class=&quot;c-radio-tile__label-wrapapper&quot;&gt;
+                        &lt;svg class=&quot;c-radio-tile__icon c-icon c-icon--size_md&quot;&gt;&lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-tick&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+                        &lt;br&gt;
+                        Icon + text
+                    &lt;/span&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;c-radio-tile c-radio-tile--square&quot;&gt;
+                &lt;input type=&quot;radio&quot;
+                       class=&quot;c-radio-tile__control&quot;
+                       name=&quot;el_radio-tile&quot;
+                       id=&quot;el_radio-tile3&quot;&gt;
+                &lt;label for=&quot;el_radio-tile3&quot;
+                       class=&quot;c-radio-tile__label&quot;&gt;
+                    &lt;span class=&quot;c-radio-tile__label-wrapapper&quot;&gt;
+                        &lt;svg class=&quot;c-radio-tile__icon c-icon c-icon--size_lg&quot;&gt;&lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-tick&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+                    &lt;/span&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+
+    &lt;!-- Landscape form factor --&gt;
+
+    &lt;div class=&quot;c-form__group&quot;&gt;
+        &lt;span class=&quot;c-form__label&quot;&gt;
+            Landscape aspect ratio
+        &lt;/span&gt;
+
+        &lt;div class=&quot;c-radio-tile__inline-wrapper&quot;&gt;
+            &lt;div class=&quot;c-radio-tile c-radio-tile--landscape&quot;&gt;
+                &lt;input type=&quot;radio&quot;
+                       class=&quot;c-radio-tile__control&quot;
+                       name=&quot;el_ls-radio-tile&quot;
+                       id=&quot;el_ls-radio-tile0&quot;
+                       checked&gt;
+                &lt;label for=&quot;el_ls-radio-tile0&quot;
+                       class=&quot;c-radio-tile__label&quot;&gt;
+                    &lt;span class=&quot;c-radio-tile__label-wrapapper&quot;&gt;
+                        Single line
+                    &lt;/span&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;c-radio-tile c-radio-tile--landscape&quot;&gt;
+                &lt;input type=&quot;radio&quot;
+                       class=&quot;c-radio-tile__control&quot;
+                       name=&quot;el_ls-radio-tile&quot;
+                       id=&quot;el_ls-radio-tile1&quot;&gt;
+                &lt;label for=&quot;el_ls-radio-tile1&quot;
+                       class=&quot;c-radio-tile__label&quot;&gt;
+                    &lt;span class=&quot;c-radio-tile__label-wrapapper&quot;&gt;
+                        Multi-line
+                        &lt;br&gt;
+                        text label
+                    &lt;/span&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;c-radio-tile c-radio-tile--landscape&quot;&gt;
+                &lt;input type=&quot;radio&quot;
+                       class=&quot;c-radio-tile__control&quot;
+                       name=&quot;el_ls-radio-tile&quot;
+                       id=&quot;el_ls-radio-tile2&quot;&gt;
+                &lt;label for=&quot;el_ls-radio-tile2&quot;
+                       class=&quot;c-radio-tile__label&quot;&gt;
+                    &lt;span class=&quot;c-radio-tile__label-wrapapper&quot;&gt;
+                        &lt;svg class=&quot;c-radio-tile__icon c-icon c-icon--size_lg&quot;&gt;&lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-tick&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+                        &lt;br&gt;
+                        Icon + text
+                    &lt;/span&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;c-radio-tile c-radio-tile--landscape&quot;&gt;
+                &lt;input type=&quot;radio&quot;
+                       class=&quot;c-radio-tile__control&quot;
+                       name=&quot;el_ls-radio-tile&quot;
+                       id=&quot;el_ls-radio-tile3&quot;&gt;
+                &lt;label for=&quot;el_ls-radio-tile3&quot;
+                       class=&quot;c-radio-tile__label&quot;&gt;
+                    &lt;span class=&quot;c-radio-tile__label-wrapapper&quot;&gt;
+                        &lt;svg class=&quot;c-radio-tile__icon c-icon c-icon--size_lg&quot;&gt;&lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-tick&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+                    &lt;/span&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+
+    &lt;!-- Fluid form factor --&gt;
+
+    &lt;div class=&quot;c-form__group&quot;&gt;
+        &lt;span class=&quot;c-form__label&quot;&gt;
+            Unrestricted aspect ratio
+        &lt;/span&gt;
+
+        &lt;div class=&quot;c-radio-tile__inline-wrapper&quot;&gt;
+
+            &lt;div class=&quot;c-radio-tile c-radio-tile--fluid&quot;&gt;
+                &lt;input type=&quot;radio&quot;
+                       class=&quot;c-radio-tile__control&quot;
+                       name=&quot;el_fl-radio-tile&quot;
+                       id=&quot;el_fl-radio-tile0&quot;
+                       checked&gt;
+                &lt;label for=&quot;el_fl-radio-tile0&quot;
+                       class=&quot;c-radio-tile__label&quot;&gt;
+                    &lt;span class=&quot;c-radio-tile__label-wrapapper&quot;&gt;
+                        Single line
+                    &lt;/span&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;c-radio-tile c-radio-tile--fluid&quot;&gt;
+                &lt;input type=&quot;radio&quot;
+                       class=&quot;c-radio-tile__control&quot;
+                       name=&quot;el_fl-radio-tile&quot;
+                       id=&quot;el_fl-radio-tile1&quot;&gt;
+                &lt;label for=&quot;el_fl-radio-tile1&quot;
+                       class=&quot;c-radio-tile__label&quot;&gt;
+                    &lt;span class=&quot;c-radio-tile__label-wrapapper&quot;&gt;
+                        Multi-line
+                        &lt;br&gt;
+                        text label
+                    &lt;/span&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;c-radio-tile c-radio-tile--fluid&quot;&gt;
+                &lt;input type=&quot;radio&quot;
+                       class=&quot;c-radio-tile__control&quot;
+                       name=&quot;el_fl-radio-tile&quot;
+                       id=&quot;el_fl-radio-tile2&quot;&gt;
+                &lt;label for=&quot;el_fl-radio-tile2&quot;
+                       class=&quot;c-radio-tile__label&quot;&gt;
+                    &lt;span class=&quot;c-radio-tile__label-wrapapper&quot;&gt;
+                        &lt;svg class=&quot;c-radio-tile__icon c-icon c-icon--size_lg&quot;&gt;&lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-tick&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+                        &lt;br&gt;
+                        Icon + text
+                    &lt;/span&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;c-radio-tile c-radio-tile--fluid&quot;&gt;
+                &lt;input type=&quot;radio&quot;
+                       class=&quot;c-radio-tile__control&quot;
+                       name=&quot;el_fl-radio-tile&quot;
+                       id=&quot;el_fl-radio-tile3&quot;&gt;
+                &lt;label for=&quot;el_fl-radio-tile3&quot;
+                       class=&quot;c-radio-tile__label&quot;&gt;
+                    &lt;span class=&quot;c-radio-tile__label-wrapapper&quot;&gt;
+                        &lt;svg class=&quot;c-radio-tile__icon c-icon c-icon--size_lg&quot;&gt;&lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-tick&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+                    &lt;/span&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/form&gt;
+</code></pre>
+        </div>
+      </div>
+      <h4 class="sg-heading sg-text--md sg-heading--md">Naked-style radio</h4>
+      <div class="sg-component-description">
+        <p>Can take any content. Checked item will be set to 50% opacity.</p>
+      </div>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light">
+<form class="c-form
+             c-form--space_default">
+
+    <div class="c-form__group">
+        <span class="c-form__label">
+            'Fake' label text
+        </span>
+
+        <div class="c-radio-naked__inline-wrapper">
+            <div class="c-radio-naked">
+                <input type="radio"
+                       class="c-form__radio c-radio-naked__control"
+                       name="el_radio-naked"
+                       id="el_radio-naked0"
+                       checked>
+                <label for="el_radio-naked0"
+                       class="c-form__radio-label c-radio-naked__label">
+                    Option one
+                </label>
+            </div>
+
+            <div class="c-radio-naked">
+                <input type="radio"
+                       class="c-form__radio c-radio-naked__control"
+                       name="el_radio-naked"
+                       id="el_radio-naked1">
+                <label for="el_radio-naked1"
+                       class="c-form__radio-label c-radio-naked__label">
+                    <svg class="c-radio-tile__icon c-icon c-icon--size_md"><use xlink:href="/framework/svg/stack.svg#icon--circle-tick"></use></svg>
+                </label>
+            </div>
+
+            <div class="c-radio-naked">
+                <input type="radio"
+                       class="c-form__radio c-radio-naked__control"
+                       name="el_radio-naked"
+                       id="el_radio-naked2">
+                <label for="el_radio-naked2"
+                       class="c-form__radio-label c-radio-naked__label">
+                    <img src="http://via.placeholder.com/80x80" class=c-image">
+                </label>
+            </div>
+
+        </div>
+    </div>
+
+</form>
+
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">&lt;form class=&quot;c-form
+             c-form--space_default&quot;&gt;
+
+    &lt;div class=&quot;c-form__group&quot;&gt;
+        &lt;span class=&quot;c-form__label&quot;&gt;
+            'Fake' label text
+        &lt;/span&gt;
+
+        &lt;div class=&quot;c-radio-naked__inline-wrapper&quot;&gt;
+            &lt;div class=&quot;c-radio-naked&quot;&gt;
+                &lt;input type=&quot;radio&quot;
+                       class=&quot;c-form__radio c-radio-naked__control&quot;
+                       name=&quot;el_radio-naked&quot;
+                       id=&quot;el_radio-naked0&quot;
+                       checked&gt;
+                &lt;label for=&quot;el_radio-naked0&quot;
+                       class=&quot;c-form__radio-label c-radio-naked__label&quot;&gt;
+                    Option one
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;c-radio-naked&quot;&gt;
+                &lt;input type=&quot;radio&quot;
+                       class=&quot;c-form__radio c-radio-naked__control&quot;
+                       name=&quot;el_radio-naked&quot;
+                       id=&quot;el_radio-naked1&quot;&gt;
+                &lt;label for=&quot;el_radio-naked1&quot;
+                       class=&quot;c-form__radio-label c-radio-naked__label&quot;&gt;
+                    &lt;svg class=&quot;c-radio-tile__icon c-icon c-icon--size_md&quot;&gt;&lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--circle-tick&quot;&gt;&lt;/use&gt;&lt;/svg&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;c-radio-naked&quot;&gt;
+                &lt;input type=&quot;radio&quot;
+                       class=&quot;c-form__radio c-radio-naked__control&quot;
+                       name=&quot;el_radio-naked&quot;
+                       id=&quot;el_radio-naked2&quot;&gt;
+                &lt;label for=&quot;el_radio-naked2&quot;
+                       class=&quot;c-form__radio-label c-radio-naked__label&quot;&gt;
+                    &lt;img src=&quot;http://via.placeholder.com/80x80&quot; class=c-image&quot;&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/form&gt;
+</code></pre>
+        </div>
+      </div>
+    </main>
+    <!-- ==================================================================================================-->
+    <!-- << CONTENT ENDS-->
+    <!-- ==================================================================================================-->
+    <script src="../framework/vendors/bundle.js"></script>
+    <script src="../framework/scripts/main.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

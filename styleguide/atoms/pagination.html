@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html class="sg" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>UI design system - Pagination</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" rel="stylesheet" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link href="styles/sg-main.css" rel="stylesheet">
+    <link href="styles/assets.css" rel="stylesheet">
+    <link href="../framework/styles/vendor.css" rel="stylesheet">
+    <link href="../framework/styles/main.css" rel="stylesheet">
+  </head>
+  <body class="sg-layout">
+    <button class="sg-toggle-nav js-sg-toggle-nav"><i class="fas fa-bars"></i></button>
+    <header class="sg-layout-header">
+      <p><a href="/styleguide/">Index</a></p>
+      <nav>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Atoms</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/atoms/headings.html">Headings</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/buttons.html">Buttons</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/icons.html">Icons</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/lists.html">Lists</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/forms.html">Form</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/tables.html">Tables</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Molecules</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/molecules/hero.html">Hero</a></li>
+          <li class="sg-list__item"><a href="/styleguide/molecules/carousel.html">Carousel</a></li>
+          <li class="sg-list__item"><a href="/styleguide/molecules/overlay-tabs.html">Overlay tabs</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Organisms</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/organisms/header.html">Header</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/footer.html">Footer</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/page-nav.html">Page nav</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/section-header.html">Section header</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/content-blocks.html">Content blocks</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/grid-blocks.html">Grid blocks</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Pages</h3>
+        <h4 class="sg-heading sg-heading--xs sg-text--xs">Main</h4>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/pages.html#pages/0_home">Home</a></li>
+          <li class="sg-list__item"><a href="/styleguide/pages.html#pages/1_sector">Sector</a></li>
+          <li class="sg-list__item"><a href="/styleguide/pages.html#pages/2_newsroom">Newsroom</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ==================================================================================================-->
+    <!-- CONTENT STARTS >>-->
+    <!-- ==================================================================================================-->
+    <main class="sg-layout-content">
+      <h2 class="sg-heading sg-text--xl sg-heading--xl">Pagination</h2>
+      <div class="sg-component-description"><span class="sg-code sg-code--inline">c-pagination</span>
+        <p></p>
+      </div>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light">
+
+          <div class="c-pagination u-mb-x8"><a class="c-pagination__item c-pagination__prev" href="#">
+              <svg class="c-icon c-icon--size_md c-pagination__icon" role="presentation">
+                <use xlink:href="/framework/svg/stack.svg#icon--carret-left"></use>
+              </svg></a><a class="c-pagination__item c-pagination__step" href="#">10</a><a class="c-pagination__step--current c-pagination__item c-pagination__step" href="#">11</a><a class="c-pagination__item c-pagination__step" href="#">12</a><a class="c-pagination__item c-pagination__step" href="#">13</a><a class="c-pagination__item c-pagination__step" href="#">14</a><a class="c-pagination__item c-pagination__step" href="#">15</a><a class="c-pagination__item c-pagination__step" href="#">16</a><a class="c-pagination__item c-pagination__next" href="#">
+              <svg class="c-icon c-icon--size_md c-pagination__icon" role="presentation">
+                <use xlink:href="/framework/svg/stack.svg#icon--carret-right"></use>
+              </svg></a>
+          </div>
+          <div class="sg-component-example__comments">With centre align modifier</div>
+          <div class="c-pagination c-pagination--align_center u-mb-x8"><a class="c-pagination__item c-pagination__prev" href="#">
+              <svg class="c-icon c-icon--size_md c-pagination__icon" role="presentation">
+                <use xlink:href="/framework/svg/stack.svg#icon--carret-left"></use>
+              </svg></a><a class="c-pagination__item c-pagination__step" href="#">10</a><a class="c-pagination__step--current c-pagination__item c-pagination__step" href="#">11</a><a class="c-pagination__item c-pagination__step" href="#">12</a><a class="c-pagination__item c-pagination__step" href="#">13</a><a class="c-pagination__item c-pagination__step" href="#">14</a><a class="c-pagination__item c-pagination__step" href="#">15</a><a class="c-pagination__item c-pagination__step" href="#">16</a><a class="c-pagination__item c-pagination__next" href="#">
+              <svg class="c-icon c-icon--size_md c-pagination__icon" role="presentation">
+                <use xlink:href="/framework/svg/stack.svg#icon--carret-right"></use>
+              </svg></a>
+          </div>
+          <div class="sg-component-example__comments">Width right align modifier</div>
+          <div class="c-pagination c-pagination--align_right"><a class="c-pagination__item c-pagination__prev" href="#">
+              <svg class="c-icon c-icon--size_md c-pagination__icon" role="presentation">
+                <use xlink:href="/framework/svg/stack.svg#icon--carret-left"></use>
+              </svg></a><a class="c-pagination__item c-pagination__step" href="#">10</a><a class="c-pagination__step--current c-pagination__item c-pagination__step" href="#">11</a><a class="c-pagination__item c-pagination__step" href="#">12</a><a class="c-pagination__item c-pagination__step" href="#">13</a><a class="c-pagination__item c-pagination__step" href="#">14</a><a class="c-pagination__item c-pagination__step" href="#">15</a><a class="c-pagination__item c-pagination__step" href="#">16</a><a class="c-pagination__item c-pagination__next" href="#">
+              <svg class="c-icon c-icon--size_md c-pagination__icon" role="presentation">
+                <use xlink:href="/framework/svg/stack.svg#icon--carret-right"></use>
+              </svg></a>
+          </div>
+
+        </div>
+        <div class="sg-component-example__preview sg-component-example__preview--dark">
+
+          <div class="c-pagination u-mb-x8"><a class="c-pagination__item c-pagination__prev" href="#">
+              <svg class="c-icon c-icon--size_md c-pagination__icon" role="presentation">
+                <use xlink:href="/framework/svg/stack.svg#icon--carret-left"></use>
+              </svg></a><a class="c-pagination__item c-pagination__step" href="#">10</a><a class="c-pagination__step--current c-pagination__item c-pagination__step" href="#">11</a><a class="c-pagination__item c-pagination__step" href="#">12</a><a class="c-pagination__item c-pagination__step" href="#">13</a><a class="c-pagination__item c-pagination__step" href="#">14</a><a class="c-pagination__item c-pagination__step" href="#">15</a><a class="c-pagination__item c-pagination__step" href="#">16</a><a class="c-pagination__item c-pagination__next" href="#">
+              <svg class="c-icon c-icon--size_md c-pagination__icon" role="presentation">
+                <use xlink:href="/framework/svg/stack.svg#icon--carret-right"></use>
+              </svg></a>
+          </div>
+          <div class="sg-component-example__comments">With centre align modifier</div>
+          <div class="c-pagination c-pagination--align_center u-mb-x8"><a class="c-pagination__item c-pagination__prev" href="#">
+              <svg class="c-icon c-icon--size_md c-pagination__icon" role="presentation">
+                <use xlink:href="/framework/svg/stack.svg#icon--carret-left"></use>
+              </svg></a><a class="c-pagination__item c-pagination__step" href="#">10</a><a class="c-pagination__step--current c-pagination__item c-pagination__step" href="#">11</a><a class="c-pagination__item c-pagination__step" href="#">12</a><a class="c-pagination__item c-pagination__step" href="#">13</a><a class="c-pagination__item c-pagination__step" href="#">14</a><a class="c-pagination__item c-pagination__step" href="#">15</a><a class="c-pagination__item c-pagination__step" href="#">16</a><a class="c-pagination__item c-pagination__next" href="#">
+              <svg class="c-icon c-icon--size_md c-pagination__icon" role="presentation">
+                <use xlink:href="/framework/svg/stack.svg#icon--carret-right"></use>
+              </svg></a>
+          </div>
+          <div class="sg-component-example__comments">Width right align modifier</div>
+          <div class="c-pagination c-pagination--align_right"><a class="c-pagination__item c-pagination__prev" href="#">
+              <svg class="c-icon c-icon--size_md c-pagination__icon" role="presentation">
+                <use xlink:href="/framework/svg/stack.svg#icon--carret-left"></use>
+              </svg></a><a class="c-pagination__item c-pagination__step" href="#">10</a><a class="c-pagination__step--current c-pagination__item c-pagination__step" href="#">11</a><a class="c-pagination__item c-pagination__step" href="#">12</a><a class="c-pagination__item c-pagination__step" href="#">13</a><a class="c-pagination__item c-pagination__step" href="#">14</a><a class="c-pagination__item c-pagination__step" href="#">15</a><a class="c-pagination__item c-pagination__step" href="#">16</a><a class="c-pagination__item c-pagination__next" href="#">
+              <svg class="c-icon c-icon--size_md c-pagination__icon" role="presentation">
+                <use xlink:href="/framework/svg/stack.svg#icon--carret-right"></use>
+              </svg></a>
+          </div>
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">
+              &lt;div class=&quot;c-pagination u-mb-x8&quot;&gt;&lt;a class=&quot;c-pagination__item c-pagination__prev&quot; href=&quot;#&quot;&gt;
+                  &lt;svg class=&quot;c-icon c-icon--size_md c-pagination__icon&quot; role=&quot;presentation&quot;&gt;
+                    &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--carret-left&quot;&gt;&lt;/use&gt;
+                  &lt;/svg&gt;&lt;/a&gt;&lt;a class=&quot;c-pagination__item c-pagination__step&quot; href=&quot;#&quot;&gt;10&lt;/a&gt;&lt;a class=&quot;c-pagination__step--current c-pagination__item c-pagination__step&quot; href=&quot;#&quot;&gt;11&lt;/a&gt;&lt;a class=&quot;c-pagination__item c-pagination__step&quot; href=&quot;#&quot;&gt;12&lt;/a&gt;&lt;a class=&quot;c-pagination__item c-pagination__step&quot; href=&quot;#&quot;&gt;13&lt;/a&gt;&lt;a class=&quot;c-pagination__item c-pagination__step&quot; href=&quot;#&quot;&gt;14&lt;/a&gt;&lt;a class=&quot;c-pagination__item c-pagination__step&quot; href=&quot;#&quot;&gt;15&lt;/a&gt;&lt;a class=&quot;c-pagination__item c-pagination__step&quot; href=&quot;#&quot;&gt;16&lt;/a&gt;&lt;a class=&quot;c-pagination__item c-pagination__next&quot; href=&quot;#&quot;&gt;
+                  &lt;svg class=&quot;c-icon c-icon--size_md c-pagination__icon&quot; role=&quot;presentation&quot;&gt;
+                    &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--carret-right&quot;&gt;&lt;/use&gt;
+                  &lt;/svg&gt;&lt;/a&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;sg-component-example__comments&quot;&gt;With centre align modifier&lt;/div&gt;
+              &lt;div class=&quot;c-pagination c-pagination--align_center u-mb-x8&quot;&gt;&lt;a class=&quot;c-pagination__item c-pagination__prev&quot; href=&quot;#&quot;&gt;
+                  &lt;svg class=&quot;c-icon c-icon--size_md c-pagination__icon&quot; role=&quot;presentation&quot;&gt;
+                    &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--carret-left&quot;&gt;&lt;/use&gt;
+                  &lt;/svg&gt;&lt;/a&gt;&lt;a class=&quot;c-pagination__item c-pagination__step&quot; href=&quot;#&quot;&gt;10&lt;/a&gt;&lt;a class=&quot;c-pagination__step--current c-pagination__item c-pagination__step&quot; href=&quot;#&quot;&gt;11&lt;/a&gt;&lt;a class=&quot;c-pagination__item c-pagination__step&quot; href=&quot;#&quot;&gt;12&lt;/a&gt;&lt;a class=&quot;c-pagination__item c-pagination__step&quot; href=&quot;#&quot;&gt;13&lt;/a&gt;&lt;a class=&quot;c-pagination__item c-pagination__step&quot; href=&quot;#&quot;&gt;14&lt;/a&gt;&lt;a class=&quot;c-pagination__item c-pagination__step&quot; href=&quot;#&quot;&gt;15&lt;/a&gt;&lt;a class=&quot;c-pagination__item c-pagination__step&quot; href=&quot;#&quot;&gt;16&lt;/a&gt;&lt;a class=&quot;c-pagination__item c-pagination__next&quot; href=&quot;#&quot;&gt;
+                  &lt;svg class=&quot;c-icon c-icon--size_md c-pagination__icon&quot; role=&quot;presentation&quot;&gt;
+                    &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--carret-right&quot;&gt;&lt;/use&gt;
+                  &lt;/svg&gt;&lt;/a&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;sg-component-example__comments&quot;&gt;Width right align modifier&lt;/div&gt;
+              &lt;div class=&quot;c-pagination c-pagination--align_right&quot;&gt;&lt;a class=&quot;c-pagination__item c-pagination__prev&quot; href=&quot;#&quot;&gt;
+                  &lt;svg class=&quot;c-icon c-icon--size_md c-pagination__icon&quot; role=&quot;presentation&quot;&gt;
+                    &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--carret-left&quot;&gt;&lt;/use&gt;
+                  &lt;/svg&gt;&lt;/a&gt;&lt;a class=&quot;c-pagination__item c-pagination__step&quot; href=&quot;#&quot;&gt;10&lt;/a&gt;&lt;a class=&quot;c-pagination__step--current c-pagination__item c-pagination__step&quot; href=&quot;#&quot;&gt;11&lt;/a&gt;&lt;a class=&quot;c-pagination__item c-pagination__step&quot; href=&quot;#&quot;&gt;12&lt;/a&gt;&lt;a class=&quot;c-pagination__item c-pagination__step&quot; href=&quot;#&quot;&gt;13&lt;/a&gt;&lt;a class=&quot;c-pagination__item c-pagination__step&quot; href=&quot;#&quot;&gt;14&lt;/a&gt;&lt;a class=&quot;c-pagination__item c-pagination__step&quot; href=&quot;#&quot;&gt;15&lt;/a&gt;&lt;a class=&quot;c-pagination__item c-pagination__step&quot; href=&quot;#&quot;&gt;16&lt;/a&gt;&lt;a class=&quot;c-pagination__item c-pagination__next&quot; href=&quot;#&quot;&gt;
+                  &lt;svg class=&quot;c-icon c-icon--size_md c-pagination__icon&quot; role=&quot;presentation&quot;&gt;
+                    &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--carret-right&quot;&gt;&lt;/use&gt;
+                  &lt;/svg&gt;&lt;/a&gt;
+              &lt;/div&gt;</code></pre>
+        </div>
+      </div>
+    </main>
+    <!-- ==================================================================================================-->
+    <!-- << CONTENT ENDS-->
+    <!-- ==================================================================================================-->
+    <script src="../framework/vendors/bundle.js"></script>
+    <script src="../framework/scripts/main.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>UI design system - </title>
+    <link href="/framework/styles/assets.css" rel="stylesheet">
+    <link href="/framework/styles/vendor.css" rel="stylesheet">
+    <link href="/framework/styles/main.css" rel="stylesheet">
+  </head>
+  <body class="c-section c-section--admin">
+    <div class="tingle-content-wrapper">
+      <header class="c-header c-header--admin">
+        <div class="o-container o-container--gutter_md o-container--width_fluid">
+          <div class="c-header__inner o-media o-media--middle o-media--gutter_md">
+            <div class="o-media__fixed"><a class="c-header__brand" href="/"><img class="c-image" src="/framework/svg/au-logo.svg" alt="Australian Unity logo"></a></div>
+            <div class="o-media__fluid">
+              <div class="c-navbar js-mainnav">
+                      <button class="c-button c-button--size_md c-button--theme_default-solid c-navbar__menu-trigger js-mainnav__trigger" type="button"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_sm" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--hamburger"></use>
+                                </svg></span></button>
+                <nav class="c-navbar__nav js-mainnav__target">
+                  <div class="c-navbar__main">
+                    <ul class="c-menu-main">
+                      <li class="c-menu-main__item"><a class="c-menu-main__action" href="#">Users</a></li>
+                      <li class="c-menu-main__item"><a class="c-menu-main__action" href="#">Investments</a></li>
+                      <li class="c-menu-main__item"><a class="c-menu-main__action" href="#">Queues</a></li>
+                      <li class="c-menu-main__item"><a class="c-menu-main__action" href="#">Repayments</a></li>
+                    </ul>
+                  </div>
+                  <div class="c-navbar__side">
+                    <div class="o-list o-list--inline o-list--gutter_xs o-list--middle u-lh-dense">
+                      <div class="o-list__item u-pr-x6 u-border-r-sm-dark">
+                        <div class="o-type-ms-1">Anthony Smith</div>
+                      </div>
+                      <div class="o-list__item"><a class="u-weight-bold" href="#">LOGOUT</a></div>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- ==================================================================================================-->
+      <!-- CONTENT STARTS >>-->
+      <!-- ==================================================================================================-->
+      <div class="o-grid">
+        <aside class="o-grid__col u-5/24@md-up u-4/24@lg-up u-bgcolor-neutral-lightest">
+          <div class="o-container o-container--gutter_sm o-container--width_fluid">
+            <section class="u-ph-x6 u-pv-x12">
+              <h2 class="c-heading c-heading--lg">Queues</h2>
+              <nav class="o-list o-list--block o-list--gutter_xs">
+                <div class="o-list__item"><a href="#">Cash account</a></div>
+                <div class="o-list__item"><a class="u-color-scheme-brand u-weight-bold" href="#">Beaumaris, VIC (478)</a></div>
+                <div class="o-list__item"><a href="#">Brunswick West, VIC (503)</a></div>
+                <div class="o-list__item"><a href="#">Brunswick West, VIC (503)</a></div>
+                <div class="o-list__item"><a href="#">Brunswick West, VIC (503)</a></div>
+                <div class="o-list__item"><a href="#">Brunswick West, VIC (503)</a></div>
+                <div class="o-list__item"><a href="#">Brunswick West, VIC (503)</a></div>
+                <div class="o-list__item"><a href="#">Brunswick West, VIC (503)</a></div>
+                <div class="o-list__item"><a href="#">Brunswick West, VIC (503)</a></div>
+                <div class="o-list__item"><a href="#">Brunswick West, VIC (503)</a></div>
+                <div class="o-list__item"><a href="#">Brunswick West, VIC (503)</a></div>
+                <div class="o-list__item"><a href="#">Brunswick West, VIC (503)</a></div>
+              </nav>
+            </section>
+          </div>
+        </aside>
+        <main class="o-grid__col u-19/24@md-up u-20/24@lg-up u-bgcolor-white">
+          <div class="o-container o-container--gutter_sm o-container--width_fluid">
+            <header class="u-ph-x6 u-pv-x12">
+              <section class="o-media o-media--res">
+                <div class="o-media__fixed">
+                  <h2 class="c-heading c-heading--lg u-mb u-color-scheme-brand">Beaumaris, VIC (478)</h2>
+                </div>
+                <div class="o-media__fluid u-pt-x3@sm-dn u-text-right@md-up">
+                  <div class="o-list o-list--inline o-list--gutter_sm">
+                    <div class="o-list__item">
+                            <button class="c-button c-button--size_md c-button--theme_default-solid js-tooltip-html-trigger" type="button" data-tooltip-target="#tooltip_queue-inv"><span class="c-button__pos">
+                                      <svg class="c-icon c-icon--size_sm" role="presentation">
+                                        <use xlink:href="/framework/svg/stack.svg#icon--actions"></use>
+                                      </svg></span></button>
+                    </div>
+                    <div class="o-list__item">
+                            <button class="c-button c-button--size_md c-button--theme_default-solid" type="button"><span class="c-button__pos">Process selected</span></button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <div class="u-lh-dense">
+                <div class="o-type-ms3 u-weight-bold">$314,000</div>allocated
+              </div>
+            </header>
+            <section class="u-ph-x6 u-pb-x6">
+              <form class="c-form c-form--style_outline c-form--theme_default c-form--space_default">
+                <div class="o-grid o-grid--gutter_lg">
+                  <div class="o-grid__col u-8/24@md-up u-6/24@lg-up">
+                    <div class="c-form__group">
+                      <label class="c-form__label" for="gridbar-searchusers">Search investors
+                      </label>
+                      <div class="c-form__input-group">
+                        <input class="c-form__control" type="text" name="gridbar-searchusers" value="" placeholder="Enter name or account number" id="gridbar-searchusers"/>
+                              <button class="c-button c-button--size_md c-button--theme_default-solid" type="button"><span class="c-button__pos">
+                                        <svg class="c-icon c-icon--size_xs" role="presentation">
+                                          <use xlink:href="/framework/svg/stack.svg#icon--search"></use>
+                                        </svg></span></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="o-grid__col u-16/24@md-up u-18/24@lg-up">
+                    <div class="o-media o-media--gutter_lg o-media--res">
+                      <div class="o-media__fixed">
+                        <h4 class="c-heading c-heading--xs u-lh-tight u-mv-x3@sm-dn">Filter by</h4>
+                      </div>
+                      <div class="o-media__fluid">
+                        <div class="c-form__group u-12/24@sm-up u-8/24@lg-up">
+                          <label class="c-form__label" for="gridbar-searchusers">Investor type
+                          </label>
+                          <select class="c-form__control" name="gridbar-acctype" id="gridbar-acctype">
+                            <option>All investor types</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </section>
+            <section class="u-ph-x6 u-pb-x12">
+              <div class="o-overflow-scroll">
+                <table class="c-table c-table--style_clean c-table--space_default">
+                  <thead>
+                    <tr>
+                      <th class="c-table__cell--w_min">
+                        <div class="c-checkbox">
+                          <input class="c-checkbox__control" type="checkbox" name="admn-tbl-opt-all" value="1" id="admn-tbl-opt-all"/>
+                          <label class="c-checkbox__label" for="admn-tbl-opt-all">
+                          </label>
+                        </div>
+                      </th>
+                      <th>Investor</th>
+                      <th>Email address</th>
+                      <th>Contact number</th>
+                      <th>Investor #</th>
+                      <th>Type</th>
+                      <th>Adviser</th>
+                      <th>Allocation ($)</th>
+                      <th>
+                        <div class="u-mb-x2">SPDS <br></div>
+                        <div class="c-checkbox">
+                          <input class="c-checkbox__control" type="checkbox" name="admn-tbl-opt-all" value="1" id="admn-tbl-opt-all"/>
+                          <label class="c-checkbox__label" for="admn-tbl-opt-all">
+                          </label>
+                        </div>
+                      </th>
+                      <th>
+                        <div class="u-mb-x2">Pooled fund <br></div>
+                        <div class="c-checkbox">
+                          <input class="c-checkbox__control" type="checkbox" name="admn-tbl-opt-all" value="1" id="admn-tbl-opt-all"/>
+                          <label class="c-checkbox__label" for="admn-tbl-opt-all">
+                          </label>
+                        </div>
+                      </th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="c-table__cell--w_min">
+                        <div class="c-checkbox">
+                          <input class="c-checkbox__control" type="checkbox" name="admn-tbl-opt-all" value="1" id="admn-tbl-opt-all"/>
+                          <label class="c-checkbox__label" for="admn-tbl-opt-all">
+                          </label>
+                        </div>
+                      </td>
+                      <td>Michael Jackson</td>
+                      <td>michael.jackson@motown.com</td>
+                      <td>0412 456 987</td>
+                      <td>165987</td>
+                      <td>GIA</td>
+                      <td>Marty McFly</td>
+                      <td class="c-table__cell--numeric">66,000</td>
+                      <td class="u-text-center">
+                        <div class="c-checkbox">
+                          <input class="c-checkbox__control" type="checkbox" name="admn-tbl-opt-all" value="1" id="admn-tbl-opt-all"/>
+                          <label class="c-checkbox__label" for="admn-tbl-opt-all">
+                          </label>
+                        </div>
+                      </td>
+                      <td class="u-text-center">
+                        <div class="c-checkbox">
+                          <input class="c-checkbox__control" type="checkbox" name="admn-tbl-opt-all" value="1" id="admn-tbl-opt-all"/>
+                          <label class="c-checkbox__label" for="admn-tbl-opt-all">
+                          </label>
+                        </div>
+                      </td>
+                      <td class="c-table__cell--w_min c-table__cell--actions">
+                              <button class="c-button c-button--size_md c-button--theme_default-solid js-tooltip-html-trigger" type="button" data-tooltip-target="#tooltip_investors-table-actions"><span class="c-button__pos">
+                                        <svg class="c-icon c-icon--size_sm" role="presentation">
+                                          <use xlink:href="/framework/svg/stack.svg#icon--actions"></use>
+                                        </svg></span></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="c-table__cell--w_min">
+                        <div class="c-checkbox">
+                          <input class="c-checkbox__control" type="checkbox" name="admn-tbl-opt-all" value="1" id="admn-tbl-opt-all"/>
+                          <label class="c-checkbox__label" for="admn-tbl-opt-all">
+                          </label>
+                        </div>
+                      </td>
+                      <td>Michael Jackson</td>
+                      <td>michael.jackson@motown.com</td>
+                      <td>0412 456 987</td>
+                      <td>165987</td>
+                      <td>GIA</td>
+                      <td>Marty McFly</td>
+                      <td class="c-table__cell--numeric">66,000</td>
+                      <td class="u-text-center">
+                        <div class="c-checkbox">
+                          <input class="c-checkbox__control" type="checkbox" name="admn-tbl-opt-all" value="1" id="admn-tbl-opt-all"/>
+                          <label class="c-checkbox__label" for="admn-tbl-opt-all">
+                          </label>
+                        </div>
+                      </td>
+                      <td class="u-text-center">
+                        <div class="c-checkbox">
+                          <input class="c-checkbox__control" type="checkbox" name="admn-tbl-opt-all" value="1" id="admn-tbl-opt-all"/>
+                          <label class="c-checkbox__label" for="admn-tbl-opt-all">
+                          </label>
+                        </div>
+                      </td>
+                      <td class="c-table__cell--w_min c-table__cell--actions">
+                              <button class="c-button c-button--size_md c-button--theme_default-solid js-tooltip-html-trigger" type="button" data-tooltip-target="#tooltip_investors-table-actions"><span class="c-button__pos">
+                                        <svg class="c-icon c-icon--size_sm" role="presentation">
+                                          <use xlink:href="/framework/svg/stack.svg#icon--actions"></use>
+                                        </svg></span></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="c-table__cell--w_min">
+                        <div class="c-checkbox">
+                          <input class="c-checkbox__control" type="checkbox" name="admn-tbl-opt-all" value="1" id="admn-tbl-opt-all"/>
+                          <label class="c-checkbox__label" for="admn-tbl-opt-all">
+                          </label>
+                        </div>
+                      </td>
+                      <td>Michael Jackson</td>
+                      <td>michael.jackson@motown.com</td>
+                      <td>0412 456 987</td>
+                      <td>165987</td>
+                      <td>GIA</td>
+                      <td>Marty McFly</td>
+                      <td class="c-table__cell--numeric">66,000</td>
+                      <td class="u-text-center">
+                        <div class="c-checkbox">
+                          <input class="c-checkbox__control" type="checkbox" name="admn-tbl-opt-all" value="1" id="admn-tbl-opt-all"/>
+                          <label class="c-checkbox__label" for="admn-tbl-opt-all">
+                          </label>
+                        </div>
+                      </td>
+                      <td class="u-text-center">
+                        <div class="c-checkbox">
+                          <input class="c-checkbox__control" type="checkbox" name="admn-tbl-opt-all" value="1" id="admn-tbl-opt-all"/>
+                          <label class="c-checkbox__label" for="admn-tbl-opt-all">
+                          </label>
+                        </div>
+                      </td>
+                      <td class="c-table__cell--w_min c-table__cell--actions">
+                              <button class="c-button c-button--size_md c-button--theme_default-solid js-tooltip-html-trigger" type="button" data-tooltip-target="#tooltip_investors-table-actions"><span class="c-button__pos">
+                                        <svg class="c-icon c-icon--size_sm" role="presentation">
+                                          <use xlink:href="/framework/svg/stack.svg#icon--actions"></use>
+                                        </svg></span></button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="u-pt-x2 u-text-center">
+                <div class="c-pagination"><a class="c-pagination__item c-pagination__prev" href="#">
+                          <svg class="c-icon c-icon--size_md c-pagination__icon" role="presentation">
+                            <use xlink:href="/framework/svg/stack.svg#icon--carret-left"></use>
+                          </svg></a><a class="c-pagination__item c-pagination__step" href="#">1</a><a class="c-pagination__step--current c-pagination__item c-pagination__step" href="#">2</a><a class="c-pagination__item c-pagination__step" href="#">3</a><a class="c-pagination__item c-pagination__step" href="#">4</a><a class="c-pagination__item c-pagination__next" href="#">
+                          <svg class="c-icon c-icon--size_md c-pagination__icon" role="presentation">
+                            <use xlink:href="/framework/svg/stack.svg#icon--carret-right"></use>
+                          </svg></a>
+                </div>
+              </div>
+            </section>
+            <section class="u-ph-x6 u-pv-x12">
+              <div class="u-lh-dense u-mb-x12">
+                <div class="o-type-ms3 u-weight-bold">$50,000</div>in the pipeline
+              </div>
+              <div class="o-overflow-scroll">
+                <table class="c-table c-table--style_clean c-table--space_default">
+                  <thead>
+                    <tr>
+                      <th>Investor</th>
+                      <th>Investor #</th>
+                      <th class="u-text-right">Allocation ($)</th>
+                      <th>Notes</th>
+                      <th>Time in pipeline</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Michael Jackson</td>
+                      <td>165987</td>
+                      <td class="c-table__cell--numeric">66,000</td>
+                      <td>Spoke on the phone and is waiting for a cheque to clear before depositing the funds</td>
+                      <td>4 days</td>
+                      <td class="c-table__cell--w_min c-table__cell--actions">
+                              <button class="c-button c-button--size_md c-button--theme_default-solid js-tooltip-html-trigger" type="button" data-tooltip-target="#tooltip_pipeline-table-actions"><span class="c-button__pos">
+                                        <svg class="c-icon c-icon--size_sm" role="presentation">
+                                          <use xlink:href="/framework/svg/stack.svg#icon--actions"></use>
+                                        </svg></span></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Michael Jackson</td>
+                      <td>165987</td>
+                      <td class="c-table__cell--numeric">66,000</td>
+                      <td>Spoke on the phone and is waiting for a cheque to clear before depositing the funds</td>
+                      <td>4 days</td>
+                      <td class="c-table__cell--w_min c-table__cell--actions">
+                              <button class="c-button c-button--size_md c-button--theme_default-solid js-tooltip-html-trigger" type="button" data-tooltip-target="#tooltip_pipeline-table-actions"><span class="c-button__pos">
+                                        <svg class="c-icon c-icon--size_sm" role="presentation">
+                                          <use xlink:href="/framework/svg/stack.svg#icon--actions"></use>
+                                        </svg></span></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Michael Jackson</td>
+                      <td>165987</td>
+                      <td class="c-table__cell--numeric">66,000</td>
+                      <td>Spoke on the phone and is waiting for a cheque to clear before depositing the funds</td>
+                      <td>4 days</td>
+                      <td class="c-table__cell--w_min c-table__cell--actions">
+                              <button class="c-button c-button--size_md c-button--theme_default-solid js-tooltip-html-trigger" type="button" data-tooltip-target="#tooltip_pipeline-table-actions"><span class="c-button__pos">
+                                        <svg class="c-icon c-icon--size_sm" role="presentation">
+                                          <use xlink:href="/framework/svg/stack.svg#icon--actions"></use>
+                                        </svg></span></button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="u-pt-x2 u-text-center">
+                <div class="c-pagination"><a class="c-pagination__item c-pagination__prev" href="#">
+                          <svg class="c-icon c-icon--size_md c-pagination__icon" role="presentation">
+                            <use xlink:href="/framework/svg/stack.svg#icon--carret-left"></use>
+                          </svg></a><a class="c-pagination__item c-pagination__step" href="#">1</a><a class="c-pagination__step--current c-pagination__item c-pagination__step" href="#">2</a><a class="c-pagination__item c-pagination__step" href="#">3</a><a class="c-pagination__item c-pagination__step" href="#">4</a><a class="c-pagination__item c-pagination__next" href="#">
+                          <svg class="c-icon c-icon--size_md c-pagination__icon" role="presentation">
+                            <use xlink:href="/framework/svg/stack.svg#icon--carret-right"></use>
+                          </svg></a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </main>
+      </div>
+      <!-- Tooltips-->
+      <div class="js-tooltip-html-target" id="tooltip_queue-inv">
+        <div class="c-nav-actions c-nav-actions--layout_v c-nav-actions--size_sm">
+          <div class="c-nav-actions__item"><a class="c-nav-actions__link" href="#">Export to CSV</a></div>
+          <div class="c-nav-actions__item"><a class="c-nav-actions__link" href="#" onclick="openModalSm(event)" data-modal-target="#modal_add-pipeline-investor">Add pipeline investor</a></div>
+          <div class="c-nav-actions__item"><a class="c-nav-actions__link" href="#">Generate report</a></div>
+        </div>
+      </div>
+      <div class="js-tooltip-html-target" id="tooltip_investors-table-actions">
+        <div class="c-nav-actions c-nav-actions--layout_v c-nav-actions--size_sm">
+          <div class="c-nav-actions__item"><a class="c-nav-actions__link" href="#" onclick="openModalSm(event)" data-modal-target="#modal_edit-investor">Edit</a></div>
+          <div class="c-nav-actions__item"><a class="c-nav-actions__link" href="#">Remove</a></div>
+        </div>
+      </div>
+      <div class="js-tooltip-html-target" id="tooltip_pipeline-table-actions">
+        <div class="c-nav-actions c-nav-actions--layout_v c-nav-actions--size_sm">
+          <div class="c-nav-actions__item"><a class="c-nav-actions__link" href="#">&mdash;</a></div>
+        </div>
+      </div>
+      <!-- Modals-->
+      <div class="c-modal__content u-hidden" id="modal_add-pipeline-investor" data-modal-save-label="Add to pipeline" data-modal-cancel-label="Cancel">
+        <h3 class="c-heading c-heading--sm">Add pipeline investor</h3>
+        <form class="c-form c-form--style_outline c-form--theme_default c-form--space_dense">
+          <div class="o-grid o-grid--gutter_sm c-form__group">
+            <div class="o-grid__col u-12/24">
+              <label class="c-form__label" for="appl-invopt-initamount">Investor name
+              </label>
+              <input class="c-form__control" type="text" name="appl-invopt-initamount" value="" placeholder="" id="appl-invopt-initamount">
+            </div>
+            <div class="o-grid__col u-12/24">
+              <label class="c-form__label" for="appl-invopt-initamount">Allocation amount
+              </label>
+              <div class="c-form__input-group">
+                <div class="c-form__before-control">$</div>
+                <input class="c-form__control" type="text" name="appl-invopt-initamount" value="" placeholder="" id="appl-invopt-initamount">
+              </div>
+            </div>
+          </div>
+          <div class="c-form__group u-12/24">
+            <label class="c-form__label" for="appl-invopt-initamount">Investor #<span class="c-form__optional">(optional)</span>
+            </label>
+            <input class="c-form__control" type="text" name="appl-invopt-initamount" value="" placeholder="" id="appl-invopt-initamount">
+          </div>
+          <div class="c-form__group">
+            <label class="c-form__label" for="appl-invopt-initamount">Investor notes
+            </label>
+            <textarea class="c-form__control" name="admn-devup" placeholder="" id="admn-devup">Currently running ahead of schedule and looking at a November 2018 finish</textarea>
+          </div>
+        </form>
+      </div>
+      <div class="c-modal__content u-hidden" id="modal_edit-investor" data-modal-save-label="Update allocation" data-modal-cancel-label="Cancel">
+        <h3 class="c-heading c-heading--sm">Edit investor</h3>
+        <div class="u-bgcolor-neutral-light u-pv-x4 u-ph-x5 u-mb-x5">
+          <div class="o-grid o-grid--gutter_sm">
+            <div class="o-grid__col u-8/24 u-weight-bold">Investor</div>
+            <div class="o-grid__col u-16/24">Michael Jackson</div>
+          </div>
+          <div class="o-grid o-grid--gutter_sm">
+            <div class="o-grid__col u-8/24 u-weight-bold">Investor #</div>
+            <div class="o-grid__col u-16/24">123 987</div>
+          </div>
+          <div class="o-grid o-grid--gutter_sm">
+            <div class="o-grid__col u-8/24 u-weight-bold">Available funds</div>
+            <div class="o-grid__col u-16/24 u-weight-bold u-color-scheme-brand">66,000</div>
+          </div>
+        </div>
+        <form class="c-form c-form--style_outline c-form--theme_default c-form--space_dense">
+          <div class="o-grid o-grid--gutter_md c-form__group">
+            <div class="o-grid__col u-12/24">
+              <label class="c-form__label" for="appl-invopt-initamount">Allocation amount
+              </label>
+              <div class="c-form__input-group">
+                <div class="c-form__before-control">$</div>
+                <input class="c-form__control" type="text" name="appl-invopt-initamount" value="60,000" placeholder="" id="appl-invopt-initamount">
+              </div>
+            </div>
+            <div class="o-grid__col u-12/24">
+              <div class="c-form__group">
+                <label class="c-form__label" for="gridbar-searchusers">Additional info
+                </label>
+                <div class="c-checkbox__stack-wrapper">
+                  <div class="c-checkbox">
+                    <input class="c-checkbox__control" type="checkbox" name="admn-vuser-updbyemail" value="1" id="admn-vuser-updbyemail" checked="checked">
+                    <label class="c-checkbox__label" for="admn-vuser-updbyemail">Pooled Fund
+                    </label>
+                  </div>
+                  <div class="c-checkbox">
+                    <input class="c-checkbox__control" type="checkbox" name="admn-vuser-updbyemail" value="1" id="admn-vuser-updbyemail" checked="checked">
+                    <label class="c-checkbox__label" for="admn-vuser-updbyemail">SPDS received
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- ==================================================================================================-->
+      <!-- << CONTENT ENDS-->
+      <!-- ==================================================================================================-->
+    </div>
+    <script src="/framework/vendors/bundle.js"></script>
+    <script src="/framework/scripts/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,2339 @@
+<!DOCTYPE html>
+<html class="sg" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>UI design system - </title>
+    <link href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" rel="stylesheet" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link href="styles/sg-main.css" rel="stylesheet">
+    <link href="styles/assets.css" rel="stylesheet">
+    <link href="../framework/styles/vendor.css" rel="stylesheet">
+    <link href="../framework/styles/main.css" rel="stylesheet">
+  </head>
+  <body class="sg-layout">
+    <button class="sg-toggle-nav js-sg-toggle-nav"><i class="fas fa-bars"></i></button>
+    <header class="sg-layout-header">
+      <p><a href="/styleguide/">Index</a></p>
+      <nav>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Atoms</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/atoms/headings.html">Headings</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/buttons.html">Buttons</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/icons.html">Icons</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/lists.html">Lists</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/forms.html">Form</a></li>
+          <li class="sg-list__item"><a href="/styleguide/atoms/tables.html">Tables</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Molecules</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/molecules/hero.html">Hero</a></li>
+          <li class="sg-list__item"><a href="/styleguide/molecules/carousel.html">Carousel</a></li>
+          <li class="sg-list__item"><a href="/styleguide/molecules/overlay-tabs.html">Overlay tabs</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Organisms</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/organisms/header.html">Header</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/footer.html">Footer</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/page-nav.html">Page nav</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/section-header.html">Section header</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/content-blocks.html">Content blocks</a></li>
+          <li class="sg-list__item"><a href="/styleguide/organisms/grid-blocks.html">Grid blocks</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Pages</h3>
+        <h4 class="sg-heading sg-heading--xs sg-text--xs">Main</h4>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="/styleguide/pages.html#pages/0_home">Home</a></li>
+          <li class="sg-list__item"><a href="/styleguide/pages.html#pages/1_sector">Sector</a></li>
+          <li class="sg-list__item"><a href="/styleguide/pages.html#pages/2_newsroom">Newsroom</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ==================================================================================================-->
+    <!-- CONTENT STARTS >>-->
+    <!-- ==================================================================================================-->
+    <main class="sg-layout-content">
+      <h4 class="sg-heading sg-text--md sg-heading--md">Grid block - standard</h4>
+      <div class="sg-component-description">
+        Standard vertrical cards - media, title and body.
+        
+      </div>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light sg-component-example__preview--full">
+
+          <article class="c-content-block">
+            <div class="o-container o-container--gutter_lg o-container--width_lg">
+              <div class="o-grid o-grid--gutter_sm">
+                <div class="o-grid__col u-6/24@lg-up u-mb-x4@md-dn">
+                  <section class="c-card c-card--theme_default c-card--mod_inverse c-card--size_md">
+                    <div class="c-card__inner">
+                      <div class="c-card__media"><img class="c-image c-image--fit_contain" src="/styleguide/assets/sg-placeholder-material-lanscape.jpg"></div>
+                      <header class="c-card__header">
+                        <h3 class="c-heading c-heading--sm c-card__title">Investor Relations
+                        </h3>
+                      </header>
+                      <div class="c-card__content c-card__content--fixed">
+                        Invest in a global engineering and technology Group that is one of the largest
+                        entities on the Singapore Exchange.
+                        
+                      </div>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_md" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid"><a class="c-link u-weight-bold" href="#">Investor relations</a></div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+                <div class="o-grid__col u-6/24@lg-up u-mb-x4@md-dn">
+                  <section class="c-card c-card--theme_default c-card--mod_inverse c-card--size_md">
+                    <div class="c-card__inner">
+                      <div class="c-card__media"><img class="c-image c-image--fit_contain" src="/styleguide/assets/sg-placeholder-material-lanscape.jpg"></div>
+                      <header class="c-card__header">
+                        <h3 class="c-heading c-heading--sm c-card__title">Investor Relations
+                        </h3>
+                      </header>
+                      <div class="c-card__content c-card__content--fixed">
+                        Invest in a global engineering and technology Group that is one of the largest
+                        entities on the Singapore Exchange.
+                        
+                      </div>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_md" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid"><a class="c-link u-weight-bold" href="#">Investor relations</a></div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+                <div class="o-grid__col u-6/24@lg-up u-mb-x4@md-dn">
+                  <section class="c-card c-card--theme_default c-card--mod_inverse c-card--size_md">
+                    <div class="c-card__inner">
+                      <div class="c-card__media"><img class="c-image c-image--fit_contain" src="/styleguide/assets/sg-placeholder-material-lanscape.jpg"></div>
+                      <header class="c-card__header">
+                        <h3 class="c-heading c-heading--sm c-card__title">Investor Relations
+                        </h3>
+                      </header>
+                      <div class="c-card__content c-card__content--fixed">
+                        Invest in a global engineering and technology Group that is one of the largest
+                        entities on the Singapore Exchange.
+                        
+                      </div>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_md" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid"><a class="c-link u-weight-bold" href="#">Investor relations</a></div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+                <div class="o-grid__col u-6/24@lg-up">
+                  <section class="c-card c-card--theme_default c-card--mod_inverse c-card--size_md">
+                    <div class="c-card__inner">
+                      <div class="c-card__media"><img class="c-image c-image--fit_contain" src="/styleguide/assets/sg-placeholder-material-lanscape.jpg"></div>
+                      <header class="c-card__header">
+                        <h3 class="c-heading c-heading--sm c-card__title">Investor Relations
+                        </h3>
+                      </header>
+                      <div class="c-card__content c-card__content--fixed">
+                        Invest in a global engineering and technology Group that is one of the largest
+                        entities on the Singapore Exchange.
+                        
+                      </div>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_md" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid"><a class="c-link u-weight-bold" href="#">Investor relations</a></div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">
+              &lt;article class=&quot;c-content-block&quot;&gt;
+                &lt;div class=&quot;o-container o-container--gutter_lg o-container--width_lg&quot;&gt;
+                  &lt;div class=&quot;o-grid o-grid--gutter_sm&quot;&gt;
+                    &lt;div class=&quot;o-grid__col u-6/24@lg-up u-mb-x4@md-dn&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_default c-card--mod_inverse c-card--size_md&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;div class=&quot;c-card__media&quot;&gt;&lt;img class=&quot;c-image c-image--fit_contain&quot; src=&quot;/styleguide/assets/sg-placeholder-material-lanscape.jpg&quot;&gt;&lt;/div&gt;
+                          &lt;header class=&quot;c-card__header&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--sm c-card__title&quot;&gt;Investor Relations
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;div class=&quot;c-card__content c-card__content--fixed&quot;&gt;
+                            Invest in a global engineering and technology Group that is one of the largest
+                            entities on the Singapore Exchange.
+                            
+                          &lt;/div&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_md&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;&lt;a class=&quot;c-link u-weight-bold&quot; href=&quot;#&quot;&gt;Investor relations&lt;/a&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;o-grid__col u-6/24@lg-up u-mb-x4@md-dn&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_default c-card--mod_inverse c-card--size_md&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;div class=&quot;c-card__media&quot;&gt;&lt;img class=&quot;c-image c-image--fit_contain&quot; src=&quot;/styleguide/assets/sg-placeholder-material-lanscape.jpg&quot;&gt;&lt;/div&gt;
+                          &lt;header class=&quot;c-card__header&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--sm c-card__title&quot;&gt;Investor Relations
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;div class=&quot;c-card__content c-card__content--fixed&quot;&gt;
+                            Invest in a global engineering and technology Group that is one of the largest
+                            entities on the Singapore Exchange.
+                            
+                          &lt;/div&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_md&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;&lt;a class=&quot;c-link u-weight-bold&quot; href=&quot;#&quot;&gt;Investor relations&lt;/a&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;o-grid__col u-6/24@lg-up u-mb-x4@md-dn&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_default c-card--mod_inverse c-card--size_md&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;div class=&quot;c-card__media&quot;&gt;&lt;img class=&quot;c-image c-image--fit_contain&quot; src=&quot;/styleguide/assets/sg-placeholder-material-lanscape.jpg&quot;&gt;&lt;/div&gt;
+                          &lt;header class=&quot;c-card__header&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--sm c-card__title&quot;&gt;Investor Relations
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;div class=&quot;c-card__content c-card__content--fixed&quot;&gt;
+                            Invest in a global engineering and technology Group that is one of the largest
+                            entities on the Singapore Exchange.
+                            
+                          &lt;/div&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_md&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;&lt;a class=&quot;c-link u-weight-bold&quot; href=&quot;#&quot;&gt;Investor relations&lt;/a&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;o-grid__col u-6/24@lg-up&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_default c-card--mod_inverse c-card--size_md&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;div class=&quot;c-card__media&quot;&gt;&lt;img class=&quot;c-image c-image--fit_contain&quot; src=&quot;/styleguide/assets/sg-placeholder-material-lanscape.jpg&quot;&gt;&lt;/div&gt;
+                          &lt;header class=&quot;c-card__header&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--sm c-card__title&quot;&gt;Investor Relations
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;div class=&quot;c-card__content c-card__content--fixed&quot;&gt;
+                            Invest in a global engineering and technology Group that is one of the largest
+                            entities on the Singapore Exchange.
+                            
+                          &lt;/div&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_md&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;&lt;a class=&quot;c-link u-weight-bold&quot; href=&quot;#&quot;&gt;Investor relations&lt;/a&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/article&gt;</code></pre>
+        </div>
+      </div>
+      <h4 class="sg-heading sg-text--md sg-heading--md">Grid block 4</h4>
+      <div class="sg-component-description">
+        Vertical prominent cards with full-image background.
+        
+      </div>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light sg-component-example__preview--full">
+
+          <article class="c-content-block">
+            <div class="o-container o-container--gutter_lg o-container--width_lg">
+              <div class="o-grid o-grid--gutter_sm">
+                <div class="o-grid__col u-6/24@lg-up">
+                  <section class="c-card c-card--theme_overlay c-card--mediabg-demo c-card--mod_inverse c-card--size_md c-card--style_mediabg-v">
+                    <div class="c-card__inner">
+                      <header class="c-card__header">
+                        <h3 class="c-heading c-heading--lg c-card__title">Aerospace
+                        </h3>
+                      </header>
+                      <div class="c-card__content">
+                        We make planes safe, efficient and comfortable through the services
+                        that we provide at aerospace hubs in the Americas, Asia Pacific and Europe.
+                        
+                        
+                      </div>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_lg" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid"></div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+                <div class="o-grid__col u-6/24@lg-up">
+                  <section class="c-card c-card--theme_overlay c-card--mediabg-demo c-card--mod_inverse c-card--size_md c-card--style_mediabg-v">
+                    <div class="c-card__inner">
+                      <header class="c-card__header">
+                        <h3 class="c-heading c-heading--lg c-card__title">Aerospace
+                        </h3>
+                      </header>
+                      <div class="c-card__content">
+                        We make planes safe, efficient and comfortable through the services
+                        that we provide at aerospace hubs in the Americas, Asia Pacific and Europe.
+                        
+                        
+                      </div>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_lg" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid"></div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+                <div class="o-grid__col u-6/24@lg-up">
+                  <section class="c-card c-card--theme_overlay c-card--mediabg-demo c-card--mod_inverse c-card--size_md c-card--style_mediabg-v">
+                    <div class="c-card__inner">
+                      <header class="c-card__header">
+                        <h3 class="c-heading c-heading--lg c-card__title">Aerospace
+                        </h3>
+                      </header>
+                      <div class="c-card__content">
+                        We make planes safe, efficient and comfortable through the services
+                        that we provide at aerospace hubs in the Americas, Asia Pacific and Europe.
+                        
+                        
+                      </div>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_lg" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid"></div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+                <div class="o-grid__col u-6/24@lg-up">
+                  <section class="c-card c-card--theme_overlay c-card--mediabg-demo c-card--mod_inverse c-card--size_md c-card--style_mediabg-v">
+                    <div class="c-card__inner">
+                      <header class="c-card__header">
+                        <h3 class="c-heading c-heading--lg c-card__title">Aerospace
+                        </h3>
+                      </header>
+                      <div class="c-card__content">
+                        We make planes safe, efficient and comfortable through the services
+                        that we provide at aerospace hubs in the Americas, Asia Pacific and Europe.
+                        
+                        
+                      </div>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_lg" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid"></div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">
+              &lt;article class=&quot;c-content-block&quot;&gt;
+                &lt;div class=&quot;o-container o-container--gutter_lg o-container--width_lg&quot;&gt;
+                  &lt;div class=&quot;o-grid o-grid--gutter_sm&quot;&gt;
+                    &lt;div class=&quot;o-grid__col u-6/24@lg-up&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_overlay c-card--mediabg-demo c-card--mod_inverse c-card--size_md c-card--style_mediabg-v&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;header class=&quot;c-card__header&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--lg c-card__title&quot;&gt;Aerospace
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;div class=&quot;c-card__content&quot;&gt;
+                            We make planes safe, efficient and comfortable through the services
+                            that we provide at aerospace hubs in the Americas, Asia Pacific and Europe.
+                            
+                            
+                          &lt;/div&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_lg&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;o-grid__col u-6/24@lg-up&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_overlay c-card--mediabg-demo c-card--mod_inverse c-card--size_md c-card--style_mediabg-v&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;header class=&quot;c-card__header&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--lg c-card__title&quot;&gt;Aerospace
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;div class=&quot;c-card__content&quot;&gt;
+                            We make planes safe, efficient and comfortable through the services
+                            that we provide at aerospace hubs in the Americas, Asia Pacific and Europe.
+                            
+                            
+                          &lt;/div&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_lg&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;o-grid__col u-6/24@lg-up&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_overlay c-card--mediabg-demo c-card--mod_inverse c-card--size_md c-card--style_mediabg-v&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;header class=&quot;c-card__header&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--lg c-card__title&quot;&gt;Aerospace
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;div class=&quot;c-card__content&quot;&gt;
+                            We make planes safe, efficient and comfortable through the services
+                            that we provide at aerospace hubs in the Americas, Asia Pacific and Europe.
+                            
+                            
+                          &lt;/div&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_lg&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;o-grid__col u-6/24@lg-up&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_overlay c-card--mediabg-demo c-card--mod_inverse c-card--size_md c-card--style_mediabg-v&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;header class=&quot;c-card__header&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--lg c-card__title&quot;&gt;Aerospace
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;div class=&quot;c-card__content&quot;&gt;
+                            We make planes safe, efficient and comfortable through the services
+                            that we provide at aerospace hubs in the Americas, Asia Pacific and Europe.
+                            
+                            
+                          &lt;/div&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_lg&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/article&gt;</code></pre>
+        </div>
+      </div>
+      <h4 class="sg-heading sg-text--md sg-heading--md">Grid block 3</h4>
+      <div class="sg-component-description">
+        Horizontal prominent cards with full-image background.
+        
+      </div>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light sg-component-example__preview--full">
+
+          <article class="c-content-block">
+            <div class="o-container o-container--width_lg">
+              <div class="o-grid o-grid--gutter_sm">
+                <div class="o-grid__col u-12/24@lg-up u-mb-x6">
+                  <section class="c-card c-card--theme_overlay c-card--mediabg-demo c-card--mod_inverse c-card--size_md c-card--style_mediabg-h c-card--style_vcenter">
+                    <div class="c-card__inner">
+                      <header class="c-card__header">
+                        <h3 class="c-heading c-heading--lg c-card__title">Aerospace
+                        </h3>
+                      </header>
+                      <div class="c-card__content">
+                        We make planes safe, efficient and comfortable through the services
+                        that we provide at aerospace hubs in the Americas, Asia Pacific and Europe.
+                        
+                        
+                      </div>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_lg" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid"></div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+                <div class="o-grid__col u-12/24@lg-up u-mb-x6">
+                  <section class="c-card c-card--theme_overlay c-card--mediabg-demo c-card--mod_inverse c-card--size_md c-card--style_mediabg-h c-card--style_vcenter">
+                    <div class="c-card__inner">
+                      <header class="c-card__header">
+                        <h3 class="c-heading c-heading--lg c-card__title">Aerospace
+                        </h3>
+                      </header>
+                      <div class="c-card__content">
+                        We make planes safe, efficient and comfortable through the services
+                        that we provide at aerospace hubs in the Americas, Asia Pacific and Europe.
+                        
+                        
+                      </div>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_lg" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid"></div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+                <div class="o-grid__col u-12/24@lg-up u-mb-x6">
+                  <section class="c-card c-card--theme_overlay c-card--mediabg-demo c-card--mod_inverse c-card--size_md c-card--style_mediabg-h c-card--style_vcenter">
+                    <div class="c-card__inner">
+                      <header class="c-card__header">
+                        <h3 class="c-heading c-heading--lg c-card__title">Aerospace
+                        </h3>
+                      </header>
+                      <div class="c-card__content">
+                        We make planes safe, efficient and comfortable through the services
+                        that we provide at aerospace hubs in the Americas, Asia Pacific and Europe.
+                        
+                        
+                      </div>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_lg" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid"></div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+                <div class="o-grid__col u-12/24@lg-up u-mb-x6">
+                  <section class="c-card c-card--theme_overlay c-card--mediabg-demo c-card--mod_inverse c-card--size_md c-card--style_mediabg-h c-card--style_vcenter">
+                    <div class="c-card__inner">
+                      <header class="c-card__header">
+                        <h3 class="c-heading c-heading--lg c-card__title">Aerospace
+                        </h3>
+                      </header>
+                      <div class="c-card__content">
+                        We make planes safe, efficient and comfortable through the services
+                        that we provide at aerospace hubs in the Americas, Asia Pacific and Europe.
+                        
+                        
+                      </div>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_lg" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid"></div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+                <div class="o-grid__col u-12/24@lg-up u-mb-x6">
+                  <section class="c-card c-card--theme_overlay c-card--mediabg-demo c-card--mod_inverse c-card--size_md c-card--style_mediabg-h c-card--style_vcenter">
+                    <div class="c-card__inner">
+                      <header class="c-card__header">
+                        <h3 class="c-heading c-heading--lg c-card__title">Aerospace
+                        </h3>
+                      </header>
+                      <div class="c-card__content">
+                        We make planes safe, efficient and comfortable through the services
+                        that we provide at aerospace hubs in the Americas, Asia Pacific and Europe.
+                        
+                        
+                      </div>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_lg" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid"></div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+                <div class="o-grid__col u-12/24@lg-up u-mb-x6@md-dn">
+                  <section class="c-card c-card--theme_overlay c-card--mediabg-demo c-card--mod_inverse c-card--size_md c-card--style_mediabg-h c-card--style_vcenter">
+                    <div class="c-card__inner">
+                      <header class="c-card__header">
+                        <h3 class="c-heading c-heading--lg c-card__title">Aerospace
+                        </h3>
+                      </header>
+                      <div class="c-card__content">
+                        We make planes safe, efficient and comfortable through the services
+                        that we provide at aerospace hubs in the Americas, Asia Pacific and Europe.
+                        
+                        
+                      </div>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_lg" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid"></div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">
+              &lt;article class=&quot;c-content-block&quot;&gt;
+                &lt;div class=&quot;o-container o-container--width_lg&quot;&gt;
+                  &lt;div class=&quot;o-grid o-grid--gutter_sm&quot;&gt;
+                    &lt;div class=&quot;o-grid__col u-12/24@lg-up u-mb-x6&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_overlay c-card--mediabg-demo c-card--mod_inverse c-card--size_md c-card--style_mediabg-h c-card--style_vcenter&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;header class=&quot;c-card__header&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--lg c-card__title&quot;&gt;Aerospace
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;div class=&quot;c-card__content&quot;&gt;
+                            We make planes safe, efficient and comfortable through the services
+                            that we provide at aerospace hubs in the Americas, Asia Pacific and Europe.
+                            
+                            
+                          &lt;/div&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_lg&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;o-grid__col u-12/24@lg-up u-mb-x6&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_overlay c-card--mediabg-demo c-card--mod_inverse c-card--size_md c-card--style_mediabg-h c-card--style_vcenter&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;header class=&quot;c-card__header&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--lg c-card__title&quot;&gt;Aerospace
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;div class=&quot;c-card__content&quot;&gt;
+                            We make planes safe, efficient and comfortable through the services
+                            that we provide at aerospace hubs in the Americas, Asia Pacific and Europe.
+                            
+                            
+                          &lt;/div&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_lg&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;o-grid__col u-12/24@lg-up u-mb-x6&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_overlay c-card--mediabg-demo c-card--mod_inverse c-card--size_md c-card--style_mediabg-h c-card--style_vcenter&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;header class=&quot;c-card__header&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--lg c-card__title&quot;&gt;Aerospace
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;div class=&quot;c-card__content&quot;&gt;
+                            We make planes safe, efficient and comfortable through the services
+                            that we provide at aerospace hubs in the Americas, Asia Pacific and Europe.
+                            
+                            
+                          &lt;/div&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_lg&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;o-grid__col u-12/24@lg-up u-mb-x6&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_overlay c-card--mediabg-demo c-card--mod_inverse c-card--size_md c-card--style_mediabg-h c-card--style_vcenter&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;header class=&quot;c-card__header&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--lg c-card__title&quot;&gt;Aerospace
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;div class=&quot;c-card__content&quot;&gt;
+                            We make planes safe, efficient and comfortable through the services
+                            that we provide at aerospace hubs in the Americas, Asia Pacific and Europe.
+                            
+                            
+                          &lt;/div&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_lg&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;o-grid__col u-12/24@lg-up u-mb-x6&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_overlay c-card--mediabg-demo c-card--mod_inverse c-card--size_md c-card--style_mediabg-h c-card--style_vcenter&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;header class=&quot;c-card__header&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--lg c-card__title&quot;&gt;Aerospace
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;div class=&quot;c-card__content&quot;&gt;
+                            We make planes safe, efficient and comfortable through the services
+                            that we provide at aerospace hubs in the Americas, Asia Pacific and Europe.
+                            
+                            
+                          &lt;/div&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_lg&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;o-grid__col u-12/24@lg-up u-mb-x6@md-dn&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_overlay c-card--mediabg-demo c-card--mod_inverse c-card--size_md c-card--style_mediabg-h c-card--style_vcenter&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;header class=&quot;c-card__header&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--lg c-card__title&quot;&gt;Aerospace
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;div class=&quot;c-card__content&quot;&gt;
+                            We make planes safe, efficient and comfortable through the services
+                            that we provide at aerospace hubs in the Americas, Asia Pacific and Europe.
+                            
+                            
+                          &lt;/div&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_lg&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/article&gt;</code></pre>
+        </div>
+      </div>
+      <h4 class="sg-heading sg-text--md sg-heading--md">Grid block - news, in-line header</h4>
+      <div class="sg-component-description">
+        Standard vertrical cards - news, with row header on the side.
+        
+      </div>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light sg-component-example__preview--full">
+
+          <article class="c-content-block">
+            <div class="o-container o-container--gutter_lg o-container--width_lg">
+              <div class="o-grid o-grid--gutter_sm">
+                <div class="o-grid__col u-6/24@lg-up">
+                  <header class="c-section-header c-section-header--col">
+                    <div class="c-section-header__before">
+                      <svg class="c-icon c-icon--size_md c-icon--theme_tertiary" role="presentation">
+                        <use xlink:href="/framework/svg/stack.svg#icon--news"></use>
+                      </svg>
+                    </div>
+                    <div class="c-section-header__main">
+                      <h2 class="c-heading c-heading--lg">News and Developments
+                      </h2>
+                    </div>
+                    <div class="c-section-header__after"><a class="c-button c-button--size_md c-button--theme_secondary-solid" href="#"><span class="c-button__pos">All news</span></a>
+                    </div>
+                  </header>
+                </div>
+                <div class="o-grid__col u-6/24@lg-up">
+                  <section class="c-card c-card--theme_gradient c-card--size_md">
+                    <div class="c-card__inner">
+                      <header class="c-card__header c-card__header--fixed">
+                        <h3 class="c-heading c-heading--xs c-card__title">ST Engineering Updates on the Proposed Acquisition of MRAS Updates on the Proposed Acquisition of MRAS
+                        </h3>
+                      </header>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_secondary-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_lg c-icon--theme_secondary" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid">
+                            <div class="u-color-scheme-shade-dark u-weight-bold">29 Mar 2019</div>
+                            <div class="o-list o-list--inline o-list--gutter_xs">
+                              <div class="o-list__item"><a class="c-link" href="#">Aerospace</a></div>
+                              <div class="o-list__item"><a class="c-link" href="#">Electronics</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+                <div class="o-grid__col u-6/24@lg-up">
+                  <section class="c-card c-card--theme_gradient c-card--size_md">
+                    <div class="c-card__inner">
+                      <header class="c-card__header c-card__header--fixed">
+                        <h3 class="c-heading c-heading--xs c-card__title">ST Engineering Updates on the Proposed Acquisition of MRAS Updates on the Proposed Acquisition of MRAS
+                        </h3>
+                      </header>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_secondary-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_lg c-icon--theme_secondary" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid">
+                            <div class="u-color-scheme-shade-dark u-weight-bold">29 Mar 2019</div>
+                            <div class="o-list o-list--inline o-list--gutter_xs">
+                              <div class="o-list__item"><a class="c-link" href="#">Aerospace</a></div>
+                              <div class="o-list__item"><a class="c-link" href="#">Electronics</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+                <div class="o-grid__col u-6/24@lg-up">
+                  <section class="c-card c-card--theme_gradient c-card--size_md">
+                    <div class="c-card__inner">
+                      <header class="c-card__header c-card__header--fixed">
+                        <h3 class="c-heading c-heading--xs c-card__title">ST Engineering Updates on the Proposed Acquisition of MRAS Updates on the Proposed Acquisition of MRAS
+                        </h3>
+                      </header>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_secondary-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_lg c-icon--theme_secondary" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid">
+                            <div class="u-color-scheme-shade-dark u-weight-bold">29 Mar 2019</div>
+                            <div class="o-list o-list--inline o-list--gutter_xs">
+                              <div class="o-list__item"><a class="c-link" href="#">Aerospace</a></div>
+                              <div class="o-list__item"><a class="c-link" href="#">Electronics</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">
+              &lt;article class=&quot;c-content-block&quot;&gt;
+                &lt;div class=&quot;o-container o-container--gutter_lg o-container--width_lg&quot;&gt;
+                  &lt;div class=&quot;o-grid o-grid--gutter_sm&quot;&gt;
+                    &lt;div class=&quot;o-grid__col u-6/24@lg-up&quot;&gt;
+                      &lt;header class=&quot;c-section-header c-section-header--col&quot;&gt;
+                        &lt;div class=&quot;c-section-header__before&quot;&gt;
+                          &lt;svg class=&quot;c-icon c-icon--size_md c-icon--theme_tertiary&quot; role=&quot;presentation&quot;&gt;
+                            &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--news&quot;&gt;&lt;/use&gt;
+                          &lt;/svg&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;c-section-header__main&quot;&gt;
+                          &lt;h2 class=&quot;c-heading c-heading--lg&quot;&gt;News and Developments
+                          &lt;/h2&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;c-section-header__after&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_secondary-solid&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;All news&lt;/span&gt;&lt;/a&gt;
+                        &lt;/div&gt;
+                      &lt;/header&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;o-grid__col u-6/24@lg-up&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_gradient c-card--size_md&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;header class=&quot;c-card__header c-card__header--fixed&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--xs c-card__title&quot;&gt;ST Engineering Updates on the Proposed Acquisition of MRAS Updates on the Proposed Acquisition of MRAS
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_secondary-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_lg c-icon--theme_secondary&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;
+                                &lt;div class=&quot;u-color-scheme-shade-dark u-weight-bold&quot;&gt;29 Mar 2019&lt;/div&gt;
+                                &lt;div class=&quot;o-list o-list--inline o-list--gutter_xs&quot;&gt;
+                                  &lt;div class=&quot;o-list__item&quot;&gt;&lt;a class=&quot;c-link&quot; href=&quot;#&quot;&gt;Aerospace&lt;/a&gt;&lt;/div&gt;
+                                  &lt;div class=&quot;o-list__item&quot;&gt;&lt;a class=&quot;c-link&quot; href=&quot;#&quot;&gt;Electronics&lt;/a&gt;&lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;o-grid__col u-6/24@lg-up&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_gradient c-card--size_md&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;header class=&quot;c-card__header c-card__header--fixed&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--xs c-card__title&quot;&gt;ST Engineering Updates on the Proposed Acquisition of MRAS Updates on the Proposed Acquisition of MRAS
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_secondary-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_lg c-icon--theme_secondary&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;
+                                &lt;div class=&quot;u-color-scheme-shade-dark u-weight-bold&quot;&gt;29 Mar 2019&lt;/div&gt;
+                                &lt;div class=&quot;o-list o-list--inline o-list--gutter_xs&quot;&gt;
+                                  &lt;div class=&quot;o-list__item&quot;&gt;&lt;a class=&quot;c-link&quot; href=&quot;#&quot;&gt;Aerospace&lt;/a&gt;&lt;/div&gt;
+                                  &lt;div class=&quot;o-list__item&quot;&gt;&lt;a class=&quot;c-link&quot; href=&quot;#&quot;&gt;Electronics&lt;/a&gt;&lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;o-grid__col u-6/24@lg-up&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_gradient c-card--size_md&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;header class=&quot;c-card__header c-card__header--fixed&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--xs c-card__title&quot;&gt;ST Engineering Updates on the Proposed Acquisition of MRAS Updates on the Proposed Acquisition of MRAS
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_secondary-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_lg c-icon--theme_secondary&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;
+                                &lt;div class=&quot;u-color-scheme-shade-dark u-weight-bold&quot;&gt;29 Mar 2019&lt;/div&gt;
+                                &lt;div class=&quot;o-list o-list--inline o-list--gutter_xs&quot;&gt;
+                                  &lt;div class=&quot;o-list__item&quot;&gt;&lt;a class=&quot;c-link&quot; href=&quot;#&quot;&gt;Aerospace&lt;/a&gt;&lt;/div&gt;
+                                  &lt;div class=&quot;o-list__item&quot;&gt;&lt;a class=&quot;c-link&quot; href=&quot;#&quot;&gt;Electronics&lt;/a&gt;&lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/article&gt;</code></pre>
+        </div>
+      </div>
+      <h4 class="sg-heading sg-text--md sg-heading--md">Grid block - news</h4>
+      <div class="sg-component-description">
+        Vertrical text-only cards - news.
+        
+      </div>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light sg-component-example__preview--full">
+
+          <article class="c-content-block">
+            <div class="o-container o-container--gutter_lg o-container--width_lg">
+              <header class="c-section-header c-section-header--row">
+                <div class="c-section-header__before">
+                  <svg class="c-icon c-icon--size_md c-icon--theme_tertiary" role="presentation">
+                    <use xlink:href="/framework/svg/stack.svg#icon--news"></use>
+                  </svg>
+                </div>
+                <div class="c-section-header__main">
+                  <h2 class="c-heading c-heading--lg">News and developments
+                  </h2>
+                </div>
+                <div class="c-section-header__after"><a class="c-button c-button--size_md c-button--theme_secondary-solid" href="#"><span class="c-button__pos">All news</span></a>
+                </div>
+              </header>
+              <div class="o-grid o-grid--gutter_sm">
+                <div class="o-grid__col u-6/24@lg-up u-mb-x4@md-dn">
+                  <section class="c-card c-card--theme_gradient c-card--size_md">
+                    <div class="c-card__inner">
+                      <header class="c-card__header c-card__header--fixed">
+                        <h3 class="c-heading c-heading--xs c-card__title">ST Engineering Updates on the Proposed Acquisition of MRAS Updates on the Proposed Acquisition of MRAS
+                        </h3>
+                      </header>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_secondary-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_lg c-icon--theme_secondary" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid">
+                            <div class="u-color-scheme-shade-dark u-weight-bold">29 Mar 2019</div>
+                            <div class="o-list o-list--inline o-list--gutter_xs">
+                              <div class="o-list__item"><a class="c-link" href="#">Aerospace</a></div>
+                              <div class="o-list__item"><a class="c-link" href="#">Electronics</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+                <div class="o-grid__col u-6/24@lg-up u-mb-x4@md-dn">
+                  <section class="c-card c-card--theme_gradient c-card--size_md">
+                    <div class="c-card__inner">
+                      <header class="c-card__header c-card__header--fixed">
+                        <h3 class="c-heading c-heading--xs c-card__title">ST Engineering Updates on the Proposed Acquisition of MRAS Updates on the Proposed Acquisition of MRAS
+                        </h3>
+                      </header>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_secondary-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_lg c-icon--theme_secondary" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid">
+                            <div class="u-color-scheme-shade-dark u-weight-bold">29 Mar 2019</div>
+                            <div class="o-list o-list--inline o-list--gutter_xs">
+                              <div class="o-list__item"><a class="c-link" href="#">Aerospace</a></div>
+                              <div class="o-list__item"><a class="c-link" href="#">Electronics</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+                <div class="o-grid__col u-6/24@lg-up u-mb-x4@md-dn">
+                  <section class="c-card c-card--theme_gradient c-card--size_md">
+                    <div class="c-card__inner">
+                      <header class="c-card__header c-card__header--fixed">
+                        <h3 class="c-heading c-heading--xs c-card__title">ST Engineering Updates on the Proposed Acquisition of MRAS Updates on the Proposed Acquisition of MRAS
+                        </h3>
+                      </header>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_secondary-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_lg c-icon--theme_secondary" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid">
+                            <div class="u-color-scheme-shade-dark u-weight-bold">29 Mar 2019</div>
+                            <div class="o-list o-list--inline o-list--gutter_xs">
+                              <div class="o-list__item"><a class="c-link" href="#">Aerospace</a></div>
+                              <div class="o-list__item"><a class="c-link" href="#">Electronics</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+                <div class="o-grid__col u-6/24@lg-up">
+                  <section class="c-card c-card--theme_gradient c-card--size_md">
+                    <div class="c-card__inner">
+                      <header class="c-card__header c-card__header--fixed">
+                        <h3 class="c-heading c-heading--xs c-card__title">ST Engineering Updates on the Proposed Acquisition of MRAS Updates on the Proposed Acquisition of MRAS
+                        </h3>
+                      </header>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_secondary-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_lg c-icon--theme_secondary" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid">
+                            <div class="u-color-scheme-shade-dark u-weight-bold">29 Mar 2019</div>
+                            <div class="o-list o-list--inline o-list--gutter_xs">
+                              <div class="o-list__item"><a class="c-link" href="#">Aerospace</a></div>
+                              <div class="o-list__item"><a class="c-link" href="#">Electronics</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">
+              &lt;article class=&quot;c-content-block&quot;&gt;
+                &lt;div class=&quot;o-container o-container--gutter_lg o-container--width_lg&quot;&gt;
+                  &lt;header class=&quot;c-section-header c-section-header--row&quot;&gt;
+                    &lt;div class=&quot;c-section-header__before&quot;&gt;
+                      &lt;svg class=&quot;c-icon c-icon--size_md c-icon--theme_tertiary&quot; role=&quot;presentation&quot;&gt;
+                        &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--news&quot;&gt;&lt;/use&gt;
+                      &lt;/svg&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;c-section-header__main&quot;&gt;
+                      &lt;h2 class=&quot;c-heading c-heading--lg&quot;&gt;News and developments
+                      &lt;/h2&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;c-section-header__after&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_secondary-solid&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;All news&lt;/span&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                  &lt;/header&gt;
+                  &lt;div class=&quot;o-grid o-grid--gutter_sm&quot;&gt;
+                    &lt;div class=&quot;o-grid__col u-6/24@lg-up u-mb-x4@md-dn&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_gradient c-card--size_md&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;header class=&quot;c-card__header c-card__header--fixed&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--xs c-card__title&quot;&gt;ST Engineering Updates on the Proposed Acquisition of MRAS Updates on the Proposed Acquisition of MRAS
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_secondary-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_lg c-icon--theme_secondary&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;
+                                &lt;div class=&quot;u-color-scheme-shade-dark u-weight-bold&quot;&gt;29 Mar 2019&lt;/div&gt;
+                                &lt;div class=&quot;o-list o-list--inline o-list--gutter_xs&quot;&gt;
+                                  &lt;div class=&quot;o-list__item&quot;&gt;&lt;a class=&quot;c-link&quot; href=&quot;#&quot;&gt;Aerospace&lt;/a&gt;&lt;/div&gt;
+                                  &lt;div class=&quot;o-list__item&quot;&gt;&lt;a class=&quot;c-link&quot; href=&quot;#&quot;&gt;Electronics&lt;/a&gt;&lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;o-grid__col u-6/24@lg-up u-mb-x4@md-dn&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_gradient c-card--size_md&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;header class=&quot;c-card__header c-card__header--fixed&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--xs c-card__title&quot;&gt;ST Engineering Updates on the Proposed Acquisition of MRAS Updates on the Proposed Acquisition of MRAS
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_secondary-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_lg c-icon--theme_secondary&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;
+                                &lt;div class=&quot;u-color-scheme-shade-dark u-weight-bold&quot;&gt;29 Mar 2019&lt;/div&gt;
+                                &lt;div class=&quot;o-list o-list--inline o-list--gutter_xs&quot;&gt;
+                                  &lt;div class=&quot;o-list__item&quot;&gt;&lt;a class=&quot;c-link&quot; href=&quot;#&quot;&gt;Aerospace&lt;/a&gt;&lt;/div&gt;
+                                  &lt;div class=&quot;o-list__item&quot;&gt;&lt;a class=&quot;c-link&quot; href=&quot;#&quot;&gt;Electronics&lt;/a&gt;&lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;o-grid__col u-6/24@lg-up u-mb-x4@md-dn&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_gradient c-card--size_md&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;header class=&quot;c-card__header c-card__header--fixed&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--xs c-card__title&quot;&gt;ST Engineering Updates on the Proposed Acquisition of MRAS Updates on the Proposed Acquisition of MRAS
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_secondary-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_lg c-icon--theme_secondary&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;
+                                &lt;div class=&quot;u-color-scheme-shade-dark u-weight-bold&quot;&gt;29 Mar 2019&lt;/div&gt;
+                                &lt;div class=&quot;o-list o-list--inline o-list--gutter_xs&quot;&gt;
+                                  &lt;div class=&quot;o-list__item&quot;&gt;&lt;a class=&quot;c-link&quot; href=&quot;#&quot;&gt;Aerospace&lt;/a&gt;&lt;/div&gt;
+                                  &lt;div class=&quot;o-list__item&quot;&gt;&lt;a class=&quot;c-link&quot; href=&quot;#&quot;&gt;Electronics&lt;/a&gt;&lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;o-grid__col u-6/24@lg-up&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_gradient c-card--size_md&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;header class=&quot;c-card__header c-card__header--fixed&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--xs c-card__title&quot;&gt;ST Engineering Updates on the Proposed Acquisition of MRAS Updates on the Proposed Acquisition of MRAS
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_secondary-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_lg c-icon--theme_secondary&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;
+                                &lt;div class=&quot;u-color-scheme-shade-dark u-weight-bold&quot;&gt;29 Mar 2019&lt;/div&gt;
+                                &lt;div class=&quot;o-list o-list--inline o-list--gutter_xs&quot;&gt;
+                                  &lt;div class=&quot;o-list__item&quot;&gt;&lt;a class=&quot;c-link&quot; href=&quot;#&quot;&gt;Aerospace&lt;/a&gt;&lt;/div&gt;
+                                  &lt;div class=&quot;o-list__item&quot;&gt;&lt;a class=&quot;c-link&quot; href=&quot;#&quot;&gt;Electronics&lt;/a&gt;&lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/article&gt;</code></pre>
+        </div>
+      </div>
+      <h4 class="sg-heading sg-text--md sg-heading--md">Grid block - events</h4>
+      <div class="sg-component-description">
+        Vertrical text-only cards - events.
+        
+      </div>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light sg-component-example__preview--full">
+
+          <article class="c-content-block">
+            <div class="o-container o-container--gutter_lg o-container--width_lg">
+              <header class="c-section-header c-section-header--row">
+                <div class="c-section-header__before">
+                  <svg class="c-icon c-icon--size_md c-icon--theme_tertiary" role="presentation">
+                    <use xlink:href="/framework/svg/stack.svg#icon--calendar"></use>
+                  </svg>
+                </div>
+                <div class="c-section-header__main">
+                  <h2 class="c-heading c-heading--lg">Upcoming events
+                  </h2>
+                </div>
+                <div class="c-section-header__after"><a class="c-button c-button--size_md c-button--theme_secondary-solid" href="#"><span class="c-button__pos">All events</span></a>
+                </div>
+              </header>
+              <div class="o-grid o-grid--gutter_sm">
+                <div class="o-grid__col u-6/24@lg-up u-mb-x4@md-dn">
+                  <section class="c-card c-card--theme_gradient c-card--size_md">
+                    <div class="c-card__inner">
+                      <header class="c-card__header c-card__header--fixed">
+                        <h3 class="c-heading c-heading--xs c-card__title">ST Engineering Updates on the Proposed Acquisition of MRAS Updates on the Proposed Acquisition of MRAS
+                        </h3>
+                      </header>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_secondary-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_lg c-icon--theme_secondary" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid">
+                            <div class="u-color-scheme-shade-dark u-weight-bold">29 Mar 2019</div>
+                            <div class="o-list o-list--inline o-list--gutter_xs">
+                              <div class="o-list__item"><a class="c-link" href="#">Aerospace</a></div>
+                              <div class="o-list__item"><a class="c-link" href="#">Electronics</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+                <div class="o-grid__col u-6/24@lg-up u-mb-x4@md-dn">
+                  <section class="c-card c-card--theme_gradient c-card--size_md">
+                    <div class="c-card__inner">
+                      <header class="c-card__header c-card__header--fixed">
+                        <h3 class="c-heading c-heading--xs c-card__title">ST Engineering Updates on the Proposed Acquisition of MRAS Updates on the Proposed Acquisition of MRAS
+                        </h3>
+                      </header>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_secondary-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_lg c-icon--theme_secondary" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid">
+                            <div class="u-color-scheme-shade-dark u-weight-bold">29 Mar 2019</div>
+                            <div class="o-list o-list--inline o-list--gutter_xs">
+                              <div class="o-list__item"><a class="c-link" href="#">Aerospace</a></div>
+                              <div class="o-list__item"><a class="c-link" href="#">Electronics</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+                <div class="o-grid__col u-6/24@lg-up u-mb-x4@md-dn">
+                  <section class="c-card c-card--theme_gradient c-card--size_md">
+                    <div class="c-card__inner">
+                      <header class="c-card__header c-card__header--fixed">
+                        <h3 class="c-heading c-heading--xs c-card__title">ST Engineering Updates on the Proposed Acquisition of MRAS Updates on the Proposed Acquisition of MRAS
+                        </h3>
+                      </header>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_secondary-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_lg c-icon--theme_secondary" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid">
+                            <div class="u-color-scheme-shade-dark u-weight-bold">29 Mar 2019</div>
+                            <div class="o-list o-list--inline o-list--gutter_xs">
+                              <div class="o-list__item"><a class="c-link" href="#">Aerospace</a></div>
+                              <div class="o-list__item"><a class="c-link" href="#">Electronics</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+                <div class="o-grid__col u-6/24@lg-up">
+                  <section class="c-card c-card--theme_gradient c-card--size_md">
+                    <div class="c-card__inner">
+                      <header class="c-card__header c-card__header--fixed">
+                        <h3 class="c-heading c-heading--xs c-card__title">ST Engineering Updates on the Proposed Acquisition of MRAS Updates on the Proposed Acquisition of MRAS
+                        </h3>
+                      </header>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_secondary-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_lg c-icon--theme_secondary" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid">
+                            <div class="u-color-scheme-shade-dark u-weight-bold">29 Mar 2019</div>
+                            <div class="o-list o-list--inline o-list--gutter_xs">
+                              <div class="o-list__item"><a class="c-link" href="#">Aerospace</a></div>
+                              <div class="o-list__item"><a class="c-link" href="#">Electronics</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">
+              &lt;article class=&quot;c-content-block&quot;&gt;
+                &lt;div class=&quot;o-container o-container--gutter_lg o-container--width_lg&quot;&gt;
+                  &lt;header class=&quot;c-section-header c-section-header--row&quot;&gt;
+                    &lt;div class=&quot;c-section-header__before&quot;&gt;
+                      &lt;svg class=&quot;c-icon c-icon--size_md c-icon--theme_tertiary&quot; role=&quot;presentation&quot;&gt;
+                        &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--calendar&quot;&gt;&lt;/use&gt;
+                      &lt;/svg&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;c-section-header__main&quot;&gt;
+                      &lt;h2 class=&quot;c-heading c-heading--lg&quot;&gt;Upcoming events
+                      &lt;/h2&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;c-section-header__after&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_secondary-solid&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;All events&lt;/span&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                  &lt;/header&gt;
+                  &lt;div class=&quot;o-grid o-grid--gutter_sm&quot;&gt;
+                    &lt;div class=&quot;o-grid__col u-6/24@lg-up u-mb-x4@md-dn&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_gradient c-card--size_md&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;header class=&quot;c-card__header c-card__header--fixed&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--xs c-card__title&quot;&gt;ST Engineering Updates on the Proposed Acquisition of MRAS Updates on the Proposed Acquisition of MRAS
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_secondary-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_lg c-icon--theme_secondary&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;
+                                &lt;div class=&quot;u-color-scheme-shade-dark u-weight-bold&quot;&gt;29 Mar 2019&lt;/div&gt;
+                                &lt;div class=&quot;o-list o-list--inline o-list--gutter_xs&quot;&gt;
+                                  &lt;div class=&quot;o-list__item&quot;&gt;&lt;a class=&quot;c-link&quot; href=&quot;#&quot;&gt;Aerospace&lt;/a&gt;&lt;/div&gt;
+                                  &lt;div class=&quot;o-list__item&quot;&gt;&lt;a class=&quot;c-link&quot; href=&quot;#&quot;&gt;Electronics&lt;/a&gt;&lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;o-grid__col u-6/24@lg-up u-mb-x4@md-dn&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_gradient c-card--size_md&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;header class=&quot;c-card__header c-card__header--fixed&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--xs c-card__title&quot;&gt;ST Engineering Updates on the Proposed Acquisition of MRAS Updates on the Proposed Acquisition of MRAS
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_secondary-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_lg c-icon--theme_secondary&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;
+                                &lt;div class=&quot;u-color-scheme-shade-dark u-weight-bold&quot;&gt;29 Mar 2019&lt;/div&gt;
+                                &lt;div class=&quot;o-list o-list--inline o-list--gutter_xs&quot;&gt;
+                                  &lt;div class=&quot;o-list__item&quot;&gt;&lt;a class=&quot;c-link&quot; href=&quot;#&quot;&gt;Aerospace&lt;/a&gt;&lt;/div&gt;
+                                  &lt;div class=&quot;o-list__item&quot;&gt;&lt;a class=&quot;c-link&quot; href=&quot;#&quot;&gt;Electronics&lt;/a&gt;&lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;o-grid__col u-6/24@lg-up u-mb-x4@md-dn&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_gradient c-card--size_md&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;header class=&quot;c-card__header c-card__header--fixed&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--xs c-card__title&quot;&gt;ST Engineering Updates on the Proposed Acquisition of MRAS Updates on the Proposed Acquisition of MRAS
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_secondary-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_lg c-icon--theme_secondary&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;
+                                &lt;div class=&quot;u-color-scheme-shade-dark u-weight-bold&quot;&gt;29 Mar 2019&lt;/div&gt;
+                                &lt;div class=&quot;o-list o-list--inline o-list--gutter_xs&quot;&gt;
+                                  &lt;div class=&quot;o-list__item&quot;&gt;&lt;a class=&quot;c-link&quot; href=&quot;#&quot;&gt;Aerospace&lt;/a&gt;&lt;/div&gt;
+                                  &lt;div class=&quot;o-list__item&quot;&gt;&lt;a class=&quot;c-link&quot; href=&quot;#&quot;&gt;Electronics&lt;/a&gt;&lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;o-grid__col u-6/24@lg-up&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_gradient c-card--size_md&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;header class=&quot;c-card__header c-card__header--fixed&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--xs c-card__title&quot;&gt;ST Engineering Updates on the Proposed Acquisition of MRAS Updates on the Proposed Acquisition of MRAS
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_secondary-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_lg c-icon--theme_secondary&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;
+                                &lt;div class=&quot;u-color-scheme-shade-dark u-weight-bold&quot;&gt;29 Mar 2019&lt;/div&gt;
+                                &lt;div class=&quot;o-list o-list--inline o-list--gutter_xs&quot;&gt;
+                                  &lt;div class=&quot;o-list__item&quot;&gt;&lt;a class=&quot;c-link&quot; href=&quot;#&quot;&gt;Aerospace&lt;/a&gt;&lt;/div&gt;
+                                  &lt;div class=&quot;o-list__item&quot;&gt;&lt;a class=&quot;c-link&quot; href=&quot;#&quot;&gt;Electronics&lt;/a&gt;&lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/article&gt;</code></pre>
+        </div>
+      </div>
+      <h4 class="sg-heading sg-text--md sg-heading--md">Grid block - inverse styles</h4>
+      <div class="sg-component-description">
+        Standard vertrical cards - with row header on top.
+        
+      </div>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light sg-component-example__preview--full">
+
+          <article class="c-content-block">
+            <div class="o-container o-container--gutter_lg o-container--width_lg">
+              <div class="o-grid o-grid--gutter_sm">
+                <div class="o-grid__col u-6/24@lg-up u-mb-x4@md-dn">
+                  <section class="c-card c-card--theme_gradient c-card--size_md c-card--mod_inverse">
+                    <div class="c-card__inner">
+                      <header class="c-card__header c-card__header--fixed">
+                        <h3 class="c-heading c-heading--xs c-card__title">ST Engineering Updates on the Proposed Acquisition of MRAS Updates on the Proposed Acquisition of MRAS
+                        </h3>
+                      </header>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_secondary-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_lg c-icon--theme_secondary" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid">
+                            <div class="u-color-scheme-shade-dark u-weight-bold">29 Mar 2019</div>
+                            <div class="o-list o-list--inline o-list--gutter_xs">
+                              <div class="o-list__item"><a class="c-link" href="#">Aerospace</a></div>
+                              <div class="o-list__item"><a class="c-link" href="#">Electronics</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+                <div class="o-grid__col u-6/24@lg-up u-mb-x4@md-dn">
+                  <section class="c-card c-card--theme_gradient c-card--size_md c-card--mod_inverse">
+                    <div class="c-card__inner">
+                      <header class="c-card__header c-card__header--fixed">
+                        <h3 class="c-heading c-heading--xs c-card__title">ST Engineering Updates on the Proposed Acquisition of MRAS Updates on the Proposed Acquisition of MRAS
+                        </h3>
+                      </header>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_secondary-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_lg c-icon--theme_secondary" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid">
+                            <div class="u-color-scheme-shade-dark u-weight-bold">29 Mar 2019</div>
+                            <div class="o-list o-list--inline o-list--gutter_xs">
+                              <div class="o-list__item"><a class="c-link" href="#">Aerospace</a></div>
+                              <div class="o-list__item"><a class="c-link" href="#">Electronics</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+                <div class="o-grid__col u-6/24@lg-up u-mb-x4@md-dn">
+                  <section class="c-card c-card--theme_gradient c-card--size_md c-card--mod_inverse">
+                    <div class="c-card__inner">
+                      <header class="c-card__header c-card__header--fixed">
+                        <h3 class="c-heading c-heading--xs c-card__title">ST Engineering Updates on the Proposed Acquisition of MRAS Updates on the Proposed Acquisition of MRAS
+                        </h3>
+                      </header>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_secondary-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_lg c-icon--theme_secondary" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid">
+                            <div class="u-color-scheme-shade-dark u-weight-bold">29 Mar 2019</div>
+                            <div class="o-list o-list--inline o-list--gutter_xs">
+                              <div class="o-list__item"><a class="c-link" href="#">Aerospace</a></div>
+                              <div class="o-list__item"><a class="c-link" href="#">Electronics</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+                <div class="o-grid__col u-6/24@lg-up">
+                  <section class="c-card c-card--theme_gradient c-card--size_md c-card--mod_inverse">
+                    <div class="c-card__inner">
+                      <header class="c-card__header c-card__header--fixed">
+                        <h3 class="c-heading c-heading--xs c-card__title">ST Engineering Updates on the Proposed Acquisition of MRAS Updates on the Proposed Acquisition of MRAS
+                        </h3>
+                      </header>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_secondary-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_lg c-icon--theme_secondary" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid">
+                            <div class="u-color-scheme-shade-dark u-weight-bold">29 Mar 2019</div>
+                            <div class="o-list o-list--inline o-list--gutter_xs">
+                              <div class="o-list__item"><a class="c-link" href="#">Aerospace</a></div>
+                              <div class="o-list__item"><a class="c-link" href="#">Electronics</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="c-content-block">
+            <div class="o-grid o-grid--gutter_sm">
+              <div class="o-grid__col u-12/24@lg-up u-mb-x4@md-dn">
+                <section class="c-card c-card--theme_overlay c-card--mediabg-demo c-card--mod_inverse c-card--size_md c-card--style_mediabg-h c-card--style_vcenter">
+                  <div class="c-card__inner">
+                    <header class="c-card__header">
+                      <h3 class="c-heading c-heading--lg c-card__title">Aerospace
+                      </h3>
+                    </header>
+                    <div class="c-card__content">
+                      We make planes safe, efficient and comfortable through the services
+                      that we provide at aerospace hubs in the Americas, Asia Pacific and Europe.
+                      
+                      
+                    </div>
+                    <footer class="c-card__footer c-card__footer--has-button">
+                      <div class="o-media o-media--rev o-media--middle">
+                        <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                              <svg class="c-icon c-icon--size_lg" role="presentation">
+                                <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                              </svg></span></a>
+                        </div>
+                        <div class="o-media__fluid"></div>
+                      </div>
+                    </footer>
+                  </div>
+                </section>
+              </div>
+              <div class="o-grid__col u-12/24@lg-up">
+                <section class="c-card c-card--theme_overlay c-card--mediabg-demo c-card--mod_inverse c-card--size_md c-card--style_mediabg-h c-card--style_vcenter">
+                  <div class="c-card__inner">
+                    <header class="c-card__header">
+                      <h3 class="c-heading c-heading--lg c-card__title">Aerospace
+                      </h3>
+                    </header>
+                    <div class="c-card__content">
+                      We make planes safe, efficient and comfortable through the services
+                      that we provide at aerospace hubs in the Americas, Asia Pacific and Europe.
+                      
+                      
+                    </div>
+                    <footer class="c-card__footer c-card__footer--has-button">
+                      <div class="o-media o-media--rev o-media--middle">
+                        <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                              <svg class="c-icon c-icon--size_lg" role="presentation">
+                                <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                              </svg></span></a>
+                        </div>
+                        <div class="o-media__fluid"></div>
+                      </div>
+                    </footer>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </article>
+          <article class="c-content-block">
+            <div class="o-grid o-grid--gutter_sm">
+              <div class="o-grid__col u-8/24@lg-up">
+                <section class="c-card c-card--theme_overlay c-card--mediabg-demo c-card--size_md c-card--style_mediabg-v">
+                  <div class="c-card__inner">
+                    <header class="c-card__header">
+                      <h3 class="c-heading c-heading--lg c-card__title">Aerospace
+                      </h3>
+                    </header>
+                    <div class="c-card__content">
+                      We make planes safe, efficient and comfortable through the services
+                      that we provide at aerospace hubs in the Americas, Asia Pacific and Europe.
+                      
+                      
+                    </div>
+                    <footer class="c-card__footer c-card__footer--has-button">
+                      <div class="o-media o-media--rev o-media--middle">
+                        <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                              <svg class="c-icon c-icon--size_lg" role="presentation">
+                                <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                              </svg></span></a>
+                        </div>
+                        <div class="o-media__fluid"></div>
+                      </div>
+                    </footer>
+                  </div>
+                </section>
+              </div>
+              <div class="o-grid__col u-8/24@lg-up">
+                <section class="c-card c-card--theme_overlay c-card--mediabg-demo c-card--size_md c-card--style_mediabg-v">
+                  <div class="c-card__inner">
+                    <header class="c-card__header">
+                      <h3 class="c-heading c-heading--lg c-card__title">Aerospace
+                      </h3>
+                    </header>
+                    <div class="c-card__content">
+                      We make planes safe, efficient and comfortable through the services
+                      that we provide at aerospace hubs in the Americas, Asia Pacific and Europe.
+                      
+                      
+                    </div>
+                    <footer class="c-card__footer c-card__footer--has-button">
+                      <div class="o-media o-media--rev o-media--middle">
+                        <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                              <svg class="c-icon c-icon--size_lg" role="presentation">
+                                <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                              </svg></span></a>
+                        </div>
+                        <div class="o-media__fluid"></div>
+                      </div>
+                    </footer>
+                  </div>
+                </section>
+              </div>
+              <div class="o-grid__col u-8/24@lg-up">
+                <section class="c-card c-card--theme_overlay c-card--mediabg-demo c-card--size_md c-card--style_mediabg-v">
+                  <div class="c-card__inner">
+                    <header class="c-card__header">
+                      <h3 class="c-heading c-heading--lg c-card__title">Aerospace
+                      </h3>
+                    </header>
+                    <div class="c-card__content">
+                      We make planes safe, efficient and comfortable through the services
+                      that we provide at aerospace hubs in the Americas, Asia Pacific and Europe.
+                      
+                      
+                    </div>
+                    <footer class="c-card__footer c-card__footer--has-button">
+                      <div class="o-media o-media--rev o-media--middle">
+                        <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                              <svg class="c-icon c-icon--size_lg" role="presentation">
+                                <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                              </svg></span></a>
+                        </div>
+                        <div class="o-media__fluid"></div>
+                      </div>
+                    </footer>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </article>
+          <article class="c-content-block">
+            <div class="o-container o-container--gutter_lg o-container--width_lg">
+              <div class="o-grid o-grid--gutter_sm">
+                <div class="o-grid__col u-6/24@lg-up u-mb-x4@md-dn">
+                  <section class="c-card c-card--theme_default c-card--size_md">
+                    <div class="c-card__inner">
+                      <div class="c-card__media"><img class="c-image c-image--fit_contain" src="/styleguide/assets/sg-placeholder-material-lanscape.jpg"></div>
+                      <header class="c-card__header">
+                        <h3 class="c-heading c-heading--sm c-card__title">Investor Relations
+                        </h3>
+                      </header>
+                      <div class="c-card__content c-card__content--fixed">
+                        Invest in a global engineering and technology Group that is one of the largest
+                        entities on the Singapore Exchange.
+                        
+                      </div>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_md" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid"><a class="c-link u-weight-bold" href="#">Investor relations</a></div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+                <div class="o-grid__col u-6/24@lg-up u-mb-x4@md-dn">
+                  <section class="c-card c-card--theme_default c-card--size_md">
+                    <div class="c-card__inner">
+                      <div class="c-card__media"><img class="c-image c-image--fit_contain" src="/styleguide/assets/sg-placeholder-material-lanscape.jpg"></div>
+                      <header class="c-card__header">
+                        <h3 class="c-heading c-heading--sm c-card__title">Investor Relations
+                        </h3>
+                      </header>
+                      <div class="c-card__content c-card__content--fixed">
+                        Invest in a global engineering and technology Group that is one of the largest
+                        entities on the Singapore Exchange.
+                        
+                      </div>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_md" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid"><a class="c-link u-weight-bold" href="#">Investor relations</a></div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+                <div class="o-grid__col u-6/24@lg-up u-mb-x4@md-dn">
+                  <section class="c-card c-card--theme_default c-card--size_md">
+                    <div class="c-card__inner">
+                      <div class="c-card__media"><img class="c-image c-image--fit_contain" src="/styleguide/assets/sg-placeholder-material-lanscape.jpg"></div>
+                      <header class="c-card__header">
+                        <h3 class="c-heading c-heading--sm c-card__title">Investor Relations
+                        </h3>
+                      </header>
+                      <div class="c-card__content c-card__content--fixed">
+                        Invest in a global engineering and technology Group that is one of the largest
+                        entities on the Singapore Exchange.
+                        
+                      </div>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_md" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid"><a class="c-link u-weight-bold" href="#">Investor relations</a></div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+                <div class="o-grid__col u-6/24@lg-up u-mb-x4@md-dn">
+                  <section class="c-card c-card--theme_default c-card--size_md">
+                    <div class="c-card__inner">
+                      <div class="c-card__media"><img class="c-image c-image--fit_contain" src="/styleguide/assets/sg-placeholder-material-lanscape.jpg"></div>
+                      <header class="c-card__header">
+                        <h3 class="c-heading c-heading--sm c-card__title">Investor Relations
+                        </h3>
+                      </header>
+                      <div class="c-card__content c-card__content--fixed">
+                        Invest in a global engineering and technology Group that is one of the largest
+                        entities on the Singapore Exchange.
+                        
+                      </div>
+                      <footer class="c-card__footer c-card__footer--has-button">
+                        <div class="o-media o-media--rev o-media--middle">
+                          <div class="o-media__fixed"><a class="c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0" href="#"><span class="c-button__pos">
+                                <svg class="c-icon c-icon--size_md" role="presentation">
+                                  <use xlink:href="/framework/svg/stack.svg#icon--chevron-right"></use>
+                                </svg></span></a>
+                          </div>
+                          <div class="o-media__fluid"><a class="c-link u-weight-bold" href="#">Investor relations</a></div>
+                        </div>
+                      </footer>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">
+              &lt;article class=&quot;c-content-block&quot;&gt;
+                &lt;div class=&quot;o-container o-container--gutter_lg o-container--width_lg&quot;&gt;
+                  &lt;div class=&quot;o-grid o-grid--gutter_sm&quot;&gt;
+                    &lt;div class=&quot;o-grid__col u-6/24@lg-up u-mb-x4@md-dn&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_gradient c-card--size_md c-card--mod_inverse&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;header class=&quot;c-card__header c-card__header--fixed&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--xs c-card__title&quot;&gt;ST Engineering Updates on the Proposed Acquisition of MRAS Updates on the Proposed Acquisition of MRAS
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_secondary-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_lg c-icon--theme_secondary&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;
+                                &lt;div class=&quot;u-color-scheme-shade-dark u-weight-bold&quot;&gt;29 Mar 2019&lt;/div&gt;
+                                &lt;div class=&quot;o-list o-list--inline o-list--gutter_xs&quot;&gt;
+                                  &lt;div class=&quot;o-list__item&quot;&gt;&lt;a class=&quot;c-link&quot; href=&quot;#&quot;&gt;Aerospace&lt;/a&gt;&lt;/div&gt;
+                                  &lt;div class=&quot;o-list__item&quot;&gt;&lt;a class=&quot;c-link&quot; href=&quot;#&quot;&gt;Electronics&lt;/a&gt;&lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;o-grid__col u-6/24@lg-up u-mb-x4@md-dn&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_gradient c-card--size_md c-card--mod_inverse&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;header class=&quot;c-card__header c-card__header--fixed&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--xs c-card__title&quot;&gt;ST Engineering Updates on the Proposed Acquisition of MRAS Updates on the Proposed Acquisition of MRAS
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_secondary-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_lg c-icon--theme_secondary&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;
+                                &lt;div class=&quot;u-color-scheme-shade-dark u-weight-bold&quot;&gt;29 Mar 2019&lt;/div&gt;
+                                &lt;div class=&quot;o-list o-list--inline o-list--gutter_xs&quot;&gt;
+                                  &lt;div class=&quot;o-list__item&quot;&gt;&lt;a class=&quot;c-link&quot; href=&quot;#&quot;&gt;Aerospace&lt;/a&gt;&lt;/div&gt;
+                                  &lt;div class=&quot;o-list__item&quot;&gt;&lt;a class=&quot;c-link&quot; href=&quot;#&quot;&gt;Electronics&lt;/a&gt;&lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;o-grid__col u-6/24@lg-up u-mb-x4@md-dn&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_gradient c-card--size_md c-card--mod_inverse&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;header class=&quot;c-card__header c-card__header--fixed&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--xs c-card__title&quot;&gt;ST Engineering Updates on the Proposed Acquisition of MRAS Updates on the Proposed Acquisition of MRAS
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_secondary-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_lg c-icon--theme_secondary&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;
+                                &lt;div class=&quot;u-color-scheme-shade-dark u-weight-bold&quot;&gt;29 Mar 2019&lt;/div&gt;
+                                &lt;div class=&quot;o-list o-list--inline o-list--gutter_xs&quot;&gt;
+                                  &lt;div class=&quot;o-list__item&quot;&gt;&lt;a class=&quot;c-link&quot; href=&quot;#&quot;&gt;Aerospace&lt;/a&gt;&lt;/div&gt;
+                                  &lt;div class=&quot;o-list__item&quot;&gt;&lt;a class=&quot;c-link&quot; href=&quot;#&quot;&gt;Electronics&lt;/a&gt;&lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;o-grid__col u-6/24@lg-up&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_gradient c-card--size_md c-card--mod_inverse&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;header class=&quot;c-card__header c-card__header--fixed&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--xs c-card__title&quot;&gt;ST Engineering Updates on the Proposed Acquisition of MRAS Updates on the Proposed Acquisition of MRAS
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_secondary-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_lg c-icon--theme_secondary&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;
+                                &lt;div class=&quot;u-color-scheme-shade-dark u-weight-bold&quot;&gt;29 Mar 2019&lt;/div&gt;
+                                &lt;div class=&quot;o-list o-list--inline o-list--gutter_xs&quot;&gt;
+                                  &lt;div class=&quot;o-list__item&quot;&gt;&lt;a class=&quot;c-link&quot; href=&quot;#&quot;&gt;Aerospace&lt;/a&gt;&lt;/div&gt;
+                                  &lt;div class=&quot;o-list__item&quot;&gt;&lt;a class=&quot;c-link&quot; href=&quot;#&quot;&gt;Electronics&lt;/a&gt;&lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/article&gt;
+              &lt;article class=&quot;c-content-block&quot;&gt;
+                &lt;div class=&quot;o-grid o-grid--gutter_sm&quot;&gt;
+                  &lt;div class=&quot;o-grid__col u-12/24@lg-up u-mb-x4@md-dn&quot;&gt;
+                    &lt;section class=&quot;c-card c-card--theme_overlay c-card--mediabg-demo c-card--mod_inverse c-card--size_md c-card--style_mediabg-h c-card--style_vcenter&quot;&gt;
+                      &lt;div class=&quot;c-card__inner&quot;&gt;
+                        &lt;header class=&quot;c-card__header&quot;&gt;
+                          &lt;h3 class=&quot;c-heading c-heading--lg c-card__title&quot;&gt;Aerospace
+                          &lt;/h3&gt;
+                        &lt;/header&gt;
+                        &lt;div class=&quot;c-card__content&quot;&gt;
+                          We make planes safe, efficient and comfortable through the services
+                          that we provide at aerospace hubs in the Americas, Asia Pacific and Europe.
+                          
+                          
+                        &lt;/div&gt;
+                        &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                          &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                            &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                  &lt;svg class=&quot;c-icon c-icon--size_lg&quot; role=&quot;presentation&quot;&gt;
+                                    &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                  &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;o-media__fluid&quot;&gt;&lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/footer&gt;
+                      &lt;/div&gt;
+                    &lt;/section&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;o-grid__col u-12/24@lg-up&quot;&gt;
+                    &lt;section class=&quot;c-card c-card--theme_overlay c-card--mediabg-demo c-card--mod_inverse c-card--size_md c-card--style_mediabg-h c-card--style_vcenter&quot;&gt;
+                      &lt;div class=&quot;c-card__inner&quot;&gt;
+                        &lt;header class=&quot;c-card__header&quot;&gt;
+                          &lt;h3 class=&quot;c-heading c-heading--lg c-card__title&quot;&gt;Aerospace
+                          &lt;/h3&gt;
+                        &lt;/header&gt;
+                        &lt;div class=&quot;c-card__content&quot;&gt;
+                          We make planes safe, efficient and comfortable through the services
+                          that we provide at aerospace hubs in the Americas, Asia Pacific and Europe.
+                          
+                          
+                        &lt;/div&gt;
+                        &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                          &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                            &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                  &lt;svg class=&quot;c-icon c-icon--size_lg&quot; role=&quot;presentation&quot;&gt;
+                                    &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                  &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;o-media__fluid&quot;&gt;&lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/footer&gt;
+                      &lt;/div&gt;
+                    &lt;/section&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/article&gt;
+              &lt;article class=&quot;c-content-block&quot;&gt;
+                &lt;div class=&quot;o-grid o-grid--gutter_sm&quot;&gt;
+                  &lt;div class=&quot;o-grid__col u-8/24@lg-up&quot;&gt;
+                    &lt;section class=&quot;c-card c-card--theme_overlay c-card--mediabg-demo c-card--size_md c-card--style_mediabg-v&quot;&gt;
+                      &lt;div class=&quot;c-card__inner&quot;&gt;
+                        &lt;header class=&quot;c-card__header&quot;&gt;
+                          &lt;h3 class=&quot;c-heading c-heading--lg c-card__title&quot;&gt;Aerospace
+                          &lt;/h3&gt;
+                        &lt;/header&gt;
+                        &lt;div class=&quot;c-card__content&quot;&gt;
+                          We make planes safe, efficient and comfortable through the services
+                          that we provide at aerospace hubs in the Americas, Asia Pacific and Europe.
+                          
+                          
+                        &lt;/div&gt;
+                        &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                          &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                            &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                  &lt;svg class=&quot;c-icon c-icon--size_lg&quot; role=&quot;presentation&quot;&gt;
+                                    &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                  &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;o-media__fluid&quot;&gt;&lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/footer&gt;
+                      &lt;/div&gt;
+                    &lt;/section&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;o-grid__col u-8/24@lg-up&quot;&gt;
+                    &lt;section class=&quot;c-card c-card--theme_overlay c-card--mediabg-demo c-card--size_md c-card--style_mediabg-v&quot;&gt;
+                      &lt;div class=&quot;c-card__inner&quot;&gt;
+                        &lt;header class=&quot;c-card__header&quot;&gt;
+                          &lt;h3 class=&quot;c-heading c-heading--lg c-card__title&quot;&gt;Aerospace
+                          &lt;/h3&gt;
+                        &lt;/header&gt;
+                        &lt;div class=&quot;c-card__content&quot;&gt;
+                          We make planes safe, efficient and comfortable through the services
+                          that we provide at aerospace hubs in the Americas, Asia Pacific and Europe.
+                          
+                          
+                        &lt;/div&gt;
+                        &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                          &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                            &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                  &lt;svg class=&quot;c-icon c-icon--size_lg&quot; role=&quot;presentation&quot;&gt;
+                                    &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                  &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;o-media__fluid&quot;&gt;&lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/footer&gt;
+                      &lt;/div&gt;
+                    &lt;/section&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;o-grid__col u-8/24@lg-up&quot;&gt;
+                    &lt;section class=&quot;c-card c-card--theme_overlay c-card--mediabg-demo c-card--size_md c-card--style_mediabg-v&quot;&gt;
+                      &lt;div class=&quot;c-card__inner&quot;&gt;
+                        &lt;header class=&quot;c-card__header&quot;&gt;
+                          &lt;h3 class=&quot;c-heading c-heading--lg c-card__title&quot;&gt;Aerospace
+                          &lt;/h3&gt;
+                        &lt;/header&gt;
+                        &lt;div class=&quot;c-card__content&quot;&gt;
+                          We make planes safe, efficient and comfortable through the services
+                          that we provide at aerospace hubs in the Americas, Asia Pacific and Europe.
+                          
+                          
+                        &lt;/div&gt;
+                        &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                          &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                            &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                  &lt;svg class=&quot;c-icon c-icon--size_lg&quot; role=&quot;presentation&quot;&gt;
+                                    &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                  &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;o-media__fluid&quot;&gt;&lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/footer&gt;
+                      &lt;/div&gt;
+                    &lt;/section&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/article&gt;
+              &lt;article class=&quot;c-content-block&quot;&gt;
+                &lt;div class=&quot;o-container o-container--gutter_lg o-container--width_lg&quot;&gt;
+                  &lt;div class=&quot;o-grid o-grid--gutter_sm&quot;&gt;
+                    &lt;div class=&quot;o-grid__col u-6/24@lg-up u-mb-x4@md-dn&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_default c-card--size_md&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;div class=&quot;c-card__media&quot;&gt;&lt;img class=&quot;c-image c-image--fit_contain&quot; src=&quot;/styleguide/assets/sg-placeholder-material-lanscape.jpg&quot;&gt;&lt;/div&gt;
+                          &lt;header class=&quot;c-card__header&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--sm c-card__title&quot;&gt;Investor Relations
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;div class=&quot;c-card__content c-card__content--fixed&quot;&gt;
+                            Invest in a global engineering and technology Group that is one of the largest
+                            entities on the Singapore Exchange.
+                            
+                          &lt;/div&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_md&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;&lt;a class=&quot;c-link u-weight-bold&quot; href=&quot;#&quot;&gt;Investor relations&lt;/a&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;o-grid__col u-6/24@lg-up u-mb-x4@md-dn&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_default c-card--size_md&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;div class=&quot;c-card__media&quot;&gt;&lt;img class=&quot;c-image c-image--fit_contain&quot; src=&quot;/styleguide/assets/sg-placeholder-material-lanscape.jpg&quot;&gt;&lt;/div&gt;
+                          &lt;header class=&quot;c-card__header&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--sm c-card__title&quot;&gt;Investor Relations
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;div class=&quot;c-card__content c-card__content--fixed&quot;&gt;
+                            Invest in a global engineering and technology Group that is one of the largest
+                            entities on the Singapore Exchange.
+                            
+                          &lt;/div&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_md&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;&lt;a class=&quot;c-link u-weight-bold&quot; href=&quot;#&quot;&gt;Investor relations&lt;/a&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;o-grid__col u-6/24@lg-up u-mb-x4@md-dn&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_default c-card--size_md&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;div class=&quot;c-card__media&quot;&gt;&lt;img class=&quot;c-image c-image--fit_contain&quot; src=&quot;/styleguide/assets/sg-placeholder-material-lanscape.jpg&quot;&gt;&lt;/div&gt;
+                          &lt;header class=&quot;c-card__header&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--sm c-card__title&quot;&gt;Investor Relations
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;div class=&quot;c-card__content c-card__content--fixed&quot;&gt;
+                            Invest in a global engineering and technology Group that is one of the largest
+                            entities on the Singapore Exchange.
+                            
+                          &lt;/div&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_md&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;&lt;a class=&quot;c-link u-weight-bold&quot; href=&quot;#&quot;&gt;Investor relations&lt;/a&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;o-grid__col u-6/24@lg-up u-mb-x4@md-dn&quot;&gt;
+                      &lt;section class=&quot;c-card c-card--theme_default c-card--size_md&quot;&gt;
+                        &lt;div class=&quot;c-card__inner&quot;&gt;
+                          &lt;div class=&quot;c-card__media&quot;&gt;&lt;img class=&quot;c-image c-image--fit_contain&quot; src=&quot;/styleguide/assets/sg-placeholder-material-lanscape.jpg&quot;&gt;&lt;/div&gt;
+                          &lt;header class=&quot;c-card__header&quot;&gt;
+                            &lt;h3 class=&quot;c-heading c-heading--sm c-card__title&quot;&gt;Investor Relations
+                            &lt;/h3&gt;
+                          &lt;/header&gt;
+                          &lt;div class=&quot;c-card__content c-card__content--fixed&quot;&gt;
+                            Invest in a global engineering and technology Group that is one of the largest
+                            entities on the Singapore Exchange.
+                            
+                          &lt;/div&gt;
+                          &lt;footer class=&quot;c-card__footer c-card__footer--has-button&quot;&gt;
+                            &lt;div class=&quot;o-media o-media--rev o-media--middle&quot;&gt;
+                              &lt;div class=&quot;o-media__fixed&quot;&gt;&lt;a class=&quot;c-button c-button--size_md c-button--theme_default-solid c-button--mod_clear u-p-x0&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;c-button__pos&quot;&gt;
+                                    &lt;svg class=&quot;c-icon c-icon--size_md&quot; role=&quot;presentation&quot;&gt;
+                                      &lt;use xlink:href=&quot;/framework/svg/stack.svg#icon--chevron-right&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;&lt;/span&gt;&lt;/a&gt;
+                              &lt;/div&gt;
+                              &lt;div class=&quot;o-media__fluid&quot;&gt;&lt;a class=&quot;c-link u-weight-bold&quot; href=&quot;#&quot;&gt;Investor relations&lt;/a&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/footer&gt;
+                        &lt;/div&gt;
+                      &lt;/section&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/article&gt;</code></pre>
+        </div>
+      </div>
+    </main>
+    <!-- ==================================================================================================-->
+    <!-- << CONTENT ENDS-->
+    <!-- ==================================================================================================-->
+    <script src="../framework/vendors/bundle.js"></script>
+    <script src="../framework/scripts/main.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
