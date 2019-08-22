@@ -3563,8 +3563,8 @@ $(function() {
 			// If '.js-owl-carousel_show-controls' class is also present on the Owl component
 			if (!$owlCustomNext.is('*') && !$owlCustomPrev.is('*')) {
 				owlNavText = [
-					'<svg class="c-icon c-icon--size_sm u-mr"><use xlink:href="/framework/svg/stack.svg#icon--carret-left"></use></svg>',
-					'<svg class="c-icon c-icon--size_sm u-mr"><use xlink:href="/framework/svg/stack.svg#icon--carret-right"></use></svg>'
+					'<svg class="c-icon c-icon--size_sm u-mr"><use xlink:href="./framework/svg/stack.svg#icon--carret-left"></use></svg>',
+					'<svg class="c-icon c-icon--size_sm u-mr"><use xlink:href="./framework/svg/stack.svg#icon--carret-right"></use></svg>'
 				];
 			}
 
