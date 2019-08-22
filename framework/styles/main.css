@@ -4157,7 +4157,7 @@ Form component
   -moz-appearance: none;
   appearance: none;
   position: relative;
-  background-image: url("/framework/images/png-icons/caret-down.png");
+  background-image: url("./framework/images/png-icons/caret-down.png");
   background-repeat: no-repeat;
   background-size: auto 16px;
 }
@@ -4188,7 +4188,7 @@ Form component
   transition: rotate 0.2s;
   width: 16px;
   height: 16px;
-  background: url("/framework/images/png-icons/caret-down.png") center center no-repeat;
+  background: url("./framework/images/png-icons/caret-down.png") center center no-repeat;
   background-size: auto 16px;
   pointer-events: none;
 }
@@ -4198,7 +4198,7 @@ Form component
 }
 
 .c-form__dateinput {
-  background-image: url("/framework/images/png-icons/calendar_2.png");
+  background-image: url("./framework/images/png-icons/calendar_2.png");
   background-position: right 13.2px center;
   background-repeat: no-repeat;
 }
@@ -9882,22 +9882,22 @@ Content block
 Content block
 */
 .c-section--application {
-  background: transparent url("/framework/images/application-form_bg.jpg") 0 0 no-repeat fixed;
+  background: transparent url("./framework/images/application-form_bg.jpg") 0 0 no-repeat fixed;
   background-size: cover;
 }
 
 .c-section--investor {
-  background: transparent url("/framework/images/application-form_bg.jpg") 0 0 no-repeat fixed;
+  background: transparent url("./framework/images/application-form_bg.jpg") 0 0 no-repeat fixed;
   background-size: cover;
 }
 
 .c-section--adviser {
-  background: transparent url("/framework/images/application-form_bg.jpg") 0 0 no-repeat fixed;
+  background: transparent url("./framework/images/application-form_bg.jpg") 0 0 no-repeat fixed;
   background-size: cover;
 }
 
 .c-section--admin {
-  background: transparent url("/framework/images/application-form_bg.jpg") 0 0 no-repeat fixed;
+  background: transparent url("./framework/images/application-form_bg.jpg") 0 0 no-repeat fixed;
   background-size: cover;
   height: 100%;
 }
