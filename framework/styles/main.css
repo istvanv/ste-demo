@@ -7365,7 +7365,7 @@ Menu item
 
 .c-menu-item--quaternary-left,
 .c-menu-item--quaternary-left .c-menu-item__action {
-  line-height: 20px;
+  line-height: inherit;
 }
 
 .c-menu-item--quaternary-left .c-menu-item__action {
@@ -7387,6 +7387,13 @@ Menu item
   transition: "opacity" 0.4s ease;
 }
 
+@media screen and (max-width: 1399px) {
+  .c-menu-item--quaternary-left .c-menu-item__posticon {
+    margin-right: 16px;
+    transform: rotate(90deg);
+  }
+}
+
 .c-menu-item--quaternary-left.is-current .c-menu-item__action,
 .c-menu-item--quaternary-left:hover .c-menu-item__action,
 .c-menu-item--quaternary-left .c-menu-item__action:focus {
@@ -7404,6 +7411,14 @@ Menu item
   left: 0;
   width: 4px;
   background-color: #00A9CE;
+}
+
+@media screen and (max-width: 1399px) {
+  .c-menu-item--quaternary-left.is-current .c-menu-item__action:before,
+  .c-menu-item--quaternary-left:hover .c-menu-item__action:before,
+  .c-menu-item--quaternary-left .c-menu-item__action:focus:before {
+    display: none;
+  }
 }
 
 .c-menu-item--quaternary-left.is-current .c-menu-item__action {
@@ -9427,11 +9442,10 @@ Menu items styled by .c-menu-item > .c-menu-item--tertiary
 @media screen and (max-width: 1399px) {
   .c-menu-page {
     padding: 0 16px;
-    background: linear-gradient(90deg, #757575 30%, rgba(255, 255, 255, 0)), linear-gradient(90deg, rgba(255, 255, 255, 0), #757575 70%) 100% 0, radial-gradient(0 50%, farthest-side, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), radial-gradient(100% 50%, farthest-side, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)) 100% 0;
-    background: linear-gradient(90deg, #757575 30%, rgba(255, 255, 255, 0)), linear-gradient(90deg, rgba(255, 255, 255, 0), #757575 70%) 100% 0, radial-gradient(farthest-side at 0 50%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 100% 50%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)) 100% 0;
+    background: linear-gradient(90deg, #757575 30%, rgba(255, 255, 255, 0)), linear-gradient(90deg, rgba(255, 255, 255, 0), #757575 70%) 100% 0, radial-gradient(farthest-side at 0 40%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 100% 40%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)) 100% 0;
     background-repeat: no-repeat;
     background-color: #757575;
-    background-size: 40px 100%, 40px 100%, 14px 100%, 14px 100%;
+    background-size: 80px 100%, 80px 100%, 40px 140%, 40px 140%;
     /* Opera doesn't support this in the shorthand */
     background-attachment: local, local, scroll, scroll;
   }
@@ -9455,6 +9469,7 @@ Menu items styled by .c-menu-item > .c-menu-item--primary
 
 */
 .c-menu-side {
+  line-height: 32px;
   display: flex;
   flex: 1 1 100%;
   flex-flow: row nowrap;
@@ -9462,6 +9477,12 @@ Menu items styled by .c-menu-item > .c-menu-item--primary
   align-content: flex-start;
   justify-content: flex-start;
   color: currentColor;
+}
+
+@media screen and (min-width: 1000px) {
+  .c-menu-side {
+    line-height: 20px;
+  }
 }
 
 @media screen and (min-width: 1400px) {
@@ -9472,11 +9493,10 @@ Menu items styled by .c-menu-item > .c-menu-item--primary
 
 @media screen and (max-width: 1399px) {
   .c-menu-side {
-    background: linear-gradient(90deg, #ffffff 30%, rgba(255, 255, 255, 0)), linear-gradient(90deg, rgba(255, 255, 255, 0), #ffffff 70%) 100% 0, radial-gradient(0 50%, farthest-side, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), radial-gradient(100% 50%, farthest-side, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)) 100% 0;
-    background: linear-gradient(90deg, #ffffff 30%, rgba(255, 255, 255, 0)), linear-gradient(90deg, rgba(255, 255, 255, 0), #ffffff 70%) 100% 0, radial-gradient(farthest-side at 0 50%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 100% 50%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)) 100% 0;
+    background: linear-gradient(90deg, #ffffff 30%, rgba(255, 255, 255, 0)), linear-gradient(90deg, rgba(255, 255, 255, 0), #ffffff 70%) 100% 0, radial-gradient(farthest-side at 0 40%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), radial-gradient(farthest-side at 100% 40%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)) 100% 0;
     background-repeat: no-repeat;
     background-color: #ffffff;
-    background-size: 40px 100%, 40px 100%, 14px 100%, 14px 100%;
+    background-size: 80px 100%, 80px 100%, 40px 140%, 40px 140%;
     /* Opera doesn't support this in the shorthand */
     background-attachment: local, local, scroll, scroll;
     margin-left: -16px;
@@ -9492,9 +9512,6 @@ Menu items styled by .c-menu-item > .c-menu-item--primary
   .c-menu-side__item {
     margin-left: 4px;
     margin-right: 16px;
-  }
-  .c-menu-side__item .c-menu-item__posticon {
-    transform: rotate(90deg);
   }
 }
 
@@ -9678,7 +9695,7 @@ Page nav
 
 @media screen and (min-width: 1400px) {
   .c-page-nav__inner {
-    height: 48px;
+    height: 56px;
   }
 }
 
@@ -9689,7 +9706,7 @@ Page nav
 }
 
 .c-page-nav__main {
-  line-height: 48px;
+  line-height: 56px;
   max-width: 100%;
 }
 
