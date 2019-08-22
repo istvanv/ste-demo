@@ -8460,7 +8460,7 @@ Cards
 }
 
 .c-card--mediabg-demo {
-  background-image: url("./styleguide/assets/sg-placeholder-material-lanscape.jpg");
+  background-image: url("../../styleguide/assets/sg-placeholder-material-lanscape.jpg");
 }
 
 .c-card--mediabg-demo.c-card--style_vcenter .c-card__inner {
