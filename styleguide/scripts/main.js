@@ -38,7 +38,7 @@ Prism.languages.scss=Prism.languages.extend("css",{comment:{pattern:/(^|[^\\])(?
 
     function updateContent() {
         let pageName = window.location.hash.slice(1);
-        targetFrame.attr('src', '/styleguide/'+pageName+'.html');
+        targetFrame.attr('src', './styleguide/'+pageName+'.html');
     }
 
     if (window.location.hash) updateContent();
