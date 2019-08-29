@@ -3563,8 +3563,8 @@ $(function() {
 			// If '.js-owl-carousel_show-controls' class is also present on the Owl component
 			if (!$owlCustomNext.is('*') && !$owlCustomPrev.is('*')) {
 				owlNavText = [
-					'<svg class="c-icon c-icon--size_sm u-mr"><use xlink:href="./framework/svg/stack.svg#icon--carret-left"></use></svg>',
-					'<svg class="c-icon c-icon--size_sm u-mr"><use xlink:href="./framework/svg/stack.svg#icon--carret-right"></use></svg>'
+					'<svg class="owl-prev-icon c-icon c-icon--size_md u-mr"><use xlink:href="./framework/svg/stack.svg#icon--chevron-left"></use></svg>',
+					'<svg class="owl-prev-icon c-icon c-icon--size_md u-mr"><use xlink:href="./framework/svg/stack.svg#icon--chevron-right"></use></svg>'
 				];
 			}
 
@@ -3573,8 +3573,8 @@ $(function() {
 				loop: true,
 				items: 1,
 				nav: owlShowControls,
-				dotsSpeed: 1000,
-				navSpeed: 1000,
+				dotsSpeed: 800,
+				navSpeed: 800,
 				navText: owlNavText,
 				itemElement: owlItemElement
 			});
@@ -4217,6 +4217,25 @@ function openModalSm(e) {
 
 
 
+/*
+ Scroll to top of page */
+;(function($) {
+
+    $(document).ready(function() {
+
+        $('.js-page-top-jump').on('click', function () {
+            $("html, body").animate({
+                scrollTop: 0
+            }, "slow");
+        });
+
+    });
+
+})(jQuery);
+
+
+
+
 /** ========================================================
  * UI helpers - custom stuff
  */
@@ -4404,13 +4423,17 @@ const breakPoint = (function() {
 
 
 
+
+
+
+
+
+
 // include components/tooltip.js
 // include components/graph.js
 
 // include thirdparty/multiple-select.js
 // include components/multiple-select.js
-
-
 
 // include utils/showmore.js
 
