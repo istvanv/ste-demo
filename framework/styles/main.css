@@ -4224,6 +4224,14 @@ Form component
   opacity: 0;
 }
 
+.c-form__label--required:after {
+  content: '*';
+  display: inline-block;
+  position: relative;
+  font-size: 0.85em;
+  color: #E30613;
+}
+
 .c-form__control,
 .c-form__control option {
   font-size: 18px;
@@ -8858,13 +8866,13 @@ Modal component
   line-height: 36px;
 }
 
-@media (max-width: 540px) {
+@media screen and (max-width: 999px) {
   .c-modal.tingle-modal {
     padding-top: 48px;
   }
 }
 
-@media (max-width: 540px) {
+@media screen and (max-width: 999px) {
   .c-modal .tingle-modal__close {
     padding-right: 16px;
     height: 48px;
@@ -8874,13 +8882,13 @@ Modal component
   }
 }
 
-@media (max-width: 540px) {
+@media screen and (max-width: 999px) {
   .c-modal .tingle-modal__closeIcon {
     font-size: 2.5rem;
   }
 }
 
-@media (max-width: 540px) {
+@media screen and (max-width: 999px) {
   .c-modal .tingle-modal__closeLabel {
     font-size: 1.5rem;
     font-family: "Open Sans", sans-serif;
@@ -8888,14 +8896,22 @@ Modal component
   }
 }
 
-.c-modal .tingle-modal-box__footer,
 .c-modal .tingle-modal-box__content {
-  padding: 36px;
+  padding: 24px;
 }
 
-@media (max-width: 540px) {
-  .c-modal .tingle-modal-box__footer,
+@media screen and (max-width: 999px) {
   .c-modal .tingle-modal-box__content {
+    padding: 16px;
+  }
+}
+
+.c-modal .tingle-modal-box__footer {
+  padding: 24px 24px;
+}
+
+@media screen and (max-width: 999px) {
+  .c-modal .tingle-modal-box__footer {
     padding: 16px;
   }
 }

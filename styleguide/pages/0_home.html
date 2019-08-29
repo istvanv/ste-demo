@@ -1848,7 +1848,8 @@
               <!-- Mailing list ------------------------------->
                     <h4 class="c-heading c-heading--xxs u-mt-x0 u-mb-x2">Mailing list
                     </h4>
-              <p class="u-mt-x0 u-mb-x4">Sign up for our mailing list to receive latest updates from ST Engineering.</p><a class="c-button c-button--size_md c-button--theme_default-solid c-footer__mail-signup-btn u-mb-x3" href="#"><span class="c-button__pos">Sign up</span></a>
+              <p class="u-mt-x0 u-mb-x4">Sign up for our mailing list to receive latest updates from ST Engineering.</p>
+                    <button class="c-button c-button--size_md c-button--theme_default-solid c-footer__mail-signup-btn u-mb-x3" type="button" onclick="openModalSm(event)" data-modal-target="#modal_footer-mail-list-subscribe"><span class="c-button__pos">Sign up</span></button>
             </div>
           </div>
         </div>
@@ -1869,6 +1870,76 @@
           </div>
         </div>
       </footer>
+      <!-- Mailing list subscribe modal ------------------------------->
+            <div class="c-modal__content u-hidden" id="modal_footer-mail-list-subscribe" data-modal-save-label="Subscribe" data-modal-cancel-label="Cancel">
+              <h3 class="c-heading c-heading--sm">Subscribe to Our Mailing List</h3>
+              <div class="u-mb-x2 o-type-ms-3 u-text-right u-lh-dense u-color-neutral-darker"><span class="u-pr u-color-scheme-brand">*</span>indicates required fields</div>
+              <!-- Mailing list subscribe form ------------------------------->
+              <form class="c-form c-form--style_outline c-form--theme_default c-form--space_dense">
+                <div class="c-form__group">
+                        <label class="c-form__label c-form__label--required" for="subscribe-ml_email-address">Email Address
+                        </label>
+                        <input class="c-form__control" type="email" name="subscribe-ml_email-address" value="" placeholder="" id="subscribe-ml_email-address">
+                </div>
+                <div class="c-form__group">
+                        <label class="c-form__label" for="subscribe-ml_first-name">First Name
+                        </label>
+                        <input class="c-form__control" type="text" name="subscribe-ml_first-name" value="" placeholder="" id="subscribe-ml_first-name">
+                </div>
+                <div class="c-form__group">
+                        <label class="c-form__label" for="subscribe-ml_last-name">Last Name
+                        </label>
+                        <input class="c-form__control" type="text" name="subscribe-ml_last-name" value="" placeholder="" id="subscribe-ml_last-name">
+                </div>
+                <div class="c-form__group"><span class="c-form__label u-mb-x4 u-weight-bold">Subscribe to</span>
+                  <div class="o-grid o-grid--gutter_lg">
+                    <div class="o-grid__col u-12/24">
+                            <div class="c-checkbox__stack-wrapper">
+                                    <div class="c-checkbox">
+                                            <input class="c-checkbox__control" type="checkbox" name="subscribe-ml_subscribe-to-0" value="1" id="subscribe-ml_subscribe-to-0">
+                                            <label class="c-checkbox__label" for="subscribe-ml_subscribe-to-0">Press Releases
+                                            </label>
+                                    </div>
+                                    <div class="c-checkbox">
+                                            <input class="c-checkbox__control" type="checkbox" name="subscribe-ml_subscribe-to-1" value="1" id="subscribe-ml_subscribe-to-1">
+                                            <label class="c-checkbox__label" for="subscribe-ml_subscribe-to-1">Corporate
+                                            </label>
+                                    </div>
+                                    <div class="c-checkbox">
+                                            <input class="c-checkbox__control" type="checkbox" name="subscribe-ml_subscribe-to-2" value="1" id="subscribe-ml_subscribe-to-2">
+                                            <label class="c-checkbox__label" for="subscribe-ml_subscribe-to-2">Electronics
+                                            </label>
+                                    </div>
+                                    <div class="c-checkbox">
+                                            <input class="c-checkbox__control" type="checkbox" name="subscribe-ml_subscribe-to-3" value="1" id="subscribe-ml_subscribe-to-3">
+                                            <label class="c-checkbox__label" for="subscribe-ml_subscribe-to-3">Marine
+                                            </label>
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="o-grid__col u-12/24">
+                            <div class="c-checkbox__stack-wrapper">
+                                    <div class="c-checkbox">
+                                            <input class="c-checkbox__control" type="checkbox" name="subscribe-ml_subscribe-to-4" value="1" id="subscribe-ml_subscribe-to-4">
+                                            <label class="c-checkbox__label" for="subscribe-ml_subscribe-to-4">Financial Results
+                                            </label>
+                                    </div>
+                                    <div class="c-checkbox">
+                                            <input class="c-checkbox__control" type="checkbox" name="subscribe-ml_subscribe-to-5" value="1" id="subscribe-ml_subscribe-to-5">
+                                            <label class="c-checkbox__label" for="subscribe-ml_subscribe-to-5">Aerospace
+                                            </label>
+                                    </div>
+                                    <div class="c-checkbox">
+                                            <input class="c-checkbox__control" type="checkbox" name="subscribe-ml_subscribe-to-6" value="1" id="subscribe-ml_subscribe-to-6" checked="checked">
+                                            <label class="c-checkbox__label" for="subscribe-ml_subscribe-to-6">Land Systems
+                                            </label>
+                                    </div>
+                            </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
     </div>
     <script src="./framework/vendors/bundle.js"></script>
     <script src="./framework/scripts/main.js"></script>

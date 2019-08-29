@@ -4087,9 +4087,9 @@ data-modal-cancel-label="Custom cancel"
 var modalSmall = new tingle.modal({
     footer:         true,
     stickyFooter:   false,
-    closeMethods:   ['overlay', 'button', 'escape'],
+    closeMethods:   ['button', 'escape'],
     closeLabel:     "Close",
-    cssClass:       ['c-modal', 'c-modal--size_sm']
+    cssClass:       ['c-modal', 'c-modal--size_md']
 });
 
 
@@ -4100,28 +4100,25 @@ function openModalSm(e) {
     var contentEl           = e.currentTarget.getAttribute("data-modal-target");
     var modalContentEl      = document.querySelector(contentEl);
 
-
     // Get buton labels
     var modalSaveLabel      = modalContentEl.getAttribute("data-modal-save-label");
     var modalCancelLabel    = modalContentEl.getAttribute("data-modal-cancel-label");
 
-
     // Update modal content
     modalSmall.setContent(modalContentEl.innerHTML);
-
 
     // Update modal footer content
     modalSmall.modalBoxFooter.innerHTML = '';
 
     if (modalCancelLabel) {
-        modalSmall.addFooterBtn(modalCancelLabel, 'c-modal__button c-button c-button--size_lg c-button--theme_default c-button--inverse', function() {
+        modalSmall.addFooterBtn(modalCancelLabel, 'c-modal__button c-button c-button--size_lg c-button--theme_default-solid', function() {
             // Callback after the cancel button has been clicked
             modalSmall.close();
         });
     }
 
     if (modalSaveLabel) {
-        modalSmall.addFooterBtn(modalSaveLabel, 'c-modal__button c-button c-button--size_lg c-button--theme_primary tingle-btn--pull-right', function() {
+        modalSmall.addFooterBtn(modalSaveLabel, 'c-modal__button c-button c-button--size_lg c-button--theme_primary-solid tingle-btn--pull-right', function() {
             // Callback after the save button has been clicked
             modalSmall.close();
         });
