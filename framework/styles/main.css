@@ -8914,27 +8914,27 @@ Cards
      */
 }
 
-.c-card:not(.c-card--dir_h)__inner {
+.c-card:not(.c-card--dir_h) .c-card__inner {
   display: flex;
   flex-direction: column;
   position: relative;
   height: 100%;
 }
 
-.c-card:not(.c-card--dir_h)__header {
+.c-card:not(.c-card--dir_h) .c-card__header {
   flex: 0 1 auto;
 }
 
-.c-card:not(.c-card--dir_h)__header--fixed {
+.c-card:not(.c-card--dir_h) .c-card__header--fixed {
   flex-basis: 9em;
   overflow: hidden;
 }
 
-.c-card:not(.c-card--dir_h)__content {
+.c-card:not(.c-card--dir_h) .c-card__content {
   flex: 1 1 100%;
 }
 
-.c-card:not(.c-card--dir_h)__footer {
+.c-card:not(.c-card--dir_h) .c-card__footer {
   flex: 0 1 auto;
 }
 
