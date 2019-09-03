@@ -4241,31 +4241,47 @@ function openModalSm(e) {
 
     const $component = $('.js-mainnav');
 
+    const $body = $('body');
+
 
 
     $component.each(function () {
 
-        const $mainnavTrigger = $('.js-mainnav__trigger', this);
+        const $navEl = $(this);
 
-        const $mainnavTarget = $('.js-mainnav__target', this);
+        const $mainnavTrigger = $('.js-mainnav__trigger', $navEl);
+
+        const $mainnavTarget = $('.js-mainnav__target', $navEl);
+
+        const $mainnavScrollContainer = $('.js-mainnav__scroll-container', $navEl);
 
 
 
-        const openNav = function() {
+        // Apply utility class to make container's overflow vertically scrollable
+
+        $mainnavScrollContainer.addClass('u-scrollable-y_auto');
+
+
+
+        let openNav = function() {
 
             $mainnavTarget.addClass('is-open');
 
             $mainnavTrigger.addClass('is-open');
 
+            $body.addClass('u-scrollable-none');
+
         };
 
 
 
-        const closeNav = function() {
+        let closeNav = function() {
 
             $mainnavTarget.removeClass('is-open');
 
             $mainnavTrigger.removeClass('is-open');
+
+            $body.removeClass('u-scrollable-none');
 
         };
 
@@ -4303,71 +4319,93 @@ function openModalSm(e) {
 
         // Dropdowns - used for mobile ATM
 
-        $('.c-menu-item--dropdownify, .c-menu-item--dropdownify_accr').on('click', function (e) {
+        $('.c-menu-item--dropdownify_accr', $navEl).on('click', function (e) {
 
             e.stopPropagation();
 
 
 
-            var $el = $(this),
+            const $el = $(this);
 
-                isSel = $el.hasClass('menu-item--is-active');
+            const isSel = $(this).hasClass('menu-item--is-active');
 
 
+
+            // Close any currently open menu item first, so scroll offsets will be accurate
 
             $('.menu-item--is-active').removeClass('menu-item--is-active');
 
 
 
-            if (isSel) {
+            // If we're not just closing an item, open the activated nav item
 
-
-
-                // Responsive scroll-to functionality
-
-                setTimeout(function () {
-
-                    if (breakPoint.check.smDown()) {
-
-                        // On mobile, scroll to make sure the top of the current item is visible
-
-                        $mainnavTarget.animate({
-
-                            scrollTop: 0
-
-                        }, 200);
-
-                    }
-
-                }, 400);
-
-
-
-            } else {
+            if (!isSel) {
 
                 $el.addClass('menu-item--is-active');
 
+            }
 
 
-                // Responsive scroll-to functionality
+
+            // Figure out the position of the current nav item
+
+            // and the scroll position of the entire nav's container,
+
+            // which is the scrollable element.
+
+            const elPosTop = $el.position().top;
+
+            const contScrollTop = $mainnavScrollContainer.scrollTop();
+
+
+
+            // Figure out where we need to scroll the container to
+
+            const offsetScrollToCurrent = (contScrollTop + elPosTop);
+
+
+
+
+
+            // Responsive scroll-to functionality
+
+            // On mobile, scroll to make sure the top of the current item is visible
+
+            if (isSel) {
+
+                // If the currently open item has been activated - scroll to the top of the nav
+
+                if (breakPoint.check.smDown()) {
+
+                    $mainnavScrollContainer.animate({
+
+                        scrollTop: 0
+
+                    }, 200);
+
+                }
+
+            } else {
+
+                // If a closed item has been activated - scroll to place it at the top of the container
 
                 setTimeout(function () {
 
                     if (breakPoint.check.smDown()) {
 
-                        // On mobile, scroll to make sure the top of the current item is visible
+                        $mainnavScrollContainer.animate({
 
-                        $mainnavTarget.animate({
-
-                            scrollTop: $el.offset().top
+                            scrollTop: offsetScrollToCurrent
 
                         }, 200);
 
                     }
 
-                }, 400);
+                }, 300);
 
             }
+
+
 
         });
 

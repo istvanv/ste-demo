@@ -10044,9 +10044,11 @@ Navbar
   width: 100vw;
   height: 100vh;
   transform: translateX(-100%);
-  z-index: 200;
+  z-index: 201;
   background-color: #ffffff;
-  overflow-y: auto;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .c-navbar--mobile.is-open {
@@ -10066,6 +10068,25 @@ Navbar
 
 .is-mobile .c-navbar__nav .c-navbar__side {
   padding: 12px 24px;
+}
+
+.c-navbar__mobile-hamburger {
+  flex: 0 1 auto;
+  padding: 4px 0;
+  border-bottom: 1px solid #e8e8e8;
+  color: #a3a3a3;
+}
+
+.c-navbar--mobile .c-navbar__mobile-hamburger {
+  width: 100%;
+  text-align: right;
+  background-color: #ffffff;
+  overflow: visible;
+}
+
+.c-navbar__mobile-content {
+  flex: 1 1 100%;
+  position: relative;
 }
 
 /*
@@ -32635,4 +32656,27 @@ Bordered element
 
 .u-border-clr-scheme-shade-dark_light {
   border-color: #cceef5;
+}
+
+/*
+Container scrolling
+*/
+.u-scrollable-auto_all {
+  overflow: auto;
+}
+
+.u-scrollable-all {
+  overflow: scroll;
+}
+
+.u-scrollable-none {
+  overflow: hidden;
+}
+
+.u-scrollable-y_auto {
+  overflow-y: auto;
+}
+
+.u-scrollable-x_auto {
+  overflow-x: auto;
 }
