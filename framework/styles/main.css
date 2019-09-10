@@ -9972,6 +9972,50 @@ Repsonsive tabs
 }
 
 /*
+Overlayer
+A specific item, e.g. clickable (link), can be set to cover the entire card so it's all clickable
+*/
+.c-overlayer {
+  position: relative;
+}
+
+.c-overlayer .c-overlayer__item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.c-overlayer--tint_dark .c-overlayer__item {
+  background: rgba(25, 25, 25, 0.4);
+}
+
+.c-overlayer--tint_dark .c-overlayer__item:hover, .c-overlayer--tint_dark .c-overlayer__item:focus {
+  background: rgba(5, 140, 170, 0.7);
+}
+
+.c-overlayer--tint_light .c-overlayer__item {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.c-overlayer--tint_light .c-overlayer__item:hover, .c-overlayer--tint_light .c-overlayer__item:focus {
+  background: rgba(5, 140, 170, 0.7);
+}
+
+.c-overlayer .c-overlayer__positioned {
+  position: absolute;
+  z-index: 11;
+}
+
+.c-overlayer--style_center .c-overlayer__positioned {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*
 Overlay tabs component
 */
 .c-overlay-tabs {
