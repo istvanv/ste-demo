@@ -3804,24 +3804,34 @@ a {
 /*
 Text link
 */
-.c-link {
+.c-link, .c-content-block a:not([class]),
+.c-content-block__wrapper a:not([class]),
+.c-content-block__wrapper--feature a:not([class]) {
   color: inherit;
   text-decoration: underline;
   cursor: pointer;
 }
 
 @media screen and (max-width: 699px) {
-  .c-link {
+  .c-link, .c-content-block a:not([class]),
+  .c-content-block__wrapper a:not([class]),
+  .c-content-block__wrapper--feature a:not([class]) {
     word-break: break-all;
   }
 }
 
-.c-link:hover, .c-link:active {
+.c-link:hover, .c-content-block a:hover:not([class]),
+.c-content-block__wrapper a:hover:not([class]),
+.c-content-block__wrapper--feature a:hover:not([class]), .c-link:active, .c-content-block a:active:not([class]),
+.c-content-block__wrapper a:active:not([class]),
+.c-content-block__wrapper--feature a:active:not([class]) {
   text-decoration: none;
 }
 
-.c-link:focus {
-  border-bottom: 1px dotted #f4f4f4;
+.c-link:focus, .c-content-block a:focus:not([class]),
+.c-content-block__wrapper a:focus:not([class]),
+.c-content-block__wrapper--feature a:focus:not([class]) {
+  border-bottom: 1px dotted #e7e7e7;
 }
 
 .c-link__icon {
@@ -3837,6 +3847,27 @@ Text link
 
 .c-link--with-icon .c-link__icon {
   margin-right: 8px;
+}
+
+.c-content-block :not(.u-content-inverse) a:not([class]),
+:not(.u-content-inverse) .c-content-block a:not([class]),
+.c-content-block:not(.u-content-inverse) a:not([class]),
+.c-content-block__wrapper :not(.u-content-inverse) a:not([class]),
+:not(.u-content-inverse)
+.c-content-block__wrapper a:not([class]),
+.c-content-block__wrapper:not(.u-content-inverse) a:not([class]),
+.c-content-block__wrapper--feature :not(.u-content-inverse) a:not([class]),
+:not(.u-content-inverse)
+.c-content-block__wrapper--feature a:not([class]),
+.c-content-block__wrapper--feature:not(.u-content-inverse) a:not([class]) {
+  color: #E30613;
+}
+
+.c-content-block .c-heading a:not([class]),
+.c-content-block__wrapper .c-heading a:not([class]),
+.c-content-block__wrapper--feature .c-heading a:not([class]) {
+  color: inherit;
+  text-decoration: none;
 }
 
 /*
@@ -4346,25 +4377,26 @@ Button component
 
 .c-button--theme_default-solid.c-button--mod_clear:hover, .c-button--theme_default-solid.c-button--mod_clear:focus {
   border-color: transparent;
+  color: #E30613;
 }
 
-.c-button--theme_default-solid.c-button--mod_inverse {
+.u-content-inverse .c-button--theme_default-solid.c-button, .c-button--theme_default-solid.c-button--mod_inverse {
   background-color: #ffffff;
   color: #191919;
 }
 
-.c-button--theme_default-solid.c-button--mod_inverse:hover, .c-button--theme_default-solid.c-button--mod_inverse:focus {
-  background-color: #58595b;
-  color: currentColor;
+.u-content-inverse .c-button--theme_default-solid.c-button:hover, .u-content-inverse .c-button--theme_default-solid.c-button:focus, .c-button--theme_default-solid.c-button--mod_inverse:hover, .c-button--theme_default-solid.c-button--mod_inverse:focus {
+  background-color: #ffffff;
+  color: #E30613;
 }
 
-.c-button--theme_default-solid.c-button--mod_clear.c-button--mod_inverse {
+.u-content-inverse .c-button--theme_default-solid.c-button--mod_clear, .c-button--theme_default-solid.c-button--mod_clear.c-button--mod_inverse {
   background-color: transparent;
   border-color: transparent;
   color: #bababa;
 }
 
-.c-button--theme_default-solid.c-button--mod_clear.c-button--mod_inverse:hover, .c-button--theme_default-solid.c-button--mod_clear.c-button--mod_inverse:focus {
+.u-content-inverse .c-button--theme_default-solid.c-button--mod_clear:hover, .u-content-inverse .c-button--theme_default-solid.c-button--mod_clear:focus, .c-button--theme_default-solid.c-button--mod_clear.c-button--mod_inverse:hover, .c-button--theme_default-solid.c-button--mod_clear.c-button--mod_inverse:focus {
   border-color: transparent;
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -4384,6 +4416,16 @@ Button component
   background-color: #58595b;
   border-color: #58595b;
   color: #ffffff;
+}
+
+.u-content-inverse .c-button--theme_default-ghost.c-button, .u-content-inverse .c-button--theme_default-ghost-thin.c-button {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.u-content-inverse .c-button--theme_default-ghost.c-button:hover, .u-content-inverse .c-button--theme_default-ghost.c-button:focus, .u-content-inverse .c-button--theme_default-ghost-thin.c-button:hover, .u-content-inverse .c-button--theme_default-ghost-thin.c-button:focus {
+  border-color: transparent;
+  background-color: #404040;
 }
 
 .c-button--theme_default-ghost-thin {
@@ -4411,25 +4453,26 @@ Button component
 
 .c-button--theme_primary-solid.c-button--mod_clear:hover, .c-button--theme_primary-solid.c-button--mod_clear:focus {
   border-color: transparent;
+  color: #00A9CE;
 }
 
-.c-button--theme_primary-solid.c-button--mod_inverse {
+.u-content-inverse .c-button--theme_primary-solid.c-button, .c-button--theme_primary-solid.c-button--mod_inverse {
   background-color: #ffffff;
   color: #E30613;
 }
 
-.c-button--theme_primary-solid.c-button--mod_inverse:hover, .c-button--theme_primary-solid.c-button--mod_inverse:focus {
+.u-content-inverse .c-button--theme_primary-solid.c-button:hover, .u-content-inverse .c-button--theme_primary-solid.c-button:focus, .c-button--theme_primary-solid.c-button--mod_inverse:hover, .c-button--theme_primary-solid.c-button--mod_inverse:focus {
   background-color: #b40000;
   color: #ffffff;
 }
 
-.c-button--theme_primary-solid.c-button--mod_clear.c-button--mod_inverse {
+.u-content-inverse .c-button--theme_primary-solid.c-button--mod_clear, .c-button--theme_primary-solid.c-button--mod_clear.c-button--mod_inverse {
   background-color: transparent;
   border-color: transparent;
   color: #f7b4b8;
 }
 
-.c-button--theme_primary-solid.c-button--mod_clear.c-button--mod_inverse:hover, .c-button--theme_primary-solid.c-button--mod_clear.c-button--mod_inverse:focus {
+.u-content-inverse .c-button--theme_primary-solid.c-button--mod_clear:hover, .u-content-inverse .c-button--theme_primary-solid.c-button--mod_clear:focus, .c-button--theme_primary-solid.c-button--mod_clear.c-button--mod_inverse:hover, .c-button--theme_primary-solid.c-button--mod_clear.c-button--mod_inverse:focus {
   border-color: transparent;
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -4449,6 +4492,16 @@ Button component
   background-color: #b40000;
   border-color: #b40000;
   color: #ffffff;
+}
+
+.u-content-inverse .c-button--theme_primary-ghost.c-button, .u-content-inverse .c-button--theme_primary-ghost-thin.c-button {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.u-content-inverse .c-button--theme_primary-ghost.c-button:hover, .u-content-inverse .c-button--theme_primary-ghost.c-button:focus, .u-content-inverse .c-button--theme_primary-ghost-thin.c-button:hover, .u-content-inverse .c-button--theme_primary-ghost-thin.c-button:focus {
+  border-color: transparent;
+  background-color: #404040;
 }
 
 .c-button--theme_primary-ghost-thin {
@@ -4476,25 +4529,26 @@ Button component
 
 .c-button--theme_secondary-solid.c-button--mod_clear:hover, .c-button--theme_secondary-solid.c-button--mod_clear:focus {
   border-color: transparent;
+  color: #E30613;
 }
 
-.c-button--theme_secondary-solid.c-button--mod_inverse {
+.u-content-inverse .c-button--theme_secondary-solid.c-button, .c-button--theme_secondary-solid.c-button--mod_inverse {
   background-color: #ffffff;
   color: #00A9CE;
 }
 
-.c-button--theme_secondary-solid.c-button--mod_inverse:hover, .c-button--theme_secondary-solid.c-button--mod_inverse:focus {
+.u-content-inverse .c-button--theme_secondary-solid.c-button:hover, .u-content-inverse .c-button--theme_secondary-solid.c-button:focus, .c-button--theme_secondary-solid.c-button--mod_inverse:hover, .c-button--theme_secondary-solid.c-button--mod_inverse:focus {
   background-color: #058caa;
   color: #ffffff;
 }
 
-.c-button--theme_secondary-solid.c-button--mod_clear.c-button--mod_inverse {
+.u-content-inverse .c-button--theme_secondary-solid.c-button--mod_clear, .c-button--theme_secondary-solid.c-button--mod_clear.c-button--mod_inverse {
   background-color: transparent;
   border-color: transparent;
   color: #b3e5f0;
 }
 
-.c-button--theme_secondary-solid.c-button--mod_clear.c-button--mod_inverse:hover, .c-button--theme_secondary-solid.c-button--mod_clear.c-button--mod_inverse:focus {
+.u-content-inverse .c-button--theme_secondary-solid.c-button--mod_clear:hover, .u-content-inverse .c-button--theme_secondary-solid.c-button--mod_clear:focus, .c-button--theme_secondary-solid.c-button--mod_clear.c-button--mod_inverse:hover, .c-button--theme_secondary-solid.c-button--mod_clear.c-button--mod_inverse:focus {
   border-color: transparent;
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -4514,6 +4568,16 @@ Button component
   background-color: #058caa;
   border-color: #058caa;
   color: #ffffff;
+}
+
+.u-content-inverse .c-button--theme_secondary-ghost.c-button, .u-content-inverse .c-button--theme_secondary-ghost-thin.c-button {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.u-content-inverse .c-button--theme_secondary-ghost.c-button:hover, .u-content-inverse .c-button--theme_secondary-ghost.c-button:focus, .u-content-inverse .c-button--theme_secondary-ghost-thin.c-button:hover, .u-content-inverse .c-button--theme_secondary-ghost-thin.c-button:focus {
+  border-color: transparent;
+  background-color: #404040;
 }
 
 .c-button--theme_secondary-ghost-thin {
@@ -4541,25 +4605,26 @@ Button component
 
 .c-button--theme_tertiary-solid.c-button--mod_clear:hover, .c-button--theme_tertiary-solid.c-button--mod_clear:focus {
   border-color: transparent;
+  color: #E30613;
 }
 
-.c-button--theme_tertiary-solid.c-button--mod_inverse {
+.u-content-inverse .c-button--theme_tertiary-solid.c-button, .c-button--theme_tertiary-solid.c-button--mod_inverse {
   background-color: #ffffff;
   color: #404040;
 }
 
-.c-button--theme_tertiary-solid.c-button--mod_inverse:hover, .c-button--theme_tertiary-solid.c-button--mod_inverse:focus {
+.u-content-inverse .c-button--theme_tertiary-solid.c-button:hover, .u-content-inverse .c-button--theme_tertiary-solid.c-button:focus, .c-button--theme_tertiary-solid.c-button--mod_inverse:hover, .c-button--theme_tertiary-solid.c-button--mod_inverse:focus {
   background-color: #383838;
   color: #ffffff;
 }
 
-.c-button--theme_tertiary-solid.c-button--mod_clear.c-button--mod_inverse {
+.u-content-inverse .c-button--theme_tertiary-solid.c-button--mod_clear, .c-button--theme_tertiary-solid.c-button--mod_clear.c-button--mod_inverse {
   background-color: transparent;
   border-color: transparent;
   color: #c6c6c6;
 }
 
-.c-button--theme_tertiary-solid.c-button--mod_clear.c-button--mod_inverse:hover, .c-button--theme_tertiary-solid.c-button--mod_clear.c-button--mod_inverse:focus {
+.u-content-inverse .c-button--theme_tertiary-solid.c-button--mod_clear:hover, .u-content-inverse .c-button--theme_tertiary-solid.c-button--mod_clear:focus, .c-button--theme_tertiary-solid.c-button--mod_clear.c-button--mod_inverse:hover, .c-button--theme_tertiary-solid.c-button--mod_clear.c-button--mod_inverse:focus {
   border-color: transparent;
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -4579,6 +4644,16 @@ Button component
   background-color: #383838;
   border-color: #383838;
   color: #ffffff;
+}
+
+.u-content-inverse .c-button--theme_tertiary-ghost.c-button, .u-content-inverse .c-button--theme_tertiary-ghost-thin.c-button {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.u-content-inverse .c-button--theme_tertiary-ghost.c-button:hover, .u-content-inverse .c-button--theme_tertiary-ghost.c-button:focus, .u-content-inverse .c-button--theme_tertiary-ghost-thin.c-button:hover, .u-content-inverse .c-button--theme_tertiary-ghost-thin.c-button:focus {
+  border-color: transparent;
+  background-color: #404040;
 }
 
 .c-button--theme_tertiary-ghost-thin {
@@ -9344,8 +9419,11 @@ Cards
   color: #00A9CE;
 }
 
-.c-card__actionable:hover, .c-card__actionable:focus {
+.c-card__actionable:hover,
+.c-card__actionable:hover *, .c-card__actionable:focus,
+.c-card__actionable:focus * {
   color: #E30613 !important;
+  fill: #E30613 !important;
 }
 
 .c-card--mediabg-demo {
@@ -9566,15 +9644,6 @@ Hero
   margin: 0;
 }
 
-@media screen and (max-width: 999px) {
-  .c-hero--tint_dark {
-    background-color: #e8e8e8;
-  }
-  .c-hero--tint_light {
-    background-color: #f4f4f4;
-  }
-}
-
 .c-hero--tint .c-hero__media-wrapper:before {
   display: block;
   content: '';
@@ -9590,20 +9659,8 @@ Hero
   color: #f4f4f4;
 }
 
-.c-hero--tint_dark .c-hero__media-wrapper:before {
-  background: #404040;
-  background: linear-gradient(to bottom, #58595b 0%, #191919 100%);
-  opacity: 0.6;
-}
-
 .c-hero--tint_light {
   color: #404040;
-}
-
-.c-hero--tint_light .c-hero__media-wrapper:before {
-  background: #f4f4f4;
-  background: linear-gradient(to bottom, #ffffff 0%, #e7e7e7 100%);
-  opacity: 0.6;
 }
 
 /*
@@ -10760,10 +10817,6 @@ Site footer
   }
 }
 
-.c-footer__mail-signup-btn {
-  color: #404040;
-}
-
 .c-footer__social-icons {
   color: #58595b;
 }
@@ -11295,43 +11348,53 @@ Content block
   color: #fff;
 }
 
+/*
 @media screen and (max-width: 767px) {
-  .search-results-header .btn-search-header {
-    width: 50px;
-    height: 41px;
-  }
+    .search-results-header .btn-search-header {
+        width: 50px;
+        height: 41px
+    }
 }
 
 .search-results-header .btn-search-header:after {
-  position: absolute;
-  right: 20px;
-  top: 5px;
+    //font-family: "FontAwesome";
+    //content: '\f002';
+    position: absolute;
+    right: 20px;
+    //font-size: 1.875em;
+    top: 5px;
+    //color: #555555
 }
 
 @media screen and (max-width: 767px) {
-  .search-results-header .btn-search-header:after {
-    right: 11px;
-    top: -2px;
-  }
+    .search-results-header .btn-search-header:after {
+        right: 11px;
+        //font-size: 1.5em;
+        top: -2px
+    }
 }
 
 .search-results-header .close-search-header-box {
-  position: absolute;
-  right: 0;
-  top: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    //width: 95px;
+    //height: 95px;
+    //background: #333333;
+    //cursor: pointer
 }
 
 @media screen and (max-width: 767px) {
-  .search-results-header .close-search-header-box {
-    width: 50px;
-    height: 50px;
-  }
+    .search-results-header .close-search-header-box {
+        width: 50px;
+        height: 50px
+    }
 }
 
 .search-results-header .close-search-header-box .close-search-header-btn {
-  display: block;
+	display: block;
 }
-
+*/
 /*
 .search-results-header .close-search-header-box .close-search-header-btn {
     color: #333333;
@@ -12739,6 +12802,51 @@ a.ui-button:active,
   width: auto;
   text-align: center;
   color: #404040;
+}
+
+.c-share-page-print .addthis_inline_share_toolbox_ztds {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.c-share-page-print .addthis_inline_share_toolbox_ztds .at-icon-wrapper {
+  width: 100%;
+}
+
+.c-share-page-print .c-share-page__print-button {
+  position: relative;
+}
+
+.c-share-price {
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.stock-indicator-icon-wrapper {
+  height: 1em;
+  width: 1em;
+  margin-right: 0.25em;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+
+.stock-indicator-icon {
+  top: -0.5em;
+  left: -0.6em;
+  max-width: none;
+  position: relative;
 }
 
 /**
