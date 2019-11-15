@@ -10131,6 +10131,7 @@ Overlay tabs component
 
 .c-overlay-tabs__trigger {
   border-left: 8px solid transparent;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1000px) {
@@ -10153,6 +10154,7 @@ Overlay tabs component
 
 .c-overlay-tabs__item--current .c-overlay-tabs__trigger {
   border-left-color: #E30613;
+  cursor: default;
 }
 
 @media screen and (max-width: 999px) {
