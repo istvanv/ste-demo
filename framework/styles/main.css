@@ -9670,10 +9670,18 @@ Modal component
   line-height: 36px;
 }
 
+.c-modal.tingle-modal {
+  z-index: 1000;
+}
+
 @media screen and (max-width: 999px) {
   .c-modal.tingle-modal {
     padding-top: 48px;
   }
+}
+
+.c-modal .tingle-modal__close {
+  z-index: 1000;
 }
 
 @media screen and (max-width: 999px) {
@@ -9718,6 +9726,10 @@ Modal component
   .c-modal .tingle-modal-box__footer {
     padding: 16px;
   }
+}
+
+.c-modal .tingle-modal-box__footer--sticky {
+  z-index: 10001;
 }
 
 .c-modal--size_sm .tingle-modal-box {
@@ -10073,6 +10085,7 @@ A specific item, e.g. clickable (link), can be set to cover the entire card so i
   left: 0;
   right: 0;
   z-index: 10;
+  cursor: pointer;
 }
 
 .c-overlayer--tint_dark .c-overlayer__item {
@@ -10308,7 +10321,7 @@ Navbar
   width: 100vw;
   height: 100vh;
   transform: translateX(-100%);
-  z-index: 201;
+  z-index: 1001;
   background-color: #ffffff;
   overflow-y: hidden;
   display: flex;
@@ -10752,7 +10765,7 @@ Site header
 .c-header--sticky {
   top: 0;
   width: 100%;
-  z-index: 201;
+  z-index: 1001;
 }
 
 .has-stickyheader .c-header--sticky {
