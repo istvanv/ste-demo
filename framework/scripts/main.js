@@ -3544,8 +3544,9 @@ $(function() {
 		$owlInstances.each(function () {
 			const $owlInstance = $(this);
 			let owlNavText = false;
+            let owlAtoplayTimeout = 0;
 
-			// Add this class to the elements that are to be used as the slide items
+			// Use the 'js-carousel__slide-element' class on the elements that are to be used as the slide items
 			// By default Owl uses 'div', but this way we can easily apply it to any
 			// HTML element type without needing to change the JS
 			const owlItemElement = $('.js-carousel__slide-element', $owlInstance).prop("tagName");
@@ -3559,6 +3560,19 @@ $(function() {
 
 			// Controls will only be shown if '.js-owl-carousel_show-controls' class is also present on the Owl component
 			const owlShowControls = $owlInstance.hasClass('js-owl-carousel_show-controls');
+
+			// If '.js-owl-carousel_autoplay' class is present on the Owl component will enable autoplay option.
+			const owlAtoplay = $owlInstance.hasClass('js-owl-carousel_autoplay');
+
+            // If '.js-owl-carousel_autoplay--X' will set a predefined autoplay speed or "timeout".
+            // X is interval speed: 'fast', 'medium', 'slow'
+			if ($owlInstance.hasClass('js-owl-carousel_autoplay--slow')) {
+                owlAtoplayTimeout = 5000;
+            } else if ($owlInstance.hasClass('js-owl-carousel_autoplay--fast')) {
+                owlAtoplayTimeout = 2000;
+            } else {
+                owlAtoplayTimeout = 3500;
+            }
 
 			// If '.js-owl-carousel_show-controls' class is also present on the Owl component
 			if (!$owlCustomNext.is('*') && !$owlCustomPrev.is('*')) {
@@ -3576,7 +3590,11 @@ $(function() {
 				dotsSpeed: 800,
 				navSpeed: 800,
 				navText: owlNavText,
-				itemElement: owlItemElement
+                // stageElement: 'section',
+				itemElement: owlItemElement,
+                autoplay: owlAtoplay,
+                autoplayTimeout: owlAtoplayTimeout,
+                autoplaySpeed: 800
 			});
 
 			// If a custom 'next' trigger element was specified
