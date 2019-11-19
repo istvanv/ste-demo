@@ -3567,11 +3567,11 @@ $(function() {
             // If '.js-owl-carousel_autoplay--X' will set a predefined autoplay speed or "timeout".
             // X is interval speed: 'fast', 'medium', 'slow'
 			if ($owlInstance.hasClass('js-owl-carousel_autoplay--slow')) {
-                owlAtoplayTimeout = 5000;
+                owlAtoplayTimeout = 7000;
             } else if ($owlInstance.hasClass('js-owl-carousel_autoplay--fast')) {
                 owlAtoplayTimeout = 2000;
             } else {
-                owlAtoplayTimeout = 3500;
+                owlAtoplayTimeout = 4000;
             }
 
 			// If '.js-owl-carousel_show-controls' class is also present on the Owl component
@@ -3594,7 +3594,7 @@ $(function() {
 				itemElement: owlItemElement,
                 autoplay: owlAtoplay,
                 autoplayTimeout: owlAtoplayTimeout,
-                autoplaySpeed: 800
+                autoplaySpeed: 1000
 			});
 
 			// If a custom 'next' trigger element was specified
