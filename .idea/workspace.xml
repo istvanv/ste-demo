@@ -2,10 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c34c378-7b2b-4df1-b8bc-4d2cd99a1f09" name="Default Changelist" comment="Update">
-      <change beforePath="$PROJECT_DIR$/framework/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/framework/scripts/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/framework/styles/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/framework/svg/sprite.symbol.html" beforeDir="false" afterPath="$PROJECT_DIR$/framework/svg/sprite.symbol.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styleguide/atoms/badges.html" beforeDir="false" afterPath="$PROJECT_DIR$/styleguide/atoms/badges.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styleguide/atoms/buttons.html" beforeDir="false" afterPath="$PROJECT_DIR$/styleguide/atoms/buttons.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styleguide/atoms/forms.html" beforeDir="false" afterPath="$PROJECT_DIR$/styleguide/atoms/forms.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styleguide/atoms/headings.html" beforeDir="false" afterPath="$PROJECT_DIR$/styleguide/atoms/headings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styleguide/atoms/icons.html" beforeDir="false" afterPath="$PROJECT_DIR$/styleguide/atoms/icons.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styleguide/atoms/lists.html" beforeDir="false" afterPath="$PROJECT_DIR$/styleguide/atoms/lists.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styleguide/atoms/pagination.html" beforeDir="false" afterPath="$PROJECT_DIR$/styleguide/atoms/pagination.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styleguide/atoms/tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/styleguide/atoms/tables.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styleguide/examples.html" beforeDir="false" afterPath="$PROJECT_DIR$/styleguide/examples.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styleguide/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/styleguide/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styleguide/molecules/alerts.html" beforeDir="false" afterPath="$PROJECT_DIR$/styleguide/molecules/alerts.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styleguide/molecules/carousel.html" beforeDir="false" afterPath="$PROJECT_DIR$/styleguide/molecules/carousel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styleguide/molecules/hero.html" beforeDir="false" afterPath="$PROJECT_DIR$/styleguide/molecules/hero.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styleguide/molecules/multiple-select.html" beforeDir="false" afterPath="$PROJECT_DIR$/styleguide/molecules/multiple-select.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styleguide/molecules/overlay-tabs.html" beforeDir="false" afterPath="$PROJECT_DIR$/styleguide/molecules/overlay-tabs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styleguide/organisms/content-blocks.html" beforeDir="false" afterPath="$PROJECT_DIR$/styleguide/organisms/content-blocks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styleguide/organisms/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/styleguide/organisms/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styleguide/organisms/grid-blocks.html" beforeDir="false" afterPath="$PROJECT_DIR$/styleguide/organisms/grid-blocks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styleguide/organisms/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/styleguide/organisms/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styleguide/organisms/page-nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/styleguide/organisms/page-nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styleguide/organisms/section-header.html" beforeDir="false" afterPath="$PROJECT_DIR$/styleguide/organisms/section-header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styleguide/pages.html" beforeDir="false" afterPath="$PROJECT_DIR$/styleguide/pages.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styleguide/pages/0_home.html" beforeDir="false" afterPath="$PROJECT_DIR$/styleguide/pages/0_home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styleguide/pages/1_sector.html" beforeDir="false" afterPath="$PROJECT_DIR$/styleguide/pages/1_sector.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styleguide/pages/2_newsroom.html" beforeDir="false" afterPath="$PROJECT_DIR$/styleguide/pages/2_newsroom.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +89,7 @@
       <workItem from="1568885479282" duration="42000" />
       <workItem from="1573538085854" duration="896000" />
       <workItem from="1573773919296" duration="849000" />
-      <workItem from="1574140423969" duration="3339000" />
+      <workItem from="1574140423969" duration="4443000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1566430581767</created>
@@ -355,7 +378,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574207118279</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Update">
+      <created>1574208742898</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1574208742898</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,11 +414,11 @@
   <component name="WindowStateProjectService">
     <state x="960" y="432" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1573538338501" />
     <state x="960" y="432" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/3840.2160/2560.1440/1920.1080" timestamp="1573538338501" />
-    <state x="737" y="343" key="Vcs.Push.Dialog.v2" timestamp="1574207119705">
+    <state x="737" y="343" key="Vcs.Push.Dialog.v2" timestamp="1574208744106">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="-3287" y="259" key="Vcs.Push.Dialog.v2/-3840.0.1920.1065/0.0.2560.1410/2560.0.1920.1050@-3840.0.1920.1065" timestamp="1573538381905" />
-    <state x="737" y="343" key="Vcs.Push.Dialog.v2/-3840.0.1920.1065/0.0.2560.1410/2560.0.1920.1050@0.0.2560.1410" timestamp="1574207119705" />
+    <state x="737" y="343" key="Vcs.Push.Dialog.v2/-3840.0.1920.1065/0.0.2560.1410/2560.0.1920.1050@0.0.2560.1410" timestamp="1574208744106" />
     <state x="-3287" y="259" key="Vcs.Push.Dialog.v2/3840.2160/2560.1440/1920.1080" timestamp="1573538338501" />
   </component>
 </project>
