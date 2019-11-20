@@ -3569,9 +3569,9 @@ $(function() {
 			if ($owlInstance.hasClass('js-owl-carousel_autoplay--slow')) {
                 owlAtoplayTimeout = 7000;
             } else if ($owlInstance.hasClass('js-owl-carousel_autoplay--fast')) {
-                owlAtoplayTimeout = 2000;
+                owlAtoplayTimeout = 3000;
             } else {
-                owlAtoplayTimeout = 4000;
+                owlAtoplayTimeout = 5000;
             }
 
 			// If '.js-owl-carousel_show-controls' class is also present on the Owl component
