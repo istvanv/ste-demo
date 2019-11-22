@@ -10762,6 +10762,31 @@ Site header
   }
 }
 
+.c-header__stockinfo-movement-icon-wrapper {
+  height: 1em;
+  width: 1em;
+  margin-right: .25em;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+
+.c-header__stockinfo-movement-icon_high, .c-header__stockinfo-movement-icon_low {
+  display: none;
+  top: -1.1em;
+  left: -0.25em;
+  max-width: none;
+  position: relative;
+}
+
+.high .c-header__stockinfo-movement-icon_high {
+  display: initial;
+}
+
+.low .c-header__stockinfo-movement-icon_low {
+  display: initial;
+}
+
 .c-header__regionswitch {
   font-size: 14.22px;
   font-weight: 700;
