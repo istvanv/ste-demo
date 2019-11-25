@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html class="sg" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>UI design system - </title>
+    <base href="https://istvanv.github.io/ste-demo/">
+    <!-- base(href="/")-->
+    <link href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" rel="stylesheet" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link href="./styleguide/styles/sg-main.css" rel="stylesheet">
+    <link href="./framework/styles/assets.css" rel="stylesheet">
+    <link href="./framework/styles/vendor.css" rel="stylesheet">
+    <link href="./framework/styles/main.css" rel="stylesheet">
+    <link href="./framework/images/favicon.png" rel="favicon" sizes="16x16 32x32 64x64 128x128">
+  </head>
+  <body class="sg-layout">
+    <button class="sg-toggle-nav js-sg-toggle-nav"><i class="fas fa-bars"></i></button>
+    <header class="sg-layout-header">
+      <p><a href="./styleguide/">Index</a></p>
+      <nav>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Atoms</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="./styleguide/atoms/headings.html">Headings</a></li>
+          <li class="sg-list__item"><a href="./styleguide/atoms/buttons.html">Buttons</a></li>
+          <li class="sg-list__item"><a href="./styleguide/atoms/icons.html">Icons</a></li>
+          <li class="sg-list__item"><a href="./styleguide/atoms/lists.html">Lists</a></li>
+          <li class="sg-list__item"><a href="./styleguide/atoms/forms.html">Form</a></li>
+          <li class="sg-list__item"><a href="./styleguide/atoms/tables.html">Tables</a></li>
+          <li class="sg-list__item"><a href="./styleguide/atoms/images.html">Images</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Molecules</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="./styleguide/molecules/hero.html">Hero</a></li>
+          <li class="sg-list__item"><a href="./styleguide/molecules/carousel.html">Carousel</a></li>
+          <li class="sg-list__item"><a href="./styleguide/molecules/overlay-tabs.html">Overlay tabs</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Organisms</h3>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="./styleguide/organisms/header.html">Header</a></li>
+          <li class="sg-list__item"><a href="./styleguide/organisms/footer.html">Footer</a></li>
+          <li class="sg-list__item"><a href="./styleguide/organisms/page-nav.html">Page nav</a></li>
+          <li class="sg-list__item"><a href="./styleguide/organisms/section-header.html">Section header</a></li>
+          <li class="sg-list__item"><a href="./styleguide/organisms/content-blocks.html">Content blocks</a></li>
+          <li class="sg-list__item"><a href="./styleguide/organisms/grid-blocks.html">Grid blocks</a></li>
+        </ul>
+        <h3 class="sg-heading sg-heading--sm sg-text--sm">Pages</h3>
+        <h4 class="sg-heading sg-heading--xs sg-text--xs">Main</h4>
+        <ul class="sg-list sg-list--stip sg-list--spaced">
+          <li class="sg-list__item"><a href="./styleguide/pages.html#pages/0_home">Home</a></li>
+          <li class="sg-list__item"><a href="./styleguide/pages.html#pages/1_sector">Sector</a></li>
+          <li class="sg-list__item"><a href="./styleguide/pages.html#pages/2_newsroom">Newsroom</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ==================================================================================================-->
+    <!-- CONTENT STARTS >>-->
+    <!-- ==================================================================================================-->
+    <main class="sg-layout-content">
+      <h2 class="sg-heading sg-text--xl sg-heading--xl">Image (and examples for the use of ratio container</h2>
+      <div class="sg-component-description">
+        <p>To display images</p>
+      </div>
+      <h4 class="sg-heading sg-text--md sg-heading--md">Basic usage</h4>
+      <div class="sg-component-description">
+        <p>By default, an image component takes up 100% of the parent width.</p>
+      </div>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light">
+
+          <div class="u-mb-x10 u-6/24"><img class="c-image" src="./styleguide/assets/sg-placeholder-material-landscape.jpg"></div>
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">
+              &lt;div class=&quot;u-mb-x10 u-6/24&quot;&gt;&lt;img class=&quot;c-image&quot; src=&quot;./styleguide/assets/sg-placeholder-material-landscape.jpg&quot;&gt;&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+      <h4 class="sg-heading sg-text--md sg-heading--md">Sizes (optional)</h4>
+      <div class="sg-component-description">
+        <p>This sets an initial size as min-width. Note that this overrides the parent width, so will overflow.</p>
+      </div>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light">
+
+          <div class="u-12/24">
+            <div class="sg-component-example__comments">Size xl</div><img class="c-image c-image--size_xl" src="./styleguide/assets/sg-placeholder-material-landscape.jpg">
+            <div class="sg-component-example__comments">Size lg</div><img class="c-image c-image--size_lg" src="./styleguide/assets/sg-placeholder-material-landscape.jpg">
+            <div class="sg-component-example__comments">Size md</div><img class="c-image c-image--size_md" src="./styleguide/assets/sg-placeholder-material-landscape.jpg">
+            <div class="sg-component-example__comments">Size sm</div><img class="c-image c-image--size_sm" src="./styleguide/assets/sg-placeholder-material-landscape.jpg">
+            <div class="sg-component-example__comments">Size xs</div><img class="c-image c-image--size_xs" src="./styleguide/assets/sg-placeholder-material-landscape.jpg">
+          </div>
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">
+              &lt;div class=&quot;u-12/24&quot;&gt;
+                &lt;div class=&quot;sg-component-example__comments&quot;&gt;Size xl&lt;/div&gt;&lt;img class=&quot;c-image c-image--size_xl&quot; src=&quot;./styleguide/assets/sg-placeholder-material-landscape.jpg&quot;&gt;
+                &lt;div class=&quot;sg-component-example__comments&quot;&gt;Size lg&lt;/div&gt;&lt;img class=&quot;c-image c-image--size_lg&quot; src=&quot;./styleguide/assets/sg-placeholder-material-landscape.jpg&quot;&gt;
+                &lt;div class=&quot;sg-component-example__comments&quot;&gt;Size md&lt;/div&gt;&lt;img class=&quot;c-image c-image--size_md&quot; src=&quot;./styleguide/assets/sg-placeholder-material-landscape.jpg&quot;&gt;
+                &lt;div class=&quot;sg-component-example__comments&quot;&gt;Size sm&lt;/div&gt;&lt;img class=&quot;c-image c-image--size_sm&quot; src=&quot;./styleguide/assets/sg-placeholder-material-landscape.jpg&quot;&gt;
+                &lt;div class=&quot;sg-component-example__comments&quot;&gt;Size xs&lt;/div&gt;&lt;img class=&quot;c-image c-image--size_xs&quot; src=&quot;./styleguide/assets/sg-placeholder-material-landscape.jpg&quot;&gt;
+              &lt;/div&gt;</code></pre>
+        </div>
+      </div>
+      <h4 class="sg-heading sg-text--md sg-heading--md">Constrain display ratio</h4>
+      <div class="sg-component-description">
+        <p>Any overflow is essentially masked by the container that sets the ratio. Width is set by the parent.</p>
+      </div>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light">
+
+          <div class="o-grid o-grid--gutter_sm u-mb-x10">
+            <div class="o-grid__col u-6/24">
+              <div class="sg-component-example__comments"> 1:1 ratio</div>
+              <figure class="o-ratio o-ratio-1/1"><img class="c-image c-image--fit c-image--fit_h c-image--fit_cover o-ratio__content" src="./styleguide/assets/sg-placeholder-material-landscape.jpg"></figure>
+            </div>
+            <div class="o-grid__col u-6/24">
+              <div class="sg-component-example__comments"> 4:3 ratio</div>
+              <figure class="o-ratio o-ratio-4/3"><img class="c-image c-image--fit c-image--fit_h c-image--fit_cover o-ratio__content" src="./styleguide/assets/sg-placeholder-material-landscape.jpg"></figure>
+            </div>
+            <div class="o-grid__col u-6/24">
+              <div class="sg-component-example__comments"> 16:9 ratio</div>
+              <figure class="o-ratio o-ratio-16/9"><img class="c-image c-image--fit c-image--fit_v c-image--fit_cover o-ratio__content" src="./styleguide/assets/sg-placeholder-material-landscape.jpg"></figure>
+            </div>
+          </div>
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">
+              &lt;div class=&quot;o-grid o-grid--gutter_sm u-mb-x10&quot;&gt;
+                &lt;div class=&quot;o-grid__col u-6/24&quot;&gt;
+                  &lt;div class=&quot;sg-component-example__comments&quot;&gt; 1:1 ratio&lt;/div&gt;
+                  &lt;figure class=&quot;o-ratio o-ratio-1/1&quot;&gt;&lt;img class=&quot;c-image c-image--fit c-image--fit_h c-image--fit_cover o-ratio__content&quot; src=&quot;./styleguide/assets/sg-placeholder-material-landscape.jpg&quot;&gt;&lt;/figure&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;o-grid__col u-6/24&quot;&gt;
+                  &lt;div class=&quot;sg-component-example__comments&quot;&gt; 4:3 ratio&lt;/div&gt;
+                  &lt;figure class=&quot;o-ratio o-ratio-4/3&quot;&gt;&lt;img class=&quot;c-image c-image--fit c-image--fit_h c-image--fit_cover o-ratio__content&quot; src=&quot;./styleguide/assets/sg-placeholder-material-landscape.jpg&quot;&gt;&lt;/figure&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;o-grid__col u-6/24&quot;&gt;
+                  &lt;div class=&quot;sg-component-example__comments&quot;&gt; 16:9 ratio&lt;/div&gt;
+                  &lt;figure class=&quot;o-ratio o-ratio-16/9&quot;&gt;&lt;img class=&quot;c-image c-image--fit c-image--fit_v c-image--fit_cover o-ratio__content&quot; src=&quot;./styleguide/assets/sg-placeholder-material-landscape.jpg&quot;&gt;&lt;/figure&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;</code></pre>
+        </div>
+      </div>
+      <h4 class="sg-heading sg-text--md sg-heading--md">Image with caption / overlay</h4>
+      <div class="sg-component-description">
+        <p>Can be combined with the ratio classes/containers above. Width is set by the parent.</p>
+      </div>
+      <div class="sg-component-example js-sg-showmore">
+        <div class="sg-component-example__preview sg-component-example__preview--light">
+
+          <div class="o-grid o-grid--gutter_sm">
+            <div class="o-grid__col u-6/24">
+              <div class="sg-component-example__comments"> Image with caption</div>
+              <figure class="c-overlayer c-overlayer--pos_bottom c-overlayer--tint_dark">
+                <figcaption class="c-overlayer__item">
+                  <h5 class="c-heading c-heading--sm c-overlayer__title">Caption title</h5>
+                  <div class="c-overlayer__content">Caption content text example.</div>
+                </figcaption><img class="c-image" src="./styleguide/assets/sg-placeholder-material-landscape.jpg">
+              </figure>
+            </div>
+            <div class="o-grid__col u-6/24">
+              <div class="sg-component-example__comments">Image with full overlay - e.g. to trigger to launch a modal</div>
+              <figure class="c-overlayer c-overlayer--style_center c-overlayer--tint_dark">
+                <figcaption class="c-overlayer__item">
+                  <div class="c-overlayer__positioned">
+                    <svg class="c-icon c-icon--size_xl" role="presentation">
+                      <use xlink:href="./framework/svg/stack.svg#icon--play-circle"></use>
+                    </svg>
+                  </div>
+                </figcaption><img class="c-image" src="./styleguide/assets/sg-placeholder-material-landscape.jpg">
+              </figure>
+            </div>
+            <div class="o-grid__col u-6/24">
+              <div class="sg-component-example__comments"> Combined with ratio constraint</div>
+              <figure class="c-overlayer c-overlayer--style_center c-overlayer--tint_dark o-ratio o-ratio-1/1">
+                <figcaption class="c-overlayer__item">
+                  <div class="c-overlayer__positioned">
+                    <svg class="c-icon c-icon--size_xl" role="presentation">
+                      <use xlink:href="./framework/svg/stack.svg#icon--play-circle"></use>
+                    </svg>
+                  </div>
+                </figcaption><img class="c-image c-image--fit c-image--fit_v c-image--fit_cover o-ratio__content" src="./styleguide/assets/sg-placeholder-material-landscape.jpg">
+              </figure>
+            </div>
+          </div>
+
+          <button class="sg-component-toggle-code js-sg-showmore__trigger"><i class="fas fa-code"></i></button>
+        </div>
+        <div class="sg-component-example__code js-sg-showmore__target">
+          <pre class="line-numbers"><code class="language-html">
+              &lt;div class=&quot;o-grid o-grid--gutter_sm&quot;&gt;
+                &lt;div class=&quot;o-grid__col u-6/24&quot;&gt;
+                  &lt;div class=&quot;sg-component-example__comments&quot;&gt; Image with caption&lt;/div&gt;
+                  &lt;figure class=&quot;c-overlayer c-overlayer--pos_bottom c-overlayer--tint_dark&quot;&gt;
+                    &lt;figcaption class=&quot;c-overlayer__item&quot;&gt;
+                      &lt;h5 class=&quot;c-heading c-heading--sm c-overlayer__title&quot;&gt;Caption title&lt;/h5&gt;
+                      &lt;div class=&quot;c-overlayer__content&quot;&gt;Caption content text example.&lt;/div&gt;
+                    &lt;/figcaption&gt;&lt;img class=&quot;c-image&quot; src=&quot;./styleguide/assets/sg-placeholder-material-landscape.jpg&quot;&gt;
+                  &lt;/figure&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;o-grid__col u-6/24&quot;&gt;
+                  &lt;div class=&quot;sg-component-example__comments&quot;&gt;Image with full overlay - e.g. to trigger to launch a modal&lt;/div&gt;
+                  &lt;figure class=&quot;c-overlayer c-overlayer--style_center c-overlayer--tint_dark&quot;&gt;
+                    &lt;figcaption class=&quot;c-overlayer__item&quot;&gt;
+                      &lt;div class=&quot;c-overlayer__positioned&quot;&gt;
+                        &lt;svg class=&quot;c-icon c-icon--size_xl&quot; role=&quot;presentation&quot;&gt;
+                          &lt;use xlink:href=&quot;./framework/svg/stack.svg#icon--play-circle&quot;&gt;&lt;/use&gt;
+                        &lt;/svg&gt;
+                      &lt;/div&gt;
+                    &lt;/figcaption&gt;&lt;img class=&quot;c-image&quot; src=&quot;./styleguide/assets/sg-placeholder-material-landscape.jpg&quot;&gt;
+                  &lt;/figure&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;o-grid__col u-6/24&quot;&gt;
+                  &lt;div class=&quot;sg-component-example__comments&quot;&gt; Combined with ratio constraint&lt;/div&gt;
+                  &lt;figure class=&quot;c-overlayer c-overlayer--style_center c-overlayer--tint_dark o-ratio o-ratio-1/1&quot;&gt;
+                    &lt;figcaption class=&quot;c-overlayer__item&quot;&gt;
+                      &lt;div class=&quot;c-overlayer__positioned&quot;&gt;
+                        &lt;svg class=&quot;c-icon c-icon--size_xl&quot; role=&quot;presentation&quot;&gt;
+                          &lt;use xlink:href=&quot;./framework/svg/stack.svg#icon--play-circle&quot;&gt;&lt;/use&gt;
+                        &lt;/svg&gt;
+                      &lt;/div&gt;
+                    &lt;/figcaption&gt;&lt;img class=&quot;c-image c-image--fit c-image--fit_v c-image--fit_cover o-ratio__content&quot; src=&quot;./styleguide/assets/sg-placeholder-material-landscape.jpg&quot;&gt;
+                  &lt;/figure&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;</code></pre>
+        </div>
+      </div>
+    </main>
+    <!-- ==================================================================================================-->
+    <!-- << CONTENT ENDS-->
+    <!-- ==================================================================================================-->
+    <script src="./framework/vendors/bundle.js"></script>
+    <script src="./framework/scripts/main.js"></script>
+    <script src="./styleguide/scripts/main.js"></script>
+  </body>
+</html>
