@@ -1546,13 +1546,6 @@ a {
 
 .o-ratio-1\/1 {
   position: relative;
-}
-
-.o-ratio-1\/1::before {
-  content: "";
-  display: block;
-  position: relative;
-  width: 100%;
   height: 0;
   padding-top: 100%;
   overflow: hidden;
@@ -1582,13 +1575,6 @@ a {
 
 .o-ratio-21\/9 {
   position: relative;
-}
-
-.o-ratio-21\/9::before {
-  content: "";
-  display: block;
-  position: relative;
-  width: 100%;
   height: 0;
   padding-top: 42.85714286%;
   overflow: hidden;
@@ -1618,13 +1604,6 @@ a {
 
 .o-ratio-16\/9 {
   position: relative;
-}
-
-.o-ratio-16\/9::before {
-  content: "";
-  display: block;
-  position: relative;
-  width: 100%;
   height: 0;
   padding-top: 56.25%;
   overflow: hidden;
@@ -1654,13 +1633,6 @@ a {
 
 .o-ratio-4\/3 {
   position: relative;
-}
-
-.o-ratio-4\/3::before {
-  content: "";
-  display: block;
-  position: relative;
-  width: 100%;
   height: 0;
   padding-top: 75%;
   overflow: hidden;
@@ -1690,13 +1662,6 @@ a {
 
 .o-ratio-5\/3 {
   position: relative;
-}
-
-.o-ratio-5\/3::before {
-  content: "";
-  display: block;
-  position: relative;
-  width: 100%;
   height: 0;
   padding-top: 60%;
   overflow: hidden;
@@ -9423,12 +9388,43 @@ Cards
   fill: #E30613 !important;
 }
 
-.c-card--mediabg-demo {
-  background-image: url("../../styleguide/assets/st-placeholder-landscape-1.jpg");
+.c-card a:not(.c-card__actionable):hover,
+.c-card a:not(.c-card__actionable):hover *, .c-card a:not(.c-card__actionable):focus,
+.c-card a:not(.c-card__actionable):focus * {
+  color: inherit;
 }
 
-.c-card--mediabg-demo.c-card--style_vcenter .c-card__inner {
-  min-height: 328px;
+.c-card--effect_focus-shadow {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transition: box-shadow 0.4s ease;
+}
+
+.c-card--effect_focus-shadow:hover {
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
+}
+
+.c-card--effect_zoom-all {
+  transition: all 400ms ease;
+  transform: scale(1);
+}
+
+.c-card--effect_zoom-all:hover {
+  z-index: 2;
+  transition: all 400ms ease;
+  transform: scale(1.1);
+}
+
+.c-card--effect_zoom-media .c-card__media {
+  overflow: hidden;
+  height: auto;
+}
+
+.c-card--effect_zoom-media .c-card__media img {
+  transition: transform 800ms ease;
+}
+
+.c-card--effect_zoom-media:hover .c-card__media img {
+  transform: scale(1.5);
 }
 
 /*
@@ -10089,6 +10085,10 @@ A specific item, e.g. clickable (link), can be set to cover the entire card so i
   top: auto;
   cursor: default;
   padding: 12px 16px;
+}
+
+.owl-carousel .c-overlayer--pos_bottom .c-overlayer__item {
+  padding-bottom: 48px;
 }
 
 .c-overlayer__title {
@@ -10898,7 +10898,7 @@ Page nav
   flex: 1 1 100%;
   flex-flow: row wrap;
   align-items: center;
-  align-content: flex-start;
+  align-content: center;
   justify-content: flex-start;
 }
 
