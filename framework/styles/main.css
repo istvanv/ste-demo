@@ -9007,7 +9007,12 @@ Cards
      * Has an image as the full background of the card
      * Leaves space ON TOP to revel a portion of the image
      * The contents of the card reside in the remaining space
-     * with a translucent filled background
+     * with a translucent filled background.
+     * Used together with "--theme_overlay" theme mod
+     */
+  /**
+     * Aligns header and content vertically in the middle
+     * but puts the footer at the bottom of the card
      */
 }
 
@@ -9166,188 +9171,6 @@ Cards
   height: 100%;
 }
 
-.c-card {
-  /**
-     * Aligns header and content vertically in the middle
-     * but puts the footer at the bottom of the card
-     */
-}
-
-.c-card__title {
-  color: #404040;
-}
-
-.c-card a.c-card__title {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-}
-
-.c-card--theme_gradient {
-  background: #f4f4f4;
-  background: linear-gradient(to bottom, #ffffff 0%, #e7e7e7 100%);
-  color: #404040;
-}
-
-.c-card--theme_gradient .c-card__title {
-  color: #404040;
-}
-
-.c-card--theme_gradient .c-card__sub-title {
-  color: #58595b;
-}
-
-.c-card--theme_gradient .c-card__content {
-  color: #58595b;
-}
-
-.c-card--theme_gradient .c-card__footer {
-  color: #58595b;
-}
-
-.c-card--theme_gradient .c-card__actionable {
-  color: #191919;
-}
-
-.c-card--theme_gradient.c-card--mod_inverse {
-  background: #404040;
-  background: linear-gradient(to bottom, #58595b 0%, #191919 100%);
-  color: #f4f4f4;
-}
-
-.c-card--theme_gradient.c-card--mod_inverse .c-card__title {
-  color: #ffffff;
-}
-
-.c-card--theme_gradient.c-card--mod_inverse .c-card__sub-title {
-  color: #e7e7e7;
-}
-
-.c-card--theme_gradient.c-card--mod_inverse .c-card__content {
-  color: #e7e7e7;
-}
-
-.c-card--theme_gradient.c-card--mod_inverse .c-card__footer {
-  color: #e7e7e7;
-}
-
-.c-card--theme_gradient.c-card--mod_inverse .c-card__actionable {
-  color: #ffffff;
-}
-
-.c-card--theme_default {
-  background: #f4f4f4;
-  color: #404040;
-}
-
-.c-card--theme_default .c-card__title {
-  color: #404040;
-}
-
-.c-card--theme_default .c-card__sub-title {
-  color: #58595b;
-}
-
-.c-card--theme_default .c-card__content {
-  color: #58595b;
-}
-
-.c-card--theme_default .c-card__footer {
-  color: #58595b;
-}
-
-.c-card--theme_default .c-card__actionable {
-  color: #191919;
-}
-
-.c-card--theme_default.c-card--mod_inverse {
-  background: #404040;
-  color: #f4f4f4;
-}
-
-.c-card--theme_default.c-card--mod_inverse .c-card__title {
-  color: #ffffff;
-}
-
-.c-card--theme_default.c-card--mod_inverse .c-card__sub-title {
-  color: #e7e7e7;
-}
-
-.c-card--theme_default.c-card--mod_inverse .c-card__content {
-  color: #e7e7e7;
-}
-
-.c-card--theme_default.c-card--mod_inverse .c-card__footer {
-  color: #f4f4f4;
-}
-
-.c-card--theme_default.c-card--mod_inverse .c-card__actionable {
-  color: #ffffff;
-}
-
-.c-card--theme_default.c-card--mod_clear {
-  background: none;
-}
-
-.c-card--theme_overlay {
-  background-color: #e8e8e8;
-  color: #191919;
-}
-
-.c-card--theme_overlay .c-card__inner {
-  background-color: rgba(244, 244, 244, 0.85);
-}
-
-.c-card--theme_overlay .c-card__title {
-  color: #191919;
-}
-
-.c-card--theme_overlay .c-card__sub-title {
-  color: #58595b;
-}
-
-.c-card--theme_overlay .c-card__content {
-  color: #404040;
-}
-
-.c-card--theme_overlay .c-card__footer {
-  color: #58595b;
-}
-
-.c-card--theme_overlay .c-card__actionable {
-  color: #191919;
-}
-
-.c-card--theme_overlay.c-card--mod_inverse {
-  background-color: #a3a3a3;
-  color: #ffffff;
-}
-
-.c-card--theme_overlay.c-card--mod_inverse .c-card__inner {
-  text-shadow: 0 0 6px #191919;
-  background-color: rgba(25, 25, 25, 0.85);
-}
-
-.c-card--theme_overlay.c-card--mod_inverse .c-card__title {
-  color: #ffffff;
-}
-
-.c-card--theme_overlay.c-card--mod_inverse .c-card__sub-title {
-  color: #ffffff;
-}
-
-.c-card--theme_overlay.c-card--mod_inverse .c-card__content {
-  color: #ffffff;
-}
-
-.c-card--theme_overlay.c-card--mod_inverse .c-card__footer {
-  color: #ffffff;
-}
-
-.c-card--theme_overlay.c-card--mod_inverse .c-card__actionable {
-  color: #ffffff;
-}
-
 .c-card--style_vcenter .c-card__inner {
   position: relative;
   flex-direction: column;
@@ -9377,21 +9200,260 @@ Cards
   padding-top: 0;
 }
 
-.c-card__actionable {
+.c-card {
+  /**
+     * ========================================================
+     * Card themes
+     */
+  /**
+     * With the overlay theme, the card is displayed with a background image
+     * and the content of the card ("inner") has a translucent background, sitting over the image.
+     * together with the "style_mediabg" style, the content area can be reduced to not cover the entire
+     * background image, either vertically or horizonally revealing it.
+     */
+}
+
+.c-card,
+.c-card * {
+  transition: color 400ms ease, fill 400ms ease, background-color 400ms ease;
+}
+
+.c-card a.c-card__title {
+  display: block;
+  text-decoration: none;
+  color: currentColor;
+}
+
+.c-card .c-card__actionable {
   color: #00A9CE;
 }
 
-.c-card__actionable:hover,
-.c-card__actionable:hover *, .c-card__actionable:focus,
-.c-card__actionable:focus * {
-  color: #E30613 !important;
-  fill: #E30613 !important;
+.c-card .c-card__actionable:hover, .c-card .c-card__actionable:focus {
+  color: #E30613;
 }
 
-.c-card a:not(.c-card__actionable):hover,
-.c-card a:not(.c-card__actionable):hover *, .c-card a:not(.c-card__actionable):focus,
-.c-card a:not(.c-card__actionable):focus * {
+.c-card .c-card__actionable:hover svg, .c-card .c-card__actionable:focus svg {
+  fill: currentColor;
+}
+
+.c-card a:not(.c-card__actionable):hover, .c-card a:not(.c-card__actionable):focus {
   color: inherit;
+}
+
+.c-card a:not(.c-card__actionable):hover svg, .c-card a:not(.c-card__actionable):focus svg {
+  fill: currentColor;
+}
+
+.c-card__emphasised-default {
+  font-weight: 700;
+  color: #191919;
+}
+
+.c-card__emphasised-default svg {
+  fill: currentColor;
+}
+
+.c-card__emphasised-primary {
+  font-weight: 700;
+  color: #E30613;
+}
+
+.c-card__emphasised-primary svg {
+  fill: currentColor;
+}
+
+.c-card__emphasised-secondary {
+  font-weight: 700;
+  color: #00A9CE;
+}
+
+.c-card__emphasised-secondary svg {
+  fill: currentColor;
+}
+
+.c-card--theme_default {
+  background: none #f4f4f4;
+}
+
+.c-card--theme_default,
+.c-card--theme_default .c-card__title,
+.c-card--theme_default .c-card__sub-title,
+.c-card--theme_default .c-card__content,
+.c-card--theme_default .c-card__footer {
+  color: #191919;
+}
+
+.c-card--theme_default.c-card--mod_hover-inverse:hover, .c-card--theme_default.c-card--mod_inverse {
+  background: none #404040;
+}
+
+.c-card--theme_default.c-card--mod_hover-inverse:hover,
+.c-card--theme_default.c-card--mod_hover-inverse:hover .c-card__title,
+.c-card--theme_default.c-card--mod_hover-inverse:hover .c-card__sub-title,
+.c-card--theme_default.c-card--mod_hover-inverse:hover .c-card__content,
+.c-card--theme_default.c-card--mod_hover-inverse:hover .c-card__footer,
+.c-card--theme_default.c-card--mod_hover-inverse:hover .c-card__actionable,
+.c-card--theme_default.c-card--mod_hover-inverse:hover [class^="c-card__emphasised"], .c-card--theme_default.c-card--mod_inverse,
+.c-card--theme_default.c-card--mod_inverse .c-card__title,
+.c-card--theme_default.c-card--mod_inverse .c-card__sub-title,
+.c-card--theme_default.c-card--mod_inverse .c-card__content,
+.c-card--theme_default.c-card--mod_inverse .c-card__footer,
+.c-card--theme_default.c-card--mod_inverse .c-card__actionable,
+.c-card--theme_default.c-card--mod_inverse [class^="c-card__emphasised"] {
+  color: #ffffff;
+}
+
+.c-card--theme_default.c-card--mod_hover-primary:hover, .c-card--theme_default.c-card--mod_primary {
+  background: none #E30613;
+}
+
+.c-card--theme_default.c-card--mod_hover-primary:hover,
+.c-card--theme_default.c-card--mod_hover-primary:hover .c-card__title,
+.c-card--theme_default.c-card--mod_hover-primary:hover .c-card__sub-title,
+.c-card--theme_default.c-card--mod_hover-primary:hover .c-card__content,
+.c-card--theme_default.c-card--mod_hover-primary:hover .c-card__footer,
+.c-card--theme_default.c-card--mod_hover-primary:hover .c-card__actionable, .c-card--theme_default.c-card--mod_primary,
+.c-card--theme_default.c-card--mod_primary .c-card__title,
+.c-card--theme_default.c-card--mod_primary .c-card__sub-title,
+.c-card--theme_default.c-card--mod_primary .c-card__content,
+.c-card--theme_default.c-card--mod_primary .c-card__footer,
+.c-card--theme_default.c-card--mod_primary .c-card__actionable {
+  color: #ffffff;
+}
+
+.c-card--theme_default.c-card--mod_hover-secondary:hover, .c-card--theme_default.c-card--mod_secondary {
+  background: none #00A9CE;
+}
+
+.c-card--theme_default.c-card--mod_hover-secondary:hover,
+.c-card--theme_default.c-card--mod_hover-secondary:hover .c-card__title,
+.c-card--theme_default.c-card--mod_hover-secondary:hover .c-card__sub-title,
+.c-card--theme_default.c-card--mod_hover-secondary:hover .c-card__content,
+.c-card--theme_default.c-card--mod_hover-secondary:hover .c-card__footer,
+.c-card--theme_default.c-card--mod_hover-secondary:hover .c-card__actionable,
+.c-card--theme_default.c-card--mod_hover-secondary:hover [class^="c-card__emphasised"], .c-card--theme_default.c-card--mod_secondary,
+.c-card--theme_default.c-card--mod_secondary .c-card__title,
+.c-card--theme_default.c-card--mod_secondary .c-card__sub-title,
+.c-card--theme_default.c-card--mod_secondary .c-card__content,
+.c-card--theme_default.c-card--mod_secondary .c-card__footer,
+.c-card--theme_default.c-card--mod_secondary .c-card__actionable,
+.c-card--theme_default.c-card--mod_secondary [class^="c-card__emphasised"] {
+  color: #ffffff;
+}
+
+.c-card--theme_default.c-card--mod_clear {
+  background: none transparent;
+}
+
+.c-card--theme_gradient {
+  background: #f4f4f4;
+  background: linear-gradient(to bottom, #ffffff 0%, #e7e7e7 100%);
+}
+
+.c-card--theme_gradient,
+.c-card--theme_gradient .c-card__title,
+.c-card--theme_gradient .c-card__sub-title,
+.c-card--theme_gradient .c-card__content,
+.c-card--theme_gradient .c-card__footer {
+  color: #191919;
+}
+
+.c-card--theme_gradient.c-card--mod_hover-inverse:hover, .c-card--theme_gradient.c-card--mod_inverse {
+  background: none #404040;
+}
+
+.c-card--theme_gradient.c-card--mod_hover-inverse:hover,
+.c-card--theme_gradient.c-card--mod_hover-inverse:hover .c-card__title,
+.c-card--theme_gradient.c-card--mod_hover-inverse:hover .c-card__sub-title,
+.c-card--theme_gradient.c-card--mod_hover-inverse:hover .c-card__content,
+.c-card--theme_gradient.c-card--mod_hover-inverse:hover .c-card__footer,
+.c-card--theme_gradient.c-card--mod_hover-inverse:hover .c-card__actionable,
+.c-card--theme_gradient.c-card--mod_hover-inverse:hover [class^="c-card__emphasised"], .c-card--theme_gradient.c-card--mod_inverse,
+.c-card--theme_gradient.c-card--mod_inverse .c-card__title,
+.c-card--theme_gradient.c-card--mod_inverse .c-card__sub-title,
+.c-card--theme_gradient.c-card--mod_inverse .c-card__content,
+.c-card--theme_gradient.c-card--mod_inverse .c-card__footer,
+.c-card--theme_gradient.c-card--mod_inverse .c-card__actionable,
+.c-card--theme_gradient.c-card--mod_inverse [class^="c-card__emphasised"] {
+  color: #ffffff;
+}
+
+.c-card--theme_gradient.c-card--mod_hover-primary:hover, .c-card--theme_gradient.c-card--mod_primary {
+  background: none #E30613;
+}
+
+.c-card--theme_gradient.c-card--mod_hover-primary:hover,
+.c-card--theme_gradient.c-card--mod_hover-primary:hover .c-card__title,
+.c-card--theme_gradient.c-card--mod_hover-primary:hover .c-card__sub-title,
+.c-card--theme_gradient.c-card--mod_hover-primary:hover .c-card__content,
+.c-card--theme_gradient.c-card--mod_hover-primary:hover .c-card__footer,
+.c-card--theme_gradient.c-card--mod_hover-primary:hover .c-card__actionable, .c-card--theme_gradient.c-card--mod_primary,
+.c-card--theme_gradient.c-card--mod_primary .c-card__title,
+.c-card--theme_gradient.c-card--mod_primary .c-card__sub-title,
+.c-card--theme_gradient.c-card--mod_primary .c-card__content,
+.c-card--theme_gradient.c-card--mod_primary .c-card__footer,
+.c-card--theme_gradient.c-card--mod_primary .c-card__actionable {
+  color: #ffffff;
+}
+
+.c-card--theme_gradient.c-card--mod_hover-secondary:hover, .c-card--theme_gradient.c-card--mod_secondary {
+  background: none #00A9CE;
+}
+
+.c-card--theme_gradient.c-card--mod_hover-secondary:hover,
+.c-card--theme_gradient.c-card--mod_hover-secondary:hover .c-card__title,
+.c-card--theme_gradient.c-card--mod_hover-secondary:hover .c-card__sub-title,
+.c-card--theme_gradient.c-card--mod_hover-secondary:hover .c-card__content,
+.c-card--theme_gradient.c-card--mod_hover-secondary:hover .c-card__footer,
+.c-card--theme_gradient.c-card--mod_hover-secondary:hover .c-card__actionable,
+.c-card--theme_gradient.c-card--mod_hover-secondary:hover [class^="c-card__emphasised"], .c-card--theme_gradient.c-card--mod_secondary,
+.c-card--theme_gradient.c-card--mod_secondary .c-card__title,
+.c-card--theme_gradient.c-card--mod_secondary .c-card__sub-title,
+.c-card--theme_gradient.c-card--mod_secondary .c-card__content,
+.c-card--theme_gradient.c-card--mod_secondary .c-card__footer,
+.c-card--theme_gradient.c-card--mod_secondary .c-card__actionable,
+.c-card--theme_gradient.c-card--mod_secondary [class^="c-card__emphasised"] {
+  color: #ffffff;
+}
+
+.c-card--theme_overlay {
+  background-color: #e8e8e8;
+}
+
+.c-card--theme_overlay .c-card__inner {
+  background-color: rgba(244, 244, 244, 0.85);
+}
+
+.c-card--theme_overlay,
+.c-card--theme_overlay .c-card__title,
+.c-card--theme_overlay .c-card__sub-title,
+.c-card--theme_overlay .c-card__content,
+.c-card--theme_overlay .c-card__footer,
+.c-card--theme_overlay .c-card__actionable {
+  color: #191919;
+}
+
+.c-card--theme_overlay.c-card--mod_hover-inverse:hover, .c-card--theme_overlay.c-card--mod_inverse {
+  background-color: #a3a3a3;
+}
+
+.c-card--theme_overlay.c-card--mod_hover-inverse:hover .c-card__inner, .c-card--theme_overlay.c-card--mod_inverse .c-card__inner {
+  text-shadow: 0 0 6px #191919;
+  background-color: rgba(25, 25, 25, 0.85);
+}
+
+.c-card--theme_overlay.c-card--mod_hover-inverse:hover,
+.c-card--theme_overlay.c-card--mod_hover-inverse:hover .c-card__title,
+.c-card--theme_overlay.c-card--mod_hover-inverse:hover .c-card__sub-title,
+.c-card--theme_overlay.c-card--mod_hover-inverse:hover .c-card__content,
+.c-card--theme_overlay.c-card--mod_hover-inverse:hover .c-card__footer,
+.c-card--theme_overlay.c-card--mod_hover-inverse:hover .c-card__actionable, .c-card--theme_overlay.c-card--mod_inverse,
+.c-card--theme_overlay.c-card--mod_inverse .c-card__title,
+.c-card--theme_overlay.c-card--mod_inverse .c-card__sub-title,
+.c-card--theme_overlay.c-card--mod_inverse .c-card__content,
+.c-card--theme_overlay.c-card--mod_inverse .c-card__footer,
+.c-card--theme_overlay.c-card--mod_inverse .c-card__actionable {
+  color: #ffffff;
 }
 
 .c-card--effect_focus-shadow {
@@ -10069,6 +10131,7 @@ A specific item, e.g. clickable (link), can be set to cover the entire card so i
 */
 .c-overlayer {
   position: relative;
+  display: block;
 }
 
 .c-overlayer__item {
