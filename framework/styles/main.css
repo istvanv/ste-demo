@@ -9001,9 +9001,6 @@ Cards
 
 .c-card {
   /**
-     * Sizes
-     */
-  /**
      * Has an image as the full background of the card
      * Leaves space ON TOP to revel a portion of the image
      * The contents of the card reside in the remaining space
@@ -9014,6 +9011,74 @@ Cards
      * Aligns header and content vertically in the middle
      * but puts the footer at the bottom of the card
      */
+}
+
+.c-card .c-card__header {
+  padding: 20px;
+}
+
+.c-card.c-card--mod_clear .c-card__header {
+  padding: 20px 0 20px;
+}
+
+.c-card.c-card--mod_clear.c-card--style_mini .c-card__header,
+.c-card.c-card--mod_clear.c-card--dir_h .c-card__header {
+  padding-top: 0;
+}
+
+.c-card.c-card--mod_clear.c-card--style_mini .c-card__body,
+.c-card.c-card--mod_clear.c-card--dir_h .c-card__body {
+  padding-left: 20px;
+}
+
+.c-card .c-card__content {
+  font-size: 16px;
+  padding: 0 20px 20px;
+  line-height: 1.53;
+}
+
+.c-card.c-card--mod_clear .c-card__content {
+  padding: 0 0 20px;
+}
+
+.c-card.c-card--mod_clear.c-card--style_mini .c-card__content,
+.c-card.c-card--mod_clear.c-card--dir_h .c-card__content {
+  padding-bottom: 0;
+}
+
+.c-card .c-card__footer {
+  font-size: 14.22px;
+  padding: 0 20px 20px;
+  line-height: 1.53;
+}
+
+.c-card .c-card__footer--has-button {
+  padding: 0 12px 16px 20px;
+}
+
+.c-card.c-card--mod_clear .c-card__footer {
+  padding: 0 0 20px;
+}
+
+.c-card.c-card--mod_clear .c-card__footer--has-button {
+  padding: 0 0 16px 0;
+}
+
+.c-card.c-card--style_mini .c-card__footer {
+  padding: 20px;
+  text-align: right;
+}
+
+@media screen and (min-width: 700px) {
+  .c-card.c-card--style_mini .c-card__footer {
+    padding: 20px;
+    text-align: left;
+  }
+}
+
+.c-card.c-card--style_mini .c-card__header ~ .c-card__footer,
+.c-card.c-card--style_mini .c-card__content ~ .c-card__footer {
+  padding: 0 20px 20px;
 }
 
 .c-card:not(.c-card--dir_h) .c-card__inner {
@@ -9076,74 +9141,6 @@ Cards
     align-self: center;
     min-height: 10px;
   }
-}
-
-.c-card--size_md .c-card__header {
-  padding: 20px;
-}
-
-.c-card--size_md.c-card--mod_clear .c-card__header {
-  padding: 20px 0 20px;
-}
-
-.c-card--size_md.c-card--mod_clear.c-card--style_mini .c-card__header,
-.c-card--size_md.c-card--mod_clear.c-card--dir_h .c-card__header {
-  padding-top: 0;
-}
-
-.c-card--size_md.c-card--mod_clear.c-card--style_mini .c-card__body,
-.c-card--size_md.c-card--mod_clear.c-card--dir_h .c-card__body {
-  padding-left: 20px;
-}
-
-.c-card--size_md .c-card__content {
-  font-size: 16px;
-  padding: 0 20px 20px;
-  line-height: 1.53;
-}
-
-.c-card--size_md.c-card--mod_clear .c-card__content {
-  padding: 0 0 20px;
-}
-
-.c-card--size_md.c-card--mod_clear.c-card--style_mini .c-card__content,
-.c-card--size_md.c-card--mod_clear.c-card--dir_h .c-card__content {
-  padding-bottom: 0;
-}
-
-.c-card--size_md .c-card__footer {
-  font-size: 14.22px;
-  padding: 0 20px 20px;
-  line-height: 1.53;
-}
-
-.c-card--size_md .c-card__footer--has-button {
-  padding: 0 12px 16px 20px;
-}
-
-.c-card--size_md.c-card--mod_clear .c-card__footer {
-  padding: 0 0 20px;
-}
-
-.c-card--size_md.c-card--mod_clear .c-card__footer--has-button {
-  padding: 0 0 16px 0;
-}
-
-.c-card--size_md.c-card--style_mini .c-card__footer {
-  padding: 20px;
-  text-align: right;
-}
-
-@media screen and (min-width: 700px) {
-  .c-card--size_md.c-card--style_mini .c-card__footer {
-    padding: 20px;
-    text-align: left;
-  }
-}
-
-.c-card--size_md.c-card--style_mini .c-card__header ~ .c-card__footer,
-.c-card--size_md.c-card--style_mini .c-card__content ~ .c-card__footer {
-  padding: 0 20px 20px;
 }
 
 .c-card--style_mediabg-v, .c-card--style_mediabg-h {
