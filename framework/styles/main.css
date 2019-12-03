@@ -9279,7 +9279,8 @@ Cards
 .c-card--theme_default .c-card__title,
 .c-card--theme_default .c-card__sub-title,
 .c-card--theme_default .c-card__content,
-.c-card--theme_default .c-card__footer {
+.c-card--theme_default .c-card__footer,
+.c-card--theme_default .c-card__actionable {
   color: #191919;
 }
 
@@ -9354,7 +9355,8 @@ Cards
 .c-card--theme_gradient .c-card__title,
 .c-card--theme_gradient .c-card__sub-title,
 .c-card--theme_gradient .c-card__content,
-.c-card--theme_gradient .c-card__footer {
+.c-card--theme_gradient .c-card__footer,
+.c-card--theme_gradient .c-card__actionable {
   color: #191919;
 }
 
