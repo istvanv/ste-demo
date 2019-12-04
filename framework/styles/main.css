@@ -299,7 +299,7 @@ html.has-overlay {
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  background: none #fff;
+  background: none #ffffff;
 }
 
 body {
@@ -4288,7 +4288,8 @@ ol:only-child:not([class]) {
 Button component
 */
 .c-button {
-  transition: all 0.2s ease-in;
+  transition: all 0.4s ease;
+  transition-delay: 0.0s;
 }
 
 .c-button:disabled, .c-button:disabled:hover, .c-button:disabled:focus {
@@ -7789,6 +7790,7 @@ Menu item
 
 .c-menu-item__action {
   transition: background-color 0.2s ease;
+  transition-delay: 0.0s;
   white-space: nowrap;
   color: currentColor;
   cursor: pointer;
@@ -7834,6 +7836,7 @@ Menu item
 
 .c-menu-item--dropdownify_drop .c-menu-item--dropdownify-target {
   transition: opacity 0.2s ease;
+  transition-delay: 0.0s;
   min-width: 100%;
   position: absolute;
   left: 0;
@@ -8107,6 +8110,7 @@ Menu item
 .c-menu-item--quaternary-left .c-menu-item__posticon {
   opacity: 0;
   transition: "opacity" 0.4s ease;
+  transition-delay: 0.0s;
 }
 
 @media screen and (max-width: 999px) {
@@ -9210,9 +9214,18 @@ Cards
      */
 }
 
-.c-card,
 .c-card * {
-  transition: color 400ms ease, fill 400ms ease, background-color 400ms ease;
+  transition: none;
+}
+
+.c-card {
+  transition: background-color 0.4s ease;
+  transition-delay: 0.0s;
+}
+
+.c-card .c-card__inner [class^="c-card"] {
+  transition: color 0.4s ease;
+  transition-delay: 0.0s;
 }
 
 .c-card a.c-card__title {
@@ -9246,17 +9259,9 @@ Cards
   color: #191919;
 }
 
-.c-card__emphasised-default svg {
-  fill: currentColor;
-}
-
 .c-card__emphasised-primary {
   font-weight: 700;
   color: #E30613;
-}
-
-.c-card__emphasised-primary svg {
-  fill: currentColor;
 }
 
 .c-card__emphasised-secondary {
@@ -9264,20 +9269,8 @@ Cards
   color: #00A9CE;
 }
 
-.c-card__emphasised-secondary svg {
-  fill: currentColor;
-}
-
 .c-card--theme_default {
   background: none #f4f4f4;
-}
-
-.c-card--theme_default,
-.c-card--theme_default .c-card__title,
-.c-card--theme_default .c-card__sub-title,
-.c-card--theme_default .c-card__content,
-.c-card--theme_default .c-card__footer,
-.c-card--theme_default .c-card__actionable {
   color: #191919;
 }
 
@@ -9286,18 +9279,10 @@ Cards
 }
 
 .c-card--theme_default.c-card--mod_hover-inverse:hover,
-.c-card--theme_default.c-card--mod_hover-inverse:hover .c-card__title,
-.c-card--theme_default.c-card--mod_hover-inverse:hover .c-card__sub-title,
-.c-card--theme_default.c-card--mod_hover-inverse:hover .c-card__content,
-.c-card--theme_default.c-card--mod_hover-inverse:hover .c-card__footer,
-.c-card--theme_default.c-card--mod_hover-inverse:hover .c-card__actionable,
-.c-card--theme_default.c-card--mod_hover-inverse:hover [class^="c-card__emphasised"], .c-card--theme_default.c-card--mod_inverse,
-.c-card--theme_default.c-card--mod_inverse .c-card__title,
-.c-card--theme_default.c-card--mod_inverse .c-card__sub-title,
-.c-card--theme_default.c-card--mod_inverse .c-card__content,
-.c-card--theme_default.c-card--mod_inverse .c-card__footer,
-.c-card--theme_default.c-card--mod_inverse .c-card__actionable,
-.c-card--theme_default.c-card--mod_inverse [class^="c-card__emphasised"] {
+.c-card--theme_default.c-card--mod_hover-inverse:hover [class^="c-card__emphasised"],
+.c-card--theme_default.c-card--mod_hover-inverse:hover .c-card__actionable, .c-card--theme_default.c-card--mod_inverse,
+.c-card--theme_default.c-card--mod_inverse [class^="c-card__emphasised"],
+.c-card--theme_default.c-card--mod_inverse .c-card__actionable {
   color: #ffffff;
 }
 
@@ -9306,15 +9291,9 @@ Cards
 }
 
 .c-card--theme_default.c-card--mod_hover-primary:hover,
-.c-card--theme_default.c-card--mod_hover-primary:hover .c-card__title,
-.c-card--theme_default.c-card--mod_hover-primary:hover .c-card__sub-title,
-.c-card--theme_default.c-card--mod_hover-primary:hover .c-card__content,
-.c-card--theme_default.c-card--mod_hover-primary:hover .c-card__footer,
+.c-card--theme_default.c-card--mod_hover-primary:hover [class^="c-card__emphasised"],
 .c-card--theme_default.c-card--mod_hover-primary:hover .c-card__actionable, .c-card--theme_default.c-card--mod_primary,
-.c-card--theme_default.c-card--mod_primary .c-card__title,
-.c-card--theme_default.c-card--mod_primary .c-card__sub-title,
-.c-card--theme_default.c-card--mod_primary .c-card__content,
-.c-card--theme_default.c-card--mod_primary .c-card__footer,
+.c-card--theme_default.c-card--mod_primary [class^="c-card__emphasised"],
 .c-card--theme_default.c-card--mod_primary .c-card__actionable {
   color: #ffffff;
 }
@@ -9324,18 +9303,10 @@ Cards
 }
 
 .c-card--theme_default.c-card--mod_hover-secondary:hover,
-.c-card--theme_default.c-card--mod_hover-secondary:hover .c-card__title,
-.c-card--theme_default.c-card--mod_hover-secondary:hover .c-card__sub-title,
-.c-card--theme_default.c-card--mod_hover-secondary:hover .c-card__content,
-.c-card--theme_default.c-card--mod_hover-secondary:hover .c-card__footer,
-.c-card--theme_default.c-card--mod_hover-secondary:hover .c-card__actionable,
-.c-card--theme_default.c-card--mod_hover-secondary:hover [class^="c-card__emphasised"], .c-card--theme_default.c-card--mod_secondary,
-.c-card--theme_default.c-card--mod_secondary .c-card__title,
-.c-card--theme_default.c-card--mod_secondary .c-card__sub-title,
-.c-card--theme_default.c-card--mod_secondary .c-card__content,
-.c-card--theme_default.c-card--mod_secondary .c-card__footer,
-.c-card--theme_default.c-card--mod_secondary .c-card__actionable,
-.c-card--theme_default.c-card--mod_secondary [class^="c-card__emphasised"] {
+.c-card--theme_default.c-card--mod_hover-secondary:hover [class^="c-card__emphasised"],
+.c-card--theme_default.c-card--mod_hover-secondary:hover .c-card__actionable, .c-card--theme_default.c-card--mod_secondary,
+.c-card--theme_default.c-card--mod_secondary [class^="c-card__emphasised"],
+.c-card--theme_default.c-card--mod_secondary .c-card__actionable {
   color: #ffffff;
 }
 
@@ -9346,90 +9317,60 @@ Cards
 .c-card--theme_gradient {
   background: #f4f4f4;
   background: linear-gradient(to bottom, #ffffff 0%, #e7e7e7 100%);
-}
-
-.c-card--theme_gradient,
-.c-card--theme_gradient .c-card__title,
-.c-card--theme_gradient .c-card__sub-title,
-.c-card--theme_gradient .c-card__content,
-.c-card--theme_gradient .c-card__footer,
-.c-card--theme_gradient .c-card__actionable {
   color: #191919;
 }
 
 .c-card--theme_gradient.c-card--mod_hover-inverse:hover, .c-card--theme_gradient.c-card--mod_inverse {
   background: none #404040;
+  background: linear-gradient(to bottom, #58595b 0%, #404040 100%);
 }
 
 .c-card--theme_gradient.c-card--mod_hover-inverse:hover,
-.c-card--theme_gradient.c-card--mod_hover-inverse:hover .c-card__title,
-.c-card--theme_gradient.c-card--mod_hover-inverse:hover .c-card__sub-title,
-.c-card--theme_gradient.c-card--mod_hover-inverse:hover .c-card__content,
-.c-card--theme_gradient.c-card--mod_hover-inverse:hover .c-card__footer,
-.c-card--theme_gradient.c-card--mod_hover-inverse:hover .c-card__actionable,
-.c-card--theme_gradient.c-card--mod_hover-inverse:hover [class^="c-card__emphasised"], .c-card--theme_gradient.c-card--mod_inverse,
-.c-card--theme_gradient.c-card--mod_inverse .c-card__title,
-.c-card--theme_gradient.c-card--mod_inverse .c-card__sub-title,
-.c-card--theme_gradient.c-card--mod_inverse .c-card__content,
-.c-card--theme_gradient.c-card--mod_inverse .c-card__footer,
-.c-card--theme_gradient.c-card--mod_inverse .c-card__actionable,
-.c-card--theme_gradient.c-card--mod_inverse [class^="c-card__emphasised"] {
+.c-card--theme_gradient.c-card--mod_hover-inverse:hover [class^="c-card__emphasised"],
+.c-card--theme_gradient.c-card--mod_hover-inverse:hover .c-card__actionable, .c-card--theme_gradient.c-card--mod_inverse,
+.c-card--theme_gradient.c-card--mod_inverse [class^="c-card__emphasised"],
+.c-card--theme_gradient.c-card--mod_inverse .c-card__actionable {
   color: #ffffff;
 }
 
 .c-card--theme_gradient.c-card--mod_hover-primary:hover, .c-card--theme_gradient.c-card--mod_primary {
   background: none #E30613;
+  background: linear-gradient(to bottom, #E30613 0%, #b40000 100%);
 }
 
 .c-card--theme_gradient.c-card--mod_hover-primary:hover,
-.c-card--theme_gradient.c-card--mod_hover-primary:hover .c-card__title,
-.c-card--theme_gradient.c-card--mod_hover-primary:hover .c-card__sub-title,
-.c-card--theme_gradient.c-card--mod_hover-primary:hover .c-card__content,
-.c-card--theme_gradient.c-card--mod_hover-primary:hover .c-card__footer,
+.c-card--theme_gradient.c-card--mod_hover-primary:hover [class^="c-card__emphasised"],
 .c-card--theme_gradient.c-card--mod_hover-primary:hover .c-card__actionable, .c-card--theme_gradient.c-card--mod_primary,
-.c-card--theme_gradient.c-card--mod_primary .c-card__title,
-.c-card--theme_gradient.c-card--mod_primary .c-card__sub-title,
-.c-card--theme_gradient.c-card--mod_primary .c-card__content,
-.c-card--theme_gradient.c-card--mod_primary .c-card__footer,
+.c-card--theme_gradient.c-card--mod_primary [class^="c-card__emphasised"],
 .c-card--theme_gradient.c-card--mod_primary .c-card__actionable {
   color: #ffffff;
 }
 
 .c-card--theme_gradient.c-card--mod_hover-secondary:hover, .c-card--theme_gradient.c-card--mod_secondary {
   background: none #00A9CE;
+  background: linear-gradient(to bottom, #00A9CE 0%, #058caa 100%);
 }
 
 .c-card--theme_gradient.c-card--mod_hover-secondary:hover,
-.c-card--theme_gradient.c-card--mod_hover-secondary:hover .c-card__title,
-.c-card--theme_gradient.c-card--mod_hover-secondary:hover .c-card__sub-title,
-.c-card--theme_gradient.c-card--mod_hover-secondary:hover .c-card__content,
-.c-card--theme_gradient.c-card--mod_hover-secondary:hover .c-card__footer,
-.c-card--theme_gradient.c-card--mod_hover-secondary:hover .c-card__actionable,
-.c-card--theme_gradient.c-card--mod_hover-secondary:hover [class^="c-card__emphasised"], .c-card--theme_gradient.c-card--mod_secondary,
-.c-card--theme_gradient.c-card--mod_secondary .c-card__title,
-.c-card--theme_gradient.c-card--mod_secondary .c-card__sub-title,
-.c-card--theme_gradient.c-card--mod_secondary .c-card__content,
-.c-card--theme_gradient.c-card--mod_secondary .c-card__footer,
-.c-card--theme_gradient.c-card--mod_secondary .c-card__actionable,
-.c-card--theme_gradient.c-card--mod_secondary [class^="c-card__emphasised"] {
-  color: #ffffff;
+.c-card--theme_gradient.c-card--mod_hover-secondary:hover [class^="c-card__emphasised"],
+.c-card--theme_gradient.c-card--mod_hover-secondary:hover .c-card__actionable, .c-card--theme_gradient.c-card--mod_secondary,
+.c-card--theme_gradient.c-card--mod_secondary [class^="c-card__emphasised"],
+.c-card--theme_gradient.c-card--mod_secondary .c-card__actionable {
+  color: #ffffff !important;
 }
 
 .c-card--theme_overlay {
   background-color: #e8e8e8;
 }
 
-.c-card--theme_overlay .c-card__inner {
-  background-color: rgba(244, 244, 244, 0.85);
-}
-
 .c-card--theme_overlay,
-.c-card--theme_overlay .c-card__title,
-.c-card--theme_overlay .c-card__sub-title,
-.c-card--theme_overlay .c-card__content,
-.c-card--theme_overlay .c-card__footer,
+.c-card--theme_overlay [class^="c-card__emphasised"],
 .c-card--theme_overlay .c-card__actionable {
   color: #191919;
+}
+
+.c-card--theme_overlay .c-card__inner {
+  background-color: rgba(244, 244, 244, 0.85);
 }
 
 .c-card--theme_overlay.c-card--mod_hover-inverse:hover, .c-card--theme_overlay.c-card--mod_inverse {
@@ -9442,15 +9383,9 @@ Cards
 }
 
 .c-card--theme_overlay.c-card--mod_hover-inverse:hover,
-.c-card--theme_overlay.c-card--mod_hover-inverse:hover .c-card__title,
-.c-card--theme_overlay.c-card--mod_hover-inverse:hover .c-card__sub-title,
-.c-card--theme_overlay.c-card--mod_hover-inverse:hover .c-card__content,
-.c-card--theme_overlay.c-card--mod_hover-inverse:hover .c-card__footer,
+.c-card--theme_overlay.c-card--mod_hover-inverse:hover [class^="c-card__emphasised"],
 .c-card--theme_overlay.c-card--mod_hover-inverse:hover .c-card__actionable, .c-card--theme_overlay.c-card--mod_inverse,
-.c-card--theme_overlay.c-card--mod_inverse .c-card__title,
-.c-card--theme_overlay.c-card--mod_inverse .c-card__sub-title,
-.c-card--theme_overlay.c-card--mod_inverse .c-card__content,
-.c-card--theme_overlay.c-card--mod_inverse .c-card__footer,
+.c-card--theme_overlay.c-card--mod_inverse [class^="c-card__emphasised"],
 .c-card--theme_overlay.c-card--mod_inverse .c-card__actionable {
   color: #ffffff;
 }
@@ -9458,6 +9393,7 @@ Cards
 .c-card--effect_focus-shadow {
   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   transition: box-shadow 0.4s ease;
+  transition-delay: 0.0s;
 }
 
 .c-card--effect_focus-shadow:hover {
@@ -9465,14 +9401,14 @@ Cards
 }
 
 .c-card--effect_zoom-all {
-  transition: all 400ms ease;
+  transition: all 0.4s ease;
+  transition-delay: 0.0s;
   transform: scale(1);
 }
 
 .c-card--effect_zoom-all:hover {
   z-index: 2;
-  transition: all 400ms ease;
-  transform: scale(1.1);
+  transform: scale(1.07);
 }
 
 .c-card--effect_zoom-media .c-card__media {
@@ -9481,7 +9417,8 @@ Cards
 }
 
 .c-card--effect_zoom-media .c-card__media img {
-  transition: transform 800ms ease;
+  transition: transform 0.8s ease;
+  transition-delay: 0.0s;
 }
 
 .c-card--effect_zoom-media:hover .c-card__media img {
@@ -9958,6 +9895,7 @@ Repsonsive tabs
   padding: 16px 24px;
   margin-bottom: 8px;
   transition: background-color 0.4s ease;
+  transition-delay: 0.0s;
   background-color: #f4f4f4;
 }
 
@@ -9993,6 +9931,7 @@ Repsonsive tabs
   padding: 16px 24px;
   margin-right: 8px;
   transition: background-color 0.4s ease;
+  transition-delay: 0.0s;
   position: relative;
   bottom: -1px;
   border: 1px solid #e7e7e7;
@@ -10064,6 +10003,7 @@ Repsonsive tabs
 .c-tab--slim .c-tab__list-item {
   padding: 16px 24px;
   transition: border-bottom-color 0.4s ease;
+  transition-delay: 0.0s;
   border-bottom: 4px solid transparent;
   background: transparent;
 }
@@ -10262,6 +10202,7 @@ Overlay tabs component
 
 .c-overlay-tabs__trigger-action {
   transition: background 0.8s ease;
+  transition-delay: 0.0s;
   padding: 24px 16px;
   display: block;
   font-family: "Montserrat", sans-serif;
@@ -10319,6 +10260,7 @@ Overlay tabs component
 
 .c-overlay-tabs__target {
   transition: all 0.4s ease;
+  transition-delay: 0.0s;
   box-shadow: md rgba(0, 0, 0, 0.3);
   background-color: #ffffff;
 }
@@ -10337,7 +10279,7 @@ Overlay tabs component
 @media screen and (min-width: 1000px) {
   .c-overlay-tabs__target {
     position: absolute;
-    right: 48px;
+    right: 0;
     top: 16px;
     bottom: 16px;
     overflow: hidden;
@@ -10393,6 +10335,7 @@ Navbar
 */
 .c-navbar--mobile {
   transition: all 0.4s ease;
+  transition-delay: 0.0s;
   position: fixed;
   top: 0;
   left: 0;
@@ -11146,61 +11089,41 @@ Content block
   }
 }
 
-.c-content-block__wrapper--feature {
-  margin-top: 48px;
-  margin-bottom: 48px;
+.c-content-block__wrapper {
   padding-top: 48px;
   padding-bottom: 48px;
-  background: none #f4f4f4;
-  background: linear-gradient(to top, #ffffff 0%, #e7e7e7 100%);
 }
 
 @media screen and (min-width: 1000px) {
-  .c-content-block__wrapper--feature {
-    margin-top: 56px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .c-content-block__wrapper--feature {
-    margin-top: 72px;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .c-content-block__wrapper--feature {
-    margin-bottom: 56px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .c-content-block__wrapper--feature {
-    margin-bottom: 72px;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .c-content-block__wrapper--feature {
+  .c-content-block__wrapper {
     padding-top: 56px;
   }
 }
 
 @media screen and (min-width: 1400px) {
-  .c-content-block__wrapper--feature {
+  .c-content-block__wrapper {
     padding-top: 72px;
   }
 }
 
 @media screen and (min-width: 1000px) {
-  .c-content-block__wrapper--feature {
+  .c-content-block__wrapper {
     padding-bottom: 56px;
   }
 }
 
 @media screen and (min-width: 1400px) {
-  .c-content-block__wrapper--feature {
+  .c-content-block__wrapper {
     padding-bottom: 72px;
   }
+}
+
+.c-content-block__wrapper--feature {
+  background: #f4f4f4;
+  background: linear-gradient(to top, #ffffff 0%, #e7e7e7 100%);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .c-content-block__wrapper--feature .c-content-block {
@@ -11209,60 +11132,8 @@ Content block
 }
 
 .c-content-block__wrapper--themed_1 {
-  margin-top: 48px;
-  margin-bottom: 48px;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  background: none #a2ad00;
+  background: #a2ad00;
   background: linear-gradient(45deg, #a2ad00 0%, #00A9CE 100%);
-}
-
-@media screen and (min-width: 1000px) {
-  .c-content-block__wrapper--themed_1 {
-    margin-top: 56px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .c-content-block__wrapper--themed_1 {
-    margin-top: 72px;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .c-content-block__wrapper--themed_1 {
-    margin-bottom: 56px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .c-content-block__wrapper--themed_1 {
-    margin-bottom: 72px;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .c-content-block__wrapper--themed_1 {
-    padding-top: 56px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .c-content-block__wrapper--themed_1 {
-    padding-top: 72px;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .c-content-block__wrapper--themed_1 {
-    padding-bottom: 56px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .c-content-block__wrapper--themed_1 {
-    padding-bottom: 72px;
-  }
 }
 
 .c-content-block__wrapper--themed_1 .c-content-block {
@@ -11272,60 +11143,8 @@ Content block
 }
 
 .c-content-block__wrapper--themed_2 {
-  margin-top: 48px;
-  margin-bottom: 48px;
-  padding-top: 48px;
-  padding-bottom: 48px;
   background: none #a2ad00;
   background: linear-gradient(45deg, #58595b 0%, #a3a3a3 100%);
-}
-
-@media screen and (min-width: 1000px) {
-  .c-content-block__wrapper--themed_2 {
-    margin-top: 56px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .c-content-block__wrapper--themed_2 {
-    margin-top: 72px;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .c-content-block__wrapper--themed_2 {
-    margin-bottom: 56px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .c-content-block__wrapper--themed_2 {
-    margin-bottom: 72px;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .c-content-block__wrapper--themed_2 {
-    padding-top: 56px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .c-content-block__wrapper--themed_2 {
-    padding-top: 72px;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .c-content-block__wrapper--themed_2 {
-    padding-bottom: 56px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .c-content-block__wrapper--themed_2 {
-    padding-bottom: 72px;
-  }
 }
 
 .c-content-block__wrapper--themed_2 .c-content-block {

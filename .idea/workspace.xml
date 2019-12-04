@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c34c378-7b2b-4df1-b8bc-4d2cd99a1f09" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/framework/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/framework/styles/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/framework/svg/sprite.symbol.html" beforeDir="false" afterPath="$PROJECT_DIR$/framework/svg/sprite.symbol.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styleguide/molecules/overlay-tabs.html" beforeDir="false" afterPath="$PROJECT_DIR$/styleguide/molecules/overlay-tabs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styleguide/organisms/content-blocks.html" beforeDir="false" afterPath="$PROJECT_DIR$/styleguide/organisms/content-blocks.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styleguide/organisms/grid-blocks.html" beforeDir="false" afterPath="$PROJECT_DIR$/styleguide/organisms/grid-blocks.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styleguide/pages/0_home.html" beforeDir="false" afterPath="$PROJECT_DIR$/styleguide/pages/0_home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styleguide/pages/1_sector.html" beforeDir="false" afterPath="$PROJECT_DIR$/styleguide/pages/1_sector.html" afterDir="false" />
@@ -90,14 +93,7 @@
       <workItem from="1574732490344" duration="353000" />
       <workItem from="1575249521554" duration="681000" />
       <workItem from="1575269166421" duration="99000" />
-      <workItem from="1575332212702" duration="1228000" />
-    </task>
-    <task id="LOCAL-00002" summary="Update">
-      <created>1566431211049</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1566431211049</updated>
+      <workItem from="1575332212702" duration="2459000" />
     </task>
     <task id="LOCAL-00003" summary="Update">
       <created>1566431785926</created>
@@ -435,7 +431,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575333863424</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Update">
+      <created>1575334708340</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1575334708340</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,17 +470,17 @@
     </state>
     <state x="960" y="432" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-3840.0.1920.1065/0.0.2560.1410/2560.0.1920.1050@0.0.2560.1410" timestamp="1575269149116" />
     <state x="960" y="432" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/3840.2160/2560.1440/1920.1080" timestamp="1573538338501" />
-    <state x="1083" y="436" key="CommitChangelistDialog2" timestamp="1575333862538">
+    <state x="1083" y="436" key="CommitChangelistDialog2" timestamp="1575334707552">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="1083" y="436" key="CommitChangelistDialog2/-3840.0.1920.1065/0.0.2560.1410/2560.0.1920.1050@0.0.2560.1410" timestamp="1575269098445" />
-    <state x="1083" y="436" key="CommitChangelistDialog2/-3840.0.1920.1065/2560.0.1920.1050/0.0.2560.1410@0.0.2560.1410" timestamp="1575333862538" />
-    <state x="737" y="343" key="Vcs.Push.Dialog.v2" timestamp="1575333865536">
+    <state x="1083" y="436" key="CommitChangelistDialog2/-3840.0.1920.1065/2560.0.1920.1050/0.0.2560.1410@0.0.2560.1410" timestamp="1575334707552" />
+    <state x="737" y="343" key="Vcs.Push.Dialog.v2" timestamp="1575334710377">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="-3287" y="259" key="Vcs.Push.Dialog.v2/-3840.0.1920.1065/0.0.2560.1410/2560.0.1920.1050@-3840.0.1920.1065" timestamp="1573538381905" />
     <state x="737" y="343" key="Vcs.Push.Dialog.v2/-3840.0.1920.1065/0.0.2560.1410/2560.0.1920.1050@0.0.2560.1410" timestamp="1575269101134" />
-    <state x="737" y="343" key="Vcs.Push.Dialog.v2/-3840.0.1920.1065/2560.0.1920.1050/0.0.2560.1410@0.0.2560.1410" timestamp="1575333865536" />
+    <state x="737" y="343" key="Vcs.Push.Dialog.v2/-3840.0.1920.1065/2560.0.1920.1050/0.0.2560.1410@0.0.2560.1410" timestamp="1575334710377" />
     <state x="553" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1050/0.-1440.2048.1122@0.0.1920.1050" timestamp="1574409195299" />
     <state x="-3287" y="259" key="Vcs.Push.Dialog.v2/3840.2160/2560.1440/1920.1080" timestamp="1573538338501" />
   </component>
