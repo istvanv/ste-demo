@@ -9202,6 +9202,13 @@ Cards
 }
 
 .c-card {
+  transition: background-color 0.8s ease;
+  transition-delay: 0.0s;
+  /*
+    .c-card__inner [class*="c-card"] {
+        @include effects-transition(color, normal);
+    }
+    */
   /**
      * ========================================================
      * Card themes
@@ -9214,20 +9221,6 @@ Cards
      */
 }
 
-.c-card * {
-  transition: none;
-}
-
-.c-card {
-  transition: background-color 0.4s ease;
-  transition-delay: 0.0s;
-}
-
-.c-card .c-card__inner [class^="c-card"] {
-  transition: color 0.4s ease;
-  transition-delay: 0.0s;
-}
-
 .c-card a.c-card__title {
   display: block;
   text-decoration: none;
@@ -9235,7 +9228,7 @@ Cards
 }
 
 .c-card .c-card__actionable {
-  color: #00A9CE;
+  color: currentColor;
 }
 
 .c-card .c-card__actionable:hover, .c-card .c-card__actionable:focus {
@@ -9254,17 +9247,17 @@ Cards
   fill: currentColor;
 }
 
-.c-card__emphasised-default {
+.c-card .c-card__emphasised-default {
   font-weight: 700;
   color: #191919;
 }
 
-.c-card__emphasised-primary {
+.c-card .c-card__emphasised-primary {
   font-weight: 700;
   color: #E30613;
 }
 
-.c-card__emphasised-secondary {
+.c-card .c-card__emphasised-secondary {
   font-weight: 700;
   color: #00A9CE;
 }
@@ -9279,11 +9272,15 @@ Cards
 }
 
 .c-card--theme_default.c-card--mod_hover-inverse:hover,
-.c-card--theme_default.c-card--mod_hover-inverse:hover [class^="c-card__emphasised"],
+.c-card--theme_default.c-card--mod_hover-inverse:hover [class*="c-card__emphasised"],
 .c-card--theme_default.c-card--mod_hover-inverse:hover .c-card__actionable, .c-card--theme_default.c-card--mod_inverse,
-.c-card--theme_default.c-card--mod_inverse [class^="c-card__emphasised"],
+.c-card--theme_default.c-card--mod_inverse [class*="c-card__emphasised"],
 .c-card--theme_default.c-card--mod_inverse .c-card__actionable {
   color: #ffffff;
+}
+
+.c-card--theme_default.c-card--mod_hover-inverse:hover svg, .c-card--theme_default.c-card--mod_inverse svg {
+  fill: currentColor;
 }
 
 .c-card--theme_default.c-card--mod_hover-primary:hover, .c-card--theme_default.c-card--mod_primary {
@@ -9291,11 +9288,15 @@ Cards
 }
 
 .c-card--theme_default.c-card--mod_hover-primary:hover,
-.c-card--theme_default.c-card--mod_hover-primary:hover [class^="c-card__emphasised"],
+.c-card--theme_default.c-card--mod_hover-primary:hover [class*="c-card__emphasised"],
 .c-card--theme_default.c-card--mod_hover-primary:hover .c-card__actionable, .c-card--theme_default.c-card--mod_primary,
-.c-card--theme_default.c-card--mod_primary [class^="c-card__emphasised"],
+.c-card--theme_default.c-card--mod_primary [class*="c-card__emphasised"],
 .c-card--theme_default.c-card--mod_primary .c-card__actionable {
   color: #ffffff;
+}
+
+.c-card--theme_default.c-card--mod_hover-primary:hover svg, .c-card--theme_default.c-card--mod_primary svg {
+  fill: currentColor;
 }
 
 .c-card--theme_default.c-card--mod_hover-secondary:hover, .c-card--theme_default.c-card--mod_secondary {
@@ -9303,11 +9304,15 @@ Cards
 }
 
 .c-card--theme_default.c-card--mod_hover-secondary:hover,
-.c-card--theme_default.c-card--mod_hover-secondary:hover [class^="c-card__emphasised"],
+.c-card--theme_default.c-card--mod_hover-secondary:hover [class*="c-card__emphasised"],
 .c-card--theme_default.c-card--mod_hover-secondary:hover .c-card__actionable, .c-card--theme_default.c-card--mod_secondary,
-.c-card--theme_default.c-card--mod_secondary [class^="c-card__emphasised"],
+.c-card--theme_default.c-card--mod_secondary [class*="c-card__emphasised"],
 .c-card--theme_default.c-card--mod_secondary .c-card__actionable {
   color: #ffffff;
+}
+
+.c-card--theme_default.c-card--mod_hover-secondary:hover svg, .c-card--theme_default.c-card--mod_secondary svg {
+  fill: currentColor;
 }
 
 .c-card--theme_default.c-card--mod_clear {
@@ -9321,42 +9326,54 @@ Cards
 }
 
 .c-card--theme_gradient.c-card--mod_hover-inverse:hover, .c-card--theme_gradient.c-card--mod_inverse {
-  background: none #404040;
+  background: #404040;
   background: linear-gradient(to bottom, #58595b 0%, #404040 100%);
 }
 
 .c-card--theme_gradient.c-card--mod_hover-inverse:hover,
-.c-card--theme_gradient.c-card--mod_hover-inverse:hover [class^="c-card__emphasised"],
+.c-card--theme_gradient.c-card--mod_hover-inverse:hover [class*="c-card__emphasised"],
 .c-card--theme_gradient.c-card--mod_hover-inverse:hover .c-card__actionable, .c-card--theme_gradient.c-card--mod_inverse,
-.c-card--theme_gradient.c-card--mod_inverse [class^="c-card__emphasised"],
+.c-card--theme_gradient.c-card--mod_inverse [class*="c-card__emphasised"],
 .c-card--theme_gradient.c-card--mod_inverse .c-card__actionable {
   color: #ffffff;
 }
 
+.c-card--theme_gradient.c-card--mod_hover-inverse:hover svg, .c-card--theme_gradient.c-card--mod_inverse svg {
+  fill: currentColor;
+}
+
 .c-card--theme_gradient.c-card--mod_hover-primary:hover, .c-card--theme_gradient.c-card--mod_primary {
-  background: none #E30613;
+  background: #E30613;
   background: linear-gradient(to bottom, #E30613 0%, #b40000 100%);
 }
 
 .c-card--theme_gradient.c-card--mod_hover-primary:hover,
-.c-card--theme_gradient.c-card--mod_hover-primary:hover [class^="c-card__emphasised"],
+.c-card--theme_gradient.c-card--mod_hover-primary:hover [class*="c-card__emphasised"],
 .c-card--theme_gradient.c-card--mod_hover-primary:hover .c-card__actionable, .c-card--theme_gradient.c-card--mod_primary,
-.c-card--theme_gradient.c-card--mod_primary [class^="c-card__emphasised"],
+.c-card--theme_gradient.c-card--mod_primary [class*="c-card__emphasised"],
 .c-card--theme_gradient.c-card--mod_primary .c-card__actionable {
   color: #ffffff;
 }
 
+.c-card--theme_gradient.c-card--mod_hover-primary:hover svg, .c-card--theme_gradient.c-card--mod_primary svg {
+  fill: currentColor;
+}
+
 .c-card--theme_gradient.c-card--mod_hover-secondary:hover, .c-card--theme_gradient.c-card--mod_secondary {
-  background: none #00A9CE;
+  background: #00A9CE;
   background: linear-gradient(to bottom, #00A9CE 0%, #058caa 100%);
 }
 
 .c-card--theme_gradient.c-card--mod_hover-secondary:hover,
-.c-card--theme_gradient.c-card--mod_hover-secondary:hover [class^="c-card__emphasised"],
+.c-card--theme_gradient.c-card--mod_hover-secondary:hover [class*="c-card__emphasised"],
 .c-card--theme_gradient.c-card--mod_hover-secondary:hover .c-card__actionable, .c-card--theme_gradient.c-card--mod_secondary,
-.c-card--theme_gradient.c-card--mod_secondary [class^="c-card__emphasised"],
+.c-card--theme_gradient.c-card--mod_secondary [class*="c-card__emphasised"],
 .c-card--theme_gradient.c-card--mod_secondary .c-card__actionable {
-  color: #ffffff !important;
+  color: #ffffff;
+}
+
+.c-card--theme_gradient.c-card--mod_hover-secondary:hover svg, .c-card--theme_gradient.c-card--mod_secondary svg {
+  fill: currentColor;
 }
 
 .c-card--theme_overlay {
@@ -9364,7 +9381,7 @@ Cards
 }
 
 .c-card--theme_overlay,
-.c-card--theme_overlay [class^="c-card__emphasised"],
+.c-card--theme_overlay [class*="c-card__emphasised"],
 .c-card--theme_overlay .c-card__actionable {
   color: #191919;
 }
@@ -9383,11 +9400,15 @@ Cards
 }
 
 .c-card--theme_overlay.c-card--mod_hover-inverse:hover,
-.c-card--theme_overlay.c-card--mod_hover-inverse:hover [class^="c-card__emphasised"],
+.c-card--theme_overlay.c-card--mod_hover-inverse:hover [class*="c-card__emphasised"],
 .c-card--theme_overlay.c-card--mod_hover-inverse:hover .c-card__actionable, .c-card--theme_overlay.c-card--mod_inverse,
-.c-card--theme_overlay.c-card--mod_inverse [class^="c-card__emphasised"],
+.c-card--theme_overlay.c-card--mod_inverse [class*="c-card__emphasised"],
 .c-card--theme_overlay.c-card--mod_inverse .c-card__actionable {
   color: #ffffff;
+}
+
+.c-card--theme_overlay.c-card--mod_hover-inverse:hover svg, .c-card--theme_overlay.c-card--mod_inverse svg {
+  fill: currentColor;
 }
 
 .c-card--effect_focus-shadow {
