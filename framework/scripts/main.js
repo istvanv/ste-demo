@@ -3594,20 +3594,21 @@ $(function() {
 				itemElement: owlItemElement,
                 autoplay: owlAtoplay,
                 autoplayTimeout: owlAtoplayTimeout,
-                autoplaySpeed: 1000
+                autoplaySpeed: 1000,
+                animateOut: ($owlInstance.hasClass('js-owl-carousel_animate--fadeOut')) ? 'fadeOut' : false
 			});
 
 			// If a custom 'next' trigger element was specified
 			if ($owlCustomNext.is('*')) {
 				$owlCustomNext.click(function() {
-					owlCustom.trigger('next.owl.carousel', [1000]);
+                    $owlInstance.trigger('next.owl.carousel', [1000]);
 				});
 			}
 
 			// If a custom 'prev' trigger element was specified
 			if ($owlCustomPrev.is('*')) {
 				$owlCustomPrev.click(function () {
-					owlCustom.trigger('prev.owl.carousel', [1000]);
+                    $owlInstance.trigger('prev.owl.carousel', [1000]);
 				});
 			}
 
