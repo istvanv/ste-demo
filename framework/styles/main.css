@@ -10438,6 +10438,7 @@ Overlay tabs component
   position: relative;
   overflow: auto;
   height: 100%;
+  color: #58595b;
 }
 
 /*
@@ -11065,8 +11066,12 @@ Page nav
 /*
 Section header
 */
-.c-section-header__main {
+:not(.u-content-inverse) .c-section-header__main {
   color: #404040;
+}
+
+.u-content-inverse .c-section-header__main {
+  color: #ffffff;
 }
 
 .c-section-header__before, .c-section-header__main, .c-section-header__after {
@@ -11091,11 +11096,6 @@ Section header
   .c-section-header__pre-title {
     font-size: 22.78px;
   }
-}
-
-.u-content-inverse .c-section-header,
-.u-content-inverse .c-section-header__main {
-  color: #ffffff;
 }
 
 .c-section-header--row {
@@ -11199,6 +11199,10 @@ Content block
   }
 }
 
+.c-content-block.u-content-inverse {
+  color: #ffffff;
+}
+
 .c-content-block__wrapper {
   padding-top: 48px;
   padding-bottom: 48px;
@@ -11228,9 +11232,13 @@ Content block
   }
 }
 
+.c-content-block__wrapper.u-content-inverse {
+  color: #ffffff;
+}
+
 .c-content-block__wrapper--feature {
-  background: #f4f4f4;
-  background: linear-gradient(to top, #ffffff 0%, #e7e7e7 100%);
+  background: #f4f4f4 none;
+  background: #f4f4f4 linear-gradient(to top, #ffffff 0%, #e7e7e7 100%);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -11242,25 +11250,23 @@ Content block
 }
 
 .c-content-block__wrapper--themed_1 {
-  background: #a2ad00;
-  background: linear-gradient(45deg, #a2ad00 0%, #00A9CE 100%);
+  background: #a2ad00 none;
+  background: #a2ad00 linear-gradient(45deg, #a2ad00 0%, #00A9CE 100%);
 }
 
 .c-content-block__wrapper--themed_1 .c-content-block {
   margin-top: 0;
   margin-bottom: 0;
-  color: #ffffff;
 }
 
 .c-content-block__wrapper--themed_2 {
-  background: none #a2ad00;
-  background: linear-gradient(45deg, #58595b 0%, #a3a3a3 100%);
+  background: #a3a3a3 none;
+  background: #a3a3a3 linear-gradient(45deg, #58595b 0%, #a3a3a3 100%);
 }
 
 .c-content-block__wrapper--themed_2 .c-content-block {
   margin-top: 0;
   margin-bottom: 0;
-  color: #ffffff;
 }
 
 .c-content-block-separator {
@@ -11273,6 +11279,47 @@ Content block
 /*
 Content block
 */
+/* Pagination */
+.pagination-page-wrapper .pagination {
+  list-style: none;
+  margin: 0 0 40px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pagination-page-wrapper .pagination li {
+  margin-bottom: 8px;
+}
+
+.pagination-page-wrapper .pagination li a {
+  font-size: 16px;
+  padding: 0 12px;
+  color: #a3a3a3;
+}
+
+.pagination-page-wrapper .pagination li a:hover {
+  color: #E30613;
+}
+
+@media screen and (min-width: 700px) {
+  .pagination-page-wrapper .pagination li a {
+    font-size: 18px;
+    padding: 0 8px;
+  }
+}
+
+.pagination-page-wrapper .pagination li.active a {
+  color: #aaaaaa;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.pagination-page-wrapper .pagination li.disabled {
+  display: none;
+}
+
 /*
     This stylesheet contains CSS for the search and sign up sections. Replace these as necessary.
 */
@@ -11583,63 +11630,6 @@ Content block
     }
 }
 */
-/*Pagination*/
-.pagination-page-wrapper .pagination {
-  list-style: none;
-  margin: 0 -50px 80px 0;
-  padding: 0;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-justify-content: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-}
-
-@media screen and (max-width: 993px) {
-  .pagination-page-wrapper .pagination {
-    margin-right: 0;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .pagination-page-wrapper .pagination {
-    margin-bottom: 80px;
-  }
-}
-
-.pagination-page-wrapper .pagination li {
-  margin-bottom: 8px;
-}
-
-.pagination-page-wrapper .pagination li.active a {
-  color: #555555;
-  font-weight: 700;
-}
-
-.pagination-page-wrapper .pagination li.disabled {
-  display: none;
-}
-
-.pagination-page-wrapper .pagination li a {
-  color: #777777;
-  font-size: 1.25em;
-  padding: 0 7px;
-}
-
-@media screen and (max-width: 767px) {
-  .pagination-page-wrapper .pagination li a {
-    font-size: 0.9375em;
-    padding: 0 10px;
-  }
-}
-
-.pagination-page-wrapper .pagination li a:hover {
-  color: #e30613;
-}
-
 /* Search */
 .ui-helper-hidden {
   display: none;
