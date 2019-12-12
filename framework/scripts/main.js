@@ -3521,13 +3521,13 @@ $(function() {
 		/**
 		 * Use:
 		 *
-		 * .js-carousel__slide-element - each slide element should have this class applied
+		 * .js-owl-carousel__slide-element - each slide element should have this class applied
 		 *
 		 * Add .js-owl-carousel_show-controls to Owl element to enable nav (prev/next)
 		 *
-		 * Create .js-carousel__next element - to make an element as the 'next' control
-		 * Create .js-carousel__prev element - to make an element as the 'prev' control
-		 * Create .js-carousel__count element - to make an element as the container for the counter
+		 * Create .js-owl-carousel__next element - to make an element as the 'next' control
+		 * Create .js-owl-carousel__prev element - to make an element as the 'prev' control
+		 * Create .js-owl-carousel__count element - to make an element as the container for the counter
 		 *
 		 * @type {*|jQuery|HTMLElement}
 		 */
@@ -3543,20 +3543,27 @@ $(function() {
 		// Create carousels
 		$owlInstances.each(function () {
 			const $owlInstance = $(this);
+			const $owlInstanceElements = $('.js-owl-carousel__slide-element', $owlInstance);
 			let owlNavText = false;
             let owlAtoplayTimeout = 0;
 
-			// Use the 'js-carousel__slide-element' class on the elements that are to be used as the slide items
+            // If there's only one item in the carousel, don't bother withit.
+            if ($owlInstanceElements.length < 2) {
+                $owlInstance.show();
+                return;
+            }
+
+			// Use the 'js-owl-carousel__slide-element' class on the elements that are to be used as the slide items
 			// By default Owl uses 'div', but this way we can easily apply it to any
 			// HTML element type without needing to change the JS
-			const owlItemElement = $('.js-carousel__slide-element', $owlInstance).prop("tagName");
+			const owlItemElement = $owlInstanceElements.first().prop("tagName");
 
-			// If you've created elements with the classes '.js-carousel-custom__next' and '.js-carousel-custom__prev'
+			// If you've created elements with the classes '.js-owl-carousel-custom__next' and '.js-owl-carousel-custom__prev'
 			// then they will be enabled as custom controls for the slide
 			// HOWEVER, they will only be shown if '.js-owl-carousel_show-controls' class is also present on the Owl component
-			const $owlCustomNext = $('.js-carousel-custom__next', $owlInstance);
-			const $owlCustomPrev = $('.js-carousel-custom__prev', $owlInstance);
-			const $owlCustomCount = $('.js-carousel-custom__count', $owlInstance);
+			const $owlCustomNext = $('.js-owl-carousel-custom__next', $owlInstance);
+			const $owlCustomPrev = $('.js-owl-carousel-custom__prev', $owlInstance);
+			const $owlCustomCount = $('.js-owl-carousel-custom__count', $owlInstance);
 
 			// Controls will only be shown if '.js-owl-carousel_show-controls' class is also present on the Owl component
 			const owlShowControls = $owlInstance.hasClass('js-owl-carousel_show-controls');

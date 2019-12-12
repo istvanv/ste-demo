@@ -1544,14 +1544,14 @@ a {
   }
 }
 
-.o-ratio-1\/1 {
+.o-ratio-36\/9 {
   position: relative;
   height: 0;
-  padding-top: 100%;
+  padding-top: 25%;
   overflow: hidden;
 }
 
-.o-ratio-1\/1 .o-ratio__content {
+.o-ratio-36\/9 .o-ratio__content {
   position: absolute;
   top: 0;
   left: 0;
@@ -1559,17 +1559,17 @@ a {
   bottom: 0;
 }
 
-.o-ratio-1\/1.o-ratio--rev {
+.o-ratio-36\/9.o-ratio--rev {
   position: relative;
 }
 
-.o-ratio-1\/1.o-ratio--rev::before {
+.o-ratio-36\/9.o-ratio--rev::before {
   content: "";
   display: block;
   position: relative;
   width: 100%;
   height: 0;
-  padding-top: 100%;
+  padding-top: 400%;
   overflow: hidden;
 }
 
@@ -1631,35 +1631,6 @@ a {
   overflow: hidden;
 }
 
-.o-ratio-4\/3 {
-  position: relative;
-  height: 0;
-  padding-top: 75%;
-  overflow: hidden;
-}
-
-.o-ratio-4\/3 .o-ratio__content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.o-ratio-4\/3.o-ratio--rev {
-  position: relative;
-}
-
-.o-ratio-4\/3.o-ratio--rev::before {
-  content: "";
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-top: 133.33333333%;
-  overflow: hidden;
-}
-
 .o-ratio-5\/3 {
   position: relative;
   height: 0;
@@ -1689,33 +1660,91 @@ a {
   overflow: hidden;
 }
 
+.o-ratio-4\/3 {
+  position: relative;
+  height: 0;
+  padding-top: 75%;
+  overflow: hidden;
+}
+
+.o-ratio-4\/3 .o-ratio__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.o-ratio-4\/3.o-ratio--rev {
+  position: relative;
+}
+
+.o-ratio-4\/3.o-ratio--rev::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 133.33333333%;
+  overflow: hidden;
+}
+
+.o-ratio-1\/1 {
+  position: relative;
+  height: 0;
+  padding-top: 100%;
+  overflow: hidden;
+}
+
+.o-ratio-1\/1 .o-ratio__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.o-ratio-1\/1.o-ratio--rev {
+  position: relative;
+}
+
+.o-ratio-1\/1.o-ratio--rev::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+  overflow: hidden;
+}
+
 @media screen and (min-width: 480px) {
-  .o-ratio-1\/1\@xs-up {
+  .o-ratio-36\/9\@xs-up {
     position: relative;
   }
-  .o-ratio-1\/1\@xs-up::before {
+  .o-ratio-36\/9\@xs-up::before {
     content: "";
     display: block;
     position: relative;
     width: 100%;
     height: 0;
-    padding-top: 100%;
+    padding-top: 25%;
     overflow: hidden;
   }
-  .o-ratio-1\/1\@xs-up .o-ratio__content {
+  .o-ratio-36\/9\@xs-up .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     overflow: auto;
-  }
-  .o-ratio-1\/1\@xs-up .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-21\/9\@xs-up {
     position: relative;
@@ -1736,13 +1765,13 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
-  }
-  .o-ratio-21\/9\@xs-up .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-16\/9\@xs-up {
     position: relative;
@@ -1763,40 +1792,13 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
-  }
-  .o-ratio-16\/9\@xs-up .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .o-ratio-4\/3\@xs-up {
-    position: relative;
-  }
-  .o-ratio-4\/3\@xs-up::before {
-    content: "";
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-top: 75%;
-    overflow: hidden;
-  }
-  .o-ratio-4\/3\@xs-up .o-ratio__content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: auto;
-  }
-  .o-ratio-4\/3\@xs-up .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-5\/3\@xs-up {
     position: relative;
@@ -1817,21 +1819,45 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-  .o-ratio-5\/3\@xs-up .o-ratio__content .c-image {
+  .o-ratio-4\/3\@xs-up {
+    position: relative;
+  }
+  .o-ratio-4\/3\@xs-up::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 75%;
+    overflow: hidden;
+  }
+  .o-ratio-4\/3\@xs-up .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-}
-
-@media screen and (min-width: 700px) {
-  .o-ratio-1\/1\@sm-up {
+  .o-ratio-1\/1\@xs-up {
     position: relative;
   }
-  .o-ratio-1\/1\@sm-up::before {
+  .o-ratio-1\/1\@xs-up::before {
     content: "";
     display: block;
     position: relative;
@@ -1840,20 +1866,50 @@ a {
     padding-top: 100%;
     overflow: hidden;
   }
-  .o-ratio-1\/1\@sm-up .o-ratio__content {
+  .o-ratio-1\/1\@xs-up .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-  .o-ratio-1\/1\@sm-up .o-ratio__content .c-image {
+}
+
+@media screen and (min-width: 700px) {
+  .o-ratio-36\/9\@sm-up {
+    position: relative;
+  }
+  .o-ratio-36\/9\@sm-up::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 25%;
+    overflow: hidden;
+  }
+  .o-ratio-36\/9\@sm-up .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-21\/9\@sm-up {
     position: relative;
@@ -1874,13 +1930,13 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
-  }
-  .o-ratio-21\/9\@sm-up .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-16\/9\@sm-up {
     position: relative;
@@ -1901,40 +1957,13 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
-  }
-  .o-ratio-16\/9\@sm-up .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .o-ratio-4\/3\@sm-up {
-    position: relative;
-  }
-  .o-ratio-4\/3\@sm-up::before {
-    content: "";
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-top: 75%;
-    overflow: hidden;
-  }
-  .o-ratio-4\/3\@sm-up .o-ratio__content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: auto;
-  }
-  .o-ratio-4\/3\@sm-up .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-5\/3\@sm-up {
     position: relative;
@@ -1955,21 +1984,45 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-  .o-ratio-5\/3\@sm-up .o-ratio__content .c-image {
+  .o-ratio-4\/3\@sm-up {
+    position: relative;
+  }
+  .o-ratio-4\/3\@sm-up::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 75%;
+    overflow: hidden;
+  }
+  .o-ratio-4\/3\@sm-up .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-}
-
-@media screen and (min-width: 1000px) {
-  .o-ratio-1\/1\@md-up {
+  .o-ratio-1\/1\@sm-up {
     position: relative;
   }
-  .o-ratio-1\/1\@md-up::before {
+  .o-ratio-1\/1\@sm-up::before {
     content: "";
     display: block;
     position: relative;
@@ -1978,20 +2031,50 @@ a {
     padding-top: 100%;
     overflow: hidden;
   }
-  .o-ratio-1\/1\@md-up .o-ratio__content {
+  .o-ratio-1\/1\@sm-up .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-  .o-ratio-1\/1\@md-up .o-ratio__content .c-image {
+}
+
+@media screen and (min-width: 1000px) {
+  .o-ratio-36\/9\@md-up {
+    position: relative;
+  }
+  .o-ratio-36\/9\@md-up::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 25%;
+    overflow: hidden;
+  }
+  .o-ratio-36\/9\@md-up .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-21\/9\@md-up {
     position: relative;
@@ -2012,13 +2095,13 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
-  }
-  .o-ratio-21\/9\@md-up .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-16\/9\@md-up {
     position: relative;
@@ -2039,40 +2122,13 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
-  }
-  .o-ratio-16\/9\@md-up .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .o-ratio-4\/3\@md-up {
-    position: relative;
-  }
-  .o-ratio-4\/3\@md-up::before {
-    content: "";
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-top: 75%;
-    overflow: hidden;
-  }
-  .o-ratio-4\/3\@md-up .o-ratio__content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: auto;
-  }
-  .o-ratio-4\/3\@md-up .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-5\/3\@md-up {
     position: relative;
@@ -2093,21 +2149,45 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-  .o-ratio-5\/3\@md-up .o-ratio__content .c-image {
+  .o-ratio-4\/3\@md-up {
+    position: relative;
+  }
+  .o-ratio-4\/3\@md-up::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 75%;
+    overflow: hidden;
+  }
+  .o-ratio-4\/3\@md-up .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-}
-
-@media screen and (min-width: 1400px) {
-  .o-ratio-1\/1\@lg-up {
+  .o-ratio-1\/1\@md-up {
     position: relative;
   }
-  .o-ratio-1\/1\@lg-up::before {
+  .o-ratio-1\/1\@md-up::before {
     content: "";
     display: block;
     position: relative;
@@ -2116,20 +2196,50 @@ a {
     padding-top: 100%;
     overflow: hidden;
   }
-  .o-ratio-1\/1\@lg-up .o-ratio__content {
+  .o-ratio-1\/1\@md-up .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-  .o-ratio-1\/1\@lg-up .o-ratio__content .c-image {
+}
+
+@media screen and (min-width: 1400px) {
+  .o-ratio-36\/9\@lg-up {
+    position: relative;
+  }
+  .o-ratio-36\/9\@lg-up::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 25%;
+    overflow: hidden;
+  }
+  .o-ratio-36\/9\@lg-up .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-21\/9\@lg-up {
     position: relative;
@@ -2150,13 +2260,13 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
-  }
-  .o-ratio-21\/9\@lg-up .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-16\/9\@lg-up {
     position: relative;
@@ -2177,40 +2287,13 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
-  }
-  .o-ratio-16\/9\@lg-up .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .o-ratio-4\/3\@lg-up {
-    position: relative;
-  }
-  .o-ratio-4\/3\@lg-up::before {
-    content: "";
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-top: 75%;
-    overflow: hidden;
-  }
-  .o-ratio-4\/3\@lg-up .o-ratio__content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: auto;
-  }
-  .o-ratio-4\/3\@lg-up .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-5\/3\@lg-up {
     position: relative;
@@ -2231,21 +2314,45 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-  .o-ratio-5\/3\@lg-up .o-ratio__content .c-image {
+  .o-ratio-4\/3\@lg-up {
+    position: relative;
+  }
+  .o-ratio-4\/3\@lg-up::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 75%;
+    overflow: hidden;
+  }
+  .o-ratio-4\/3\@lg-up .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-}
-
-@media screen and (min-width: 2000px) {
-  .o-ratio-1\/1\@xl-up {
+  .o-ratio-1\/1\@lg-up {
     position: relative;
   }
-  .o-ratio-1\/1\@xl-up::before {
+  .o-ratio-1\/1\@lg-up::before {
     content: "";
     display: block;
     position: relative;
@@ -2254,20 +2361,50 @@ a {
     padding-top: 100%;
     overflow: hidden;
   }
-  .o-ratio-1\/1\@xl-up .o-ratio__content {
+  .o-ratio-1\/1\@lg-up .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-  .o-ratio-1\/1\@xl-up .o-ratio__content .c-image {
+}
+
+@media screen and (min-width: 2000px) {
+  .o-ratio-36\/9\@xl-up {
+    position: relative;
+  }
+  .o-ratio-36\/9\@xl-up::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 25%;
+    overflow: hidden;
+  }
+  .o-ratio-36\/9\@xl-up .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-21\/9\@xl-up {
     position: relative;
@@ -2288,13 +2425,13 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
-  }
-  .o-ratio-21\/9\@xl-up .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-16\/9\@xl-up {
     position: relative;
@@ -2315,40 +2452,13 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
-  }
-  .o-ratio-16\/9\@xl-up .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .o-ratio-4\/3\@xl-up {
-    position: relative;
-  }
-  .o-ratio-4\/3\@xl-up::before {
-    content: "";
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-top: 75%;
-    overflow: hidden;
-  }
-  .o-ratio-4\/3\@xl-up .o-ratio__content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: auto;
-  }
-  .o-ratio-4\/3\@xl-up .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-5\/3\@xl-up {
     position: relative;
@@ -2369,21 +2479,45 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-  .o-ratio-5\/3\@xl-up .o-ratio__content .c-image {
+  .o-ratio-4\/3\@xl-up {
+    position: relative;
+  }
+  .o-ratio-4\/3\@xl-up::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 75%;
+    overflow: hidden;
+  }
+  .o-ratio-4\/3\@xl-up .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-}
-
-@media screen and (max-width: 699px) {
-  .o-ratio-1\/1\@xs-dn {
+  .o-ratio-1\/1\@xl-up {
     position: relative;
   }
-  .o-ratio-1\/1\@xs-dn::before {
+  .o-ratio-1\/1\@xl-up::before {
     content: "";
     display: block;
     position: relative;
@@ -2392,20 +2526,50 @@ a {
     padding-top: 100%;
     overflow: hidden;
   }
-  .o-ratio-1\/1\@xs-dn .o-ratio__content {
+  .o-ratio-1\/1\@xl-up .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-  .o-ratio-1\/1\@xs-dn .o-ratio__content .c-image {
+}
+
+@media screen and (max-width: 699px) {
+  .o-ratio-36\/9\@xs-dn {
+    position: relative;
+  }
+  .o-ratio-36\/9\@xs-dn::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 25%;
+    overflow: hidden;
+  }
+  .o-ratio-36\/9\@xs-dn .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-21\/9\@xs-dn {
     position: relative;
@@ -2426,13 +2590,13 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
-  }
-  .o-ratio-21\/9\@xs-dn .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-16\/9\@xs-dn {
     position: relative;
@@ -2453,40 +2617,13 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
-  }
-  .o-ratio-16\/9\@xs-dn .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .o-ratio-4\/3\@xs-dn {
-    position: relative;
-  }
-  .o-ratio-4\/3\@xs-dn::before {
-    content: "";
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-top: 75%;
-    overflow: hidden;
-  }
-  .o-ratio-4\/3\@xs-dn .o-ratio__content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: auto;
-  }
-  .o-ratio-4\/3\@xs-dn .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-5\/3\@xs-dn {
     position: relative;
@@ -2507,21 +2644,45 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-  .o-ratio-5\/3\@xs-dn .o-ratio__content .c-image {
+  .o-ratio-4\/3\@xs-dn {
+    position: relative;
+  }
+  .o-ratio-4\/3\@xs-dn::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 75%;
+    overflow: hidden;
+  }
+  .o-ratio-4\/3\@xs-dn .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-}
-
-@media screen and (max-width: 999px) {
-  .o-ratio-1\/1\@sm-dn {
+  .o-ratio-1\/1\@xs-dn {
     position: relative;
   }
-  .o-ratio-1\/1\@sm-dn::before {
+  .o-ratio-1\/1\@xs-dn::before {
     content: "";
     display: block;
     position: relative;
@@ -2530,20 +2691,50 @@ a {
     padding-top: 100%;
     overflow: hidden;
   }
-  .o-ratio-1\/1\@sm-dn .o-ratio__content {
+  .o-ratio-1\/1\@xs-dn .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-  .o-ratio-1\/1\@sm-dn .o-ratio__content .c-image {
+}
+
+@media screen and (max-width: 999px) {
+  .o-ratio-36\/9\@sm-dn {
+    position: relative;
+  }
+  .o-ratio-36\/9\@sm-dn::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 25%;
+    overflow: hidden;
+  }
+  .o-ratio-36\/9\@sm-dn .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-21\/9\@sm-dn {
     position: relative;
@@ -2564,13 +2755,13 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
-  }
-  .o-ratio-21\/9\@sm-dn .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-16\/9\@sm-dn {
     position: relative;
@@ -2591,40 +2782,13 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
-  }
-  .o-ratio-16\/9\@sm-dn .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .o-ratio-4\/3\@sm-dn {
-    position: relative;
-  }
-  .o-ratio-4\/3\@sm-dn::before {
-    content: "";
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-top: 75%;
-    overflow: hidden;
-  }
-  .o-ratio-4\/3\@sm-dn .o-ratio__content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: auto;
-  }
-  .o-ratio-4\/3\@sm-dn .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-5\/3\@sm-dn {
     position: relative;
@@ -2645,21 +2809,45 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-  .o-ratio-5\/3\@sm-dn .o-ratio__content .c-image {
+  .o-ratio-4\/3\@sm-dn {
+    position: relative;
+  }
+  .o-ratio-4\/3\@sm-dn::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 75%;
+    overflow: hidden;
+  }
+  .o-ratio-4\/3\@sm-dn .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-}
-
-@media screen and (max-width: 1399px) {
-  .o-ratio-1\/1\@md-dn {
+  .o-ratio-1\/1\@sm-dn {
     position: relative;
   }
-  .o-ratio-1\/1\@md-dn::before {
+  .o-ratio-1\/1\@sm-dn::before {
     content: "";
     display: block;
     position: relative;
@@ -2668,20 +2856,50 @@ a {
     padding-top: 100%;
     overflow: hidden;
   }
-  .o-ratio-1\/1\@md-dn .o-ratio__content {
+  .o-ratio-1\/1\@sm-dn .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-  .o-ratio-1\/1\@md-dn .o-ratio__content .c-image {
+}
+
+@media screen and (max-width: 1399px) {
+  .o-ratio-36\/9\@md-dn {
+    position: relative;
+  }
+  .o-ratio-36\/9\@md-dn::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 25%;
+    overflow: hidden;
+  }
+  .o-ratio-36\/9\@md-dn .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-21\/9\@md-dn {
     position: relative;
@@ -2702,13 +2920,13 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
-  }
-  .o-ratio-21\/9\@md-dn .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-16\/9\@md-dn {
     position: relative;
@@ -2729,40 +2947,13 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
-  }
-  .o-ratio-16\/9\@md-dn .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .o-ratio-4\/3\@md-dn {
-    position: relative;
-  }
-  .o-ratio-4\/3\@md-dn::before {
-    content: "";
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-top: 75%;
-    overflow: hidden;
-  }
-  .o-ratio-4\/3\@md-dn .o-ratio__content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: auto;
-  }
-  .o-ratio-4\/3\@md-dn .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-5\/3\@md-dn {
     position: relative;
@@ -2783,21 +2974,45 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-  .o-ratio-5\/3\@md-dn .o-ratio__content .c-image {
+  .o-ratio-4\/3\@md-dn {
+    position: relative;
+  }
+  .o-ratio-4\/3\@md-dn::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 75%;
+    overflow: hidden;
+  }
+  .o-ratio-4\/3\@md-dn .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-}
-
-@media screen and (max-width: 1999px) {
-  .o-ratio-1\/1\@lg-dn {
+  .o-ratio-1\/1\@md-dn {
     position: relative;
   }
-  .o-ratio-1\/1\@lg-dn::before {
+  .o-ratio-1\/1\@md-dn::before {
     content: "";
     display: block;
     position: relative;
@@ -2806,20 +3021,50 @@ a {
     padding-top: 100%;
     overflow: hidden;
   }
-  .o-ratio-1\/1\@lg-dn .o-ratio__content {
+  .o-ratio-1\/1\@md-dn .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-  .o-ratio-1\/1\@lg-dn .o-ratio__content .c-image {
+}
+
+@media screen and (max-width: 1999px) {
+  .o-ratio-36\/9\@lg-dn {
+    position: relative;
+  }
+  .o-ratio-36\/9\@lg-dn::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 25%;
+    overflow: hidden;
+  }
+  .o-ratio-36\/9\@lg-dn .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-21\/9\@lg-dn {
     position: relative;
@@ -2840,13 +3085,13 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
-  }
-  .o-ratio-21\/9\@lg-dn .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-16\/9\@lg-dn {
     position: relative;
@@ -2867,40 +3112,13 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
-  }
-  .o-ratio-16\/9\@lg-dn .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .o-ratio-4\/3\@lg-dn {
-    position: relative;
-  }
-  .o-ratio-4\/3\@lg-dn::before {
-    content: "";
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-top: 75%;
-    overflow: hidden;
-  }
-  .o-ratio-4\/3\@lg-dn .o-ratio__content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: auto;
-  }
-  .o-ratio-4\/3\@lg-dn .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-5\/3\@lg-dn {
     position: relative;
@@ -2921,21 +3139,45 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-  .o-ratio-5\/3\@lg-dn .o-ratio__content .c-image {
+  .o-ratio-4\/3\@lg-dn {
+    position: relative;
+  }
+  .o-ratio-4\/3\@lg-dn::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 75%;
+    overflow: hidden;
+  }
+  .o-ratio-4\/3\@lg-dn .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-}
-
-@media screen and (min-width: 480px) and (max-width: 699px) {
-  .o-ratio-1\/1\@xs {
+  .o-ratio-1\/1\@lg-dn {
     position: relative;
   }
-  .o-ratio-1\/1\@xs::before {
+  .o-ratio-1\/1\@lg-dn::before {
     content: "";
     display: block;
     position: relative;
@@ -2944,20 +3186,50 @@ a {
     padding-top: 100%;
     overflow: hidden;
   }
-  .o-ratio-1\/1\@xs .o-ratio__content {
+  .o-ratio-1\/1\@lg-dn .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-  .o-ratio-1\/1\@xs .o-ratio__content .c-image {
+}
+
+@media screen and (min-width: 480px) and (max-width: 699px) {
+  .o-ratio-36\/9\@xs {
+    position: relative;
+  }
+  .o-ratio-36\/9\@xs::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 25%;
+    overflow: hidden;
+  }
+  .o-ratio-36\/9\@xs .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-21\/9\@xs {
     position: relative;
@@ -2978,13 +3250,13 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
-  }
-  .o-ratio-21\/9\@xs .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-16\/9\@xs {
     position: relative;
@@ -3005,40 +3277,13 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
-  }
-  .o-ratio-16\/9\@xs .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .o-ratio-4\/3\@xs {
-    position: relative;
-  }
-  .o-ratio-4\/3\@xs::before {
-    content: "";
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-top: 75%;
-    overflow: hidden;
-  }
-  .o-ratio-4\/3\@xs .o-ratio__content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: auto;
-  }
-  .o-ratio-4\/3\@xs .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-5\/3\@xs {
     position: relative;
@@ -3059,21 +3304,45 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-  .o-ratio-5\/3\@xs .o-ratio__content .c-image {
+  .o-ratio-4\/3\@xs {
+    position: relative;
+  }
+  .o-ratio-4\/3\@xs::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 75%;
+    overflow: hidden;
+  }
+  .o-ratio-4\/3\@xs .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-}
-
-@media screen and (min-width: 700px) and (max-width: 999px) {
-  .o-ratio-1\/1\@sm {
+  .o-ratio-1\/1\@xs {
     position: relative;
   }
-  .o-ratio-1\/1\@sm::before {
+  .o-ratio-1\/1\@xs::before {
     content: "";
     display: block;
     position: relative;
@@ -3082,20 +3351,50 @@ a {
     padding-top: 100%;
     overflow: hidden;
   }
-  .o-ratio-1\/1\@sm .o-ratio__content {
+  .o-ratio-1\/1\@xs .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-  .o-ratio-1\/1\@sm .o-ratio__content .c-image {
+}
+
+@media screen and (min-width: 700px) and (max-width: 999px) {
+  .o-ratio-36\/9\@sm {
+    position: relative;
+  }
+  .o-ratio-36\/9\@sm::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 25%;
+    overflow: hidden;
+  }
+  .o-ratio-36\/9\@sm .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-21\/9\@sm {
     position: relative;
@@ -3116,13 +3415,13 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
-  }
-  .o-ratio-21\/9\@sm .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-16\/9\@sm {
     position: relative;
@@ -3143,40 +3442,13 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
-  }
-  .o-ratio-16\/9\@sm .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .o-ratio-4\/3\@sm {
-    position: relative;
-  }
-  .o-ratio-4\/3\@sm::before {
-    content: "";
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-top: 75%;
-    overflow: hidden;
-  }
-  .o-ratio-4\/3\@sm .o-ratio__content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: auto;
-  }
-  .o-ratio-4\/3\@sm .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-5\/3\@sm {
     position: relative;
@@ -3197,21 +3469,45 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-  .o-ratio-5\/3\@sm .o-ratio__content .c-image {
+  .o-ratio-4\/3\@sm {
+    position: relative;
+  }
+  .o-ratio-4\/3\@sm::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 75%;
+    overflow: hidden;
+  }
+  .o-ratio-4\/3\@sm .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-}
-
-@media screen and (min-width: 1000px) and (max-width: 1399px) {
-  .o-ratio-1\/1\@md {
+  .o-ratio-1\/1\@sm {
     position: relative;
   }
-  .o-ratio-1\/1\@md::before {
+  .o-ratio-1\/1\@sm::before {
     content: "";
     display: block;
     position: relative;
@@ -3220,20 +3516,50 @@ a {
     padding-top: 100%;
     overflow: hidden;
   }
-  .o-ratio-1\/1\@md .o-ratio__content {
+  .o-ratio-1\/1\@sm .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-  .o-ratio-1\/1\@md .o-ratio__content .c-image {
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1399px) {
+  .o-ratio-36\/9\@md {
+    position: relative;
+  }
+  .o-ratio-36\/9\@md::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 25%;
+    overflow: hidden;
+  }
+  .o-ratio-36\/9\@md .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-21\/9\@md {
     position: relative;
@@ -3254,13 +3580,13 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
-  }
-  .o-ratio-21\/9\@md .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-16\/9\@md {
     position: relative;
@@ -3281,40 +3607,13 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
-  }
-  .o-ratio-16\/9\@md .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .o-ratio-4\/3\@md {
-    position: relative;
-  }
-  .o-ratio-4\/3\@md::before {
-    content: "";
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-top: 75%;
-    overflow: hidden;
-  }
-  .o-ratio-4\/3\@md .o-ratio__content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: auto;
-  }
-  .o-ratio-4\/3\@md .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-5\/3\@md {
     position: relative;
@@ -3335,21 +3634,45 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-  .o-ratio-5\/3\@md .o-ratio__content .c-image {
+  .o-ratio-4\/3\@md {
+    position: relative;
+  }
+  .o-ratio-4\/3\@md::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 75%;
+    overflow: hidden;
+  }
+  .o-ratio-4\/3\@md .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-}
-
-@media screen and (min-width: 1400px) and (max-width: 1999px) {
-  .o-ratio-1\/1\@lg {
+  .o-ratio-1\/1\@md {
     position: relative;
   }
-  .o-ratio-1\/1\@lg::before {
+  .o-ratio-1\/1\@md::before {
     content: "";
     display: block;
     position: relative;
@@ -3358,20 +3681,50 @@ a {
     padding-top: 100%;
     overflow: hidden;
   }
-  .o-ratio-1\/1\@lg .o-ratio__content {
+  .o-ratio-1\/1\@md .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-  .o-ratio-1\/1\@lg .o-ratio__content .c-image {
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1999px) {
+  .o-ratio-36\/9\@lg {
+    position: relative;
+  }
+  .o-ratio-36\/9\@lg::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 25%;
+    overflow: hidden;
+  }
+  .o-ratio-36\/9\@lg .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-21\/9\@lg {
     position: relative;
@@ -3392,13 +3745,13 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
-  }
-  .o-ratio-21\/9\@lg .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-16\/9\@lg {
     position: relative;
@@ -3419,40 +3772,13 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
-  }
-  .o-ratio-16\/9\@lg .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .o-ratio-4\/3\@lg {
-    position: relative;
-  }
-  .o-ratio-4\/3\@lg::before {
-    content: "";
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-top: 75%;
-    overflow: hidden;
-  }
-  .o-ratio-4\/3\@lg .o-ratio__content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: auto;
-  }
-  .o-ratio-4\/3\@lg .o-ratio__content .c-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
   .o-ratio-5\/3\@lg {
     position: relative;
@@ -3473,13 +3799,67 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
-  .o-ratio-5\/3\@lg .o-ratio__content .c-image {
+  .o-ratio-4\/3\@lg {
+    position: relative;
+  }
+  .o-ratio-4\/3\@lg::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 75%;
+    overflow: hidden;
+  }
+  .o-ratio-4\/3\@lg .o-ratio__content {
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
+  }
+  .o-ratio-1\/1\@lg {
+    position: relative;
+  }
+  .o-ratio-1\/1\@lg::before {
+    content: "";
+    display: block;
+    position: relative;
     width: 100%;
-    height: 100%;
+    height: 0;
+    padding-top: 100%;
+    overflow: hidden;
+  }
+  .o-ratio-1\/1\@lg .o-ratio__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    /*.c-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }*/
   }
 }
 
@@ -9515,8 +9895,12 @@ Cards
 /*
 Carousel component
 */
-.owl-carousel .owl-nav button.owl-prev,
-.owl-carousel .owl-nav button.owl-next {
+.c-owl-carousel.owl-loaded .c-owl-carousel__slide-element {
+  overflow: hidden;
+}
+
+.c-owl-carousel.owl-loaded .owl-nav button.owl-prev,
+.c-owl-carousel.owl-loaded .owl-nav button.owl-next {
   position: absolute;
   top: 0;
   width: 48px;
@@ -9525,26 +9909,26 @@ Carousel component
   opacity: 0.5;
 }
 
-.owl-carousel .owl-nav button.owl-prev:hover,
-.owl-carousel .owl-nav button.owl-next:hover {
+.c-owl-carousel.owl-loaded .owl-nav button.owl-prev:hover,
+.c-owl-carousel.owl-loaded .owl-nav button.owl-next:hover {
   background: rgba(255, 255, 255, 0.1);
   opacity: 1;
 }
 
-.owl-carousel .owl-nav button.owl-prev .owl-prev-icon,
-.owl-carousel .owl-nav button.owl-next .owl-prev-icon {
+.c-owl-carousel.owl-loaded .owl-nav button.owl-prev .owl-prev-icon,
+.c-owl-carousel.owl-loaded .owl-nav button.owl-next .owl-prev-icon {
   fill: #fff;
 }
 
-.owl-carousel .owl-nav button.owl-prev {
+.c-owl-carousel.owl-loaded .owl-nav button.owl-prev {
   left: 0;
 }
 
-.owl-carousel .owl-nav button.owl-next {
+.c-owl-carousel.owl-loaded .owl-nav button.owl-next {
   right: 0;
 }
 
-.owl-carousel .owl-dots {
+.c-owl-carousel.owl-loaded .owl-dots {
   position: absolute;
   bottom: 5px;
   left: 0;
@@ -9553,13 +9937,13 @@ Carousel component
   z-index: 5;
 }
 
-.owl-carousel .owl-dots button.owl-dot {
+.c-owl-carousel.owl-loaded .owl-dots button.owl-dot {
   margin: 0 4px;
   height: 16px;
   width: 16px;
 }
 
-.owl-carousel .owl-dots button.owl-dot span {
+.c-owl-carousel.owl-loaded .owl-dots button.owl-dot span {
   background: #aaaaaa;
   border-radius: 8px;
   display: block;
@@ -9567,11 +9951,11 @@ Carousel component
   height: 100%;
 }
 
-.owl-carousel .owl-dots button.owl-dot.active span {
+.c-owl-carousel.owl-loaded .owl-dots button.owl-dot.active span {
   background: #E30613;
 }
 
-.owl-carousel--style_rich-content {
+.c-owl-carousel.owl-loaded.c-owl-carousel--style_rich-content {
   padding-bottom: 60px;
 }
 
@@ -9677,7 +10061,7 @@ Hero
 @media screen and (min-width: 1000px) {
   .c-hero--primary .c-hero__content-wrapper {
     min-height: 480px;
-    max-height: 50vh;
+    max-height: 60vh;
   }
 }
 
@@ -9705,7 +10089,7 @@ Hero
 .owl-item .c-hero--primary .c-hero__media {
   opacity: 0;
   animation: imageBreathe 40s infinite;
-  transition: opacity 1200ms ease;
+  transition: opacity 1200ms linear;
 }
 
 .owl-item.active .c-hero--primary .c-hero__media {
@@ -9715,7 +10099,7 @@ Hero
 @media screen and (min-width: 1000px) {
   .c-hero--secondary .c-hero__content-wrapper {
     min-height: 336px;
-    max-height: 40vh;
+    max-height: 60vh;
   }
 }
 
